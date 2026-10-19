@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and virtual environments
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Large dataset files (keep original raw connectome files out of Git)
+data/*.csv
+data/*.tsv
+data/*.feather
+data/*.parquet
+data/*.arrow
+data/*.h5
+data/*.tar*
+data/*.zip
+!data/synthetic_connectivity_test.csv
+!data/synthetic_connectivity_malformed.csv
+!data/README.md
+
+# Large generated binaries / plots
+results/*.png
+results/*.pdf
+
+# Local system files
+.DS_Store
+*.swp

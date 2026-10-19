@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "is_software_test": true,
+    "file_analyzed": "synthetic_connectivity_test.csv",
+    "is_sampled": false,
+    "max_records_limit": 0,
+    "execution_time_seconds": 0.0011,
+    "peak_ram_mb": 14.12
+  },
+  "record_validation": {
+    "valid_records_processed": 10,
+    "malformed_records_excluded": 0,
+    "duplicate_records_aggregated": 0
+  },
+  "network_topology": {
+    "total_unique_neurons": 8,
+    "total_directed_edges": 10,
+    "total_synapse_count": 75,
+    "self_connections_count": 1,
+    "mutual_dyads_count": 1,
+    "reciprocity_ratio": 0.2,
+    "weakly_connected_components_count": 2,
+    "largest_wcc_neuron_count": 6,
+    "largest_wcc_coverage_ratio": 0.75
+  },
+  "degree_and_weight_distributions": {
+    "out_degree": {
+      "count": 8,
+      "min": 0,
+      "max": 2,
+      "mean": 1.25,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 2.0
+    },
+    "in_degree": {
+      "count": 8,
+      "min": 0,
+      "max": 2,
+      "mean": 1.25,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 2.0
+    },
+    "edge_synapse_counts": {
+      "count": 10,
+      "min": 1,
+      "max": 20,
+      "mean": 7.5,
+      "median": 6.0,
+      "q25": 3.25,
+      "q75": 9.5
+    }
+  },
+  "prominent_hubs": {
+    "top_out_degree": [
+      {
+        "node_id": "720575940614000001",
+        "out_degree": 2
+      },
+      {
+        "node_id": "720575940614000002",
+        "out_degree": 2
+      },
+      {
+        "node_id": "720575940614000003",
+        "out_degree": 2
+      },
+      {
+        "node_id": "720575940614000007",
+        "out_degree": 1
+      },
+      {
+        "node_id": "720575940614000005",
+        "out_degree": 1
+      }
+    ],
+    "top_in_degree": [
+      {
+        "node_id": "720575940614000002",
+        "in_degree": 2
+      },
+      {
+        "node_id": "720575940614000003",
+        "in_degree": 2
+      },
+      {
+        "node_id": "720575940614000004",
+        "in_degree": 2
+      },
+      {
+        "node_id": "720575940614000001",
+        "in_degree": 1
+      },
+      {
+        "node_id": "720575940614000008",
+        "in_degree": 1
+      }
+    ],
+    "top_out_strength": [
+      {
+        "node_id": "720575940614000007",
+        "out_synapses": 20
+      },
+      {
+        "node_id": "720575940614000001",
+        "out_synapses": 15
+      },
+      {
+        "node_id": "720575940614000004",
+        "out_synapses": 15
+      },
+      {
+        "node_id": "720575940614000003",
+        "out_synapses": 12
+      },
+      {
+        "node_id": "720575940614000006",
+        "out_synapses": 7
+      }
+    ],
+    "top_in_strength": [
+      {
+        "node_id": "720575940614000008",
+        "in_synapses": 20
+      },
+      {
+        "node_id": "720575940614000005",
+        "in_synapses": 15
+      },
+      {
+        "node_id": "720575940614000004",
+        "in_synapses": 15
+      },
+      {
+        "node_id": "720575940614000002",
+        "in_synapses": 11
+      },
+      {
+        "node_id": "720575940614000003",
+        "in_synapses": 7
+      }
+    ]
+  }
+}

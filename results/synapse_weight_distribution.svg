@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" style="background:#ffffff; font-family:sans-serif;">
+  <text x="320.0" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Synapse Count Distribution (SOFTWARE TEST)</text>
+  <text x="335.0" y="348" text-anchor="middle" font-size="12" fill="#475569">Synapse Count per Edge</text>
+  <line x1="60" y1="310" x2="610" y2="310" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="60" y1="40" x2="60" y2="310" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="62.0" y="40.0" width="51.0" height="270.0" fill="#3b82f6" opacity="0.85"><title>Range: [1.0, 2.9] Count: 2</title></rect>
+  <rect x="117.0" y="40.0" width="51.0" height="270.0" fill="#3b82f6" opacity="0.85"><title>Range: [2.9, 4.8] Count: 2</title></rect>
+  <rect x="172.0" y="175.0" width="51.0" height="135.0" fill="#3b82f6" opacity="0.85"><title>Range: [4.8, 6.7] Count: 1</title></rect>
+  <rect x="227.0" y="40.0" width="51.0" height="270.0" fill="#3b82f6" opacity="0.85"><title>Range: [6.7, 8.6] Count: 2</title></rect>
+  <rect x="282.0" y="175.0" width="51.0" height="135.0" fill="#3b82f6" opacity="0.85"><title>Range: [8.6, 10.5] Count: 1</title></rect>
+  <rect x="337.0" y="310.0" width="51.0" height="0.0" fill="#3b82f6" opacity="0.85"><title>Range: [10.5, 12.4] Count: 0</title></rect>
+  <rect x="392.0" y="310.0" width="51.0" height="0.0" fill="#3b82f6" opacity="0.85"><title>Range: [12.4, 14.3] Count: 0</title></rect>
+  <rect x="447.0" y="175.0" width="51.0" height="135.0" fill="#3b82f6" opacity="0.85"><title>Range: [14.3, 16.2] Count: 1</title></rect>
+  <rect x="502.0" y="310.0" width="51.0" height="0.0" fill="#3b82f6" opacity="0.85"><title>Range: [16.2, 18.1] Count: 0</title></rect>
+  <rect x="557.0" y="175.0" width="51.0" height="135.0" fill="#3b82f6" opacity="0.85"><title>Range: [18.1, 20.0] Count: 1</title></rect>
+  <line x1="56" y1="310.0" x2="60" y2="310.0" stroke="#64748b"/>  <text x="52" y="314.0" text-anchor="end" font-size="10" fill="#64748b">0</text>
+  <line x1="56" y1="175.0" x2="60" y2="175.0" stroke="#64748b"/>  <text x="52" y="179.0" text-anchor="end" font-size="10" fill="#64748b">1</text>
+  <line x1="56" y1="40.0" x2="60" y2="40.0" stroke="#64748b"/>  <text x="52" y="44.0" text-anchor="end" font-size="10" fill="#64748b">2</text>
+</svg>

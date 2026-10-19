@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" style="background:#ffffff; font-family:sans-serif;">
+  <text x="320.0" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e293b">Out-Degree Distribution (SOFTWARE TEST)</text>
+  <text x="335.0" y="348" text-anchor="middle" font-size="12" fill="#475569">Out-Degree (Postsynaptic Partners)</text>
+  <line x1="60" y1="310" x2="610" y2="310" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="60" y1="40" x2="60" y2="310" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="62.0" y="242.5" width="51.0" height="67.5" fill="#3b82f6" opacity="0.85"><title>Range: [0.0, 0.2] Count: 1</title></rect>
+  <rect x="117.0" y="310.0" width="51.0" height="0.0" fill="#3b82f6" opacity="0.85"><title>Range: [0.2, 0.4] Count: 0</title></rect>
+  <rect x="172.0" y="310.0" width="51.0" height="0.0" fill="#3b82f6" opacity="0.85"><title>Range: [0.4, 0.6] Count: 0</title></rect>
+  <rect x="227.0" y="310.0" width="51.0" height="0.0" fill="#3b82f6" opacity="0.85"><title>Range: [0.6, 0.8] Count: 0</title></rect>
+  <rect x="282.0" y="310.0" width="51.0" height="0.0" fill="#3b82f6" opacity="0.85"><title>Range: [0.8, 1.0] Count: 0</title></rect>
+  <rect x="337.0" y="40.0" width="51.0" height="270.0" fill="#3b82f6" opacity="0.85"><title>Range: [1.0, 1.2] Count: 4</title></rect>
+  <rect x="392.0" y="310.0" width="51.0" height="0.0" fill="#3b82f6" opacity="0.85"><title>Range: [1.2, 1.4] Count: 0</title></rect>
+  <rect x="447.0" y="310.0" width="51.0" height="0.0" fill="#3b82f6" opacity="0.85"><title>Range: [1.4, 1.6] Count: 0</title></rect>
+  <rect x="502.0" y="310.0" width="51.0" height="0.0" fill="#3b82f6" opacity="0.85"><title>Range: [1.6, 1.8] Count: 0</title></rect>
+  <rect x="557.0" y="107.5" width="51.0" height="202.5" fill="#3b82f6" opacity="0.85"><title>Range: [1.8, 2.0] Count: 3</title></rect>
+  <line x1="56" y1="310.0" x2="60" y2="310.0" stroke="#64748b"/>  <text x="52" y="314.0" text-anchor="end" font-size="10" fill="#64748b">0</text>
+  <line x1="56" y1="175.0" x2="60" y2="175.0" stroke="#64748b"/>  <text x="52" y="179.0" text-anchor="end" font-size="10" fill="#64748b">2</text>
+  <line x1="56" y1="40.0" x2="60" y2="40.0" stroke="#64748b"/>  <text x="52" y="44.0" text-anchor="end" font-size="10" fill="#64748b">4</text>
+</svg>
