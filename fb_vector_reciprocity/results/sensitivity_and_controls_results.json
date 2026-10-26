@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-26T12:50:33Z",
+    "runtime_sec": 5.71
+  },
+  "confidence_threshold_sensitivity": {
+    "conf_ge_0.00": {
+      "confidence_threshold": 0.0,
+      "retained_nodes": 2465,
+      "retained_dyads": 5435,
+      "ach_gaba_dyads": 554,
+      "pct_of_dyads": 10.19,
+      "rough_enrichment_ratio": 1.41
+    },
+    "conf_ge_0.60": {
+      "confidence_threshold": 0.6,
+      "retained_nodes": 1487,
+      "retained_dyads": 1318,
+      "ach_gaba_dyads": 79,
+      "pct_of_dyads": 5.99,
+      "rough_enrichment_ratio": 0.59
+    },
+    "conf_ge_0.70": {
+      "confidence_threshold": 0.7,
+      "retained_nodes": 1064,
+      "retained_dyads": 684,
+      "ach_gaba_dyads": 57,
+      "pct_of_dyads": 8.33,
+      "rough_enrichment_ratio": 0.59
+    },
+    "conf_ge_0.80": {
+      "confidence_threshold": 0.8,
+      "retained_nodes": 600,
+      "retained_dyads": 185,
+      "ach_gaba_dyads": 0,
+      "pct_of_dyads": 0.0,
+      "rough_enrichment_ratio": 0.0
+    }
+  },
+  "synthetic_controls": {
+    "negative_control": {
+      "description": "Erdos-Renyi random mutual dyads without chemical preference",
+      "observed": 313,
+      "null_mean": 300.41,
+      "null_std": 16.07,
+      "enrichment_ratio": 1.042,
+      "z_score": 0.78,
+      "empirical_p_value": 0.4296,
+      "passed_negative_control": true
+    },
+    "positive_control": {
+      "description": "Synthetic network with injected ACh-GABA reciprocal pairs",
+      "observed": 483,
+      "null_mean": 300.48,
+      "null_std": 16.09,
+      "enrichment_ratio": 1.607,
+      "z_score": 11.34,
+      "empirical_p_value": 0.001,
+      "passed_positive_control": true
+    }
+  },
+  "synthetic_bootstrap_coverage": {
+    "trials": 500,
+    "true_mean": 554.0,
+    "nominal_coverage_pct": 95.0,
+    "naive_dyad_bootstrap_coverage_pct": 55.6,
+    "cluster_hub_bootstrap_coverage_pct": 91.6,
+    "conclusion": "Under empirical hub clustering (16 hubs), naive dyad bootstrap achieves only 55.6% coverage (severe under-coverage due to 7x variance underestimation), whereas hub-level clustering achieves 91.6% coverage. This empirically proves why naive dyad bootstrapping must be withdrawn."
+  },
+  "bootstrap_confidence_intervals": {
+    "observed_count": 554,
+    "distinct_gaba_neurons_in_dyads": 16,
+    "distinct_ach_neurons_in_dyads": 256,
+    "naive_dyad_bootstrap_dyad_count_95_ci": [
+      513,
+      599
+    ],
+    "methodological_caveat": "Naive dyad bootstrap treats mutual dyads as independent and fixes the null mean. In reality, 16 tangential GABA neurons form all 554 dyads, creating extreme topological dependence. Cross-specimen biological CI is unidentified from N=1 connectome.",
+    "models_ci": {
+      "model1_mutual_quartiles": {
+        "null_mean": 93.6,
+        "null_std": 26.1,
+        "enrichment_point_estimate": 5.919,
+        "naive_dyad_bootstrap_95_ci": [
+          5.481,
+          6.4
+        ],
+        "monte_carlo_se_null_mean": 0.584,
+        "monte_carlo_95_ci_ratio": [
+          5.847,
+          5.992
+        ]
+      },
+      "model2_joint_in_out_tertiles": {
+        "null_mean": 97.4,
+        "null_std": 28.1,
+        "enrichment_point_estimate": 5.688,
+        "naive_dyad_bootstrap_95_ci": [
+          5.267,
+          6.15
+        ],
+        "monte_carlo_se_null_mean": 0.628,
+        "monte_carlo_95_ci_ratio": [
+          5.617,
+          5.761
+        ]
+      },
+      "model3_joint_in_out_medians": {
+        "null_mean": 101.7,
+        "null_std": 26.5,
+        "enrichment_point_estimate": 5.447,
+        "naive_dyad_bootstrap_95_ci": [
+          5.044,
+          5.89
+        ],
+        "monte_carlo_se_null_mean": 0.593,
+        "monte_carlo_95_ci_ratio": [
+          5.386,
+          5.51
+        ]
+      },
+      "model4_total_degree_quintiles": {
+        "null_mean": 111.7,
+        "null_std": 29.0,
+        "enrichment_point_estimate": 4.96,
+        "naive_dyad_bootstrap_95_ci": [
+          4.593,
+          5.363
+        ],
+        "monte_carlo_se_null_mean": 0.648,
+        "monte_carlo_95_ci_ratio": [
+          4.904,
+          5.017
+        ]
+      },
+      "knn_k16_micro_strata": {
+        "null_mean": 201.65,
+        "null_std": 52.29,
+        "enrichment_point_estimate": 2.747,
+        "naive_dyad_bootstrap_95_ci": [
+          2.544,
+          2.97
+        ],
+        "monte_carlo_se_null_mean": 1.654,
+        "monte_carlo_95_ci_ratio": [
+          2.704,
+          2.792
+        ]
+      },
+      "knn_k8_micro_strata": {
+        "null_mean": 219.09,
+        "null_std": 54.14,
+        "enrichment_point_estimate": 2.529,
+        "naive_dyad_bootstrap_95_ci": [
+          2.342,
+          2.734
+        ],
+        "monte_carlo_se_null_mean": 1.712,
+        "monte_carlo_95_ci_ratio": [
+          2.49,
+          2.568
+        ]
+      }
+    }
+  }
+}

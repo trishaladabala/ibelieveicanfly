@@ -22,9 +22,9 @@ import os
 import resource
 import sys
 import time
-from collections import defaultdict, deque
+from collections import Counter, defaultdict, deque
 from pathlib import Path
-from typing import Any, TextIO
+from typing import Any, Generator, TextIO
 
 
 def get_peak_memory_mb() -> float:
@@ -63,6 +63,39 @@ def calculate_distribution_stats(values: list[int | float]) -> dict[str, float |
         "q25": round(get_percentile(0.25), 2),
         "q75": round(get_percentile(0.75), 2),
     }
+
+
+class DisjointSet:
+    """Disjoint Set Union (Union-Find) with path compression and rank optimization."""
+    __slots__ = ("parent", "rank")
+
+    def __init__(self, n: int) -> None:
+        self.parent = list(range(n))
+        self.rank = [0] * n
+
+    def find(self, x: int) -> int:
+        root = x
+        while self.parent[root] != root:
+            root = self.parent[root]
+        curr = x
+        while curr != root:
+            nxt = self.parent[curr]
+            self.parent[curr] = root
+            curr = nxt
+        return root
+
+    def union(self, x: int, y: int) -> None:
+        rx = self.find(x)
+        ry = self.find(y)
+        if rx == ry:
+            return
+        if self.rank[rx] < self.rank[ry]:
+            self.parent[rx] = ry
+        elif self.rank[rx] > self.rank[ry]:
+            self.parent[ry] = rx
+        else:
+            self.parent[ry] = rx
+            self.rank[rx] += 1
 
 
 def find_weakly_connected_components(nodes: set[str], adj_undirected: dict[str, set[str]]) -> list[set[str]]:
@@ -159,6 +192,69 @@ def generate_svg_histogram(
     with output_path.open("w", encoding="utf-8") as f:
         f.write("\n".join(svg_elements))
 
+def iter_records(file_path: Path) -> Generator[dict[str, Any], None, None]:
+    """Stream connectivity records from either CSV/TSV or Apache Arrow Feather files."""
+    if file_path.suffix.lower() == ".feather":
+        try:
+            import pyarrow.ipc as ipc
+        except ImportError:
+            venv_path = Path(__file__).resolve().parent.parent / ".venv" / "lib" / "python3.12" / "site-packages"
+            if venv_path.exists():
+                sys.path.insert(0, str(venv_path))
+                import pyarrow.ipc as ipc
+            else:
+                raise ImportError("pyarrow is required to read .feather files. Install in local .venv.")
+
+        with open(file_path, "rb") as f:
+            reader = ipc.open_file(f)
+            header = list(reader.schema.names)
+            norm_map = {c.lower(): c for c in header}
+            pre_col = next((norm_map[c] for c in ["pre_root_id", "pre_pt_root_id", "source", "pre", "bodyid_pre"] if c in norm_map), None)
+            post_col = next((norm_map[c] for c in ["post_root_id", "post_pt_root_id", "target", "post", "bodyid_post"] if c in norm_map), None)
+            weight_col = next((norm_map[c] for c in ["syn_count", "weight", "count", "num_syn", "synapses"] if c in norm_map), None)
+            neuropil_col = next((norm_map[c] for c in ["neuropil", "roi", "region"] if c in norm_map), None)
+
+            for i in range(reader.num_record_batches):
+                batch = reader.get_batch(i)
+                pre_list = batch.column(pre_col).to_pylist() if pre_col else []
+                post_list = batch.column(post_col).to_pylist() if post_col else []
+                weight_list = batch.column(weight_col).to_pylist() if weight_col else [1] * len(pre_list)
+                neuropil_list = batch.column(neuropil_col).to_pylist() if neuropil_col else [None] * len(pre_list)
+
+                for pre_val, post_val, weight_val, npil_val in zip(pre_list, post_list, weight_list, neuropil_list):
+                    yield {
+                        "pre": str(pre_val).strip() if pre_val is not None else "",
+                        "post": str(post_val).strip() if post_val is not None else "",
+                        "weight": weight_val,
+                        "neuropil": str(npil_val).strip() if npil_val is not None else None,
+                    }
+    else:
+        with open_file_stream(file_path) as f:
+            header: list[str] = []
+            delimiter = ","
+            for line in f:
+                stripped = line.strip()
+                if not stripped or stripped.startswith("#"):
+                    continue
+                delimiter = "\t" if "\t" in stripped else ","
+                header = [c.strip() for c in stripped.split(delimiter)]
+                break
+
+            norm_map = {c.lower(): c for c in header}
+            pre_col = next((norm_map[c] for c in ["pre_root_id", "pre_pt_root_id", "source", "pre", "bodyid_pre"] if c in norm_map), "pre_root_id")
+            post_col = next((norm_map[c] for c in ["post_root_id", "post_pt_root_id", "target", "post", "bodyid_post"] if c in norm_map), "post_root_id")
+            weight_col = next((norm_map[c] for c in ["syn_count", "weight", "count", "num_syn", "synapses"] if c in norm_map), "syn_count")
+            neuropil_col = next((norm_map[c] for c in ["neuropil", "roi", "region"] if c in norm_map), None)
+
+            reader = csv.DictReader(f, fieldnames=header, delimiter=delimiter)
+            for row in reader:
+                yield {
+                    "pre": row.get(pre_col, "").strip(),
+                    "post": row.get(post_col, "").strip(),
+                    "weight": row.get(weight_col, "1").strip(),
+                    "neuropil": row.get(neuropil_col, "").strip() if (neuropil_col and row.get(neuropil_col)) else None,
+                }
+
 
 def run_pipeline(
     file_path: Path,
@@ -172,129 +268,121 @@ def run_pipeline(
     start_time = time.perf_counter()
 
     if results_dir is None:
-        results_dir = file_path.resolve().parent.parent / "results"
+        project_root = Path(__file__).resolve().parent.parent
+        subfolder = "software_test" if is_software_test else "real_data_pilot"
+        results_dir = project_root / "results" / subfolder
     results_dir.mkdir(parents=True, exist_ok=True)
 
-    # 1. Basic Ingestion and Adjacency Construction
-    # Directed sparse adjacency: out_edges[pre][post] = syn_count
-    out_edges: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
-    # Pre-calculated in-edges for rapid degree and strength retrieval: in_edges[post][pre] = syn_count
-    in_edges: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
-    # Undirected neighbor mapping for connected component analysis
-    adj_undirected: dict[str, set[str]] = defaultdict(set)
+    node_to_id: dict[str, int] = {}
+    id_to_node: list[str] = []
+    edge_weights: dict[int, int] = {}
 
-    all_nodes: set[str] = set()
+    neuropil_synapses: Counter[str] = Counter()
+    neuropil_connections: Counter[str] = Counter()
+
     self_connections: list[dict[str, Any]] = []
     duplicate_records_merged = 0
     malformed_rows = 0
     valid_rows_processed = 0
     is_sampled = False
 
-    header: list[str] = []
-    delimiter = ","
-    pre_col = "pre_root_id"
-    post_col = "post_root_id"
-    weight_col = "syn_count"
-
-    with open_file_stream(file_path) as f:
-        # Detect header
-        for line in f:
-            stripped = line.strip()
-            if not stripped or stripped.startswith("#"):
-                continue
-            delimiter = "\t" if "\t" in stripped else ","
-            header = [c.strip() for c in stripped.split(delimiter)]
+    for record in iter_records(file_path):
+        if max_records is not None and max_records >= 0 and valid_rows_processed >= max_records:
+            is_sampled = True
             break
 
-        # Map column positions
-        norm_map = {c.lower(): c for c in header}
-        for cand in ["pre_root_id", "pre_pt_root_id", "source", "pre"]:
-            if cand in norm_map:
-                pre_col = norm_map[cand]
-                break
-        for cand in ["post_root_id", "post_pt_root_id", "target", "post"]:
-            if cand in norm_map:
-                post_col = norm_map[cand]
-                break
-        for cand in ["syn_count", "weight", "count", "num_syn"]:
-            if cand in norm_map:
-                weight_col = norm_map[cand]
-                break
+        pre = record.get("pre", "").strip()
+        post = record.get("post", "").strip()
+        weight_raw = record.get("weight", 1)
 
-        reader = csv.DictReader(f, fieldnames=header, delimiter=delimiter)
-        for row in reader:
-            if max_records > 0 and valid_rows_processed >= max_records:
-                is_sampled = True
-                break
+        if not pre or not post:
+            malformed_rows += 1
+            continue
 
-            pre = row.get(pre_col, "").strip()
-            post = row.get(post_col, "").strip()
-            weight_str = row.get(weight_col, "1").strip()
-
-            if not pre or not post:
+        try:
+            weight = int(weight_raw)
+            if weight <= 0:
                 malformed_rows += 1
                 continue
+        except (ValueError, TypeError):
+            malformed_rows += 1
+            continue
 
-            try:
-                weight = int(weight_str)
-                if weight <= 0:
-                    malformed_rows += 1
-                    continue
-            except (ValueError, TypeError):
-                malformed_rows += 1
-                continue
+        valid_rows_processed += 1
+        if pre not in node_to_id:
+            node_to_id[pre] = len(id_to_node)
+            id_to_node.append(pre)
+        u = node_to_id[pre]
 
-            valid_rows_processed += 1
-            all_nodes.add(pre)
-            all_nodes.add(post)
+        if post not in node_to_id:
+            node_to_id[post] = len(id_to_node)
+            id_to_node.append(post)
+        v = node_to_id[post]
 
-            # Check if this edge was already seen in the stream
-            if post in out_edges[pre]:
-                duplicate_records_merged += 1
+        edge_key = (u << 32) | v
+        if edge_key in edge_weights:
+            duplicate_records_merged += 1
+            edge_weights[edge_key] += weight
+        else:
+            edge_weights[edge_key] = weight
 
-            out_edges[pre][post] += weight
-            in_edges[post][pre] += weight
+        npil = record.get("neuropil")
+        if npil:
+            neuropil_synapses[npil] += weight
+            neuropil_connections[npil] += 1
 
-            if pre == post:
-                self_connections.append({"node_id": pre, "syn_count": weight})
-            else:
-                adj_undirected[pre].add(post)
-                adj_undirected[post].add(pre)
+        if u == v:
+            self_connections.append({"node_id": pre, "syn_count": weight})
 
     # 2. Graph Metrics Calculation
-    total_directed_edges = sum(len(targets) for targets in out_edges.values())
-
-    out_degrees = {node: len(out_edges.get(node, {})) for node in all_nodes}
-    in_degrees = {node: len(in_edges.get(node, {})) for node in all_nodes}
-    out_strengths = {node: sum(out_edges.get(node, {}).values()) for node in all_nodes}
-    in_strengths = {node: sum(in_edges.get(node, {}).values()) for node in all_nodes}
-
-    # Reciprocity calculation: count mutual dyads (u -> v and v -> u where u != v)
-    mutual_dyads = 0
+    N = len(id_to_node)
+    total_directed_edges = len(edge_weights)
+    out_degrees = [0] * N
+    in_degrees = [0] * N
+    out_strengths = [0] * N
+    in_strengths = [0] * N
     total_weights: list[int] = []
-    for u, targets in out_edges.items():
-        for v, w in targets.items():
-            total_weights.append(w)
-            if u < v and v in out_edges and u in out_edges[v]:
+
+    ds = DisjointSet(N)
+    mutual_dyads = 0
+
+    for edge_key, w in edge_weights.items():
+        u = edge_key >> 32
+        v = edge_key & 0xFFFFFFFF
+        total_weights.append(w)
+        out_degrees[u] += 1
+        in_degrees[v] += 1
+        out_strengths[u] += w
+        in_strengths[v] += w
+
+        if u != v:
+            ds.union(u, v)
+            if u < v and ((v << 32) | u) in edge_weights:
                 mutual_dyads += 1
 
     reciprocity_ratio = (2.0 * mutual_dyads / total_directed_edges) if total_directed_edges > 0 else 0.0
 
-    # Connected Components
-    components = find_weakly_connected_components(all_nodes, adj_undirected)
-    num_components = len(components)
-    largest_wcc_size = len(components[0]) if components else 0
-    largest_wcc_ratio = (largest_wcc_size / len(all_nodes)) if all_nodes else 0.0
+    # Connected Components via Disjoint-Set
+    comp_counts = Counter(ds.find(i) for i in range(N))
+    wcc_sorted = sorted(comp_counts.values(), reverse=True)
+    num_components = len(wcc_sorted)
+    largest_wcc_size = wcc_sorted[0] if wcc_sorted else 0
+    largest_wcc_ratio = (largest_wcc_size / N) if N else 0.0
 
-    # Top Hubs Identification
-    top_out_degree = sorted(out_degrees.items(), key=lambda x: x[1], reverse=True)[:5]
-    top_in_degree = sorted(in_degrees.items(), key=lambda x: x[1], reverse=True)[:5]
-    top_out_strength = sorted(out_strengths.items(), key=lambda x: x[1], reverse=True)[:5]
-    top_in_strength = sorted(in_strengths.items(), key=lambda x: x[1], reverse=True)[:5]
+    # Top Hubs Identification (deterministic secondary sort by string node_id)
+    top_out_idx = sorted(range(N), key=lambda i: (-out_degrees[i], id_to_node[i]))[:5]
+    top_in_idx = sorted(range(N), key=lambda i: (-in_degrees[i], id_to_node[i]))[:5]
+    top_out_str_idx = sorted(range(N), key=lambda i: (-out_strengths[i], id_to_node[i]))[:5]
+    top_in_str_idx = sorted(range(N), key=lambda i: (-in_strengths[i], id_to_node[i]))[:5]
+
+    top_out_degree = [(id_to_node[i], out_degrees[i]) for i in top_out_idx]
+    top_in_degree = [(id_to_node[i], in_degrees[i]) for i in top_in_idx]
+    top_out_strength = [(id_to_node[i], out_strengths[i]) for i in top_out_str_idx]
+    top_in_strength = [(id_to_node[i], in_strengths[i]) for i in top_in_str_idx]
 
     # Distributions
-    out_deg_stats = calculate_distribution_stats(list(out_degrees.values()))
-    in_deg_stats = calculate_distribution_stats(list(in_degrees.values()))
+    out_deg_stats = calculate_distribution_stats(out_degrees)
+    in_deg_stats = calculate_distribution_stats(in_degrees)
     weight_stats = calculate_distribution_stats(total_weights)
 
     elapsed_time = time.perf_counter() - start_time
@@ -304,7 +392,7 @@ def run_pipeline(
     svg_deg_path = results_dir / "out_degree_distribution.svg"
     svg_weight_path = results_dir / "synapse_weight_distribution.svg"
     generate_svg_histogram(
-        list(out_degrees.values()),
+        out_degrees,
         title=f"Out-Degree Distribution ({'SOFTWARE TEST' if is_software_test else 'Sample'})",
         xlabel="Out-Degree (Postsynaptic Partners)",
         output_path=svg_deg_path,
@@ -331,7 +419,7 @@ def run_pipeline(
             "duplicate_records_aggregated": duplicate_records_merged,
         },
         "network_topology": {
-            "total_unique_neurons": len(all_nodes),
+            "total_unique_neurons": N,
             "total_directed_edges": total_directed_edges,
             "total_synapse_count": sum(total_weights),
             "self_connections_count": len(self_connections),
@@ -352,6 +440,11 @@ def run_pipeline(
             "top_out_strength": [{"node_id": nid, "out_synapses": st} for nid, st in top_out_strength],
             "top_in_strength": [{"node_id": nid, "in_synapses": st} for nid, st in top_in_strength],
         },
+        "regional_breakdown": {
+            "neuropils_detected": len(neuropil_synapses),
+            "top_neuropils_by_synapses": dict(neuropil_synapses.most_common(10)),
+            "top_neuropils_by_connections": dict(neuropil_connections.most_common(10)),
+        } if neuropil_synapses else None,
     }
 
     # Save summary.json
@@ -365,7 +458,7 @@ def run_pipeline(
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run preliminary fly-brain connectivity analysis.")
     parser.add_argument("--file", type=Path, default=None, help="Input CSV/TSV dataset file.")
-    parser.add_argument("--max-records", type=int, default=50000, help="Max records to sample (0 for unlimited).")
+    parser.add_argument("--max-records", type=int, default=50000, help="Max records to sample (default: 50,000; -1 for unlimited; positive integer for sample size).")
     parser.add_argument("--results-dir", type=Path, default=None, help="Directory to save output results.")
     args = parser.parse_args()
 
@@ -374,7 +467,11 @@ def main() -> int:
     is_software_test = False
 
     if target_file is None:
-        raw_candidates = list((project_root / "data" / "raw").glob("*.csv")) if (project_root / "data" / "raw").exists() else []
+        raw_candidates = []
+        raw_dir = project_root / "data" / "raw"
+        if raw_dir.exists():
+            for ext in ("*.feather", "*.csv", "*.tsv", "*.gz"):
+                raw_candidates.extend(sorted(raw_dir.rglob(ext)))
         if raw_candidates:
             target_file = raw_candidates[0]
             is_software_test = False

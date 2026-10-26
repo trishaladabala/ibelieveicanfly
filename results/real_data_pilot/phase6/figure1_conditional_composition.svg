@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 680" width="980" height="680">
+<style>
+  .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #111; }
+  .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 12px; fill: #555; }
+  .panel-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #222; }
+  .axis-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 11px; fill: #666; }
+  .bar-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 500; fill: #333; }
+  .stat-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #222; }
+  .legend { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 11px; fill: #444; }
+</style>
+<rect width="100%" height="100%" fill="#ffffff" />
+<!-- Header -->
+<text x="40" y="38" class="title">Figure 1: Reciprocal Transmitter-Pair Composition under Conditional Null Model</text>
+<text x="40" y="58" class="subtitle">Empirical mutual dyad counts vs Degree-Stratified Conditional Null (B = 2,000 permutations, 95% CI) across EB, FB, and PB (w ≥ 5)</text>
+<!-- Legend -->
+<rect x="580" y="25" width="16" height="12" fill="#2b5c8f" rx="2" />
+<text x="602" y="35" class="legend">Observed Dyad Count</text>
+<rect x="740" y="25" width="16" height="12" fill="#e0e0e0" stroke="#777" stroke-width="1" rx="2" />
+<text x="762" y="35" class="legend">Conditional Null Mean (± 95% CI)</text>
+<!-- Panel 1: Ellipsoid Body (EB, w >= 5) -->
+<line x1="40" y1="95" x2="940" y2="95" stroke="#eee" stroke-width="1" />
+<text x="40" y="117" class="panel-title">Ellipsoid Body (EB, w >= 5) — Total Reciprocal Dyads: 3,518</text>
+<text x="210" y="153" text-anchor="end" class="bar-label">GABA ↔ GABA (Primary)</text>
+<rect x="220" y="137" width="318.2" height="10" fill="#e2e8f0" stroke="#cbd5e1" rx="2" />
+<line x1="529.4" y1="142" x2="546.7" y2="142" stroke="#475569" stroke-width="1.5" />
+<line x1="529.4" y1="139" x2="529.4" y2="145" stroke="#475569" stroke-width="1.5" />
+<line x1="546.7" y1="139" x2="546.7" y2="145" stroke="#475569" stroke-width="1.5" />
+<rect x="220" y="149" width="384.0" height="12" fill="#43a047" rx="2" />
+<text x="616.0" y="156" class="stat-text">Obs: 2,615 | Null: 2,167.1 | 1.21x (Z = +15.3, ***)</text>
+<text x="210" y="181" text-anchor="end" class="bar-label">ACh ↔ ACh</text>
+<rect x="220" y="165" width="22.9" height="10" fill="#e2e8f0" stroke="#cbd5e1" rx="2" />
+<line x1="238.8" y1="170" x2="248.0" y2="170" stroke="#475569" stroke-width="1.5" />
+<line x1="238.8" y1="167" x2="238.8" y2="173" stroke="#475569" stroke-width="1.5" />
+<line x1="248.0" y1="167" x2="248.0" y2="173" stroke="#475569" stroke-width="1.5" />
+<rect x="220" y="177" width="67.3" height="12" fill="#1e88e5" rx="2" />
+<text x="299.2550669216061" y="184" class="stat-text">Obs: 458 | Null: 156.2 | 2.93x (Z = +18.4, ***)</text>
+<text x="210" y="209" text-anchor="end" class="bar-label">ACh ↔ GABA</text>
+<rect x="220" y="193" width="153.7" height="10" fill="#e2e8f0" stroke="#cbd5e1" rx="2" />
+<line x1="363.9" y1="198" x2="382.7" y2="198" stroke="#475569" stroke-width="1.5" />
+<line x1="363.9" y1="195" x2="363.9" y2="201" stroke="#475569" stroke-width="1.5" />
+<line x1="382.7" y1="195" x2="382.7" y2="201" stroke="#475569" stroke-width="1.5" />
+<rect x="220" y="205" width="41.6" height="12" fill="#e53935" rx="2" />
+<text x="385.68810707456976" y="212" class="stat-text">Obs: 283 | Null: 1,046.6 | 0.27x (Z = -23.2, ***)</text>
+<text x="210" y="237" text-anchor="end" class="bar-label">ACh ↔ Glut</text>
+<rect x="220" y="221" width="2.8" height="10" fill="#e2e8f0" stroke="#cbd5e1" rx="2" />
+<line x1="221.5" y1="226" x2="224.6" y2="226" stroke="#475569" stroke-width="1.5" />
+<line x1="221.5" y1="223" x2="221.5" y2="229" stroke="#475569" stroke-width="1.5" />
+<line x1="224.6" y1="223" x2="224.6" y2="229" stroke="#475569" stroke-width="1.5" />
+<rect x="220" y="233" width="16.7" height="12" fill="#8e24aa" rx="2" />
+<text x="248.74034416826004" y="240" class="stat-text">Obs: 114 | Null: 18.9 | 6.03x (Z = +18.1, ***)</text>
+<!-- Panel 2: Fan-Shaped Body (FB, w >= 5) -->
+<line x1="40" y1="270" x2="940" y2="270" stroke="#eee" stroke-width="1" />
+<text x="40" y="292" class="panel-title">Fan-Shaped Body (FB, w >= 5) — Total Reciprocal Dyads: 5,435</text>
+<text x="210" y="328" text-anchor="end" class="bar-label">ACh ↔ GABA (Sec 1)</text>
+<rect x="220" y="312" width="15.9" height="10" fill="#e2e8f0" stroke="#cbd5e1" rx="2" />
+<line x1="229.7" y1="317" x2="246.8" y2="317" stroke="#475569" stroke-width="1.5" />
+<line x1="229.7" y1="314" x2="229.7" y2="320" stroke="#475569" stroke-width="1.5" />
+<line x1="246.8" y1="314" x2="246.8" y2="320" stroke="#475569" stroke-width="1.5" />
+<rect x="220" y="324" width="93.8" height="12" fill="#e53935" rx="2" />
+<text x="325.8403176003529" y="331" class="stat-text">Obs: 554 | Null: 94.1 | 5.89x (Z = +17.8, ***)</text>
+<text x="210" y="356" text-anchor="end" class="bar-label">ACh ↔ Glut</text>
+<rect x="220" y="340" width="332.5" height="10" fill="#e2e8f0" stroke="#cbd5e1" rx="2" />
+<line x1="528.5" y1="345" x2="575.0" y2="345" stroke="#475569" stroke-width="1.5" />
+<line x1="528.5" y1="342" x2="528.5" y2="348" stroke="#475569" stroke-width="1.5" />
+<line x1="575.0" y1="342" x2="575.0" y2="348" stroke="#475569" stroke-width="1.5" />
+<rect x="220" y="352" width="384.0" height="12" fill="#8e24aa" rx="2" />
+<text x="616.0" y="359" class="stat-text">Obs: 2,267 | Null: 1,963.0 | 1.15x (Z = +4.3, ***)</text>
+<text x="210" y="384" text-anchor="end" class="bar-label">ACh ↔ ACh</text>
+<rect x="220" y="368" width="161.7" height="10" fill="#e2e8f0" stroke="#cbd5e1" rx="2" />
+<line x1="353.5" y1="373" x2="410.2" y2="373" stroke="#475569" stroke-width="1.5" />
+<line x1="353.5" y1="370" x2="353.5" y2="376" stroke="#475569" stroke-width="1.5" />
+<line x1="410.2" y1="370" x2="410.2" y2="376" stroke="#475569" stroke-width="1.5" />
+<rect x="220" y="380" width="77.2" height="12" fill="#1e88e5" rx="2" />
+<text x="393.72718129686814" y="387" class="stat-text">Obs: 456 | Null: 954.8 | 0.48x (Z = -5.9, ***)</text>
+<text x="210" y="412" text-anchor="end" class="bar-label">DA ↔ Ser</text>
+<rect x="220" y="396" width="7.8" height="10" fill="#e2e8f0" stroke="#cbd5e1" rx="2" />
+<line x1="224.9" y1="401" x2="231.2" y2="401" stroke="#475569" stroke-width="1.5" />
+<line x1="224.9" y1="398" x2="224.9" y2="404" stroke="#475569" stroke-width="1.5" />
+<line x1="231.2" y1="398" x2="231.2" y2="404" stroke="#475569" stroke-width="1.5" />
+<rect x="220" y="408" width="12.9" height="12" fill="#fb8c00" rx="2" />
+<text x="244.87340097044552" y="415" class="stat-text">Obs: 76 | Null: 46.0 | 1.65x (Z = +3.1, **)</text>
+<!-- Panel 3: Protocerebral Bridge (PB, w >= 5) -->
+<line x1="40" y1="445" x2="940" y2="445" stroke="#eee" stroke-width="1" />
+<text x="40" y="467" class="panel-title">Protocerebral Bridge (PB, w >= 5) — Total Reciprocal Dyads: 137</text>
+<text x="210" y="503" text-anchor="end" class="bar-label">Glut ↔ Glut</text>
+<rect x="220" y="487" width="51.2" height="10" fill="#e2e8f0" stroke="#cbd5e1" rx="2" />
+<line x1="220.0" y1="492" x2="371.5" y2="492" stroke="#475569" stroke-width="1.5" />
+<line x1="220.0" y1="489" x2="220.0" y2="495" stroke="#475569" stroke-width="1.5" />
+<line x1="371.5" y1="489" x2="371.5" y2="495" stroke="#475569" stroke-width="1.5" />
+<rect x="220" y="499" width="273.8" height="12" fill="#00897b" rx="2" />
+<text x="505.8279472007283" y="506" class="stat-text">Obs: 47 | Null: 8.8 | 5.35x (Z = +5.5, ***)</text>
+<text x="210" y="531" text-anchor="end" class="bar-label">ACh ↔ ACh (Sec 2)</text>
+<rect x="220" y="515" width="384.0" height="10" fill="#e2e8f0" stroke="#cbd5e1" rx="2" />
+<line x1="354.0" y1="520" x2="773.5" y2="520" stroke="#475569" stroke-width="1.5" />
+<line x1="354.0" y1="517" x2="354.0" y2="523" stroke="#475569" stroke-width="1.5" />
+<line x1="773.5" y1="517" x2="773.5" y2="523" stroke="#475569" stroke-width="1.5" />
+<rect x="220" y="527" width="203.9" height="12" fill="#1e88e5" rx="2" />
+<text x="616.0" y="534" class="stat-text">Obs: 35 | Null: 65.9 | 0.53x (Z = -1.6, n.s.)</text>
+<text x="210" y="559" text-anchor="end" class="bar-label">ACh ↔ Glut</text>
+<rect x="220" y="543" width="284.8" height="10" fill="#e2e8f0" stroke="#cbd5e1" rx="2" />
+<line x1="377.3" y1="548" x2="668.6" y2="548" stroke="#475569" stroke-width="1.5" />
+<line x1="377.3" y1="545" x2="377.3" y2="551" stroke="#475569" stroke-width="1.5" />
+<line x1="668.6" y1="545" x2="668.6" y2="551" stroke="#475569" stroke-width="1.5" />
+<rect x="220" y="555" width="297.1" height="12" fill="#8e24aa" rx="2" />
+<text x="529.1324533454712" y="562" class="stat-text">Obs: 51 | Null: 48.9 | 1.04x (Z = +0.2, n.s.)</text>
+<text x="40" y="660" class="subtitle">* p &lt; 0.05, ** p &lt; 0.01, *** p &lt; 0.001 (Empirical 2-tailed finite-sample p-value, B = 2,000 permutations). Reciprocal topology M held strictly constant.</text>
+</svg>

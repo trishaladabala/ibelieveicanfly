@@ -1,0 +1,5527 @@
+{
+  "metadata": {
+    "execution_date": "2026-10-19 22:31:39",
+    "dataset": "proofread_connections_783.feather",
+    "runtime_seconds": 310.79,
+    "peak_ram_mb": 2288.4,
+    "permutations": 200
+  },
+  "neuron_phenotype_census": {
+    "assigned_neurons": 138005,
+    "total_neurons": 138639,
+    "per_class_counts": {
+      "gaba": 19029,
+      "glut": 24840,
+      "ach": 90836,
+      "da": 868,
+      "ser": 2206,
+      "oct": 226
+    },
+    "confidence_distribution": {
+      "0.70 - 0.89": 55033,
+      "0.50 - 0.69": 47401,
+      ">= 0.90": 11558,
+      "< 0.50 (low confidence)": 24013
+    }
+  },
+  "whole_brain_threshold_sensitivity": {
+    "w1": {
+      "label": "Whole Brain (w >= 1)",
+      "threshold": 1,
+      "total_reciprocal_dyads": 2007259,
+      "participating_neurons": 131881,
+      "marginal_transmitter_pct": {
+        "ach": 65.99,
+        "gaba": 14.11,
+        "glut": 17.89,
+        "da": 0.63,
+        "oct": 0.1,
+        "ser": 1.28
+      },
+      "chi2_total": 647735.5,
+      "macro_categories": {
+        "recurrent_excitation_ach_ach": {
+          "observed": 469091,
+          "expected": 874091.6,
+          "obs_pct": 23.37,
+          "exp_pct": 43.55,
+          "enrichment_ratio": 0.537
+        },
+        "recurrent_inhibition_gaba_gaba": {
+          "observed": 92512,
+          "expected": 39982.7,
+          "obs_pct": 4.61,
+          "exp_pct": 1.99,
+          "enrichment_ratio": 2.314
+        },
+        "recurrent_glutamatergic_glut_glut": {
+          "observed": 83260,
+          "expected": 64229.1,
+          "obs_pct": 4.15,
+          "exp_pct": 3.2,
+          "enrichment_ratio": 1.296
+        },
+        "feedback_inhibition_ach_gaba": {
+          "observed": 655653,
+          "expected": 373890.4,
+          "obs_pct": 32.66,
+          "exp_pct": 18.63,
+          "enrichment_ratio": 1.754
+        },
+        "feedback_glutamatergic_ach_glut": {
+          "observed": 452039,
+          "expected": 473886.5,
+          "obs_pct": 22.52,
+          "exp_pct": 23.61,
+          "enrichment_ratio": 0.954
+        },
+        "co_inhibition_gaba_glut": {
+          "observed": 135971,
+          "expected": 101351.8,
+          "obs_pct": 6.77,
+          "exp_pct": 5.05,
+          "enrichment_ratio": 1.342
+        },
+        "all_homotypic_fast": {
+          "observed": 644863,
+          "expected": 978303.4,
+          "obs_pct": 32.13,
+          "exp_pct": 48.74,
+          "enrichment_ratio": 0.659
+        },
+        "all_heterotypic_fast": {
+          "observed": 1243663,
+          "expected": 949128.7,
+          "obs_pct": 61.96,
+          "exp_pct": 47.28,
+          "enrichment_ratio": 1.31
+        }
+      },
+      "pair_motifs_analytic": {
+        "ach_ach": {
+          "observed": 469091,
+          "expected": 874091.6,
+          "obs_pct": 23.37,
+          "exp_pct": 43.547,
+          "enrichment_ratio": 0.537,
+          "std_residual": -433.19,
+          "classification": "Depleted"
+        },
+        "ach_gaba": {
+          "observed": 655653,
+          "expected": 373890.4,
+          "obs_pct": 32.664,
+          "exp_pct": 18.627,
+          "enrichment_ratio": 1.754,
+          "std_residual": 460.8,
+          "classification": "Enriched"
+        },
+        "ach_glut": {
+          "observed": 452039,
+          "expected": 473886.5,
+          "obs_pct": 22.52,
+          "exp_pct": 23.609,
+          "enrichment_ratio": 0.954,
+          "std_residual": -31.74,
+          "classification": "Near Expected"
+        },
+        "ach_da": {
+          "observed": 52426,
+          "expected": 16672.7,
+          "obs_pct": 2.612,
+          "exp_pct": 0.831,
+          "enrichment_ratio": 3.144,
+          "std_residual": 276.89,
+          "classification": "Enriched"
+        },
+        "ach_oct": {
+          "observed": 6729,
+          "expected": 2671.7,
+          "obs_pct": 0.335,
+          "exp_pct": 0.133,
+          "enrichment_ratio": 2.519,
+          "std_residual": 78.5,
+          "classification": "Enriched"
+        },
+        "ach_ser": {
+          "observed": 19258,
+          "expected": 33867.7,
+          "obs_pct": 0.959,
+          "exp_pct": 1.687,
+          "enrichment_ratio": 0.569,
+          "std_residual": -79.39,
+          "classification": "Depleted"
+        },
+        "gaba_gaba": {
+          "observed": 92512,
+          "expected": 39982.7,
+          "obs_pct": 4.609,
+          "exp_pct": 1.992,
+          "enrichment_ratio": 2.314,
+          "std_residual": 262.7,
+          "classification": "Enriched"
+        },
+        "gaba_glut": {
+          "observed": 135971,
+          "expected": 101351.8,
+          "obs_pct": 6.774,
+          "exp_pct": 5.049,
+          "enrichment_ratio": 1.342,
+          "std_residual": 108.74,
+          "classification": "Enriched"
+        },
+        "gaba_da": {
+          "observed": 7207,
+          "expected": 3565.9,
+          "obs_pct": 0.359,
+          "exp_pct": 0.178,
+          "enrichment_ratio": 2.021,
+          "std_residual": 60.98,
+          "classification": "Enriched"
+        },
+        "gaba_oct": {
+          "observed": 3350,
+          "expected": 571.4,
+          "obs_pct": 0.167,
+          "exp_pct": 0.028,
+          "enrichment_ratio": 5.863,
+          "std_residual": 116.24,
+          "classification": "Enriched"
+        },
+        "gaba_ser": {
+          "observed": 6539,
+          "expected": 7243.4,
+          "obs_pct": 0.326,
+          "exp_pct": 0.361,
+          "enrichment_ratio": 0.903,
+          "std_residual": -8.28,
+          "classification": "Near Expected"
+        },
+        "glut_glut": {
+          "observed": 83260,
+          "expected": 64229.1,
+          "obs_pct": 4.148,
+          "exp_pct": 3.2,
+          "enrichment_ratio": 1.296,
+          "std_residual": 75.09,
+          "classification": "Enriched"
+        },
+        "glut_da": {
+          "observed": 10390,
+          "expected": 4519.5,
+          "obs_pct": 0.518,
+          "exp_pct": 0.225,
+          "enrichment_ratio": 2.299,
+          "std_residual": 87.32,
+          "classification": "Enriched"
+        },
+        "glut_oct": {
+          "observed": 2608,
+          "expected": 724.2,
+          "obs_pct": 0.13,
+          "exp_pct": 0.036,
+          "enrichment_ratio": 3.601,
+          "std_residual": 70.0,
+          "classification": "Enriched"
+        },
+        "glut_ser": {
+          "observed": 4761,
+          "expected": 9180.6,
+          "obs_pct": 0.237,
+          "exp_pct": 0.457,
+          "enrichment_ratio": 0.519,
+          "std_residual": -46.13,
+          "classification": "Depleted"
+        },
+        "da_da": {
+          "observed": 1232,
+          "expected": 79.5,
+          "obs_pct": 0.061,
+          "exp_pct": 0.004,
+          "enrichment_ratio": 15.496,
+          "std_residual": 129.25,
+          "classification": "Enriched"
+        },
+        "da_oct": {
+          "observed": 266,
+          "expected": 25.5,
+          "obs_pct": 0.013,
+          "exp_pct": 0.001,
+          "enrichment_ratio": 10.44,
+          "std_residual": 47.65,
+          "classification": "Enriched"
+        },
+        "da_ser": {
+          "observed": 1011,
+          "expected": 323.0,
+          "obs_pct": 0.05,
+          "exp_pct": 0.016,
+          "enrichment_ratio": 3.13,
+          "std_residual": 38.28,
+          "classification": "Enriched"
+        },
+        "oct_oct": {
+          "observed": 28,
+          "expected": 2.0,
+          "obs_pct": 0.001,
+          "exp_pct": 0.0,
+          "enrichment_ratio": 13.716,
+          "std_residual": 18.17,
+          "classification": "Enriched"
+        },
+        "oct_ser": {
+          "observed": 157,
+          "expected": 51.8,
+          "obs_pct": 0.008,
+          "exp_pct": 0.003,
+          "enrichment_ratio": 3.033,
+          "std_residual": 14.63,
+          "classification": "Enriched"
+        },
+        "ser_ser": {
+          "observed": 2771,
+          "expected": 328.1,
+          "obs_pct": 0.138,
+          "exp_pct": 0.016,
+          "enrichment_ratio": 8.447,
+          "std_residual": 134.88,
+          "classification": "Enriched"
+        }
+      },
+      "pair_motifs_permutation": {
+        "ach_ach": {
+          "mean_null": 874301.3,
+          "std_null": 7021.12,
+          "z_score": -57.71,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "ach_gaba": {
+          "mean_null": 374226.1,
+          "std_null": 4724.88,
+          "z_score": 59.56,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "ach_glut": {
+          "mean_null": 473514.2,
+          "std_null": 5058.5,
+          "z_score": -4.25,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "ach_da": {
+          "mean_null": 16710.6,
+          "std_null": 1296.57,
+          "z_score": 27.55,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "ach_oct": {
+          "mean_null": 2610.8,
+          "std_null": 361.4,
+          "z_score": 11.39,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "ach_ser": {
+          "mean_null": 33804.5,
+          "std_null": 1655.43,
+          "z_score": -8.79,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "gaba_gaba": {
+          "mean_null": 40031.7,
+          "std_null": 1159.67,
+          "z_score": 45.25,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "gaba_glut": {
+          "mean_null": 101354.1,
+          "std_null": 1735.27,
+          "z_score": 19.95,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "gaba_da": {
+          "mean_null": 3572.9,
+          "std_null": 289.27,
+          "z_score": 12.56,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "gaba_oct": {
+          "mean_null": 559.6,
+          "std_null": 78.4,
+          "z_score": 35.59,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "gaba_ser": {
+          "mean_null": 7238.6,
+          "std_null": 362.91,
+          "z_score": -1.93,
+          "empirical_p_value": 0.05970149253731343,
+          "significance": "n.s."
+        },
+        "glut_glut": {
+          "mean_null": 64149.4,
+          "std_null": 1606.82,
+          "z_score": 11.89,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "glut_da": {
+          "mean_null": 4525.0,
+          "std_null": 363.01,
+          "z_score": 16.16,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "glut_oct": {
+          "mean_null": 706.3,
+          "std_null": 100.13,
+          "z_score": 18.99,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "glut_ser": {
+          "mean_null": 9145.8,
+          "std_null": 463.42,
+          "z_score": -9.46,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "da_da": {
+          "mean_null": 79.0,
+          "std_null": 16.59,
+          "z_score": 69.48,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "da_oct": {
+          "mean_null": 25.4,
+          "std_null": 6.98,
+          "z_score": 34.49,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "da_ser": {
+          "mean_null": 324.0,
+          "std_null": 34.11,
+          "z_score": 20.14,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "oct_oct": {
+          "mean_null": 1.9,
+          "std_null": 1.68,
+          "z_score": 15.56,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "oct_ser": {
+          "mean_null": 50.8,
+          "std_null": 10.22,
+          "z_score": 10.38,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "ser_ser": {
+          "mean_null": 327.0,
+          "std_null": 36.35,
+          "z_score": 67.24,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        }
+      }
+    },
+    "w3": {
+      "label": "Whole Brain (w >= 3)",
+      "threshold": 3,
+      "total_reciprocal_dyads": 404353,
+      "participating_neurons": 108328,
+      "marginal_transmitter_pct": {
+        "ach": 67.39,
+        "gaba": 14.58,
+        "glut": 16.61,
+        "da": 0.56,
+        "oct": 0.06,
+        "ser": 0.8
+      },
+      "chi2_total": 308651.0,
+      "macro_categories": {
+        "recurrent_excitation_ach_ach": {
+          "observed": 51933,
+          "expected": 183612.0,
+          "obs_pct": 12.84,
+          "exp_pct": 45.41,
+          "enrichment_ratio": 0.283
+        },
+        "recurrent_inhibition_gaba_gaba": {
+          "observed": 20446,
+          "expected": 8591.0,
+          "obs_pct": 5.06,
+          "exp_pct": 2.12,
+          "enrichment_ratio": 2.38
+        },
+        "recurrent_glutamatergic_glut_glut": {
+          "observed": 11837,
+          "expected": 11161.6,
+          "obs_pct": 2.93,
+          "exp_pct": 2.76,
+          "enrichment_ratio": 1.061
+        },
+        "feedback_inhibition_ach_gaba": {
+          "observed": 187925,
+          "expected": 79433.2,
+          "obs_pct": 46.48,
+          "exp_pct": 19.64,
+          "enrichment_ratio": 2.366
+        },
+        "feedback_glutamatergic_ach_glut": {
+          "observed": 84952,
+          "expected": 90540.8,
+          "obs_pct": 21.01,
+          "exp_pct": 22.39,
+          "enrichment_ratio": 0.938
+        },
+        "co_inhibition_gaba_glut": {
+          "observed": 24682,
+          "expected": 19584.6,
+          "obs_pct": 6.1,
+          "exp_pct": 4.84,
+          "enrichment_ratio": 1.26
+        },
+        "all_homotypic_fast": {
+          "observed": 84216,
+          "expected": 203364.6,
+          "obs_pct": 20.83,
+          "exp_pct": 50.29,
+          "enrichment_ratio": 0.414
+        },
+        "all_heterotypic_fast": {
+          "observed": 297559,
+          "expected": 189558.6,
+          "obs_pct": 73.59,
+          "exp_pct": 46.88,
+          "enrichment_ratio": 1.57
+        }
+      },
+      "pair_motifs_analytic": {
+        "ach_ach": {
+          "observed": 51933,
+          "expected": 183612.0,
+          "obs_pct": 12.843,
+          "exp_pct": 45.409,
+          "enrichment_ratio": 0.283,
+          "std_residual": -307.3,
+          "classification": "Depleted"
+        },
+        "ach_gaba": {
+          "observed": 187925,
+          "expected": 79433.2,
+          "obs_pct": 46.475,
+          "exp_pct": 19.645,
+          "enrichment_ratio": 2.366,
+          "std_residual": 384.94,
+          "classification": "Enriched"
+        },
+        "ach_glut": {
+          "observed": 84952,
+          "expected": 90540.8,
+          "obs_pct": 21.009,
+          "exp_pct": 22.392,
+          "enrichment_ratio": 0.938,
+          "std_residual": -18.57,
+          "classification": "Near Expected"
+        },
+        "ach_da": {
+          "observed": 7633,
+          "expected": 3043.5,
+          "obs_pct": 1.888,
+          "exp_pct": 0.753,
+          "enrichment_ratio": 2.508,
+          "std_residual": 83.19,
+          "classification": "Enriched"
+        },
+        "ach_oct": {
+          "observed": 669,
+          "expected": 347.1,
+          "obs_pct": 0.165,
+          "exp_pct": 0.086,
+          "enrichment_ratio": 1.927,
+          "std_residual": 17.28,
+          "classification": "Enriched"
+        },
+        "ach_ser": {
+          "observed": 5868,
+          "expected": 4366.6,
+          "obs_pct": 1.451,
+          "exp_pct": 1.08,
+          "enrichment_ratio": 1.344,
+          "std_residual": 22.72,
+          "classification": "Enriched"
+        },
+        "gaba_gaba": {
+          "observed": 20446,
+          "expected": 8591.0,
+          "obs_pct": 5.056,
+          "exp_pct": 2.125,
+          "enrichment_ratio": 2.38,
+          "std_residual": 127.9,
+          "classification": "Enriched"
+        },
+        "gaba_glut": {
+          "observed": 24682,
+          "expected": 19584.6,
+          "obs_pct": 6.104,
+          "exp_pct": 4.843,
+          "enrichment_ratio": 1.26,
+          "std_residual": 36.42,
+          "classification": "Enriched"
+        },
+        "gaba_da": {
+          "observed": 1394,
+          "expected": 658.3,
+          "obs_pct": 0.345,
+          "exp_pct": 0.163,
+          "enrichment_ratio": 2.117,
+          "std_residual": 28.67,
+          "classification": "Enriched"
+        },
+        "gaba_oct": {
+          "observed": 499,
+          "expected": 75.1,
+          "obs_pct": 0.123,
+          "exp_pct": 0.019,
+          "enrichment_ratio": 6.646,
+          "std_residual": 48.92,
+          "classification": "Enriched"
+        },
+        "gaba_ser": {
+          "observed": 1776,
+          "expected": 944.5,
+          "obs_pct": 0.439,
+          "exp_pct": 0.234,
+          "enrichment_ratio": 1.88,
+          "std_residual": 27.05,
+          "classification": "Enriched"
+        },
+        "glut_glut": {
+          "observed": 11837,
+          "expected": 11161.6,
+          "obs_pct": 2.927,
+          "exp_pct": 2.76,
+          "enrichment_ratio": 1.061,
+          "std_residual": 6.39,
+          "classification": "Near Expected"
+        },
+        "glut_da": {
+          "observed": 1853,
+          "expected": 750.4,
+          "obs_pct": 0.458,
+          "exp_pct": 0.186,
+          "enrichment_ratio": 2.469,
+          "std_residual": 40.25,
+          "classification": "Enriched"
+        },
+        "glut_oct": {
+          "observed": 265,
+          "expected": 85.6,
+          "obs_pct": 0.066,
+          "exp_pct": 0.021,
+          "enrichment_ratio": 3.096,
+          "std_residual": 19.39,
+          "classification": "Enriched"
+        },
+        "glut_ser": {
+          "observed": 1041,
+          "expected": 1076.6,
+          "obs_pct": 0.257,
+          "exp_pct": 0.266,
+          "enrichment_ratio": 0.967,
+          "std_residual": -1.08,
+          "classification": "Near Expected"
+        },
+        "da_da": {
+          "observed": 281,
+          "expected": 12.6,
+          "obs_pct": 0.069,
+          "exp_pct": 0.003,
+          "enrichment_ratio": 22.28,
+          "std_residual": 75.57,
+          "classification": "Enriched"
+        },
+        "da_oct": {
+          "observed": 31,
+          "expected": 2.9,
+          "obs_pct": 0.008,
+          "exp_pct": 0.001,
+          "enrichment_ratio": 10.776,
+          "std_residual": 16.58,
+          "classification": "Enriched"
+        },
+        "da_ser": {
+          "observed": 442,
+          "expected": 36.2,
+          "obs_pct": 0.109,
+          "exp_pct": 0.009,
+          "enrichment_ratio": 12.213,
+          "std_residual": 67.46,
+          "classification": "Enriched"
+        },
+        "oct_oct": {
+          "observed": 3,
+          "expected": 0.2,
+          "obs_pct": 0.001,
+          "exp_pct": 0.0,
+          "enrichment_ratio": 18.287,
+          "std_residual": 7.0,
+          "classification": "Enriched"
+        },
+        "oct_ser": {
+          "observed": 13,
+          "expected": 4.1,
+          "obs_pct": 0.003,
+          "exp_pct": 0.001,
+          "enrichment_ratio": 3.15,
+          "std_residual": 4.37,
+          "classification": "Enriched"
+        },
+        "ser_ser": {
+          "observed": 810,
+          "expected": 26.0,
+          "obs_pct": 0.2,
+          "exp_pct": 0.006,
+          "enrichment_ratio": 31.201,
+          "std_residual": 153.88,
+          "classification": "Enriched"
+        }
+      },
+      "pair_motifs_permutation": {}
+    },
+    "w5": {
+      "label": "Whole Brain (w >= 5)",
+      "threshold": 5,
+      "total_reciprocal_dyads": 188724,
+      "participating_neurons": 81245,
+      "marginal_transmitter_pct": {
+        "ach": 67.16,
+        "gaba": 15.73,
+        "glut": 15.87,
+        "da": 0.54,
+        "oct": 0.07,
+        "ser": 0.63
+      },
+      "chi2_total": 201507.7,
+      "macro_categories": {
+        "recurrent_excitation_ach_ach": {
+          "observed": 18231,
+          "expected": 85116.6,
+          "obs_pct": 9.66,
+          "exp_pct": 45.1,
+          "enrichment_ratio": 0.214
+        },
+        "recurrent_inhibition_gaba_gaba": {
+          "observed": 10332,
+          "expected": 4671.2,
+          "obs_pct": 5.47,
+          "exp_pct": 2.48,
+          "enrichment_ratio": 2.212
+        },
+        "recurrent_glutamatergic_glut_glut": {
+          "observed": 4843,
+          "expected": 4750.5,
+          "obs_pct": 2.57,
+          "exp_pct": 2.52,
+          "enrichment_ratio": 1.019
+        },
+        "feedback_inhibition_ach_gaba": {
+          "observed": 96674,
+          "expected": 39879.8,
+          "obs_pct": 51.23,
+          "exp_pct": 21.13,
+          "enrichment_ratio": 2.424
+        },
+        "feedback_glutamatergic_ach_glut": {
+          "observed": 36180,
+          "expected": 40216.8,
+          "obs_pct": 19.17,
+          "exp_pct": 21.31,
+          "enrichment_ratio": 0.9
+        },
+        "co_inhibition_gaba_glut": {
+          "observed": 11106,
+          "expected": 9421.4,
+          "obs_pct": 5.88,
+          "exp_pct": 4.99,
+          "enrichment_ratio": 1.179
+        },
+        "all_homotypic_fast": {
+          "observed": 33406,
+          "expected": 94538.3,
+          "obs_pct": 17.7,
+          "exp_pct": 50.09,
+          "enrichment_ratio": 0.353
+        },
+        "all_heterotypic_fast": {
+          "observed": 143960,
+          "expected": 89518.0,
+          "obs_pct": 76.28,
+          "exp_pct": 47.43,
+          "enrichment_ratio": 1.608
+        }
+      },
+      "pair_motifs_analytic": {
+        "ach_ach": {
+          "observed": 18231,
+          "expected": 85116.6,
+          "obs_pct": 9.66,
+          "exp_pct": 45.101,
+          "enrichment_ratio": 0.214,
+          "std_residual": -229.26,
+          "classification": "Depleted"
+        },
+        "ach_gaba": {
+          "observed": 96674,
+          "expected": 39879.8,
+          "obs_pct": 51.225,
+          "exp_pct": 21.131,
+          "enrichment_ratio": 2.424,
+          "std_residual": 284.4,
+          "classification": "Enriched"
+        },
+        "ach_glut": {
+          "observed": 36180,
+          "expected": 40216.8,
+          "obs_pct": 19.171,
+          "exp_pct": 21.31,
+          "enrichment_ratio": 0.9,
+          "std_residual": -20.13,
+          "classification": "Near Expected"
+        },
+        "ach_da": {
+          "observed": 3179,
+          "expected": 1379.0,
+          "obs_pct": 1.684,
+          "exp_pct": 0.731,
+          "enrichment_ratio": 2.305,
+          "std_residual": 48.47,
+          "classification": "Enriched"
+        },
+        "ach_oct": {
+          "observed": 269,
+          "expected": 184.1,
+          "obs_pct": 0.143,
+          "exp_pct": 0.098,
+          "enrichment_ratio": 1.461,
+          "std_residual": 6.26,
+          "classification": "Enriched"
+        },
+        "ach_ser": {
+          "observed": 3578,
+          "expected": 1591.2,
+          "obs_pct": 1.896,
+          "exp_pct": 0.843,
+          "enrichment_ratio": 2.249,
+          "std_residual": 49.81,
+          "classification": "Enriched"
+        },
+        "gaba_gaba": {
+          "observed": 10332,
+          "expected": 4671.2,
+          "obs_pct": 5.475,
+          "exp_pct": 2.475,
+          "enrichment_ratio": 2.212,
+          "std_residual": 82.82,
+          "classification": "Enriched"
+        },
+        "gaba_glut": {
+          "observed": 11106,
+          "expected": 9421.4,
+          "obs_pct": 5.885,
+          "exp_pct": 4.992,
+          "enrichment_ratio": 1.179,
+          "std_residual": 17.36,
+          "classification": "Enriched"
+        },
+        "gaba_da": {
+          "observed": 651,
+          "expected": 323.1,
+          "obs_pct": 0.345,
+          "exp_pct": 0.171,
+          "enrichment_ratio": 2.015,
+          "std_residual": 18.25,
+          "classification": "Enriched"
+        },
+        "gaba_oct": {
+          "observed": 197,
+          "expected": 43.1,
+          "obs_pct": 0.104,
+          "exp_pct": 0.023,
+          "enrichment_ratio": 4.568,
+          "std_residual": 23.43,
+          "classification": "Enriched"
+        },
+        "gaba_ser": {
+          "observed": 1005,
+          "expected": 372.8,
+          "obs_pct": 0.533,
+          "exp_pct": 0.198,
+          "enrichment_ratio": 2.696,
+          "std_residual": 32.75,
+          "classification": "Enriched"
+        },
+        "glut_glut": {
+          "observed": 4843,
+          "expected": 4750.5,
+          "obs_pct": 2.566,
+          "exp_pct": 2.517,
+          "enrichment_ratio": 1.019,
+          "std_residual": 1.34,
+          "classification": "Near Expected"
+        },
+        "glut_da": {
+          "observed": 751,
+          "expected": 325.8,
+          "obs_pct": 0.398,
+          "exp_pct": 0.173,
+          "enrichment_ratio": 2.305,
+          "std_residual": 23.56,
+          "classification": "Enriched"
+        },
+        "glut_oct": {
+          "observed": 91,
+          "expected": 43.5,
+          "obs_pct": 0.048,
+          "exp_pct": 0.023,
+          "enrichment_ratio": 2.093,
+          "std_residual": 7.2,
+          "classification": "Enriched"
+        },
+        "glut_ser": {
+          "observed": 545,
+          "expected": 375.9,
+          "obs_pct": 0.289,
+          "exp_pct": 0.199,
+          "enrichment_ratio": 1.45,
+          "std_residual": 8.72,
+          "classification": "Enriched"
+        },
+        "da_da": {
+          "observed": 168,
+          "expected": 5.6,
+          "obs_pct": 0.089,
+          "exp_pct": 0.003,
+          "enrichment_ratio": 30.077,
+          "std_residual": 68.72,
+          "classification": "Enriched"
+        },
+        "da_oct": {
+          "observed": 9,
+          "expected": 1.5,
+          "obs_pct": 0.005,
+          "exp_pct": 0.001,
+          "enrichment_ratio": 6.035,
+          "std_residual": 6.15,
+          "classification": "Enriched"
+        },
+        "da_ser": {
+          "observed": 365,
+          "expected": 12.9,
+          "obs_pct": 0.193,
+          "exp_pct": 0.007,
+          "enrichment_ratio": 28.316,
+          "std_residual": 98.07,
+          "classification": "Enriched"
+        },
+        "oct_oct": {
+          "observed": 2,
+          "expected": 0.1,
+          "obs_pct": 0.001,
+          "exp_pct": 0.0,
+          "enrichment_ratio": 20.095,
+          "std_residual": 6.02,
+          "classification": "Enriched"
+        },
+        "oct_ser": {
+          "observed": 5,
+          "expected": 1.7,
+          "obs_pct": 0.003,
+          "exp_pct": 0.001,
+          "enrichment_ratio": 2.906,
+          "std_residual": 2.5,
+          "classification": "Enriched"
+        },
+        "ser_ser": {
+          "observed": 543,
+          "expected": 7.4,
+          "obs_pct": 0.288,
+          "exp_pct": 0.004,
+          "enrichment_ratio": 73.017,
+          "std_residual": 196.39,
+          "classification": "Enriched"
+        }
+      },
+      "pair_motifs_permutation": {
+        "ach_ach": {
+          "mean_null": 85363.1,
+          "std_null": 2311.05,
+          "z_score": -29.05,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "ach_gaba": {
+          "mean_null": 39911.2,
+          "std_null": 1463.43,
+          "z_score": 38.79,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "ach_glut": {
+          "mean_null": 40033.6,
+          "std_null": 1474.38,
+          "z_score": -2.61,
+          "empirical_p_value": 0.009950248756218905,
+          "significance": "** (p < 0.01)"
+        },
+        "ach_da": {
+          "mean_null": 1383.5,
+          "std_null": 451.19,
+          "z_score": 3.98,
+          "empirical_p_value": 0.014925373134328358,
+          "significance": "* (p < 0.05)"
+        },
+        "ach_oct": {
+          "mean_null": 169.2,
+          "std_null": 53.15,
+          "z_score": 1.88,
+          "empirical_p_value": 0.04477611940298507,
+          "significance": "* (p < 0.05)"
+        },
+        "ach_ser": {
+          "mean_null": 1635.7,
+          "std_null": 423.68,
+          "z_score": 4.58,
+          "empirical_p_value": 0.024875621890547265,
+          "significance": "* (p < 0.05)"
+        },
+        "gaba_gaba": {
+          "mean_null": 4661.7,
+          "std_null": 405.55,
+          "z_score": 13.98,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "gaba_glut": {
+          "mean_null": 9351.0,
+          "std_null": 527.41,
+          "z_score": 3.33,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "gaba_da": {
+          "mean_null": 324.9,
+          "std_null": 107.06,
+          "z_score": 3.05,
+          "empirical_p_value": 0.029850746268656716,
+          "significance": "* (p < 0.05)"
+        },
+        "gaba_oct": {
+          "mean_null": 39.8,
+          "std_null": 13.35,
+          "z_score": 11.78,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "gaba_ser": {
+          "mean_null": 384.5,
+          "std_null": 99.51,
+          "z_score": 6.24,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "glut_glut": {
+          "mean_null": 4688.0,
+          "std_null": 424.73,
+          "z_score": 0.36,
+          "empirical_p_value": 0.7164179104477612,
+          "significance": "n.s."
+        },
+        "glut_da": {
+          "mean_null": 325.0,
+          "std_null": 108.72,
+          "z_score": 3.92,
+          "empirical_p_value": 0.01990049751243781,
+          "significance": "* (p < 0.05)"
+        },
+        "glut_oct": {
+          "mean_null": 40.1,
+          "std_null": 14.42,
+          "z_score": 3.53,
+          "empirical_p_value": 0.014925373134328358,
+          "significance": "* (p < 0.05)"
+        },
+        "glut_ser": {
+          "mean_null": 382.8,
+          "std_null": 99.18,
+          "z_score": 1.63,
+          "empirical_p_value": 0.03482587064676617,
+          "significance": "* (p < 0.05)"
+        },
+        "da_da": {
+          "mean_null": 5.5,
+          "std_null": 4.39,
+          "z_score": 37.05,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "da_oct": {
+          "mean_null": 1.4,
+          "std_null": 1.5,
+          "z_score": 5.06,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "da_ser": {
+          "mean_null": 13.3,
+          "std_null": 6.3,
+          "z_score": 55.86,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        },
+        "oct_oct": {
+          "mean_null": 0.1,
+          "std_null": 0.27,
+          "z_score": 7.27,
+          "empirical_p_value": 0.009950248756218905,
+          "significance": "** (p < 0.01)"
+        },
+        "oct_ser": {
+          "mean_null": 1.6,
+          "std_null": 1.49,
+          "z_score": 2.29,
+          "empirical_p_value": 0.05970149253731343,
+          "significance": "n.s."
+        },
+        "ser_ser": {
+          "mean_null": 7.8,
+          "std_null": 4.47,
+          "z_score": 119.74,
+          "empirical_p_value": 0.004975124378109453,
+          "significance": "** (p < 0.01)"
+        }
+      }
+    },
+    "w10": {
+      "label": "Whole Brain (w >= 10)",
+      "threshold": 10,
+      "total_reciprocal_dyads": 61509,
+      "participating_neurons": 41582,
+      "marginal_transmitter_pct": {
+        "ach": 63.19,
+        "gaba": 19.54,
+        "glut": 16.09,
+        "da": 0.56,
+        "oct": 0.08,
+        "ser": 0.53
+      },
+      "chi2_total": 138100.5,
+      "macro_categories": {
+        "recurrent_excitation_ach_ach": {
+          "observed": 4041,
+          "expected": 24557.3,
+          "obs_pct": 6.57,
+          "exp_pct": 39.92,
+          "enrichment_ratio": 0.165
+        },
+        "recurrent_inhibition_gaba_gaba": {
+          "observed": 4759,
+          "expected": 2349.6,
+          "obs_pct": 7.74,
+          "exp_pct": 3.82,
+          "enrichment_ratio": 2.025
+        },
+        "recurrent_glutamatergic_glut_glut": {
+          "observed": 1345,
+          "expected": 1592.6,
+          "obs_pct": 2.19,
+          "exp_pct": 2.59,
+          "enrichment_ratio": 0.845
+        },
+        "feedback_inhibition_ach_gaba": {
+          "observed": 31322,
+          "expected": 15192.0,
+          "obs_pct": 50.92,
+          "exp_pct": 24.7,
+          "enrichment_ratio": 2.062
+        },
+        "feedback_glutamatergic_ach_glut": {
+          "observed": 11003,
+          "expected": 12507.6,
+          "obs_pct": 17.89,
+          "exp_pct": 20.33,
+          "enrichment_ratio": 0.88
+        },
+        "co_inhibition_gaba_glut": {
+          "observed": 4336,
+          "expected": 3868.8,
+          "obs_pct": 7.05,
+          "exp_pct": 6.29,
+          "enrichment_ratio": 1.121
+        },
+        "all_homotypic_fast": {
+          "observed": 10145,
+          "expected": 28499.5,
+          "obs_pct": 16.49,
+          "exp_pct": 46.33,
+          "enrichment_ratio": 0.356
+        },
+        "all_heterotypic_fast": {
+          "observed": 46661,
+          "expected": 31568.4,
+          "obs_pct": 75.86,
+          "exp_pct": 51.32,
+          "enrichment_ratio": 1.478
+        }
+      },
+      "pair_motifs_analytic": {
+        "ach_ach": {
+          "observed": 4041,
+          "expected": 24557.3,
+          "obs_pct": 6.57,
+          "exp_pct": 39.925,
+          "enrichment_ratio": 0.165,
+          "std_residual": -130.92,
+          "classification": "Depleted"
+        },
+        "ach_gaba": {
+          "observed": 31322,
+          "expected": 15192.0,
+          "obs_pct": 50.923,
+          "exp_pct": 24.699,
+          "enrichment_ratio": 2.062,
+          "std_residual": 130.87,
+          "classification": "Enriched"
+        },
+        "ach_glut": {
+          "observed": 11003,
+          "expected": 12507.6,
+          "obs_pct": 17.888,
+          "exp_pct": 20.335,
+          "enrichment_ratio": 0.88,
+          "std_residual": -13.45,
+          "classification": "Near Expected"
+        },
+        "ach_da": {
+          "observed": 1044,
+          "expected": 437.4,
+          "obs_pct": 1.697,
+          "exp_pct": 0.711,
+          "enrichment_ratio": 2.387,
+          "std_residual": 29.0,
+          "classification": "Enriched"
+        },
+        "ach_oct": {
+          "observed": 80,
+          "expected": 65.4,
+          "obs_pct": 0.13,
+          "exp_pct": 0.106,
+          "enrichment_ratio": 1.223,
+          "std_residual": 1.8,
+          "classification": "Enriched"
+        },
+        "ach_ser": {
+          "observed": 1758,
+          "expected": 413.1,
+          "obs_pct": 2.858,
+          "exp_pct": 0.672,
+          "enrichment_ratio": 4.255,
+          "std_residual": 66.17,
+          "classification": "Enriched"
+        },
+        "gaba_gaba": {
+          "observed": 4759,
+          "expected": 2349.6,
+          "obs_pct": 7.737,
+          "exp_pct": 3.82,
+          "enrichment_ratio": 2.025,
+          "std_residual": 49.71,
+          "classification": "Enriched"
+        },
+        "gaba_glut": {
+          "observed": 4336,
+          "expected": 3868.8,
+          "obs_pct": 7.049,
+          "exp_pct": 6.29,
+          "enrichment_ratio": 1.121,
+          "std_residual": 7.51,
+          "classification": "Near Expected"
+        },
+        "gaba_da": {
+          "observed": 239,
+          "expected": 135.3,
+          "obs_pct": 0.389,
+          "exp_pct": 0.22,
+          "enrichment_ratio": 1.766,
+          "std_residual": 8.91,
+          "classification": "Enriched"
+        },
+        "gaba_oct": {
+          "observed": 64,
+          "expected": 20.2,
+          "obs_pct": 0.104,
+          "exp_pct": 0.033,
+          "enrichment_ratio": 3.162,
+          "std_residual": 9.73,
+          "classification": "Enriched"
+        },
+        "gaba_ser": {
+          "observed": 449,
+          "expected": 127.8,
+          "obs_pct": 0.73,
+          "exp_pct": 0.208,
+          "enrichment_ratio": 3.514,
+          "std_residual": 28.42,
+          "classification": "Enriched"
+        },
+        "glut_glut": {
+          "observed": 1345,
+          "expected": 1592.6,
+          "obs_pct": 2.187,
+          "exp_pct": 2.589,
+          "enrichment_ratio": 0.845,
+          "std_residual": -6.2,
+          "classification": "Depleted"
+        },
+        "glut_da": {
+          "observed": 185,
+          "expected": 111.4,
+          "obs_pct": 0.301,
+          "exp_pct": 0.181,
+          "enrichment_ratio": 1.661,
+          "std_residual": 6.97,
+          "classification": "Enriched"
+        },
+        "glut_oct": {
+          "observed": 4,
+          "expected": 16.7,
+          "obs_pct": 0.007,
+          "exp_pct": 0.027,
+          "enrichment_ratio": 0.24,
+          "std_residual": -3.1,
+          "classification": "Depleted"
+        },
+        "glut_ser": {
+          "observed": 167,
+          "expected": 105.2,
+          "obs_pct": 0.272,
+          "exp_pct": 0.171,
+          "enrichment_ratio": 1.587,
+          "std_residual": 6.02,
+          "classification": "Enriched"
+        },
+        "da_da": {
+          "observed": 93,
+          "expected": 1.9,
+          "obs_pct": 0.151,
+          "exp_pct": 0.003,
+          "enrichment_ratio": 47.744,
+          "std_residual": 65.24,
+          "classification": "Enriched"
+        },
+        "da_oct": {
+          "observed": 0,
+          "expected": 0.6,
+          "obs_pct": 0.0,
+          "exp_pct": 0.001,
+          "enrichment_ratio": 0.0,
+          "std_residual": -0.76,
+          "classification": "Depleted"
+        },
+        "da_ser": {
+          "observed": 263,
+          "expected": 3.7,
+          "obs_pct": 0.428,
+          "exp_pct": 0.006,
+          "enrichment_ratio": 71.481,
+          "std_residual": 135.19,
+          "classification": "Enriched"
+        },
+        "oct_oct": {
+          "observed": 1,
+          "expected": 0.0,
+          "obs_pct": 0.002,
+          "exp_pct": 0.0,
+          "enrichment_ratio": 22.948,
+          "std_residual": 4.58,
+          "classification": "Enriched"
+        },
+        "oct_ser": {
+          "observed": 0,
+          "expected": 0.6,
+          "obs_pct": 0.0,
+          "exp_pct": 0.001,
+          "enrichment_ratio": 0.0,
+          "std_residual": -0.74,
+          "classification": "Depleted"
+        },
+        "ser_ser": {
+          "observed": 356,
+          "expected": 1.7,
+          "obs_pct": 0.579,
+          "exp_pct": 0.003,
+          "enrichment_ratio": 204.898,
+          "std_residual": 268.76,
+          "classification": "Enriched"
+        }
+      },
+      "pair_motifs_permutation": {}
+    }
+  },
+  "regional_motif_analysis": {
+    "FB": {
+      "w1": {
+        "label": "FB (w >= 1)",
+        "threshold": 1,
+        "total_reciprocal_dyads": 40090,
+        "participating_neurons": 2433,
+        "marginal_transmitter_pct": {
+          "ach": 61.2,
+          "gaba": 4.27,
+          "glut": 24.78,
+          "da": 4.19,
+          "oct": 0.12,
+          "ser": 5.43
+        },
+        "chi2_total": 22703.5,
+        "macro_categories": {
+          "recurrent_excitation_ach_ach": {
+            "observed": 5813,
+            "expected": 15015.5,
+            "obs_pct": 14.5,
+            "exp_pct": 37.45,
+            "enrichment_ratio": 0.387
+          },
+          "recurrent_inhibition_gaba_gaba": {
+            "observed": 50,
+            "expected": 73.3,
+            "obs_pct": 0.12,
+            "exp_pct": 0.18,
+            "enrichment_ratio": 0.682
+          },
+          "recurrent_glutamatergic_glut_glut": {
+            "observed": 7727,
+            "expected": 2462.6,
+            "obs_pct": 19.27,
+            "exp_pct": 6.14,
+            "enrichment_ratio": 3.138
+          },
+          "feedback_inhibition_ach_gaba": {
+            "observed": 1460,
+            "expected": 2097.5,
+            "obs_pct": 3.64,
+            "exp_pct": 5.23,
+            "enrichment_ratio": 0.696
+          },
+          "feedback_glutamatergic_ach_glut": {
+            "observed": 15737,
+            "expected": 12161.7,
+            "obs_pct": 39.25,
+            "exp_pct": 30.34,
+            "enrichment_ratio": 1.294
+          },
+          "co_inhibition_gaba_glut": {
+            "observed": 474,
+            "expected": 849.4,
+            "obs_pct": 1.18,
+            "exp_pct": 2.12,
+            "enrichment_ratio": 0.558
+          },
+          "all_homotypic_fast": {
+            "observed": 13590,
+            "expected": 17551.4,
+            "obs_pct": 33.9,
+            "exp_pct": 43.78,
+            "enrichment_ratio": 0.774
+          },
+          "all_heterotypic_fast": {
+            "observed": 17671,
+            "expected": 15108.6,
+            "obs_pct": 44.08,
+            "exp_pct": 37.69,
+            "enrichment_ratio": 1.17
+          }
+        },
+        "pair_motifs_analytic": {
+          "ach_ach": {
+            "observed": 5813,
+            "expected": 15015.5,
+            "obs_pct": 14.5,
+            "exp_pct": 37.455,
+            "enrichment_ratio": 0.387,
+            "std_residual": -75.1,
+            "classification": "Depleted"
+          },
+          "ach_gaba": {
+            "observed": 1460,
+            "expected": 2097.5,
+            "obs_pct": 3.642,
+            "exp_pct": 5.232,
+            "enrichment_ratio": 0.696,
+            "std_residual": -13.92,
+            "classification": "Depleted"
+          },
+          "ach_glut": {
+            "observed": 15737,
+            "expected": 12161.7,
+            "obs_pct": 39.254,
+            "exp_pct": 30.336,
+            "enrichment_ratio": 1.294,
+            "std_residual": 32.42,
+            "classification": "Enriched"
+          },
+          "ach_da": {
+            "observed": 2917,
+            "expected": 2057.2,
+            "obs_pct": 7.276,
+            "exp_pct": 5.131,
+            "enrichment_ratio": 1.418,
+            "std_residual": 18.96,
+            "classification": "Enriched"
+          },
+          "ach_oct": {
+            "observed": 54,
+            "expected": 60.5,
+            "obs_pct": 0.135,
+            "exp_pct": 0.151,
+            "enrichment_ratio": 0.892,
+            "std_residual": -0.84,
+            "classification": "Near Expected"
+          },
+          "ach_ser": {
+            "observed": 1158,
+            "expected": 2662.3,
+            "obs_pct": 2.889,
+            "exp_pct": 6.641,
+            "enrichment_ratio": 0.435,
+            "std_residual": -29.15,
+            "classification": "Depleted"
+          },
+          "gaba_gaba": {
+            "observed": 50,
+            "expected": 73.3,
+            "obs_pct": 0.125,
+            "exp_pct": 0.183,
+            "enrichment_ratio": 0.683,
+            "std_residual": -2.72,
+            "classification": "Depleted"
+          },
+          "gaba_glut": {
+            "observed": 474,
+            "expected": 849.4,
+            "obs_pct": 1.182,
+            "exp_pct": 2.119,
+            "enrichment_ratio": 0.558,
+            "std_residual": -12.88,
+            "classification": "Depleted"
+          },
+          "gaba_da": {
+            "observed": 76,
+            "expected": 143.7,
+            "obs_pct": 0.19,
+            "exp_pct": 0.358,
+            "enrichment_ratio": 0.529,
+            "std_residual": -5.65,
+            "classification": "Depleted"
+          },
+          "gaba_oct": {
+            "observed": 2,
+            "expected": 4.2,
+            "obs_pct": 0.005,
+            "exp_pct": 0.011,
+            "enrichment_ratio": 0.473,
+            "std_residual": -1.08,
+            "classification": "Depleted"
+          },
+          "gaba_ser": {
+            "observed": 97,
+            "expected": 185.9,
+            "obs_pct": 0.242,
+            "exp_pct": 0.464,
+            "enrichment_ratio": 0.522,
+            "std_residual": -6.52,
+            "classification": "Depleted"
+          },
+          "glut_glut": {
+            "observed": 7727,
+            "expected": 2462.6,
+            "obs_pct": 19.274,
+            "exp_pct": 6.143,
+            "enrichment_ratio": 3.138,
+            "std_residual": 106.09,
+            "classification": "Enriched"
+          },
+          "glut_da": {
+            "observed": 2208,
+            "expected": 833.1,
+            "obs_pct": 5.508,
+            "exp_pct": 2.078,
+            "enrichment_ratio": 2.65,
+            "std_residual": 47.63,
+            "classification": "Enriched"
+          },
+          "glut_oct": {
+            "observed": 45,
+            "expected": 24.5,
+            "obs_pct": 0.112,
+            "exp_pct": 0.061,
+            "enrichment_ratio": 1.837,
+            "std_residual": 4.14,
+            "classification": "Enriched"
+          },
+          "glut_ser": {
+            "observed": 1571,
+            "expected": 1078.1,
+            "obs_pct": 3.919,
+            "exp_pct": 2.689,
+            "enrichment_ratio": 1.457,
+            "std_residual": 15.01,
+            "classification": "Enriched"
+          },
+          "da_da": {
+            "observed": 254,
+            "expected": 70.5,
+            "obs_pct": 0.634,
+            "exp_pct": 0.176,
+            "enrichment_ratio": 3.605,
+            "std_residual": 21.87,
+            "classification": "Enriched"
+          },
+          "da_oct": {
+            "observed": 20,
+            "expected": 4.1,
+            "obs_pct": 0.05,
+            "exp_pct": 0.01,
+            "enrichment_ratio": 4.825,
+            "std_residual": 7.79,
+            "classification": "Enriched"
+          },
+          "da_ser": {
+            "observed": 268,
+            "expected": 182.4,
+            "obs_pct": 0.668,
+            "exp_pct": 0.455,
+            "enrichment_ratio": 1.47,
+            "std_residual": 6.34,
+            "classification": "Enriched"
+          },
+          "oct_oct": {
+            "observed": 0,
+            "expected": 0.1,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.25,
+            "classification": "Depleted"
+          },
+          "oct_ser": {
+            "observed": 2,
+            "expected": 5.4,
+            "obs_pct": 0.005,
+            "exp_pct": 0.013,
+            "enrichment_ratio": 0.373,
+            "std_residual": -1.45,
+            "classification": "Depleted"
+          },
+          "ser_ser": {
+            "observed": 157,
+            "expected": 118.0,
+            "obs_pct": 0.392,
+            "exp_pct": 0.294,
+            "enrichment_ratio": 1.33,
+            "std_residual": 3.59,
+            "classification": "Enriched"
+          }
+        },
+        "pair_motifs_permutation": {
+          "ach_ach": {
+            "mean_null": 14999.6,
+            "std_null": 558.88,
+            "z_score": -16.44,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_gaba": {
+            "mean_null": 2099.2,
+            "std_null": 222.05,
+            "z_score": -2.88,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_glut": {
+            "mean_null": 12202.1,
+            "std_null": 364.98,
+            "z_score": 9.69,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_da": {
+            "mean_null": 2063.4,
+            "std_null": 223.1,
+            "z_score": 3.83,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_oct": {
+            "mean_null": 64.3,
+            "std_null": 42.18,
+            "z_score": -0.24,
+            "empirical_p_value": 0.8258706467661692,
+            "significance": "n.s."
+          },
+          "ach_ser": {
+            "mean_null": 2617.1,
+            "std_null": 245.98,
+            "z_score": -5.93,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_gaba": {
+            "mean_null": 72.9,
+            "std_null": 17.77,
+            "z_score": -1.29,
+            "empirical_p_value": 0.21393034825870647,
+            "significance": "n.s."
+          },
+          "gaba_glut": {
+            "mean_null": 858.1,
+            "std_null": 101.19,
+            "z_score": -3.8,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_da": {
+            "mean_null": 145.1,
+            "std_null": 23.94,
+            "z_score": -2.89,
+            "empirical_p_value": 0.014925373134328358,
+            "significance": "* (p < 0.05)"
+          },
+          "gaba_oct": {
+            "mean_null": 4.3,
+            "std_null": 3.61,
+            "z_score": -0.63,
+            "empirical_p_value": 0.6417910447761194,
+            "significance": "n.s."
+          },
+          "gaba_ser": {
+            "mean_null": 183.7,
+            "std_null": 27.99,
+            "z_score": -3.1,
+            "empirical_p_value": 0.009950248756218905,
+            "significance": "** (p < 0.01)"
+          },
+          "glut_glut": {
+            "mean_null": 2472.5,
+            "std_null": 208.45,
+            "z_score": 25.21,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "glut_da": {
+            "mean_null": 839.8,
+            "std_null": 94.44,
+            "z_score": 14.49,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "glut_oct": {
+            "mean_null": 26.4,
+            "std_null": 16.77,
+            "z_score": 1.11,
+            "empirical_p_value": 0.2537313432835821,
+            "significance": "n.s."
+          },
+          "glut_ser": {
+            "mean_null": 1068.2,
+            "std_null": 112.02,
+            "z_score": 4.49,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "da_da": {
+            "mean_null": 70.9,
+            "std_null": 17.36,
+            "z_score": 10.55,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "da_oct": {
+            "mean_null": 4.6,
+            "std_null": 3.58,
+            "z_score": 4.3,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "da_ser": {
+            "mean_null": 180.1,
+            "std_null": 27.07,
+            "z_score": 3.25,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "oct_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.2,
+            "z_score": -0.2,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "oct_ser": {
+            "mean_null": 5.4,
+            "std_null": 4.07,
+            "z_score": -0.84,
+            "empirical_p_value": 0.42786069651741293,
+            "significance": "n.s."
+          },
+          "ser_ser": {
+            "mean_null": 112.3,
+            "std_null": 24.19,
+            "z_score": 1.85,
+            "empirical_p_value": 0.07960199004975124,
+            "significance": "n.s."
+          }
+        }
+      },
+      "w3": {
+        "label": "FB (w >= 3)",
+        "threshold": 3,
+        "total_reciprocal_dyads": 10524,
+        "participating_neurons": 1630,
+        "marginal_transmitter_pct": {
+          "ach": 54.29,
+          "gaba": 1.6,
+          "glut": 33.93,
+          "da": 3.62,
+          "oct": 0.12,
+          "ser": 6.44
+        },
+        "chi2_total": 5497.1,
+        "macro_categories": {
+          "recurrent_excitation_ach_ach": {
+            "observed": 998,
+            "expected": 3102.4,
+            "obs_pct": 9.48,
+            "exp_pct": 29.48,
+            "enrichment_ratio": 0.322
+          },
+          "recurrent_inhibition_gaba_gaba": {
+            "observed": 7,
+            "expected": 2.7,
+            "obs_pct": 0.07,
+            "exp_pct": 0.03,
+            "enrichment_ratio": 2.593
+          },
+          "recurrent_glutamatergic_glut_glut": {
+            "observed": 2155,
+            "expected": 1211.3,
+            "obs_pct": 20.48,
+            "exp_pct": 11.51,
+            "enrichment_ratio": 1.779
+          },
+          "feedback_inhibition_ach_gaba": {
+            "observed": 792,
+            "expected": 182.3,
+            "obs_pct": 7.53,
+            "exp_pct": 1.73,
+            "enrichment_ratio": 4.344
+          },
+          "feedback_glutamatergic_ach_glut": {
+            "observed": 4193,
+            "expected": 3877.1,
+            "obs_pct": 39.84,
+            "exp_pct": 36.84,
+            "enrichment_ratio": 1.081
+          },
+          "co_inhibition_gaba_glut": {
+            "observed": 87,
+            "expected": 113.9,
+            "obs_pct": 0.83,
+            "exp_pct": 1.08,
+            "enrichment_ratio": 0.764
+          },
+          "all_homotypic_fast": {
+            "observed": 3160,
+            "expected": 4316.4,
+            "obs_pct": 30.03,
+            "exp_pct": 41.01,
+            "enrichment_ratio": 0.732
+          },
+          "all_heterotypic_fast": {
+            "observed": 5072,
+            "expected": 4173.3,
+            "obs_pct": 48.19,
+            "exp_pct": 39.66,
+            "enrichment_ratio": 1.215
+          }
+        },
+        "pair_motifs_analytic": {
+          "ach_ach": {
+            "observed": 998,
+            "expected": 3102.4,
+            "obs_pct": 9.483,
+            "exp_pct": 29.479,
+            "enrichment_ratio": 0.322,
+            "std_residual": -37.78,
+            "classification": "Depleted"
+          },
+          "ach_gaba": {
+            "observed": 792,
+            "expected": 182.3,
+            "obs_pct": 7.526,
+            "exp_pct": 1.732,
+            "enrichment_ratio": 4.345,
+            "std_residual": 45.16,
+            "classification": "Enriched"
+          },
+          "ach_glut": {
+            "observed": 4193,
+            "expected": 3877.1,
+            "obs_pct": 39.842,
+            "exp_pct": 36.84,
+            "enrichment_ratio": 1.081,
+            "std_residual": 5.07,
+            "classification": "Near Expected"
+          },
+          "ach_da": {
+            "observed": 658,
+            "expected": 413.6,
+            "obs_pct": 6.252,
+            "exp_pct": 3.931,
+            "enrichment_ratio": 1.591,
+            "std_residual": 12.01,
+            "classification": "Enriched"
+          },
+          "ach_oct": {
+            "observed": 2,
+            "expected": 14.0,
+            "obs_pct": 0.019,
+            "exp_pct": 0.133,
+            "enrichment_ratio": 0.143,
+            "std_residual": -3.21,
+            "classification": "Depleted"
+          },
+          "ach_ser": {
+            "observed": 224,
+            "expected": 736.2,
+            "obs_pct": 2.128,
+            "exp_pct": 6.995,
+            "enrichment_ratio": 0.304,
+            "std_residual": -18.88,
+            "classification": "Depleted"
+          },
+          "gaba_gaba": {
+            "observed": 7,
+            "expected": 2.7,
+            "obs_pct": 0.067,
+            "exp_pct": 0.025,
+            "enrichment_ratio": 2.614,
+            "std_residual": 2.64,
+            "classification": "Enriched"
+          },
+          "gaba_glut": {
+            "observed": 87,
+            "expected": 113.9,
+            "obs_pct": 0.827,
+            "exp_pct": 1.082,
+            "enrichment_ratio": 0.764,
+            "std_residual": -2.52,
+            "classification": "Depleted"
+          },
+          "gaba_da": {
+            "observed": 24,
+            "expected": 12.2,
+            "obs_pct": 0.228,
+            "exp_pct": 0.115,
+            "enrichment_ratio": 1.975,
+            "std_residual": 3.4,
+            "classification": "Enriched"
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "expected": 0.4,
+            "obs_pct": 0.0,
+            "exp_pct": 0.004,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.64,
+            "classification": "Depleted"
+          },
+          "gaba_ser": {
+            "observed": 30,
+            "expected": 21.6,
+            "obs_pct": 0.285,
+            "exp_pct": 0.206,
+            "enrichment_ratio": 1.387,
+            "std_residual": 1.8,
+            "classification": "Enriched"
+          },
+          "glut_glut": {
+            "observed": 2155,
+            "expected": 1211.3,
+            "obs_pct": 20.477,
+            "exp_pct": 11.51,
+            "enrichment_ratio": 1.779,
+            "std_residual": 27.11,
+            "classification": "Enriched"
+          },
+          "glut_da": {
+            "observed": 621,
+            "expected": 258.5,
+            "obs_pct": 5.901,
+            "exp_pct": 2.456,
+            "enrichment_ratio": 2.403,
+            "std_residual": 22.55,
+            "classification": "Enriched"
+          },
+          "glut_oct": {
+            "observed": 10,
+            "expected": 8.8,
+            "obs_pct": 0.095,
+            "exp_pct": 0.083,
+            "enrichment_ratio": 1.141,
+            "std_residual": 0.42,
+            "classification": "Near Expected"
+          },
+          "glut_ser": {
+            "observed": 497,
+            "expected": 460.0,
+            "obs_pct": 4.723,
+            "exp_pct": 4.371,
+            "enrichment_ratio": 1.08,
+            "std_residual": 1.73,
+            "classification": "Near Expected"
+          },
+          "da_da": {
+            "observed": 60,
+            "expected": 13.8,
+            "obs_pct": 0.57,
+            "exp_pct": 0.131,
+            "enrichment_ratio": 4.352,
+            "std_residual": 12.45,
+            "classification": "Enriched"
+          },
+          "da_oct": {
+            "observed": 0,
+            "expected": 0.9,
+            "obs_pct": 0.0,
+            "exp_pct": 0.009,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.97,
+            "classification": "Depleted"
+          },
+          "da_ser": {
+            "observed": 96,
+            "expected": 49.1,
+            "obs_pct": 0.912,
+            "exp_pct": 0.466,
+            "enrichment_ratio": 1.956,
+            "std_residual": 6.7,
+            "classification": "Enriched"
+          },
+          "oct_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.13,
+            "classification": "Depleted"
+          },
+          "oct_ser": {
+            "observed": 0,
+            "expected": 1.7,
+            "obs_pct": 0.0,
+            "exp_pct": 0.016,
+            "enrichment_ratio": 0.0,
+            "std_residual": -1.29,
+            "classification": "Depleted"
+          },
+          "ser_ser": {
+            "observed": 70,
+            "expected": 43.7,
+            "obs_pct": 0.665,
+            "exp_pct": 0.415,
+            "enrichment_ratio": 1.603,
+            "std_residual": 3.98,
+            "classification": "Enriched"
+          }
+        },
+        "pair_motifs_permutation": {
+          "ach_ach": {
+            "mean_null": 3111.0,
+            "std_null": 187.64,
+            "z_score": -11.26,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_gaba": {
+            "mean_null": 175.8,
+            "std_null": 40.47,
+            "z_score": 15.22,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_glut": {
+            "mean_null": 3885.4,
+            "std_null": 121.57,
+            "z_score": 2.53,
+            "empirical_p_value": 0.014925373134328358,
+            "significance": "* (p < 0.05)"
+          },
+          "ach_da": {
+            "mean_null": 412.8,
+            "std_null": 64.66,
+            "z_score": 3.79,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_oct": {
+            "mean_null": 13.3,
+            "std_null": 11.33,
+            "z_score": -1.0,
+            "empirical_p_value": 0.24378109452736318,
+            "significance": "n.s."
+          },
+          "ach_ser": {
+            "mean_null": 739.1,
+            "std_null": 88.67,
+            "z_score": -5.81,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_gaba": {
+            "mean_null": 2.4,
+            "std_null": 1.81,
+            "z_score": 2.53,
+            "empirical_p_value": 0.024875621890547265,
+            "significance": "* (p < 0.05)"
+          },
+          "gaba_glut": {
+            "mean_null": 108.7,
+            "std_null": 26.2,
+            "z_score": -0.83,
+            "empirical_p_value": 0.39303482587064675,
+            "significance": "n.s."
+          },
+          "gaba_da": {
+            "mean_null": 11.6,
+            "std_null": 4.87,
+            "z_score": 2.55,
+            "empirical_p_value": 0.01990049751243781,
+            "significance": "* (p < 0.05)"
+          },
+          "gaba_oct": {
+            "mean_null": 0.3,
+            "std_null": 0.63,
+            "z_score": -0.53,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "gaba_ser": {
+            "mean_null": 21.6,
+            "std_null": 6.9,
+            "z_score": 1.22,
+            "empirical_p_value": 0.24875621890547264,
+            "significance": "n.s."
+          },
+          "glut_glut": {
+            "mean_null": 1206.7,
+            "std_null": 115.48,
+            "z_score": 8.21,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "glut_da": {
+            "mean_null": 255.4,
+            "std_null": 43.58,
+            "z_score": 8.39,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "glut_oct": {
+            "mean_null": 8.3,
+            "std_null": 7.22,
+            "z_score": 0.23,
+            "empirical_p_value": 0.8706467661691543,
+            "significance": "n.s."
+          },
+          "glut_ser": {
+            "mean_null": 462.9,
+            "std_null": 59.1,
+            "z_score": 0.58,
+            "empirical_p_value": 0.5323383084577115,
+            "significance": "n.s."
+          },
+          "da_da": {
+            "mean_null": 12.8,
+            "std_null": 4.99,
+            "z_score": 9.46,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "da_oct": {
+            "mean_null": 0.9,
+            "std_null": 1.26,
+            "z_score": -0.7,
+            "empirical_p_value": 0.7562189054726368,
+            "significance": "n.s."
+          },
+          "da_ser": {
+            "mean_null": 49.2,
+            "std_null": 11.85,
+            "z_score": 3.95,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "oct_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.1,
+            "z_score": -0.1,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "oct_ser": {
+            "mean_null": 1.7,
+            "std_null": 1.99,
+            "z_score": -0.84,
+            "empirical_p_value": 0.44776119402985076,
+            "significance": "n.s."
+          },
+          "ser_ser": {
+            "mean_null": 43.9,
+            "std_null": 12.17,
+            "z_score": 2.15,
+            "empirical_p_value": 0.03980099502487562,
+            "significance": "* (p < 0.05)"
+          }
+        }
+      }
+    },
+    "MB_PED_L": {
+      "w1": {
+        "label": "MB_PED_L (w >= 1)",
+        "threshold": 1,
+        "total_reciprocal_dyads": 12388,
+        "participating_neurons": 3036,
+        "marginal_transmitter_pct": {
+          "ach": 91.77,
+          "gaba": 1.68,
+          "glut": 4.97,
+          "da": 1.15,
+          "oct": 0.16,
+          "ser": 0.26
+        },
+        "chi2_total": 30721.0,
+        "macro_categories": {
+          "recurrent_excitation_ach_ach": {
+            "observed": 6828,
+            "expected": 10431.8,
+            "obs_pct": 55.12,
+            "exp_pct": 84.21,
+            "enrichment_ratio": 0.655
+          },
+          "recurrent_inhibition_gaba_gaba": {
+            "observed": 17,
+            "expected": 3.5,
+            "obs_pct": 0.14,
+            "exp_pct": 0.03,
+            "enrichment_ratio": 4.857
+          },
+          "recurrent_glutamatergic_glut_glut": {
+            "observed": 47,
+            "expected": 30.6,
+            "obs_pct": 0.38,
+            "exp_pct": 0.25,
+            "enrichment_ratio": 1.536
+          },
+          "feedback_inhibition_ach_gaba": {
+            "observed": 2786,
+            "expected": 381.9,
+            "obs_pct": 22.49,
+            "exp_pct": 3.08,
+            "enrichment_ratio": 7.295
+          },
+          "feedback_glutamatergic_ach_glut": {
+            "observed": 420,
+            "expected": 1130.8,
+            "obs_pct": 3.39,
+            "exp_pct": 9.13,
+            "enrichment_ratio": 0.371
+          },
+          "co_inhibition_gaba_glut": {
+            "observed": 49,
+            "expected": 20.7,
+            "obs_pct": 0.4,
+            "exp_pct": 0.17,
+            "enrichment_ratio": 2.367
+          },
+          "all_homotypic_fast": {
+            "observed": 6892,
+            "expected": 10465.9,
+            "obs_pct": 55.63,
+            "exp_pct": 84.48,
+            "enrichment_ratio": 0.659
+          },
+          "all_heterotypic_fast": {
+            "observed": 3255,
+            "expected": 1533.4,
+            "obs_pct": 26.28,
+            "exp_pct": 12.38,
+            "enrichment_ratio": 2.123
+          }
+        },
+        "pair_motifs_analytic": {
+          "ach_ach": {
+            "observed": 6828,
+            "expected": 10431.8,
+            "obs_pct": 55.118,
+            "exp_pct": 84.209,
+            "enrichment_ratio": 0.655,
+            "std_residual": -35.28,
+            "classification": "Depleted"
+          },
+          "ach_gaba": {
+            "observed": 2786,
+            "expected": 381.9,
+            "obs_pct": 22.49,
+            "exp_pct": 3.083,
+            "enrichment_ratio": 7.295,
+            "std_residual": 123.02,
+            "classification": "Enriched"
+          },
+          "ach_glut": {
+            "observed": 420,
+            "expected": 1130.8,
+            "obs_pct": 3.39,
+            "exp_pct": 9.128,
+            "enrichment_ratio": 0.371,
+            "std_residual": -21.14,
+            "classification": "Depleted"
+          },
+          "ach_da": {
+            "observed": 2138,
+            "expected": 262.1,
+            "obs_pct": 17.259,
+            "exp_pct": 2.116,
+            "enrichment_ratio": 8.157,
+            "std_residual": 115.87,
+            "classification": "Enriched"
+          },
+          "ach_oct": {
+            "observed": 10,
+            "expected": 37.4,
+            "obs_pct": 0.081,
+            "exp_pct": 0.302,
+            "enrichment_ratio": 0.267,
+            "std_residual": -4.48,
+            "classification": "Depleted"
+          },
+          "ach_ser": {
+            "observed": 7,
+            "expected": 59.9,
+            "obs_pct": 0.057,
+            "exp_pct": 0.484,
+            "enrichment_ratio": 0.117,
+            "std_residual": -6.84,
+            "classification": "Depleted"
+          },
+          "gaba_gaba": {
+            "observed": 17,
+            "expected": 3.5,
+            "obs_pct": 0.137,
+            "exp_pct": 0.028,
+            "enrichment_ratio": 4.863,
+            "std_residual": 7.22,
+            "classification": "Enriched"
+          },
+          "gaba_glut": {
+            "observed": 49,
+            "expected": 20.7,
+            "obs_pct": 0.396,
+            "exp_pct": 0.167,
+            "enrichment_ratio": 2.367,
+            "std_residual": 6.22,
+            "classification": "Enriched"
+          },
+          "gaba_da": {
+            "observed": 23,
+            "expected": 4.8,
+            "obs_pct": 0.186,
+            "exp_pct": 0.039,
+            "enrichment_ratio": 4.794,
+            "std_residual": 8.31,
+            "classification": "Enriched"
+          },
+          "gaba_oct": {
+            "observed": 1,
+            "expected": 0.7,
+            "obs_pct": 0.008,
+            "exp_pct": 0.006,
+            "enrichment_ratio": 1.459,
+            "std_residual": 0.38,
+            "classification": "Enriched"
+          },
+          "gaba_ser": {
+            "observed": 0,
+            "expected": 1.1,
+            "obs_pct": 0.0,
+            "exp_pct": 0.009,
+            "enrichment_ratio": 0.0,
+            "std_residual": -1.05,
+            "classification": "Depleted"
+          },
+          "glut_glut": {
+            "observed": 47,
+            "expected": 30.6,
+            "obs_pct": 0.379,
+            "exp_pct": 0.247,
+            "enrichment_ratio": 1.534,
+            "std_residual": 2.95,
+            "classification": "Enriched"
+          },
+          "glut_da": {
+            "observed": 32,
+            "expected": 14.2,
+            "obs_pct": 0.258,
+            "exp_pct": 0.115,
+            "enrichment_ratio": 2.253,
+            "std_residual": 4.72,
+            "classification": "Enriched"
+          },
+          "glut_oct": {
+            "observed": 5,
+            "expected": 2.0,
+            "obs_pct": 0.04,
+            "exp_pct": 0.016,
+            "enrichment_ratio": 2.464,
+            "std_residual": 2.09,
+            "classification": "Enriched"
+          },
+          "glut_ser": {
+            "observed": 5,
+            "expected": 3.2,
+            "obs_pct": 0.04,
+            "exp_pct": 0.026,
+            "enrichment_ratio": 1.54,
+            "std_residual": 0.97,
+            "classification": "Enriched"
+          },
+          "da_da": {
+            "observed": 18,
+            "expected": 1.6,
+            "obs_pct": 0.145,
+            "exp_pct": 0.013,
+            "enrichment_ratio": 10.933,
+            "std_residual": 12.75,
+            "classification": "Enriched"
+          },
+          "da_oct": {
+            "observed": 0,
+            "expected": 0.5,
+            "obs_pct": 0.0,
+            "exp_pct": 0.004,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.69,
+            "classification": "Depleted"
+          },
+          "da_ser": {
+            "observed": 0,
+            "expected": 0.8,
+            "obs_pct": 0.0,
+            "exp_pct": 0.006,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.87,
+            "classification": "Depleted"
+          },
+          "oct_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.18,
+            "classification": "Depleted"
+          },
+          "oct_ser": {
+            "observed": 0,
+            "expected": 0.1,
+            "obs_pct": 0.0,
+            "exp_pct": 0.001,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.33,
+            "classification": "Depleted"
+          },
+          "ser_ser": {
+            "observed": 2,
+            "expected": 0.1,
+            "obs_pct": 0.016,
+            "exp_pct": 0.001,
+            "enrichment_ratio": 23.252,
+            "std_residual": 6.53,
+            "classification": "Enriched"
+          }
+        },
+        "pair_motifs_permutation": {
+          "ach_ach": {
+            "mean_null": 10481.3,
+            "std_null": 587.04,
+            "z_score": -6.22,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_gaba": {
+            "mean_null": 347.4,
+            "std_null": 144.03,
+            "z_score": 16.93,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_glut": {
+            "mean_null": 1135.2,
+            "std_null": 482.16,
+            "z_score": -1.48,
+            "empirical_p_value": 0.04975124378109453,
+            "significance": "* (p < 0.05)"
+          },
+          "ach_da": {
+            "mean_null": 252.6,
+            "std_null": 226.48,
+            "z_score": 8.33,
+            "empirical_p_value": 0.014925373134328358,
+            "significance": "* (p < 0.05)"
+          },
+          "ach_oct": {
+            "mean_null": 33.9,
+            "std_null": 47.72,
+            "z_score": -0.5,
+            "empirical_p_value": 0.024875621890547265,
+            "significance": "* (p < 0.05)"
+          },
+          "ach_ser": {
+            "mean_null": 59.0,
+            "std_null": 147.43,
+            "z_score": -0.35,
+            "empirical_p_value": 0.009950248756218905,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_gaba": {
+            "mean_null": 2.8,
+            "std_null": 2.6,
+            "z_score": 5.46,
+            "empirical_p_value": 0.009950248756218905,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_glut": {
+            "mean_null": 18.8,
+            "std_null": 13.94,
+            "z_score": 2.17,
+            "empirical_p_value": 0.05472636815920398,
+            "significance": "n.s."
+          },
+          "gaba_da": {
+            "mean_null": 4.2,
+            "std_null": 5.02,
+            "z_score": 3.76,
+            "empirical_p_value": 0.014925373134328358,
+            "significance": "* (p < 0.05)"
+          },
+          "gaba_oct": {
+            "mean_null": 0.6,
+            "std_null": 1.31,
+            "z_score": 0.28,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "gaba_ser": {
+            "mean_null": 1.1,
+            "std_null": 3.22,
+            "z_score": -0.35,
+            "empirical_p_value": 0.5373134328358209,
+            "significance": "n.s."
+          },
+          "glut_glut": {
+            "mean_null": 29.7,
+            "std_null": 28.0,
+            "z_score": 0.62,
+            "empirical_p_value": 0.23880597014925373,
+            "significance": "n.s."
+          },
+          "glut_da": {
+            "mean_null": 13.5,
+            "std_null": 14.28,
+            "z_score": 1.29,
+            "empirical_p_value": 0.0845771144278607,
+            "significance": "n.s."
+          },
+          "glut_oct": {
+            "mean_null": 1.9,
+            "std_null": 2.78,
+            "z_score": 1.12,
+            "empirical_p_value": 0.0945273631840796,
+            "significance": "n.s."
+          },
+          "glut_ser": {
+            "mean_null": 3.1,
+            "std_null": 8.13,
+            "z_score": 0.23,
+            "empirical_p_value": 0.472636815920398,
+            "significance": "n.s."
+          },
+          "da_da": {
+            "mean_null": 1.6,
+            "std_null": 2.95,
+            "z_score": 5.57,
+            "empirical_p_value": 0.014925373134328358,
+            "significance": "* (p < 0.05)"
+          },
+          "da_oct": {
+            "mean_null": 0.4,
+            "std_null": 0.72,
+            "z_score": -0.52,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "da_ser": {
+            "mean_null": 0.7,
+            "std_null": 2.04,
+            "z_score": -0.35,
+            "empirical_p_value": 0.7313432835820896,
+            "significance": "n.s."
+          },
+          "oct_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.25,
+            "z_score": -0.18,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "oct_ser": {
+            "mean_null": 0.1,
+            "std_null": 0.47,
+            "z_score": -0.25,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "ser_ser": {
+            "mean_null": 0.1,
+            "std_null": 0.47,
+            "z_score": 4.11,
+            "empirical_p_value": 0.009950248756218905,
+            "significance": "** (p < 0.01)"
+          }
+        }
+      },
+      "w3": {
+        "label": "MB_PED_L (w >= 3)",
+        "threshold": 3,
+        "total_reciprocal_dyads": 1895,
+        "participating_neurons": 1698,
+        "marginal_transmitter_pct": {
+          "ach": 97.64,
+          "gaba": 0.59,
+          "glut": 1.12,
+          "da": 0.59,
+          "oct": 0.0,
+          "ser": 0.06
+        },
+        "chi2_total": 103452.6,
+        "macro_categories": {
+          "recurrent_excitation_ach_ach": {
+            "observed": 272,
+            "expected": 1806.8,
+            "obs_pct": 14.35,
+            "exp_pct": 95.35,
+            "enrichment_ratio": 0.151
+          },
+          "recurrent_inhibition_gaba_gaba": {
+            "observed": 3,
+            "expected": 0.1,
+            "obs_pct": 0.16,
+            "exp_pct": 0.01,
+            "enrichment_ratio": 30.0
+          },
+          "recurrent_glutamatergic_glut_glut": {
+            "observed": 1,
+            "expected": 0.2,
+            "obs_pct": 0.05,
+            "exp_pct": 0.01,
+            "enrichment_ratio": 5.0
+          },
+          "feedback_inhibition_ach_gaba": {
+            "observed": 1500,
+            "expected": 21.8,
+            "obs_pct": 79.16,
+            "exp_pct": 1.15,
+            "enrichment_ratio": 68.807
+          },
+          "feedback_glutamatergic_ach_glut": {
+            "observed": 26,
+            "expected": 41.4,
+            "obs_pct": 1.37,
+            "exp_pct": 2.18,
+            "enrichment_ratio": 0.628
+          },
+          "co_inhibition_gaba_glut": {
+            "observed": 6,
+            "expected": 0.2,
+            "obs_pct": 0.32,
+            "exp_pct": 0.01,
+            "enrichment_ratio": 30.0
+          },
+          "all_homotypic_fast": {
+            "observed": 276,
+            "expected": 1807.1,
+            "obs_pct": 14.56,
+            "exp_pct": 95.36,
+            "enrichment_ratio": 0.153
+          },
+          "all_heterotypic_fast": {
+            "observed": 1532,
+            "expected": 63.4,
+            "obs_pct": 80.84,
+            "exp_pct": 3.35,
+            "enrichment_ratio": 24.164
+          }
+        },
+        "pair_motifs_analytic": {
+          "ach_ach": {
+            "observed": 272,
+            "expected": 1806.8,
+            "obs_pct": 14.354,
+            "exp_pct": 95.344,
+            "enrichment_ratio": 0.151,
+            "std_residual": -36.11,
+            "classification": "Depleted"
+          },
+          "ach_gaba": {
+            "observed": 1500,
+            "expected": 21.8,
+            "obs_pct": 79.156,
+            "exp_pct": 1.15,
+            "enrichment_ratio": 68.824,
+            "std_residual": 316.64,
+            "classification": "Enriched"
+          },
+          "ach_glut": {
+            "observed": 26,
+            "expected": 41.4,
+            "obs_pct": 1.372,
+            "exp_pct": 2.185,
+            "enrichment_ratio": 0.628,
+            "std_residual": -2.39,
+            "classification": "Depleted"
+          },
+          "ach_da": {
+            "observed": 61,
+            "expected": 21.8,
+            "obs_pct": 3.219,
+            "exp_pct": 1.15,
+            "enrichment_ratio": 2.799,
+            "std_residual": 8.4,
+            "classification": "Enriched"
+          },
+          "ach_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "ach_ser": {
+            "observed": 1,
+            "expected": 2.2,
+            "obs_pct": 0.053,
+            "exp_pct": 0.115,
+            "enrichment_ratio": 0.459,
+            "std_residual": -0.8,
+            "classification": "Depleted"
+          },
+          "gaba_gaba": {
+            "observed": 3,
+            "expected": 0.1,
+            "obs_pct": 0.158,
+            "exp_pct": 0.003,
+            "enrichment_ratio": 45.644,
+            "std_residual": 11.45,
+            "classification": "Enriched"
+          },
+          "gaba_glut": {
+            "observed": 6,
+            "expected": 0.2,
+            "obs_pct": 0.317,
+            "exp_pct": 0.013,
+            "enrichment_ratio": 24.023,
+            "std_residual": 11.51,
+            "classification": "Enriched"
+          },
+          "gaba_da": {
+            "observed": 11,
+            "expected": 0.1,
+            "obs_pct": 0.58,
+            "exp_pct": 0.007,
+            "enrichment_ratio": 83.681,
+            "std_residual": 29.98,
+            "classification": "Enriched"
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "gaba_ser": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.001,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.11,
+            "classification": "Depleted"
+          },
+          "glut_glut": {
+            "observed": 1,
+            "expected": 0.2,
+            "obs_pct": 0.053,
+            "exp_pct": 0.013,
+            "enrichment_ratio": 4.215,
+            "std_residual": 1.57,
+            "classification": "Enriched"
+          },
+          "glut_da": {
+            "observed": 8,
+            "expected": 0.2,
+            "obs_pct": 0.422,
+            "exp_pct": 0.013,
+            "enrichment_ratio": 32.031,
+            "std_residual": 15.51,
+            "classification": "Enriched"
+          },
+          "glut_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "glut_ser": {
+            "observed": 1,
+            "expected": 0.0,
+            "obs_pct": 0.053,
+            "exp_pct": 0.001,
+            "enrichment_ratio": 40.039,
+            "std_residual": 6.17,
+            "classification": "Enriched"
+          },
+          "da_da": {
+            "observed": 5,
+            "expected": 0.1,
+            "obs_pct": 0.264,
+            "exp_pct": 0.003,
+            "enrichment_ratio": 76.074,
+            "std_residual": 19.25,
+            "classification": "Enriched"
+          },
+          "da_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "da_ser": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.001,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.11,
+            "classification": "Depleted"
+          },
+          "oct_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "oct_ser": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "ser_ser": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.03,
+            "classification": "Depleted"
+          }
+        },
+        "pair_motifs_permutation": {
+          "ach_ach": {
+            "mean_null": 1812.3,
+            "std_null": 204.89,
+            "z_score": -7.52,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_gaba": {
+            "mean_null": 13.0,
+            "std_null": 3.73,
+            "z_score": 398.22,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_glut": {
+            "mean_null": 32.4,
+            "std_null": 101.93,
+            "z_score": -0.06,
+            "empirical_p_value": 0.7910447761194029,
+            "significance": "n.s."
+          },
+          "ach_da": {
+            "mean_null": 35.1,
+            "std_null": 176.89,
+            "z_score": 0.15,
+            "empirical_p_value": 0.024875621890547265,
+            "significance": "* (p < 0.05)"
+          },
+          "ach_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "ach_ser": {
+            "mean_null": 1.3,
+            "std_null": 0.89,
+            "z_score": -0.35,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "gaba_gaba": {
+            "mean_null": 0.0,
+            "std_null": 0.1,
+            "z_score": 30.05,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_glut": {
+            "mean_null": 0.1,
+            "std_null": 0.68,
+            "z_score": 8.7,
+            "empirical_p_value": 0.009950248756218905,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_da": {
+            "mean_null": 0.1,
+            "std_null": 1.02,
+            "z_score": 10.65,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "gaba_ser": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "glut_glut": {
+            "mean_null": 0.1,
+            "std_null": 1.14,
+            "z_score": 0.77,
+            "empirical_p_value": 0.04975124378109453,
+            "significance": "* (p < 0.05)"
+          },
+          "glut_da": {
+            "mean_null": 0.3,
+            "std_null": 2.12,
+            "z_score": 3.61,
+            "empirical_p_value": 0.024875621890547265,
+            "significance": "* (p < 0.05)"
+          },
+          "glut_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "glut_ser": {
+            "mean_null": 0.0,
+            "std_null": 0.19,
+            "z_score": 5.26,
+            "empirical_p_value": 0.024875621890547265,
+            "significance": "* (p < 0.05)"
+          },
+          "da_da": {
+            "mean_null": 0.1,
+            "std_null": 0.99,
+            "z_score": 4.92,
+            "empirical_p_value": 0.01990049751243781,
+            "significance": "* (p < 0.05)"
+          },
+          "da_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "da_ser": {
+            "mean_null": 0.0,
+            "std_null": 0.12,
+            "z_score": -0.12,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "oct_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "oct_ser": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "ser_ser": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          }
+        }
+      }
+    },
+    "AL_L": {
+      "w1": {
+        "label": "AL_L (w >= 1)",
+        "threshold": 1,
+        "total_reciprocal_dyads": 29963,
+        "participating_neurons": 2782,
+        "marginal_transmitter_pct": {
+          "ach": 67.54,
+          "gaba": 6.18,
+          "glut": 4.74,
+          "da": 0.86,
+          "oct": 0.18,
+          "ser": 20.49
+        },
+        "chi2_total": 44341.9,
+        "macro_categories": {
+          "recurrent_excitation_ach_ach": {
+            "observed": 4829,
+            "expected": 13668.6,
+            "obs_pct": 16.12,
+            "exp_pct": 45.62,
+            "enrichment_ratio": 0.353
+          },
+          "recurrent_inhibition_gaba_gaba": {
+            "observed": 489,
+            "expected": 114.5,
+            "obs_pct": 1.63,
+            "exp_pct": 0.38,
+            "enrichment_ratio": 4.271
+          },
+          "recurrent_glutamatergic_glut_glut": {
+            "observed": 95,
+            "expected": 67.5,
+            "obs_pct": 0.32,
+            "exp_pct": 0.23,
+            "enrichment_ratio": 1.407
+          },
+          "feedback_inhibition_ach_gaba": {
+            "observed": 10166,
+            "expected": 2502.4,
+            "obs_pct": 33.93,
+            "exp_pct": 8.35,
+            "enrichment_ratio": 4.062
+          },
+          "feedback_glutamatergic_ach_glut": {
+            "observed": 983,
+            "expected": 1920.4,
+            "obs_pct": 3.28,
+            "exp_pct": 6.41,
+            "enrichment_ratio": 0.512
+          },
+          "co_inhibition_gaba_glut": {
+            "observed": 485,
+            "expected": 175.8,
+            "obs_pct": 1.62,
+            "exp_pct": 0.59,
+            "enrichment_ratio": 2.759
+          },
+          "all_homotypic_fast": {
+            "observed": 5413,
+            "expected": 13850.6,
+            "obs_pct": 18.07,
+            "exp_pct": 46.23,
+            "enrichment_ratio": 0.391
+          },
+          "all_heterotypic_fast": {
+            "observed": 11634,
+            "expected": 4598.6,
+            "obs_pct": 38.83,
+            "exp_pct": 15.35,
+            "enrichment_ratio": 2.53
+          }
+        },
+        "pair_motifs_analytic": {
+          "ach_ach": {
+            "observed": 4829,
+            "expected": 13668.6,
+            "obs_pct": 16.117,
+            "exp_pct": 45.618,
+            "enrichment_ratio": 0.353,
+            "std_residual": -75.61,
+            "classification": "Depleted"
+          },
+          "ach_gaba": {
+            "observed": 10166,
+            "expected": 2502.4,
+            "obs_pct": 33.929,
+            "exp_pct": 8.352,
+            "enrichment_ratio": 4.063,
+            "std_residual": 153.2,
+            "classification": "Enriched"
+          },
+          "ach_glut": {
+            "observed": 983,
+            "expected": 1920.4,
+            "obs_pct": 3.281,
+            "exp_pct": 6.409,
+            "enrichment_ratio": 0.512,
+            "std_residual": -21.39,
+            "classification": "Depleted"
+          },
+          "ach_da": {
+            "observed": 1568,
+            "expected": 349.2,
+            "obs_pct": 5.233,
+            "exp_pct": 1.165,
+            "enrichment_ratio": 4.491,
+            "std_residual": 65.23,
+            "classification": "Enriched"
+          },
+          "ach_oct": {
+            "observed": 141,
+            "expected": 72.7,
+            "obs_pct": 0.471,
+            "exp_pct": 0.243,
+            "enrichment_ratio": 1.938,
+            "std_residual": 8.0,
+            "classification": "Enriched"
+          },
+          "ach_ser": {
+            "observed": 6364,
+            "expected": 8292.8,
+            "obs_pct": 21.24,
+            "exp_pct": 27.677,
+            "enrichment_ratio": 0.767,
+            "std_residual": -21.18,
+            "classification": "Depleted"
+          },
+          "gaba_gaba": {
+            "observed": 489,
+            "expected": 114.5,
+            "obs_pct": 1.632,
+            "exp_pct": 0.382,
+            "enrichment_ratio": 4.27,
+            "std_residual": 34.99,
+            "classification": "Enriched"
+          },
+          "gaba_glut": {
+            "observed": 485,
+            "expected": 175.8,
+            "obs_pct": 1.619,
+            "exp_pct": 0.587,
+            "enrichment_ratio": 2.759,
+            "std_residual": 23.32,
+            "classification": "Enriched"
+          },
+          "gaba_da": {
+            "observed": 290,
+            "expected": 32.0,
+            "obs_pct": 0.968,
+            "exp_pct": 0.107,
+            "enrichment_ratio": 9.073,
+            "std_residual": 45.64,
+            "classification": "Enriched"
+          },
+          "gaba_oct": {
+            "observed": 58,
+            "expected": 6.7,
+            "obs_pct": 0.194,
+            "exp_pct": 0.022,
+            "enrichment_ratio": 8.71,
+            "std_residual": 19.9,
+            "classification": "Enriched"
+          },
+          "gaba_ser": {
+            "observed": 2395,
+            "expected": 759.1,
+            "obs_pct": 7.993,
+            "exp_pct": 2.533,
+            "enrichment_ratio": 3.155,
+            "std_residual": 59.37,
+            "classification": "Enriched"
+          },
+          "glut_glut": {
+            "observed": 95,
+            "expected": 67.5,
+            "obs_pct": 0.317,
+            "exp_pct": 0.225,
+            "enrichment_ratio": 1.408,
+            "std_residual": 3.35,
+            "classification": "Enriched"
+          },
+          "glut_da": {
+            "observed": 146,
+            "expected": 24.5,
+            "obs_pct": 0.487,
+            "exp_pct": 0.082,
+            "enrichment_ratio": 5.952,
+            "std_residual": 24.53,
+            "classification": "Enriched"
+          },
+          "glut_oct": {
+            "observed": 26,
+            "expected": 5.1,
+            "obs_pct": 0.087,
+            "exp_pct": 0.017,
+            "enrichment_ratio": 5.088,
+            "std_residual": 9.24,
+            "classification": "Enriched"
+          },
+          "glut_ser": {
+            "observed": 428,
+            "expected": 582.6,
+            "obs_pct": 1.428,
+            "exp_pct": 1.944,
+            "enrichment_ratio": 0.735,
+            "std_residual": -6.4,
+            "classification": "Depleted"
+          },
+          "da_da": {
+            "observed": 47,
+            "expected": 2.2,
+            "obs_pct": 0.157,
+            "exp_pct": 0.007,
+            "enrichment_ratio": 21.077,
+            "std_residual": 29.98,
+            "classification": "Enriched"
+          },
+          "da_oct": {
+            "observed": 15,
+            "expected": 0.9,
+            "obs_pct": 0.05,
+            "exp_pct": 0.003,
+            "enrichment_ratio": 16.144,
+            "std_residual": 14.6,
+            "classification": "Enriched"
+          },
+          "da_ser": {
+            "observed": 266,
+            "expected": 105.9,
+            "obs_pct": 0.888,
+            "exp_pct": 0.354,
+            "enrichment_ratio": 2.511,
+            "std_residual": 15.55,
+            "classification": "Enriched"
+          },
+          "oct_oct": {
+            "observed": 0,
+            "expected": 0.1,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.31,
+            "classification": "Depleted"
+          },
+          "oct_ser": {
+            "observed": 55,
+            "expected": 22.1,
+            "obs_pct": 0.184,
+            "exp_pct": 0.074,
+            "enrichment_ratio": 2.492,
+            "std_residual": 7.01,
+            "classification": "Enriched"
+          },
+          "ser_ser": {
+            "observed": 1117,
+            "expected": 1257.8,
+            "obs_pct": 3.728,
+            "exp_pct": 4.198,
+            "enrichment_ratio": 0.888,
+            "std_residual": -3.97,
+            "classification": "Near Expected"
+          }
+        },
+        "pair_motifs_permutation": {
+          "ach_ach": {
+            "mean_null": 13627.6,
+            "std_null": 1243.33,
+            "z_score": -7.08,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_gaba": {
+            "mean_null": 2503.8,
+            "std_null": 617.4,
+            "z_score": 12.41,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_glut": {
+            "mean_null": 1854.6,
+            "std_null": 498.7,
+            "z_score": -1.75,
+            "empirical_p_value": 0.08955223880597014,
+            "significance": "n.s."
+          },
+          "ach_da": {
+            "mean_null": 346.9,
+            "std_null": 235.37,
+            "z_score": 5.19,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_oct": {
+            "mean_null": 65.9,
+            "std_null": 94.75,
+            "z_score": 0.79,
+            "empirical_p_value": 0.0945273631840796,
+            "significance": "n.s."
+          },
+          "ach_ser": {
+            "mean_null": 8390.1,
+            "std_null": 867.22,
+            "z_score": -2.34,
+            "empirical_p_value": 0.03482587064676617,
+            "significance": "* (p < 0.05)"
+          },
+          "gaba_gaba": {
+            "mean_null": 114.5,
+            "std_null": 59.63,
+            "z_score": 6.28,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_glut": {
+            "mean_null": 170.1,
+            "std_null": 61.44,
+            "z_score": 5.13,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_da": {
+            "mean_null": 32.3,
+            "std_null": 23.88,
+            "z_score": 10.79,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_oct": {
+            "mean_null": 6.1,
+            "std_null": 8.86,
+            "z_score": 5.86,
+            "empirical_p_value": 0.014925373134328358,
+            "significance": "* (p < 0.05)"
+          },
+          "gaba_ser": {
+            "mean_null": 770.9,
+            "std_null": 204.35,
+            "z_score": 7.95,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "glut_glut": {
+            "mean_null": 63.0,
+            "std_null": 36.62,
+            "z_score": 0.87,
+            "empirical_p_value": 0.39303482587064675,
+            "significance": "n.s."
+          },
+          "glut_da": {
+            "mean_null": 23.4,
+            "std_null": 17.84,
+            "z_score": 6.87,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "glut_oct": {
+            "mean_null": 4.5,
+            "std_null": 7.18,
+            "z_score": 3.0,
+            "empirical_p_value": 0.024875621890547265,
+            "significance": "* (p < 0.05)"
+          },
+          "glut_ser": {
+            "mean_null": 570.2,
+            "std_null": 168.97,
+            "z_score": -0.84,
+            "empirical_p_value": 0.43781094527363185,
+            "significance": "n.s."
+          },
+          "da_da": {
+            "mean_null": 2.3,
+            "std_null": 3.63,
+            "z_score": 12.31,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "da_oct": {
+            "mean_null": 0.7,
+            "std_null": 1.74,
+            "z_score": 8.18,
+            "empirical_p_value": 0.009950248756218905,
+            "significance": "** (p < 0.01)"
+          },
+          "da_ser": {
+            "mean_null": 106.9,
+            "std_null": 74.11,
+            "z_score": 2.15,
+            "empirical_p_value": 0.05472636815920398,
+            "significance": "n.s."
+          },
+          "oct_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.22,
+            "z_score": -0.18,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "oct_ser": {
+            "mean_null": 20.7,
+            "std_null": 28.0,
+            "z_score": 1.22,
+            "empirical_p_value": 0.0845771144278607,
+            "significance": "n.s."
+          },
+          "ser_ser": {
+            "mean_null": 1288.4,
+            "std_null": 339.02,
+            "z_score": -0.51,
+            "empirical_p_value": 0.6318407960199005,
+            "significance": "n.s."
+          }
+        }
+      },
+      "w3": {
+        "label": "AL_L (w >= 3)",
+        "threshold": 3,
+        "total_reciprocal_dyads": 10743,
+        "participating_neurons": 1611,
+        "marginal_transmitter_pct": {
+          "ach": 73.12,
+          "gaba": 6.21,
+          "glut": 4.78,
+          "da": 1.12,
+          "oct": 0.31,
+          "ser": 14.46
+        },
+        "chi2_total": 20993.8,
+        "macro_categories": {
+          "recurrent_excitation_ach_ach": {
+            "observed": 1295,
+            "expected": 5744.1,
+            "obs_pct": 12.05,
+            "exp_pct": 53.47,
+            "enrichment_ratio": 0.225
+          },
+          "recurrent_inhibition_gaba_gaba": {
+            "observed": 171,
+            "expected": 41.4,
+            "obs_pct": 1.59,
+            "exp_pct": 0.39,
+            "enrichment_ratio": 4.13
+          },
+          "recurrent_glutamatergic_glut_glut": {
+            "observed": 25,
+            "expected": 24.5,
+            "obs_pct": 0.23,
+            "exp_pct": 0.23,
+            "enrichment_ratio": 1.02
+          },
+          "feedback_inhibition_ach_gaba": {
+            "observed": 3690,
+            "expected": 975.2,
+            "obs_pct": 34.35,
+            "exp_pct": 9.08,
+            "enrichment_ratio": 3.784
+          },
+          "feedback_glutamatergic_ach_glut": {
+            "observed": 212,
+            "expected": 750.9,
+            "obs_pct": 1.97,
+            "exp_pct": 6.99,
+            "enrichment_ratio": 0.282
+          },
+          "co_inhibition_gaba_glut": {
+            "observed": 99,
+            "expected": 63.7,
+            "obs_pct": 0.92,
+            "exp_pct": 0.59,
+            "enrichment_ratio": 1.554
+          },
+          "all_homotypic_fast": {
+            "observed": 1491,
+            "expected": 5810.0,
+            "obs_pct": 13.88,
+            "exp_pct": 54.08,
+            "enrichment_ratio": 0.257
+          },
+          "all_heterotypic_fast": {
+            "observed": 4001,
+            "expected": 1789.8,
+            "obs_pct": 37.24,
+            "exp_pct": 16.66,
+            "enrichment_ratio": 2.235
+          }
+        },
+        "pair_motifs_analytic": {
+          "ach_ach": {
+            "observed": 1295,
+            "expected": 5744.1,
+            "obs_pct": 12.054,
+            "exp_pct": 53.469,
+            "enrichment_ratio": 0.225,
+            "std_residual": -58.7,
+            "classification": "Depleted"
+          },
+          "ach_gaba": {
+            "observed": 3690,
+            "expected": 975.2,
+            "obs_pct": 34.348,
+            "exp_pct": 9.078,
+            "enrichment_ratio": 3.784,
+            "std_residual": 86.93,
+            "classification": "Enriched"
+          },
+          "ach_glut": {
+            "observed": 212,
+            "expected": 750.9,
+            "obs_pct": 1.973,
+            "exp_pct": 6.99,
+            "enrichment_ratio": 0.282,
+            "std_residual": -19.67,
+            "classification": "Depleted"
+          },
+          "ach_da": {
+            "observed": 1073,
+            "expected": 175.5,
+            "obs_pct": 9.988,
+            "exp_pct": 1.634,
+            "enrichment_ratio": 6.112,
+            "std_residual": 67.74,
+            "classification": "Enriched"
+          },
+          "ach_oct": {
+            "observed": 21,
+            "expected": 48.8,
+            "obs_pct": 0.195,
+            "exp_pct": 0.454,
+            "enrichment_ratio": 0.431,
+            "std_residual": -3.98,
+            "classification": "Depleted"
+          },
+          "ach_ser": {
+            "observed": 2579,
+            "expected": 2272.3,
+            "obs_pct": 24.006,
+            "exp_pct": 21.151,
+            "enrichment_ratio": 1.135,
+            "std_residual": 6.43,
+            "classification": "Near Expected"
+          },
+          "gaba_gaba": {
+            "observed": 171,
+            "expected": 41.4,
+            "obs_pct": 1.592,
+            "exp_pct": 0.385,
+            "enrichment_ratio": 4.131,
+            "std_residual": 20.14,
+            "classification": "Enriched"
+          },
+          "gaba_glut": {
+            "observed": 99,
+            "expected": 63.7,
+            "obs_pct": 0.922,
+            "exp_pct": 0.593,
+            "enrichment_ratio": 1.553,
+            "std_residual": 4.42,
+            "classification": "Enriched"
+          },
+          "gaba_da": {
+            "observed": 108,
+            "expected": 14.9,
+            "obs_pct": 1.005,
+            "exp_pct": 0.139,
+            "enrichment_ratio": 7.247,
+            "std_residual": 24.12,
+            "classification": "Enriched"
+          },
+          "gaba_oct": {
+            "observed": 20,
+            "expected": 4.1,
+            "obs_pct": 0.186,
+            "exp_pct": 0.039,
+            "enrichment_ratio": 4.832,
+            "std_residual": 7.8,
+            "classification": "Enriched"
+          },
+          "gaba_ser": {
+            "observed": 715,
+            "expected": 192.9,
+            "obs_pct": 6.655,
+            "exp_pct": 1.796,
+            "enrichment_ratio": 3.707,
+            "std_residual": 37.59,
+            "classification": "Enriched"
+          },
+          "glut_glut": {
+            "observed": 25,
+            "expected": 24.5,
+            "obs_pct": 0.233,
+            "exp_pct": 0.228,
+            "enrichment_ratio": 1.019,
+            "std_residual": 0.09,
+            "classification": "Near Expected"
+          },
+          "glut_da": {
+            "observed": 43,
+            "expected": 11.5,
+            "obs_pct": 0.4,
+            "exp_pct": 0.107,
+            "enrichment_ratio": 3.747,
+            "std_residual": 9.31,
+            "classification": "Enriched"
+          },
+          "glut_oct": {
+            "observed": 1,
+            "expected": 3.2,
+            "obs_pct": 0.009,
+            "exp_pct": 0.03,
+            "enrichment_ratio": 0.314,
+            "std_residual": -1.23,
+            "classification": "Depleted"
+          },
+          "glut_ser": {
+            "observed": 107,
+            "expected": 148.5,
+            "obs_pct": 0.996,
+            "exp_pct": 1.383,
+            "enrichment_ratio": 0.72,
+            "std_residual": -3.41,
+            "classification": "Depleted"
+          },
+          "da_da": {
+            "observed": 45,
+            "expected": 1.3,
+            "obs_pct": 0.419,
+            "exp_pct": 0.012,
+            "enrichment_ratio": 33.553,
+            "std_residual": 37.7,
+            "classification": "Enriched"
+          },
+          "da_oct": {
+            "observed": 0,
+            "expected": 0.7,
+            "obs_pct": 0.0,
+            "exp_pct": 0.007,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.86,
+            "classification": "Depleted"
+          },
+          "da_ser": {
+            "observed": 213,
+            "expected": 34.7,
+            "obs_pct": 1.983,
+            "exp_pct": 0.323,
+            "enrichment_ratio": 6.135,
+            "std_residual": 30.26,
+            "classification": "Enriched"
+          },
+          "oct_oct": {
+            "observed": 0,
+            "expected": 0.1,
+            "obs_pct": 0.0,
+            "exp_pct": 0.001,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.32,
+            "classification": "Depleted"
+          },
+          "oct_ser": {
+            "observed": 7,
+            "expected": 9.6,
+            "obs_pct": 0.065,
+            "exp_pct": 0.09,
+            "enrichment_ratio": 0.726,
+            "std_residual": -0.85,
+            "classification": "Depleted"
+          },
+          "ser_ser": {
+            "observed": 319,
+            "expected": 224.7,
+            "obs_pct": 2.969,
+            "exp_pct": 2.092,
+            "enrichment_ratio": 1.42,
+            "std_residual": 6.29,
+            "classification": "Enriched"
+          }
+        },
+        "pair_motifs_permutation": {
+          "ach_ach": {
+            "mean_null": 5764.0,
+            "std_null": 612.3,
+            "z_score": -7.3,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_gaba": {
+            "mean_null": 1024.2,
+            "std_null": 340.22,
+            "z_score": 7.84,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_glut": {
+            "mean_null": 759.3,
+            "std_null": 249.67,
+            "z_score": -2.19,
+            "empirical_p_value": 0.03482587064676617,
+            "significance": "* (p < 0.05)"
+          },
+          "ach_da": {
+            "mean_null": 173.8,
+            "std_null": 113.26,
+            "z_score": 7.94,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_oct": {
+            "mean_null": 57.9,
+            "std_null": 85.22,
+            "z_score": -0.43,
+            "empirical_p_value": 0.6218905472636815,
+            "significance": "n.s."
+          },
+          "ach_ser": {
+            "mean_null": 2194.9,
+            "std_null": 360.52,
+            "z_score": 1.07,
+            "empirical_p_value": 0.2935323383084577,
+            "significance": "n.s."
+          },
+          "gaba_gaba": {
+            "mean_null": 44.7,
+            "std_null": 31.23,
+            "z_score": 4.04,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_glut": {
+            "mean_null": 67.6,
+            "std_null": 33.2,
+            "z_score": 0.95,
+            "empirical_p_value": 0.3283582089552239,
+            "significance": "n.s."
+          },
+          "gaba_da": {
+            "mean_null": 15.6,
+            "std_null": 11.89,
+            "z_score": 7.77,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_oct": {
+            "mean_null": 5.5,
+            "std_null": 7.87,
+            "z_score": 1.85,
+            "empirical_p_value": 0.06467661691542288,
+            "significance": "n.s."
+          },
+          "gaba_ser": {
+            "mean_null": 196.2,
+            "std_null": 80.28,
+            "z_score": 6.46,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "glut_glut": {
+            "mean_null": 24.5,
+            "std_null": 17.71,
+            "z_score": 0.03,
+            "empirical_p_value": 0.9651741293532339,
+            "significance": "n.s."
+          },
+          "glut_da": {
+            "mean_null": 11.7,
+            "std_null": 9.72,
+            "z_score": 3.22,
+            "empirical_p_value": 0.014925373134328358,
+            "significance": "* (p < 0.05)"
+          },
+          "glut_oct": {
+            "mean_null": 3.8,
+            "std_null": 6.04,
+            "z_score": -0.47,
+            "empirical_p_value": 0.6467661691542289,
+            "significance": "n.s."
+          },
+          "glut_ser": {
+            "mean_null": 144.7,
+            "std_null": 55.92,
+            "z_score": -0.67,
+            "empirical_p_value": 0.472636815920398,
+            "significance": "n.s."
+          },
+          "da_da": {
+            "mean_null": 1.2,
+            "std_null": 1.83,
+            "z_score": 23.94,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "da_oct": {
+            "mean_null": 0.7,
+            "std_null": 1.39,
+            "z_score": -0.54,
+            "empirical_p_value": 0.8208955223880597,
+            "significance": "n.s."
+          },
+          "da_ser": {
+            "mean_null": 32.8,
+            "std_null": 24.67,
+            "z_score": 7.31,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "oct_oct": {
+            "mean_null": 0.1,
+            "std_null": 0.31,
+            "z_score": -0.26,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "oct_ser": {
+            "mean_null": 11.3,
+            "std_null": 17.26,
+            "z_score": -0.25,
+            "empirical_p_value": 0.8258706467661692,
+            "significance": "n.s."
+          },
+          "ser_ser": {
+            "mean_null": 208.4,
+            "std_null": 82.23,
+            "z_score": 1.34,
+            "empirical_p_value": 0.14925373134328357,
+            "significance": "n.s."
+          }
+        }
+      }
+    },
+    "EB": {
+      "w1": {
+        "label": "EB (w >= 1)",
+        "threshold": 1,
+        "total_reciprocal_dyads": 13072,
+        "participating_neurons": 556,
+        "marginal_transmitter_pct": {
+          "ach": 33.81,
+          "gaba": 54.32,
+          "glut": 4.68,
+          "da": 5.04,
+          "oct": 0.0,
+          "ser": 2.16
+        },
+        "chi2_total": 4412.5,
+        "macro_categories": {
+          "recurrent_excitation_ach_ach": {
+            "observed": 1098,
+            "expected": 1494.5,
+            "obs_pct": 8.4,
+            "exp_pct": 11.43,
+            "enrichment_ratio": 0.735
+          },
+          "recurrent_inhibition_gaba_gaba": {
+            "observed": 7186,
+            "expected": 3856.6,
+            "obs_pct": 54.97,
+            "exp_pct": 29.5,
+            "enrichment_ratio": 1.863
+          },
+          "recurrent_glutamatergic_glut_glut": {
+            "observed": 11,
+            "expected": 28.6,
+            "obs_pct": 0.08,
+            "exp_pct": 0.22,
+            "enrichment_ratio": 0.385
+          },
+          "feedback_inhibition_ach_gaba": {
+            "observed": 3559,
+            "expected": 4801.6,
+            "obs_pct": 27.23,
+            "exp_pct": 36.73,
+            "enrichment_ratio": 0.741
+          },
+          "feedback_glutamatergic_ach_glut": {
+            "observed": 308,
+            "expected": 413.4,
+            "obs_pct": 2.36,
+            "exp_pct": 3.16,
+            "enrichment_ratio": 0.745
+          },
+          "co_inhibition_gaba_glut": {
+            "observed": 274,
+            "expected": 664.1,
+            "obs_pct": 2.1,
+            "exp_pct": 5.08,
+            "enrichment_ratio": 0.413
+          },
+          "all_homotypic_fast": {
+            "observed": 8295,
+            "expected": 5379.7,
+            "obs_pct": 63.46,
+            "exp_pct": 41.15,
+            "enrichment_ratio": 1.542
+          },
+          "all_heterotypic_fast": {
+            "observed": 4141,
+            "expected": 5879.1,
+            "obs_pct": 31.68,
+            "exp_pct": 44.97,
+            "enrichment_ratio": 0.704
+          }
+        },
+        "pair_motifs_analytic": {
+          "ach_ach": {
+            "observed": 1098,
+            "expected": 1494.5,
+            "obs_pct": 8.4,
+            "exp_pct": 11.433,
+            "enrichment_ratio": 0.735,
+            "std_residual": -10.26,
+            "classification": "Depleted"
+          },
+          "ach_gaba": {
+            "observed": 3559,
+            "expected": 4801.6,
+            "obs_pct": 27.226,
+            "exp_pct": 36.732,
+            "enrichment_ratio": 0.741,
+            "std_residual": -17.93,
+            "classification": "Depleted"
+          },
+          "ach_glut": {
+            "observed": 308,
+            "expected": 413.4,
+            "obs_pct": 2.356,
+            "exp_pct": 3.162,
+            "enrichment_ratio": 0.745,
+            "std_residual": -5.18,
+            "classification": "Depleted"
+          },
+          "ach_da": {
+            "observed": 272,
+            "expected": 445.2,
+            "obs_pct": 2.081,
+            "exp_pct": 3.406,
+            "enrichment_ratio": 0.611,
+            "std_residual": -8.21,
+            "classification": "Depleted"
+          },
+          "ach_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "ach_ser": {
+            "observed": 16,
+            "expected": 190.8,
+            "obs_pct": 0.122,
+            "exp_pct": 1.46,
+            "enrichment_ratio": 0.084,
+            "std_residual": -12.65,
+            "classification": "Depleted"
+          },
+          "gaba_gaba": {
+            "observed": 7186,
+            "expected": 3856.6,
+            "obs_pct": 54.972,
+            "exp_pct": 29.503,
+            "enrichment_ratio": 1.863,
+            "std_residual": 53.61,
+            "classification": "Enriched"
+          },
+          "gaba_glut": {
+            "observed": 274,
+            "expected": 664.1,
+            "obs_pct": 2.096,
+            "exp_pct": 5.08,
+            "enrichment_ratio": 0.413,
+            "std_residual": -15.14,
+            "classification": "Depleted"
+          },
+          "gaba_da": {
+            "observed": 282,
+            "expected": 715.1,
+            "obs_pct": 2.157,
+            "exp_pct": 5.471,
+            "enrichment_ratio": 0.394,
+            "std_residual": -16.2,
+            "classification": "Depleted"
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "gaba_ser": {
+            "observed": 26,
+            "expected": 306.5,
+            "obs_pct": 0.199,
+            "exp_pct": 2.345,
+            "enrichment_ratio": 0.085,
+            "std_residual": -16.02,
+            "classification": "Depleted"
+          },
+          "glut_glut": {
+            "observed": 11,
+            "expected": 28.6,
+            "obs_pct": 0.084,
+            "exp_pct": 0.219,
+            "enrichment_ratio": 0.385,
+            "std_residual": -3.29,
+            "classification": "Depleted"
+          },
+          "glut_da": {
+            "observed": 37,
+            "expected": 61.6,
+            "obs_pct": 0.283,
+            "exp_pct": 0.471,
+            "enrichment_ratio": 0.601,
+            "std_residual": -3.13,
+            "classification": "Depleted"
+          },
+          "glut_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "glut_ser": {
+            "observed": 0,
+            "expected": 26.4,
+            "obs_pct": 0.0,
+            "exp_pct": 0.202,
+            "enrichment_ratio": 0.0,
+            "std_residual": -5.14,
+            "classification": "Depleted"
+          },
+          "da_da": {
+            "observed": 3,
+            "expected": 33.2,
+            "obs_pct": 0.023,
+            "exp_pct": 0.254,
+            "enrichment_ratio": 0.09,
+            "std_residual": -5.24,
+            "classification": "Depleted"
+          },
+          "da_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "da_ser": {
+            "observed": 0,
+            "expected": 28.4,
+            "obs_pct": 0.0,
+            "exp_pct": 0.217,
+            "enrichment_ratio": 0.0,
+            "std_residual": -5.33,
+            "classification": "Depleted"
+          },
+          "oct_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "oct_ser": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "ser_ser": {
+            "observed": 0,
+            "expected": 6.1,
+            "obs_pct": 0.0,
+            "exp_pct": 0.047,
+            "enrichment_ratio": 0.0,
+            "std_residual": -2.47,
+            "classification": "Depleted"
+          }
+        },
+        "pair_motifs_permutation": {
+          "ach_ach": {
+            "mean_null": 1485.0,
+            "std_null": 147.7,
+            "z_score": -2.62,
+            "empirical_p_value": 0.009950248756218905,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_gaba": {
+            "mean_null": 4812.7,
+            "std_null": 157.93,
+            "z_score": -7.94,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_glut": {
+            "mean_null": 407.6,
+            "std_null": 68.21,
+            "z_score": -1.46,
+            "empirical_p_value": 0.15422885572139303,
+            "significance": "n.s."
+          },
+          "ach_da": {
+            "mean_null": 452.0,
+            "std_null": 69.19,
+            "z_score": -2.6,
+            "empirical_p_value": 0.014925373134328358,
+            "significance": "* (p < 0.05)"
+          },
+          "ach_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "ach_ser": {
+            "mean_null": 183.2,
+            "std_null": 40.28,
+            "z_score": -4.15,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_gaba": {
+            "mean_null": 3868.4,
+            "std_null": 250.84,
+            "z_score": 13.23,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_glut": {
+            "mean_null": 655.5,
+            "std_null": 98.25,
+            "z_score": -3.88,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_da": {
+            "mean_null": 730.5,
+            "std_null": 103.95,
+            "z_score": -4.32,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "gaba_ser": {
+            "mean_null": 296.6,
+            "std_null": 67.11,
+            "z_score": -4.03,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "glut_glut": {
+            "mean_null": 27.0,
+            "std_null": 9.39,
+            "z_score": -1.71,
+            "empirical_p_value": 0.06965174129353234,
+            "significance": "n.s."
+          },
+          "glut_da": {
+            "mean_null": 62.1,
+            "std_null": 14.23,
+            "z_score": -1.76,
+            "empirical_p_value": 0.0945273631840796,
+            "significance": "n.s."
+          },
+          "glut_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "glut_ser": {
+            "mean_null": 25.0,
+            "std_null": 8.05,
+            "z_score": -3.1,
+            "empirical_p_value": 0.009950248756218905,
+            "significance": "** (p < 0.01)"
+          },
+          "da_da": {
+            "mean_null": 33.0,
+            "std_null": 10.99,
+            "z_score": -2.73,
+            "empirical_p_value": 0.009950248756218905,
+            "significance": "** (p < 0.01)"
+          },
+          "da_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "da_ser": {
+            "mean_null": 28.1,
+            "std_null": 9.27,
+            "z_score": -3.04,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "oct_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "oct_ser": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "ser_ser": {
+            "mean_null": 5.3,
+            "std_null": 3.07,
+            "z_score": -1.72,
+            "empirical_p_value": 0.0845771144278607,
+            "significance": "n.s."
+          }
+        }
+      },
+      "w3": {
+        "label": "EB (w >= 3)",
+        "threshold": 3,
+        "total_reciprocal_dyads": 5296,
+        "participating_neurons": 418,
+        "marginal_transmitter_pct": {
+          "ach": 26.32,
+          "gaba": 69.86,
+          "glut": 1.2,
+          "da": 2.39,
+          "oct": 0.0,
+          "ser": 0.24
+        },
+        "chi2_total": 2148.4,
+        "macro_categories": {
+          "recurrent_excitation_ach_ach": {
+            "observed": 615,
+            "expected": 366.8,
+            "obs_pct": 11.61,
+            "exp_pct": 6.93,
+            "enrichment_ratio": 1.677
+          },
+          "recurrent_inhibition_gaba_gaba": {
+            "observed": 3683,
+            "expected": 2584.4,
+            "obs_pct": 69.54,
+            "exp_pct": 48.8,
+            "enrichment_ratio": 1.425
+          },
+          "recurrent_glutamatergic_glut_glut": {
+            "observed": 0,
+            "expected": 0.8,
+            "obs_pct": 0.0,
+            "exp_pct": 0.02,
+            "enrichment_ratio": 0.0
+          },
+          "feedback_inhibition_ach_gaba": {
+            "observed": 696,
+            "expected": 1947.2,
+            "obs_pct": 13.14,
+            "exp_pct": 36.77,
+            "enrichment_ratio": 0.357
+          },
+          "feedback_glutamatergic_ach_glut": {
+            "observed": 168,
+            "expected": 33.3,
+            "obs_pct": 3.17,
+            "exp_pct": 0.63,
+            "enrichment_ratio": 5.045
+          },
+          "co_inhibition_gaba_glut": {
+            "observed": 37,
+            "expected": 88.5,
+            "obs_pct": 0.7,
+            "exp_pct": 1.67,
+            "enrichment_ratio": 0.418
+          },
+          "all_homotypic_fast": {
+            "observed": 4298,
+            "expected": 2952.0,
+            "obs_pct": 81.16,
+            "exp_pct": 55.74,
+            "enrichment_ratio": 1.456
+          },
+          "all_heterotypic_fast": {
+            "observed": 901,
+            "expected": 2069.0,
+            "obs_pct": 17.01,
+            "exp_pct": 39.07,
+            "enrichment_ratio": 0.435
+          }
+        },
+        "pair_motifs_analytic": {
+          "ach_ach": {
+            "observed": 615,
+            "expected": 366.8,
+            "obs_pct": 11.613,
+            "exp_pct": 6.925,
+            "enrichment_ratio": 1.677,
+            "std_residual": 12.96,
+            "classification": "Enriched"
+          },
+          "ach_gaba": {
+            "observed": 696,
+            "expected": 1947.2,
+            "obs_pct": 13.142,
+            "exp_pct": 36.767,
+            "enrichment_ratio": 0.357,
+            "std_residual": -28.35,
+            "classification": "Depleted"
+          },
+          "ach_glut": {
+            "observed": 168,
+            "expected": 33.3,
+            "obs_pct": 3.172,
+            "exp_pct": 0.63,
+            "enrichment_ratio": 5.039,
+            "std_residual": 23.32,
+            "classification": "Enriched"
+          },
+          "ach_da": {
+            "observed": 23,
+            "expected": 66.7,
+            "obs_pct": 0.434,
+            "exp_pct": 1.259,
+            "enrichment_ratio": 0.345,
+            "std_residual": -5.35,
+            "classification": "Depleted"
+          },
+          "ach_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "ach_ser": {
+            "observed": 5,
+            "expected": 6.7,
+            "obs_pct": 0.094,
+            "exp_pct": 0.126,
+            "enrichment_ratio": 0.75,
+            "std_residual": -0.65,
+            "classification": "Depleted"
+          },
+          "gaba_gaba": {
+            "observed": 3683,
+            "expected": 2584.4,
+            "obs_pct": 69.543,
+            "exp_pct": 48.799,
+            "enrichment_ratio": 1.425,
+            "std_residual": 21.61,
+            "classification": "Enriched"
+          },
+          "gaba_glut": {
+            "observed": 37,
+            "expected": 88.5,
+            "obs_pct": 0.699,
+            "exp_pct": 1.671,
+            "enrichment_ratio": 0.418,
+            "std_residual": -5.47,
+            "classification": "Depleted"
+          },
+          "gaba_da": {
+            "observed": 61,
+            "expected": 177.0,
+            "obs_pct": 1.152,
+            "exp_pct": 3.342,
+            "enrichment_ratio": 0.345,
+            "std_residual": -8.72,
+            "classification": "Depleted"
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "gaba_ser": {
+            "observed": 0,
+            "expected": 17.7,
+            "obs_pct": 0.0,
+            "exp_pct": 0.334,
+            "enrichment_ratio": 0.0,
+            "std_residual": -4.21,
+            "classification": "Depleted"
+          },
+          "glut_glut": {
+            "observed": 0,
+            "expected": 0.8,
+            "obs_pct": 0.0,
+            "exp_pct": 0.014,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.87,
+            "classification": "Depleted"
+          },
+          "glut_da": {
+            "observed": 8,
+            "expected": 3.0,
+            "obs_pct": 0.151,
+            "exp_pct": 0.057,
+            "enrichment_ratio": 2.639,
+            "std_residual": 2.85,
+            "classification": "Enriched"
+          },
+          "glut_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "glut_ser": {
+            "observed": 0,
+            "expected": 0.3,
+            "obs_pct": 0.0,
+            "exp_pct": 0.006,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.55,
+            "classification": "Depleted"
+          },
+          "da_da": {
+            "observed": 0,
+            "expected": 3.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.057,
+            "enrichment_ratio": 0.0,
+            "std_residual": -1.74,
+            "classification": "Depleted"
+          },
+          "da_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "da_ser": {
+            "observed": 0,
+            "expected": 0.6,
+            "obs_pct": 0.0,
+            "exp_pct": 0.011,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.78,
+            "classification": "Depleted"
+          },
+          "oct_oct": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "oct_ser": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.0,
+            "enrichment_ratio": 0.0,
+            "std_residual": 0.0,
+            "classification": "Depleted"
+          },
+          "ser_ser": {
+            "observed": 0,
+            "expected": 0.0,
+            "obs_pct": 0.0,
+            "exp_pct": 0.001,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.17,
+            "classification": "Depleted"
+          }
+        },
+        "pair_motifs_permutation": {
+          "ach_ach": {
+            "mean_null": 366.2,
+            "std_null": 38.31,
+            "z_score": 6.49,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_gaba": {
+            "mean_null": 1951.8,
+            "std_null": 63.92,
+            "z_score": -19.65,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_glut": {
+            "mean_null": 34.6,
+            "std_null": 10.02,
+            "z_score": 13.31,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_da": {
+            "mean_null": 69.0,
+            "std_null": 13.82,
+            "z_score": -3.33,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "ach_ser": {
+            "mean_null": 7.0,
+            "std_null": 4.17,
+            "z_score": -0.49,
+            "empirical_p_value": 0.6368159203980099,
+            "significance": "n.s."
+          },
+          "gaba_gaba": {
+            "mean_null": 2570.1,
+            "std_null": 98.94,
+            "z_score": 11.25,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_glut": {
+            "mean_null": 90.2,
+            "std_null": 23.82,
+            "z_score": -2.24,
+            "empirical_p_value": 0.03482587064676617,
+            "significance": "* (p < 0.05)"
+          },
+          "gaba_da": {
+            "mean_null": 181.2,
+            "std_null": 32.62,
+            "z_score": -3.69,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "gaba_ser": {
+            "mean_null": 18.0,
+            "std_null": 10.11,
+            "z_score": -1.78,
+            "empirical_p_value": 0.03482587064676617,
+            "significance": "* (p < 0.05)"
+          },
+          "glut_glut": {
+            "mean_null": 0.7,
+            "std_null": 0.82,
+            "z_score": -0.84,
+            "empirical_p_value": 0.6119402985074627,
+            "significance": "n.s."
+          },
+          "glut_da": {
+            "mean_null": 3.3,
+            "std_null": 2.05,
+            "z_score": 2.31,
+            "empirical_p_value": 0.029850746268656716,
+            "significance": "* (p < 0.05)"
+          },
+          "glut_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "glut_ser": {
+            "mean_null": 0.4,
+            "std_null": 0.62,
+            "z_score": -0.58,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "da_da": {
+            "mean_null": 3.0,
+            "std_null": 1.77,
+            "z_score": -1.69,
+            "empirical_p_value": 0.15920398009950248,
+            "significance": "n.s."
+          },
+          "da_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "da_ser": {
+            "mean_null": 0.6,
+            "std_null": 0.77,
+            "z_score": -0.73,
+            "empirical_p_value": 0.6915422885572139,
+            "significance": "n.s."
+          },
+          "oct_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "oct_ser": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "ser_ser": {
+            "mean_null": 0.0,
+            "std_null": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          }
+        }
+      }
+    },
+    "AL_R": {
+      "w1": {
+        "label": "AL_R (w >= 1)",
+        "threshold": 1,
+        "total_reciprocal_dyads": 29321,
+        "participating_neurons": 2935,
+        "marginal_transmitter_pct": {
+          "ach": 68.59,
+          "gaba": 6.54,
+          "glut": 5.25,
+          "da": 0.85,
+          "oct": 0.31,
+          "ser": 18.47
+        },
+        "chi2_total": 33008.8,
+        "macro_categories": {
+          "recurrent_excitation_ach_ach": {
+            "observed": 5366,
+            "expected": 13792.7,
+            "obs_pct": 18.3,
+            "exp_pct": 47.04,
+            "enrichment_ratio": 0.389
+          },
+          "recurrent_inhibition_gaba_gaba": {
+            "observed": 492,
+            "expected": 125.5,
+            "obs_pct": 1.68,
+            "exp_pct": 0.43,
+            "enrichment_ratio": 3.92
+          },
+          "recurrent_glutamatergic_glut_glut": {
+            "observed": 96,
+            "expected": 80.7,
+            "obs_pct": 0.33,
+            "exp_pct": 0.28,
+            "enrichment_ratio": 1.19
+          },
+          "feedback_inhibition_ach_gaba": {
+            "observed": 10082,
+            "expected": 2631.1,
+            "obs_pct": 34.38,
+            "exp_pct": 8.97,
+            "enrichment_ratio": 3.832
+          },
+          "feedback_glutamatergic_ach_glut": {
+            "observed": 1256,
+            "expected": 2110.4,
+            "obs_pct": 4.28,
+            "exp_pct": 7.2,
+            "enrichment_ratio": 0.595
+          },
+          "co_inhibition_gaba_glut": {
+            "observed": 511,
+            "expected": 201.3,
+            "obs_pct": 1.74,
+            "exp_pct": 0.69,
+            "enrichment_ratio": 2.538
+          },
+          "all_homotypic_fast": {
+            "observed": 5954,
+            "expected": 13998.9,
+            "obs_pct": 20.31,
+            "exp_pct": 47.74,
+            "enrichment_ratio": 0.425
+          },
+          "all_heterotypic_fast": {
+            "observed": 11849,
+            "expected": 4942.8,
+            "obs_pct": 40.41,
+            "exp_pct": 16.86,
+            "enrichment_ratio": 2.397
+          }
+        },
+        "pair_motifs_analytic": {
+          "ach_ach": {
+            "observed": 5366,
+            "expected": 13792.7,
+            "obs_pct": 18.301,
+            "exp_pct": 47.04,
+            "enrichment_ratio": 0.389,
+            "std_residual": -71.75,
+            "classification": "Depleted"
+          },
+          "ach_gaba": {
+            "observed": 10082,
+            "expected": 2631.1,
+            "obs_pct": 34.385,
+            "exp_pct": 8.973,
+            "enrichment_ratio": 3.832,
+            "std_residual": 145.26,
+            "classification": "Enriched"
+          },
+          "ach_glut": {
+            "observed": 1256,
+            "expected": 2110.4,
+            "obs_pct": 4.284,
+            "exp_pct": 7.197,
+            "enrichment_ratio": 0.595,
+            "std_residual": -18.6,
+            "classification": "Depleted"
+          },
+          "ach_da": {
+            "observed": 851,
+            "expected": 342.6,
+            "obs_pct": 2.902,
+            "exp_pct": 1.168,
+            "enrichment_ratio": 2.484,
+            "std_residual": 27.47,
+            "classification": "Enriched"
+          },
+          "ach_oct": {
+            "observed": 114,
+            "expected": 123.3,
+            "obs_pct": 0.389,
+            "exp_pct": 0.421,
+            "enrichment_ratio": 0.924,
+            "std_residual": -0.84,
+            "classification": "Near Expected"
+          },
+          "ach_ser": {
+            "observed": 6485,
+            "expected": 7427.4,
+            "obs_pct": 22.117,
+            "exp_pct": 25.331,
+            "enrichment_ratio": 0.873,
+            "std_residual": -10.93,
+            "classification": "Near Expected"
+          },
+          "gaba_gaba": {
+            "observed": 492,
+            "expected": 125.5,
+            "obs_pct": 1.678,
+            "exp_pct": 0.428,
+            "enrichment_ratio": 3.921,
+            "std_residual": 32.72,
+            "classification": "Enriched"
+          },
+          "gaba_glut": {
+            "observed": 511,
+            "expected": 201.3,
+            "obs_pct": 1.743,
+            "exp_pct": 0.686,
+            "enrichment_ratio": 2.539,
+            "std_residual": 21.83,
+            "classification": "Enriched"
+          },
+          "gaba_da": {
+            "observed": 185,
+            "expected": 32.7,
+            "obs_pct": 0.631,
+            "exp_pct": 0.111,
+            "enrichment_ratio": 5.662,
+            "std_residual": 26.65,
+            "classification": "Enriched"
+          },
+          "gaba_oct": {
+            "observed": 46,
+            "expected": 11.8,
+            "obs_pct": 0.157,
+            "exp_pct": 0.04,
+            "enrichment_ratio": 3.91,
+            "std_residual": 9.98,
+            "classification": "Enriched"
+          },
+          "gaba_ser": {
+            "observed": 2128,
+            "expected": 708.4,
+            "obs_pct": 7.258,
+            "exp_pct": 2.416,
+            "enrichment_ratio": 3.004,
+            "std_residual": 53.33,
+            "classification": "Enriched"
+          },
+          "glut_glut": {
+            "observed": 96,
+            "expected": 80.7,
+            "obs_pct": 0.327,
+            "exp_pct": 0.275,
+            "enrichment_ratio": 1.189,
+            "std_residual": 1.7,
+            "classification": "Enriched"
+          },
+          "glut_da": {
+            "observed": 92,
+            "expected": 26.2,
+            "obs_pct": 0.314,
+            "exp_pct": 0.089,
+            "enrichment_ratio": 3.51,
+            "std_residual": 12.85,
+            "classification": "Enriched"
+          },
+          "glut_oct": {
+            "observed": 9,
+            "expected": 9.4,
+            "obs_pct": 0.031,
+            "exp_pct": 0.032,
+            "enrichment_ratio": 0.954,
+            "std_residual": -0.14,
+            "classification": "Near Expected"
+          },
+          "glut_ser": {
+            "observed": 398,
+            "expected": 568.2,
+            "obs_pct": 1.357,
+            "exp_pct": 1.938,
+            "enrichment_ratio": 0.7,
+            "std_residual": -7.14,
+            "classification": "Depleted"
+          },
+          "da_da": {
+            "observed": 14,
+            "expected": 2.1,
+            "obs_pct": 0.048,
+            "exp_pct": 0.007,
+            "enrichment_ratio": 6.581,
+            "std_residual": 8.14,
+            "classification": "Enriched"
+          },
+          "da_oct": {
+            "observed": 3,
+            "expected": 1.5,
+            "obs_pct": 0.01,
+            "exp_pct": 0.005,
+            "enrichment_ratio": 1.959,
+            "std_residual": 1.19,
+            "classification": "Enriched"
+          },
+          "da_ser": {
+            "observed": 135,
+            "expected": 92.2,
+            "obs_pct": 0.46,
+            "exp_pct": 0.315,
+            "enrichment_ratio": 1.464,
+            "std_residual": 4.45,
+            "classification": "Enriched"
+          },
+          "oct_oct": {
+            "observed": 3,
+            "expected": 0.3,
+            "obs_pct": 0.01,
+            "exp_pct": 0.001,
+            "enrichment_ratio": 10.881,
+            "std_residual": 5.19,
+            "classification": "Enriched"
+          },
+          "oct_ser": {
+            "observed": 46,
+            "expected": 33.2,
+            "obs_pct": 0.157,
+            "exp_pct": 0.113,
+            "enrichment_ratio": 1.385,
+            "std_residual": 2.22,
+            "classification": "Enriched"
+          },
+          "ser_ser": {
+            "observed": 1009,
+            "expected": 999.9,
+            "obs_pct": 3.441,
+            "exp_pct": 3.41,
+            "enrichment_ratio": 1.009,
+            "std_residual": 0.29,
+            "classification": "Near Expected"
+          }
+        },
+        "pair_motifs_permutation": {
+          "ach_ach": {
+            "mean_null": 13799.6,
+            "std_null": 1181.19,
+            "z_score": -7.14,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_gaba": {
+            "mean_null": 2646.2,
+            "std_null": 665.1,
+            "z_score": 11.18,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_glut": {
+            "mean_null": 2128.3,
+            "std_null": 600.07,
+            "z_score": -1.45,
+            "empirical_p_value": 0.09950248756218906,
+            "significance": "n.s."
+          },
+          "ach_da": {
+            "mean_null": 332.7,
+            "std_null": 222.21,
+            "z_score": 2.33,
+            "empirical_p_value": 0.04975124378109453,
+            "significance": "* (p < 0.05)"
+          },
+          "ach_oct": {
+            "mean_null": 116.2,
+            "std_null": 145.9,
+            "z_score": -0.02,
+            "empirical_p_value": 0.9950248756218906,
+            "significance": "n.s."
+          },
+          "ach_ser": {
+            "mean_null": 7411.7,
+            "std_null": 810.88,
+            "z_score": -1.14,
+            "empirical_p_value": 0.2835820895522388,
+            "significance": "n.s."
+          },
+          "gaba_gaba": {
+            "mean_null": 125.5,
+            "std_null": 67.3,
+            "z_score": 5.45,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_glut": {
+            "mean_null": 203.6,
+            "std_null": 73.25,
+            "z_score": 4.2,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_da": {
+            "mean_null": 31.3,
+            "std_null": 23.38,
+            "z_score": 6.57,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_oct": {
+            "mean_null": 11.3,
+            "std_null": 14.58,
+            "z_score": 2.38,
+            "empirical_p_value": 0.04477611940298507,
+            "significance": "* (p < 0.05)"
+          },
+          "gaba_ser": {
+            "mean_null": 711.9,
+            "std_null": 192.3,
+            "z_score": 7.36,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "glut_glut": {
+            "mean_null": 80.7,
+            "std_null": 48.26,
+            "z_score": 0.32,
+            "empirical_p_value": 0.7860696517412935,
+            "significance": "n.s."
+          },
+          "glut_da": {
+            "mean_null": 26.0,
+            "std_null": 19.38,
+            "z_score": 3.4,
+            "empirical_p_value": 0.01990049751243781,
+            "significance": "* (p < 0.05)"
+          },
+          "glut_oct": {
+            "mean_null": 9.2,
+            "std_null": 12.34,
+            "z_score": -0.01,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "glut_ser": {
+            "mean_null": 573.1,
+            "std_null": 187.5,
+            "z_score": -0.93,
+            "empirical_p_value": 0.3681592039800995,
+            "significance": "n.s."
+          },
+          "da_da": {
+            "mean_null": 2.0,
+            "std_null": 2.87,
+            "z_score": 4.2,
+            "empirical_p_value": 0.014925373134328358,
+            "significance": "* (p < 0.05)"
+          },
+          "da_oct": {
+            "mean_null": 1.4,
+            "std_null": 2.38,
+            "z_score": 0.66,
+            "empirical_p_value": 0.19402985074626866,
+            "significance": "n.s."
+          },
+          "da_ser": {
+            "mean_null": 89.5,
+            "std_null": 61.81,
+            "z_score": 0.74,
+            "empirical_p_value": 0.39800995024875624,
+            "significance": "n.s."
+          },
+          "oct_oct": {
+            "mean_null": 0.3,
+            "std_null": 1.04,
+            "z_score": 2.64,
+            "empirical_p_value": 0.03482587064676617,
+            "significance": "* (p < 0.05)"
+          },
+          "oct_ser": {
+            "mean_null": 31.3,
+            "std_null": 39.77,
+            "z_score": 0.37,
+            "empirical_p_value": 0.582089552238806,
+            "significance": "n.s."
+          },
+          "ser_ser": {
+            "mean_null": 989.1,
+            "std_null": 271.16,
+            "z_score": 0.07,
+            "empirical_p_value": 0.9552238805970149,
+            "significance": "n.s."
+          }
+        }
+      },
+      "w3": {
+        "label": "AL_R (w >= 3)",
+        "threshold": 3,
+        "total_reciprocal_dyads": 9989,
+        "participating_neurons": 1567,
+        "marginal_transmitter_pct": {
+          "ach": 72.94,
+          "gaba": 7.02,
+          "glut": 4.98,
+          "da": 0.96,
+          "oct": 0.26,
+          "ser": 13.85
+        },
+        "chi2_total": 11824.1,
+        "macro_categories": {
+          "recurrent_excitation_ach_ach": {
+            "observed": 1582,
+            "expected": 5314.7,
+            "obs_pct": 15.84,
+            "exp_pct": 53.21,
+            "enrichment_ratio": 0.298
+          },
+          "recurrent_inhibition_gaba_gaba": {
+            "observed": 179,
+            "expected": 49.2,
+            "obs_pct": 1.79,
+            "exp_pct": 0.49,
+            "enrichment_ratio": 3.638
+          },
+          "recurrent_glutamatergic_glut_glut": {
+            "observed": 24,
+            "expected": 24.7,
+            "obs_pct": 0.24,
+            "exp_pct": 0.25,
+            "enrichment_ratio": 0.972
+          },
+          "feedback_inhibition_ach_gaba": {
+            "observed": 3461,
+            "expected": 1022.9,
+            "obs_pct": 34.65,
+            "exp_pct": 10.24,
+            "enrichment_ratio": 3.384
+          },
+          "feedback_glutamatergic_ach_glut": {
+            "observed": 304,
+            "expected": 725.4,
+            "obs_pct": 3.04,
+            "exp_pct": 7.26,
+            "enrichment_ratio": 0.419
+          },
+          "co_inhibition_gaba_glut": {
+            "observed": 120,
+            "expected": 69.8,
+            "obs_pct": 1.2,
+            "exp_pct": 0.7,
+            "enrichment_ratio": 1.719
+          },
+          "all_homotypic_fast": {
+            "observed": 1785,
+            "expected": 5388.6,
+            "obs_pct": 17.87,
+            "exp_pct": 53.95,
+            "enrichment_ratio": 0.331
+          },
+          "all_heterotypic_fast": {
+            "observed": 3885,
+            "expected": 1818.1,
+            "obs_pct": 38.89,
+            "exp_pct": 18.2,
+            "enrichment_ratio": 2.137
+          }
+        },
+        "pair_motifs_analytic": {
+          "ach_ach": {
+            "observed": 1582,
+            "expected": 5314.7,
+            "obs_pct": 15.837,
+            "exp_pct": 53.205,
+            "enrichment_ratio": 0.298,
+            "std_residual": -51.2,
+            "classification": "Depleted"
+          },
+          "ach_gaba": {
+            "observed": 3461,
+            "expected": 1022.9,
+            "obs_pct": 34.648,
+            "exp_pct": 10.241,
+            "enrichment_ratio": 3.383,
+            "std_residual": 76.23,
+            "classification": "Enriched"
+          },
+          "ach_glut": {
+            "observed": 304,
+            "expected": 725.4,
+            "obs_pct": 3.043,
+            "exp_pct": 7.262,
+            "enrichment_ratio": 0.419,
+            "std_residual": -15.65,
+            "classification": "Depleted"
+          },
+          "ach_da": {
+            "observed": 529,
+            "expected": 139.5,
+            "obs_pct": 5.296,
+            "exp_pct": 1.396,
+            "enrichment_ratio": 3.792,
+            "std_residual": 32.98,
+            "classification": "Enriched"
+          },
+          "ach_oct": {
+            "observed": 9,
+            "expected": 37.2,
+            "obs_pct": 0.09,
+            "exp_pct": 0.372,
+            "enrichment_ratio": 0.242,
+            "std_residual": -4.62,
+            "classification": "Depleted"
+          },
+          "ach_ser": {
+            "observed": 2530,
+            "expected": 2018.0,
+            "obs_pct": 25.328,
+            "exp_pct": 20.202,
+            "enrichment_ratio": 1.254,
+            "std_residual": 11.4,
+            "classification": "Enriched"
+          },
+          "gaba_gaba": {
+            "observed": 179,
+            "expected": 49.2,
+            "obs_pct": 1.792,
+            "exp_pct": 0.493,
+            "enrichment_ratio": 3.637,
+            "std_residual": 18.5,
+            "classification": "Enriched"
+          },
+          "gaba_glut": {
+            "observed": 120,
+            "expected": 69.8,
+            "obs_pct": 1.201,
+            "exp_pct": 0.699,
+            "enrichment_ratio": 1.719,
+            "std_residual": 6.01,
+            "classification": "Enriched"
+          },
+          "gaba_da": {
+            "observed": 51,
+            "expected": 13.4,
+            "obs_pct": 0.511,
+            "exp_pct": 0.134,
+            "enrichment_ratio": 3.799,
+            "std_residual": 10.26,
+            "classification": "Enriched"
+          },
+          "gaba_oct": {
+            "observed": 17,
+            "expected": 3.6,
+            "obs_pct": 0.17,
+            "exp_pct": 0.036,
+            "enrichment_ratio": 4.749,
+            "std_residual": 7.09,
+            "classification": "Enriched"
+          },
+          "gaba_ser": {
+            "observed": 618,
+            "expected": 194.2,
+            "obs_pct": 6.187,
+            "exp_pct": 1.944,
+            "enrichment_ratio": 3.182,
+            "std_residual": 30.41,
+            "classification": "Enriched"
+          },
+          "glut_glut": {
+            "observed": 24,
+            "expected": 24.7,
+            "obs_pct": 0.24,
+            "exp_pct": 0.248,
+            "enrichment_ratio": 0.97,
+            "std_residual": -0.15,
+            "classification": "Near Expected"
+          },
+          "glut_da": {
+            "observed": 37,
+            "expected": 9.5,
+            "obs_pct": 0.37,
+            "exp_pct": 0.095,
+            "enrichment_ratio": 3.887,
+            "std_residual": 8.91,
+            "classification": "Enriched"
+          },
+          "glut_oct": {
+            "observed": 0,
+            "expected": 2.5,
+            "obs_pct": 0.0,
+            "exp_pct": 0.025,
+            "enrichment_ratio": 0.0,
+            "std_residual": -1.59,
+            "classification": "Depleted"
+          },
+          "glut_ser": {
+            "observed": 126,
+            "expected": 137.7,
+            "obs_pct": 1.261,
+            "exp_pct": 1.379,
+            "enrichment_ratio": 0.915,
+            "std_residual": -1.0,
+            "classification": "Near Expected"
+          },
+          "da_da": {
+            "observed": 11,
+            "expected": 0.9,
+            "obs_pct": 0.11,
+            "exp_pct": 0.009,
+            "enrichment_ratio": 12.018,
+            "std_residual": 10.54,
+            "classification": "Enriched"
+          },
+          "da_oct": {
+            "observed": 0,
+            "expected": 0.5,
+            "obs_pct": 0.0,
+            "exp_pct": 0.005,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.7,
+            "classification": "Depleted"
+          },
+          "da_ser": {
+            "observed": 100,
+            "expected": 26.5,
+            "obs_pct": 1.001,
+            "exp_pct": 0.265,
+            "enrichment_ratio": 3.776,
+            "std_residual": 14.29,
+            "classification": "Enriched"
+          },
+          "oct_oct": {
+            "observed": 0,
+            "expected": 0.1,
+            "obs_pct": 0.0,
+            "exp_pct": 0.001,
+            "enrichment_ratio": 0.0,
+            "std_residual": -0.26,
+            "classification": "Depleted"
+          },
+          "oct_ser": {
+            "observed": 3,
+            "expected": 7.1,
+            "obs_pct": 0.03,
+            "exp_pct": 0.071,
+            "enrichment_ratio": 0.425,
+            "std_residual": -1.53,
+            "classification": "Depleted"
+          },
+          "ser_ser": {
+            "observed": 288,
+            "expected": 191.6,
+            "obs_pct": 2.883,
+            "exp_pct": 1.918,
+            "enrichment_ratio": 1.503,
+            "std_residual": 6.97,
+            "classification": "Enriched"
+          }
+        },
+        "pair_motifs_permutation": {
+          "ach_ach": {
+            "mean_null": 5353.7,
+            "std_null": 498.0,
+            "z_score": -7.57,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_gaba": {
+            "mean_null": 1023.0,
+            "std_null": 270.82,
+            "z_score": 9.0,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "ach_glut": {
+            "mean_null": 694.2,
+            "std_null": 231.13,
+            "z_score": -1.69,
+            "empirical_p_value": 0.07462686567164178,
+            "significance": "n.s."
+          },
+          "ach_da": {
+            "mean_null": 121.0,
+            "std_null": 91.72,
+            "z_score": 4.45,
+            "empirical_p_value": 0.014925373134328358,
+            "significance": "* (p < 0.05)"
+          },
+          "ach_oct": {
+            "mean_null": 39.6,
+            "std_null": 71.76,
+            "z_score": -0.43,
+            "empirical_p_value": 0.4975124378109453,
+            "significance": "n.s."
+          },
+          "ach_ser": {
+            "mean_null": 2040.8,
+            "std_null": 350.81,
+            "z_score": 1.39,
+            "empirical_p_value": 0.19900497512437812,
+            "significance": "n.s."
+          },
+          "gaba_gaba": {
+            "mean_null": 47.7,
+            "std_null": 28.12,
+            "z_score": 4.67,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "gaba_glut": {
+            "mean_null": 66.7,
+            "std_null": 30.41,
+            "z_score": 1.75,
+            "empirical_p_value": 0.07960199004975124,
+            "significance": "n.s."
+          },
+          "gaba_da": {
+            "mean_null": 11.9,
+            "std_null": 10.71,
+            "z_score": 3.65,
+            "empirical_p_value": 0.01990049751243781,
+            "significance": "* (p < 0.05)"
+          },
+          "gaba_oct": {
+            "mean_null": 3.7,
+            "std_null": 6.8,
+            "z_score": 1.95,
+            "empirical_p_value": 0.029850746268656716,
+            "significance": "* (p < 0.05)"
+          },
+          "gaba_ser": {
+            "mean_null": 195.4,
+            "std_null": 61.51,
+            "z_score": 6.87,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "glut_glut": {
+            "mean_null": 22.5,
+            "std_null": 16.84,
+            "z_score": 0.09,
+            "empirical_p_value": 0.9502487562189055,
+            "significance": "n.s."
+          },
+          "glut_da": {
+            "mean_null": 7.9,
+            "std_null": 7.16,
+            "z_score": 4.07,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "glut_oct": {
+            "mean_null": 2.8,
+            "std_null": 5.33,
+            "z_score": -0.52,
+            "empirical_p_value": 0.5174129353233831,
+            "significance": "n.s."
+          },
+          "glut_ser": {
+            "mean_null": 133.0,
+            "std_null": 52.9,
+            "z_score": -0.13,
+            "empirical_p_value": 0.8955223880597015,
+            "significance": "n.s."
+          },
+          "da_da": {
+            "mean_null": 0.6,
+            "std_null": 1.2,
+            "z_score": 8.67,
+            "empirical_p_value": 0.004975124378109453,
+            "significance": "** (p < 0.01)"
+          },
+          "da_oct": {
+            "mean_null": 0.5,
+            "std_null": 1.33,
+            "z_score": -0.36,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "da_ser": {
+            "mean_null": 23.0,
+            "std_null": 18.44,
+            "z_score": 4.18,
+            "empirical_p_value": 0.014925373134328358,
+            "significance": "* (p < 0.05)"
+          },
+          "oct_oct": {
+            "mean_null": 0.0,
+            "std_null": 0.23,
+            "z_score": -0.15,
+            "empirical_p_value": 1.0,
+            "significance": "n.s."
+          },
+          "oct_ser": {
+            "mean_null": 7.6,
+            "std_null": 14.03,
+            "z_score": -0.33,
+            "empirical_p_value": 0.6965174129353234,
+            "significance": "n.s."
+          },
+          "ser_ser": {
+            "mean_null": 193.4,
+            "std_null": 76.18,
+            "z_score": 1.24,
+            "empirical_p_value": 0.25870646766169153,
+            "significance": "n.s."
+          }
+        }
+      }
+    }
+  }
+}

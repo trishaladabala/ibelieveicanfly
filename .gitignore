@@ -10,6 +10,16 @@ env/
 .pytest_cache/
 
 # Large dataset files (keep original raw connectome files out of Git)
+data/raw/
+data/processed/
+data/**/*.csv
+data/**/*.tsv
+data/**/*.feather
+data/**/*.parquet
+data/**/*.arrow
+data/**/*.h5
+data/**/*.tar*
+data/**/*.zip
 data/*.csv
 data/*.tsv
 data/*.feather

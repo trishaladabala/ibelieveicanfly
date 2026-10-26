@@ -1,0 +1,1415 @@
+{
+  "metadata": {
+    "execution_date": "2026-10-20 00:03:52",
+    "dataset": "proofread_connections_783.feather",
+    "pipeline": "Controlled Central Complex Directed Degree-Preserving Null Model Analysis",
+    "regions_evaluated": [
+      "EB",
+      "FB",
+      "PB"
+    ],
+    "thresholds_evaluated": [
+      3,
+      5
+    ],
+    "num_permutations": 100,
+    "swap_multiplier": 10,
+    "random_seed": 42,
+    "runtime_seconds": 786.53,
+    "peak_ram_mb": 234.5
+  },
+  "regional_results": {
+    "EB": {
+      "w3": {
+        "threshold": 3,
+        "nodes": 566,
+        "directed_edges": 23062,
+        "mean_rewired_fraction_pct": 71.53,
+        "mutual_dyads_observed": 5296,
+        "reciprocity_edge_pct_observed": 45.93,
+        "mutual_dyad_null_stats": {
+          "observed": 5296,
+          "null_mean": 1668.97,
+          "null_std": 26.26,
+          "z_score": 138.11,
+          "empirical_p_value": 0.009900990099009901,
+          "min_resolvable_p_value": 0.009901,
+          "enrichment_ratio": 3.173,
+          "significant": true
+        },
+        "motifs_null_stats": {
+          "ach_ach": {
+            "observed": 615,
+            "null_mean": 143.39,
+            "null_std": 10.25,
+            "z_score": 45.99,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 4.289,
+            "significant": true
+          },
+          "ach_gaba": {
+            "observed": 696,
+            "null_mean": 611.54,
+            "null_std": 19.79,
+            "z_score": 4.27,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 1.138,
+            "significant": true
+          },
+          "ach_glut": {
+            "observed": 168,
+            "null_mean": 30.01,
+            "null_std": 4.76,
+            "z_score": 28.98,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 5.598,
+            "significant": true
+          },
+          "ach_da": {
+            "observed": 23,
+            "null_mean": 8.04,
+            "null_std": 2.69,
+            "z_score": 5.56,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 2.861,
+            "significant": true
+          },
+          "ach_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "ach_ser": {
+            "observed": 5,
+            "null_mean": 0.2,
+            "null_std": 0.43,
+            "z_score": 11.26,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 25.0,
+            "significant": true
+          },
+          "gaba_gaba": {
+            "observed": 3683,
+            "null_mean": 774.31,
+            "null_std": 20.21,
+            "z_score": 143.93,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 4.756,
+            "significant": true
+          },
+          "gaba_glut": {
+            "observed": 37,
+            "null_mean": 79.33,
+            "null_std": 8.22,
+            "z_score": -5.15,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.466,
+            "significant": true
+          },
+          "gaba_da": {
+            "observed": 61,
+            "null_mean": 18.89,
+            "null_std": 3.97,
+            "z_score": 10.62,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 3.229,
+            "significant": true
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_ser": {
+            "observed": 0,
+            "null_mean": 0.45,
+            "null_std": 0.67,
+            "z_score": -0.67,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "glut_glut": {
+            "observed": 0,
+            "null_mean": 1.53,
+            "null_std": 1.17,
+            "z_score": -1.31,
+            "empirical_p_value": 0.25742574257425743,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "glut_da": {
+            "observed": 8,
+            "null_mean": 1.14,
+            "null_std": 1.01,
+            "z_score": 6.82,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 7.018,
+            "significant": true
+          },
+          "glut_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "glut_ser": {
+            "observed": 0,
+            "null_mean": 0.02,
+            "null_std": 0.14,
+            "z_score": -0.14,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_da": {
+            "observed": 0,
+            "null_mean": 0.12,
+            "null_std": 0.33,
+            "z_score": -0.37,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "oct_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "oct_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "ser_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          }
+        },
+        "runtime_seconds": 81.83
+      },
+      "w5": {
+        "threshold": 5,
+        "nodes": 483,
+        "directed_edges": 15812,
+        "mean_rewired_fraction_pct": 78.04,
+        "mutual_dyads_observed": 3518,
+        "reciprocity_edge_pct_observed": 44.5,
+        "mutual_dyad_null_stats": {
+          "observed": 3518,
+          "null_mean": 763.27,
+          "null_std": 21.09,
+          "z_score": 130.6,
+          "empirical_p_value": 0.009900990099009901,
+          "min_resolvable_p_value": 0.009901,
+          "enrichment_ratio": 4.609,
+          "significant": true
+        },
+        "motifs_null_stats": {
+          "ach_ach": {
+            "observed": 458,
+            "null_mean": 50.5,
+            "null_std": 5.91,
+            "z_score": 68.98,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 9.069,
+            "significant": true
+          },
+          "ach_gaba": {
+            "observed": 283,
+            "null_mean": 263.44,
+            "null_std": 13.53,
+            "z_score": 1.45,
+            "empirical_p_value": 0.16831683168316833,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 1.074,
+            "significant": false
+          },
+          "ach_glut": {
+            "observed": 114,
+            "null_mean": 13.34,
+            "null_std": 3.49,
+            "z_score": 28.88,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 8.546,
+            "significant": true
+          },
+          "ach_da": {
+            "observed": 1,
+            "null_mean": 2.15,
+            "null_std": 1.43,
+            "z_score": -0.8,
+            "empirical_p_value": 0.5544554455445545,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.465,
+            "significant": false
+          },
+          "ach_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "ach_ser": {
+            "observed": 5,
+            "null_mean": 0.07,
+            "null_std": 0.26,
+            "z_score": 19.23,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 71.429,
+            "significant": true
+          },
+          "gaba_gaba": {
+            "observed": 2615,
+            "null_mean": 385.8,
+            "null_std": 15.66,
+            "z_score": 142.37,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 6.778,
+            "significant": true
+          },
+          "gaba_glut": {
+            "observed": 8,
+            "null_mean": 40.86,
+            "null_std": 5.53,
+            "z_score": -5.94,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.196,
+            "significant": true
+          },
+          "gaba_da": {
+            "observed": 32,
+            "null_mean": 5.9,
+            "null_std": 2.03,
+            "z_score": 12.84,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 5.424,
+            "significant": true
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_ser": {
+            "observed": 0,
+            "null_mean": 0.15,
+            "null_std": 0.36,
+            "z_score": -0.42,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "glut_glut": {
+            "observed": 0,
+            "null_mean": 0.74,
+            "null_std": 0.73,
+            "z_score": -1.01,
+            "empirical_p_value": 0.6039603960396039,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "glut_da": {
+            "observed": 2,
+            "null_mean": 0.31,
+            "null_std": 0.53,
+            "z_score": 3.21,
+            "empirical_p_value": 0.039603960396039604,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 6.452,
+            "significant": true
+          },
+          "glut_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "glut_ser": {
+            "observed": 0,
+            "null_mean": 0.01,
+            "null_std": 0.1,
+            "z_score": -0.1,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_da": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "oct_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "oct_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "ser_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          }
+        },
+        "runtime_seconds": 49.15
+      }
+    },
+    "FB": {
+      "w3": {
+        "threshold": 3,
+        "nodes": 2789,
+        "directed_edges": 80484,
+        "mean_rewired_fraction_pct": 92.57,
+        "mutual_dyads_observed": 10524,
+        "reciprocity_edge_pct_observed": 26.15,
+        "mutual_dyad_null_stats": {
+          "observed": 10524,
+          "null_mean": 1607.45,
+          "null_std": 38.28,
+          "z_score": 232.91,
+          "empirical_p_value": 0.009900990099009901,
+          "min_resolvable_p_value": 0.009901,
+          "enrichment_ratio": 6.547,
+          "significant": true
+        },
+        "motifs_null_stats": {
+          "ach_ach": {
+            "observed": 998,
+            "null_mean": 287.08,
+            "null_std": 15.51,
+            "z_score": 45.83,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 3.476,
+            "significant": true
+          },
+          "ach_gaba": {
+            "observed": 792,
+            "null_mean": 91.53,
+            "null_std": 8.51,
+            "z_score": 82.3,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 8.653,
+            "significant": true
+          },
+          "ach_glut": {
+            "observed": 4193,
+            "null_mean": 563.0,
+            "null_std": 22.97,
+            "z_score": 158.06,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 7.448,
+            "significant": true
+          },
+          "ach_da": {
+            "observed": 658,
+            "null_mean": 90.62,
+            "null_std": 8.13,
+            "z_score": 69.83,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 7.261,
+            "significant": true
+          },
+          "ach_oct": {
+            "observed": 2,
+            "null_mean": 0.74,
+            "null_std": 0.93,
+            "z_score": 1.36,
+            "empirical_p_value": 0.1782178217821782,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 2.703,
+            "significant": false
+          },
+          "ach_ser": {
+            "observed": 224,
+            "null_mean": 32.21,
+            "null_std": 6.15,
+            "z_score": 31.18,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 6.954,
+            "significant": true
+          },
+          "gaba_gaba": {
+            "observed": 7,
+            "null_mean": 5.0,
+            "null_std": 1.98,
+            "z_score": 1.01,
+            "empirical_p_value": 0.44554455445544555,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 1.4,
+            "significant": false
+          },
+          "gaba_glut": {
+            "observed": 87,
+            "null_mean": 95.76,
+            "null_std": 9.0,
+            "z_score": -0.97,
+            "empirical_p_value": 0.3069306930693069,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.909,
+            "significant": false
+          },
+          "gaba_da": {
+            "observed": 24,
+            "null_mean": 13.64,
+            "null_std": 3.57,
+            "z_score": 2.9,
+            "empirical_p_value": 0.0297029702970297,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 1.76,
+            "significant": true
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "null_mean": 0.2,
+            "null_std": 0.4,
+            "z_score": -0.5,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_ser": {
+            "observed": 30,
+            "null_mean": 6.01,
+            "null_std": 2.32,
+            "z_score": 10.36,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 4.992,
+            "significant": true
+          },
+          "glut_glut": {
+            "observed": 2155,
+            "null_mean": 285.86,
+            "null_std": 16.63,
+            "z_score": 112.39,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 7.539,
+            "significant": true
+          },
+          "glut_da": {
+            "observed": 621,
+            "null_mean": 89.89,
+            "null_std": 8.87,
+            "z_score": 59.87,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 6.908,
+            "significant": true
+          },
+          "glut_oct": {
+            "observed": 10,
+            "null_mean": 0.83,
+            "null_std": 0.9,
+            "z_score": 10.19,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 12.048,
+            "significant": true
+          },
+          "glut_ser": {
+            "observed": 497,
+            "null_mean": 31.33,
+            "null_std": 5.66,
+            "z_score": 82.27,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 15.863,
+            "significant": true
+          },
+          "da_da": {
+            "observed": 60,
+            "null_mean": 7.22,
+            "null_std": 2.67,
+            "z_score": 19.78,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 8.31,
+            "significant": true
+          },
+          "da_oct": {
+            "observed": 0,
+            "null_mean": 0.11,
+            "null_std": 0.31,
+            "z_score": -0.35,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_ser": {
+            "observed": 96,
+            "null_mean": 5.43,
+            "null_std": 2.23,
+            "z_score": 40.69,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 17.68,
+            "significant": true
+          },
+          "oct_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "oct_ser": {
+            "observed": 0,
+            "null_mean": 0.03,
+            "null_std": 0.17,
+            "z_score": -0.17,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "ser_ser": {
+            "observed": 70,
+            "null_mean": 0.96,
+            "null_std": 0.96,
+            "z_score": 71.68,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 72.917,
+            "significant": true
+          }
+        },
+        "runtime_seconds": 358.9
+      },
+      "w5": {
+        "threshold": 5,
+        "nodes": 2465,
+        "directed_edges": 46927,
+        "mean_rewired_fraction_pct": 93.76,
+        "mutual_dyads_observed": 5442,
+        "reciprocity_edge_pct_observed": 23.19,
+        "mutual_dyad_null_stats": {
+          "observed": 5442,
+          "null_mean": 737.67,
+          "null_std": 25.81,
+          "z_score": 182.28,
+          "empirical_p_value": 0.009900990099009901,
+          "min_resolvable_p_value": 0.009901,
+          "enrichment_ratio": 7.377,
+          "significant": true
+        },
+        "motifs_null_stats": {
+          "ach_ach": {
+            "observed": 457,
+            "null_mean": 161.79,
+            "null_std": 12.49,
+            "z_score": 23.64,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 2.825,
+            "significant": true
+          },
+          "ach_gaba": {
+            "observed": 555,
+            "null_mean": 59.18,
+            "null_std": 6.32,
+            "z_score": 78.41,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 9.378,
+            "significant": true
+          },
+          "ach_glut": {
+            "observed": 2272,
+            "null_mean": 252.66,
+            "null_std": 15.09,
+            "z_score": 133.82,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 8.992,
+            "significant": true
+          },
+          "ach_da": {
+            "observed": 296,
+            "null_mean": 35.59,
+            "null_std": 5.6,
+            "z_score": 46.54,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 8.317,
+            "significant": true
+          },
+          "ach_oct": {
+            "observed": 0,
+            "null_mean": 0.03,
+            "null_std": 0.17,
+            "z_score": -0.17,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "ach_ser": {
+            "observed": 100,
+            "null_mean": 16.62,
+            "null_std": 3.91,
+            "z_score": 21.32,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 6.017,
+            "significant": true
+          },
+          "gaba_gaba": {
+            "observed": 6,
+            "null_mean": 3.9,
+            "null_std": 1.7,
+            "z_score": 1.23,
+            "empirical_p_value": 0.2376237623762376,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 1.538,
+            "significant": false
+          },
+          "gaba_glut": {
+            "observed": 31,
+            "null_mean": 52.1,
+            "null_std": 7.58,
+            "z_score": -2.78,
+            "empirical_p_value": 0.039603960396039604,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.595,
+            "significant": true
+          },
+          "gaba_da": {
+            "observed": 16,
+            "null_mean": 6.55,
+            "null_std": 2.56,
+            "z_score": 3.69,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 2.443,
+            "significant": true
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "null_mean": 0.01,
+            "null_std": 0.1,
+            "z_score": -0.1,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_ser": {
+            "observed": 21,
+            "null_mean": 3.28,
+            "null_std": 1.72,
+            "z_score": 10.28,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 6.402,
+            "significant": true
+          },
+          "glut_glut": {
+            "observed": 968,
+            "null_mean": 101.5,
+            "null_std": 10.23,
+            "z_score": 84.72,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 9.537,
+            "significant": true
+          },
+          "glut_da": {
+            "observed": 253,
+            "null_mean": 27.85,
+            "null_std": 5.22,
+            "z_score": 43.11,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 9.084,
+            "significant": true
+          },
+          "glut_oct": {
+            "observed": 3,
+            "null_mean": 0.06,
+            "null_std": 0.24,
+            "z_score": 12.32,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 50.0,
+            "significant": true
+          },
+          "glut_ser": {
+            "observed": 307,
+            "null_mean": 12.44,
+            "null_std": 3.46,
+            "z_score": 85.22,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 24.678,
+            "significant": true
+          },
+          "da_da": {
+            "observed": 32,
+            "null_mean": 1.93,
+            "null_std": 1.27,
+            "z_score": 23.62,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 16.58,
+            "significant": true
+          },
+          "da_oct": {
+            "observed": 0,
+            "null_mean": 0.02,
+            "null_std": 0.14,
+            "z_score": -0.14,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_ser": {
+            "observed": 76,
+            "null_mean": 1.9,
+            "null_std": 1.27,
+            "z_score": 58.47,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 40.0,
+            "significant": true
+          },
+          "oct_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "oct_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "ser_ser": {
+            "observed": 49,
+            "null_mean": 0.26,
+            "null_std": 0.48,
+            "z_score": 100.6,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 188.462,
+            "significant": true
+          }
+        },
+        "runtime_seconds": 201.26
+      }
+    },
+    "PB": {
+      "w3": {
+        "threshold": 3,
+        "nodes": 1025,
+        "directed_edges": 6006,
+        "mean_rewired_fraction_pct": 86.79,
+        "mutual_dyads_observed": 321,
+        "reciprocity_edge_pct_observed": 10.69,
+        "mutual_dyad_null_stats": {
+          "observed": 321,
+          "null_mean": 171.69,
+          "null_std": 9.85,
+          "z_score": 15.16,
+          "empirical_p_value": 0.009900990099009901,
+          "min_resolvable_p_value": 0.009901,
+          "enrichment_ratio": 1.87,
+          "significant": true
+        },
+        "motifs_null_stats": {
+          "ach_ach": {
+            "observed": 50,
+            "null_mean": 12.53,
+            "null_std": 3.31,
+            "z_score": 11.31,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 3.99,
+            "significant": true
+          },
+          "ach_gaba": {
+            "observed": 0,
+            "null_mean": 0.11,
+            "null_std": 0.31,
+            "z_score": -0.35,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "ach_glut": {
+            "observed": 113,
+            "null_mean": 71.12,
+            "null_std": 7.07,
+            "z_score": 5.92,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 1.589,
+            "significant": true
+          },
+          "ach_da": {
+            "observed": 1,
+            "null_mean": 0.18,
+            "null_std": 0.41,
+            "z_score": 1.99,
+            "empirical_p_value": 0.1782178217821782,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 5.556,
+            "significant": false
+          },
+          "ach_oct": {
+            "observed": 1,
+            "null_mean": 0.07,
+            "null_std": 0.26,
+            "z_score": 3.63,
+            "empirical_p_value": 0.07920792079207921,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 14.286,
+            "significant": false
+          },
+          "ach_ser": {
+            "observed": 2,
+            "null_mean": 0.1,
+            "null_std": 0.3,
+            "z_score": 6.3,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 20.0,
+            "significant": true
+          },
+          "gaba_gaba": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_glut": {
+            "observed": 0,
+            "null_mean": 0.48,
+            "null_std": 0.72,
+            "z_score": -0.67,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_da": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "glut_glut": {
+            "observed": 149,
+            "null_mean": 85.74,
+            "null_std": 6.78,
+            "z_score": 9.34,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 1.738,
+            "significant": true
+          },
+          "glut_da": {
+            "observed": 3,
+            "null_mean": 0.7,
+            "null_std": 0.86,
+            "z_score": 2.68,
+            "empirical_p_value": 0.0594059405940594,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 4.286,
+            "significant": false
+          },
+          "glut_oct": {
+            "observed": 2,
+            "null_mean": 0.17,
+            "null_std": 0.43,
+            "z_score": 4.28,
+            "empirical_p_value": 0.0297029702970297,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 11.765,
+            "significant": true
+          },
+          "glut_ser": {
+            "observed": 0,
+            "null_mean": 0.49,
+            "null_std": 0.63,
+            "z_score": -0.78,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_da": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "oct_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "oct_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "ser_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          }
+        },
+        "runtime_seconds": 17.05
+      },
+      "w5": {
+        "threshold": 5,
+        "nodes": 699,
+        "directed_edges": 3651,
+        "mean_rewired_fraction_pct": 87.9,
+        "mutual_dyads_observed": 137,
+        "reciprocity_edge_pct_observed": 7.5,
+        "mutual_dyad_null_stats": {
+          "observed": 137,
+          "null_mean": 83.12,
+          "null_std": 8.23,
+          "z_score": 6.55,
+          "empirical_p_value": 0.009900990099009901,
+          "min_resolvable_p_value": 0.009901,
+          "enrichment_ratio": 1.648,
+          "significant": true
+        },
+        "motifs_null_stats": {
+          "ach_ach": {
+            "observed": 35,
+            "null_mean": 7.8,
+            "null_std": 2.57,
+            "z_score": 10.6,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 4.487,
+            "significant": true
+          },
+          "ach_gaba": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "ach_glut": {
+            "observed": 51,
+            "null_mean": 36.76,
+            "null_std": 5.72,
+            "z_score": 2.49,
+            "empirical_p_value": 0.019801980198019802,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 1.387,
+            "significant": true
+          },
+          "ach_da": {
+            "observed": 0,
+            "null_mean": 0.03,
+            "null_std": 0.17,
+            "z_score": -0.17,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "ach_oct": {
+            "observed": 1,
+            "null_mean": 0.02,
+            "null_std": 0.14,
+            "z_score": 6.96,
+            "empirical_p_value": 0.0297029702970297,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 50.0,
+            "significant": true
+          },
+          "ach_ser": {
+            "observed": 0,
+            "null_mean": 0.01,
+            "null_std": 0.1,
+            "z_score": -0.1,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_gaba": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_glut": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_da": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "gaba_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "glut_glut": {
+            "observed": 47,
+            "null_mean": 38.34,
+            "null_std": 4.73,
+            "z_score": 1.83,
+            "empirical_p_value": 0.06930693069306931,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 1.226,
+            "significant": false
+          },
+          "glut_da": {
+            "observed": 1,
+            "null_mean": 0.05,
+            "null_std": 0.22,
+            "z_score": 4.34,
+            "empirical_p_value": 0.0594059405940594,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 20.0,
+            "significant": false
+          },
+          "glut_oct": {
+            "observed": 2,
+            "null_mean": 0.07,
+            "null_std": 0.26,
+            "z_score": 7.53,
+            "empirical_p_value": 0.009900990099009901,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 28.571,
+            "significant": true
+          },
+          "glut_ser": {
+            "observed": 0,
+            "null_mean": 0.04,
+            "null_std": 0.2,
+            "z_score": -0.2,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_da": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "da_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "oct_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "oct_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          },
+          "ser_ser": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "min_resolvable_p_value": 0.009901,
+            "enrichment_ratio": 0.0,
+            "significant": false
+          }
+        },
+        "runtime_seconds": 9.33
+      }
+    }
+  }
+}

@@ -1,0 +1,876 @@
+{
+  "metadata": {
+    "execution_date": "2026-10-19 22:22:00",
+    "dataset_file": "proofread_connections_783.feather",
+    "dataset_version": "FlyWire FAFB v783.0",
+    "runtime_seconds": 178.13,
+    "peak_ram_mb": 119.4,
+    "total_records_processed": 16847997,
+    "total_synapses_processed": 54492922
+  },
+  "missingness_analysis": {
+    "records_with_any_missing_probability": 1732,
+    "records_missing_fraction_pct": 0.0103,
+    "synapses_affected_by_missing_data": 30806,
+    "synapses_missing_fraction_pct": 0.0565,
+    "complete_case_records": 16846265,
+    "complete_case_synapses": 54462116,
+    "per_class_missing_records": {
+      "ach": 1732,
+      "gaba": 1732,
+      "glut": 1732,
+      "da": 1732,
+      "oct": 1732,
+      "ser": 1732
+    },
+    "per_class_missing_synapses": {
+      "ach": 30806,
+      "gaba": 30806,
+      "glut": 30806,
+      "da": 30806,
+      "oct": 30806,
+      "ser": 30806
+    }
+  },
+  "row_probability_sum_check": {
+    "sample_size_evaluated": 100000,
+    "mean_row_probability_sum": 1.0,
+    "min_row_probability_sum": 1.0,
+    "max_row_probability_sum": 1.0,
+    "records_deviating_from_unity_gt_5pct": 0
+  },
+  "probability_mass_raw": {
+    "ach": 26348931.02,
+    "gaba": 12614419.59,
+    "glut": 10486203.84,
+    "da": 2412833.02,
+    "oct": 1466759.4,
+    "ser": 1132969.14
+  },
+  "comparative_denominators": {
+    "formulation_1_class_specific_valid_synapses_pct": {
+      "ach": 48.38,
+      "gaba": 23.16,
+      "glut": 19.25,
+      "da": 4.43,
+      "oct": 2.69,
+      "ser": 2.08
+    },
+    "formulation_2_total_connectome_synapses_pct": {
+      "ach": 48.35,
+      "gaba": 23.15,
+      "glut": 19.24,
+      "da": 4.43,
+      "oct": 2.69,
+      "ser": 2.08
+    },
+    "formulation_3_normalized_over_mass_sum_pct": {
+      "ach": 48.38,
+      "gaba": 23.16,
+      "glut": 19.25,
+      "da": 4.43,
+      "oct": 2.69,
+      "ser": 2.08
+    },
+    "formulation_4_complete_cases_only_pct": {
+      "ach": 48.38,
+      "gaba": 23.16,
+      "glut": 19.25,
+      "da": 4.43,
+      "oct": 2.69,
+      "ser": 2.08
+    }
+  },
+  "neuropil_regional_transmitter_breakdown": {
+    "ME_R": {
+      "total_synapses": 8821540,
+      "dominant_transmitter": "ach",
+      "ach_pct": 44.3,
+      "gaba_pct": 29.39,
+      "glut_pct": 18.98,
+      "da_pct": 2.34,
+      "oct_pct": 4.35,
+      "ser_pct": 0.64
+    },
+    "ME_L": {
+      "total_synapses": 7712403,
+      "dominant_transmitter": "ach",
+      "ach_pct": 42.5,
+      "gaba_pct": 30.0,
+      "glut_pct": 20.6,
+      "da_pct": 2.88,
+      "oct_pct": 3.31,
+      "ser_pct": 0.7
+    },
+    "LO_R": {
+      "total_synapses": 3877311,
+      "dominant_transmitter": "ach",
+      "ach_pct": 53.06,
+      "gaba_pct": 21.18,
+      "glut_pct": 18.14,
+      "da_pct": 2.79,
+      "oct_pct": 4.4,
+      "ser_pct": 0.43
+    },
+    "LO_L": {
+      "total_synapses": 3792886,
+      "dominant_transmitter": "ach",
+      "ach_pct": 53.83,
+      "gaba_pct": 20.64,
+      "glut_pct": 17.92,
+      "da_pct": 3.66,
+      "oct_pct": 3.41,
+      "ser_pct": 0.54
+    },
+    "GNG": {
+      "total_synapses": 2713213,
+      "dominant_transmitter": "ach",
+      "ach_pct": 47.07,
+      "gaba_pct": 22.17,
+      "glut_pct": 19.09,
+      "da_pct": 5.95,
+      "oct_pct": 0.66,
+      "ser_pct": 5.06
+    },
+    "AVLP_R": {
+      "total_synapses": 2000857,
+      "dominant_transmitter": "ach",
+      "ach_pct": 54.58,
+      "gaba_pct": 21.75,
+      "glut_pct": 13.29,
+      "da_pct": 6.46,
+      "oct_pct": 1.79,
+      "ser_pct": 2.13
+    },
+    "LOP_R": {
+      "total_synapses": 1901109,
+      "dominant_transmitter": "ach",
+      "ach_pct": 39.1,
+      "gaba_pct": 24.31,
+      "glut_pct": 27.48,
+      "da_pct": 3.27,
+      "oct_pct": 5.17,
+      "ser_pct": 0.66
+    },
+    "AVLP_L": {
+      "total_synapses": 1510021,
+      "dominant_transmitter": "ach",
+      "ach_pct": 53.86,
+      "gaba_pct": 21.73,
+      "glut_pct": 15.95,
+      "da_pct": 4.88,
+      "oct_pct": 2.28,
+      "ser_pct": 1.3
+    },
+    "LOP_L": {
+      "total_synapses": 1189689,
+      "dominant_transmitter": "ach",
+      "ach_pct": 40.03,
+      "gaba_pct": 27.66,
+      "glut_pct": 24.43,
+      "da_pct": 3.13,
+      "oct_pct": 4.19,
+      "ser_pct": 0.55
+    },
+    "SMP_R": {
+      "total_synapses": 898333,
+      "dominant_transmitter": "ach",
+      "ach_pct": 48.87,
+      "gaba_pct": 12.3,
+      "glut_pct": 28.18,
+      "da_pct": 6.21,
+      "oct_pct": 0.69,
+      "ser_pct": 3.75
+    },
+    "FB": {
+      "total_synapses": 897766,
+      "dominant_transmitter": "ach",
+      "ach_pct": 36.73,
+      "gaba_pct": 8.7,
+      "glut_pct": 34.22,
+      "da_pct": 10.97,
+      "oct_pct": 0.91,
+      "ser_pct": 8.46
+    },
+    "PVLP_L": {
+      "total_synapses": 895615,
+      "dominant_transmitter": "ach",
+      "ach_pct": 47.16,
+      "gaba_pct": 20.31,
+      "glut_pct": 19.99,
+      "da_pct": 6.43,
+      "oct_pct": 4.77,
+      "ser_pct": 1.33
+    },
+    "SMP_L": {
+      "total_synapses": 816580,
+      "dominant_transmitter": "ach",
+      "ach_pct": 48.55,
+      "gaba_pct": 10.97,
+      "glut_pct": 29.95,
+      "da_pct": 6.07,
+      "oct_pct": 0.76,
+      "ser_pct": 3.7
+    },
+    "AL_L": {
+      "total_synapses": 760542,
+      "dominant_transmitter": "ach",
+      "ach_pct": 43.87,
+      "gaba_pct": 19.43,
+      "glut_pct": 7.56,
+      "da_pct": 11.16,
+      "oct_pct": 0.4,
+      "ser_pct": 17.59
+    },
+    "PLP_L": {
+      "total_synapses": 746323,
+      "dominant_transmitter": "ach",
+      "ach_pct": 55.88,
+      "gaba_pct": 21.2,
+      "glut_pct": 14.56,
+      "da_pct": 5.34,
+      "oct_pct": 1.72,
+      "ser_pct": 1.3
+    },
+    "SPS_R": {
+      "total_synapses": 731877,
+      "dominant_transmitter": "ach",
+      "ach_pct": 50.0,
+      "gaba_pct": 19.09,
+      "glut_pct": 23.05,
+      "da_pct": 4.88,
+      "oct_pct": 1.35,
+      "ser_pct": 1.63
+    },
+    "AL_R": {
+      "total_synapses": 727451,
+      "dominant_transmitter": "ach",
+      "ach_pct": 44.93,
+      "gaba_pct": 19.48,
+      "glut_pct": 7.76,
+      "da_pct": 10.11,
+      "oct_pct": 0.32,
+      "ser_pct": 17.41
+    },
+    "SLP_R": {
+      "total_synapses": 723028,
+      "dominant_transmitter": "ach",
+      "ach_pct": 52.85,
+      "gaba_pct": 14.38,
+      "glut_pct": 24.73,
+      "da_pct": 4.65,
+      "oct_pct": 0.79,
+      "ser_pct": 2.61
+    },
+    "PVLP_R": {
+      "total_synapses": 704599,
+      "dominant_transmitter": "ach",
+      "ach_pct": 49.77,
+      "gaba_pct": 19.72,
+      "glut_pct": 14.65,
+      "da_pct": 6.52,
+      "oct_pct": 7.62,
+      "ser_pct": 1.71
+    },
+    "PLP_R": {
+      "total_synapses": 664786,
+      "dominant_transmitter": "ach",
+      "ach_pct": 54.24,
+      "gaba_pct": 20.66,
+      "glut_pct": 16.64,
+      "da_pct": 5.23,
+      "oct_pct": 1.95,
+      "ser_pct": 1.28
+    },
+    "LH_R": {
+      "total_synapses": 664653,
+      "dominant_transmitter": "ach",
+      "ach_pct": 53.18,
+      "gaba_pct": 23.93,
+      "glut_pct": 17.99,
+      "da_pct": 2.63,
+      "oct_pct": 1.43,
+      "ser_pct": 0.85
+    },
+    "LH_L": {
+      "total_synapses": 602473,
+      "dominant_transmitter": "ach",
+      "ach_pct": 53.79,
+      "gaba_pct": 21.77,
+      "glut_pct": 19.6,
+      "da_pct": 2.62,
+      "oct_pct": 1.48,
+      "ser_pct": 0.75
+    },
+    "SPS_L": {
+      "total_synapses": 569251,
+      "dominant_transmitter": "ach",
+      "ach_pct": 49.66,
+      "gaba_pct": 18.25,
+      "glut_pct": 24.12,
+      "da_pct": 5.19,
+      "oct_pct": 0.99,
+      "ser_pct": 1.79
+    },
+    "SLP_L": {
+      "total_synapses": 544953,
+      "dominant_transmitter": "ach",
+      "ach_pct": 50.81,
+      "gaba_pct": 12.6,
+      "glut_pct": 27.52,
+      "da_pct": 5.2,
+      "oct_pct": 0.9,
+      "ser_pct": 2.98
+    },
+    "SAD": {
+      "total_synapses": 527408,
+      "dominant_transmitter": "ach",
+      "ach_pct": 42.4,
+      "gaba_pct": 31.6,
+      "glut_pct": 18.1,
+      "da_pct": 4.05,
+      "oct_pct": 0.91,
+      "ser_pct": 2.94
+    },
+    "IPS_L": {
+      "total_synapses": 500696,
+      "dominant_transmitter": "ach",
+      "ach_pct": 49.47,
+      "gaba_pct": 20.08,
+      "glut_pct": 22.81,
+      "da_pct": 4.83,
+      "oct_pct": 0.93,
+      "ser_pct": 1.88
+    },
+    "IPS_R": {
+      "total_synapses": 480261,
+      "dominant_transmitter": "ach",
+      "ach_pct": 47.82,
+      "gaba_pct": 20.39,
+      "glut_pct": 24.12,
+      "da_pct": 4.83,
+      "oct_pct": 1.21,
+      "ser_pct": 1.64
+    },
+    "LAL_R": {
+      "total_synapses": 437642,
+      "dominant_transmitter": "ach",
+      "ach_pct": 48.95,
+      "gaba_pct": 26.02,
+      "glut_pct": 16.61,
+      "da_pct": 5.32,
+      "oct_pct": 1.61,
+      "ser_pct": 1.49
+    },
+    "LAL_L": {
+      "total_synapses": 432296,
+      "dominant_transmitter": "ach",
+      "ach_pct": 49.58,
+      "gaba_pct": 23.86,
+      "glut_pct": 18.53,
+      "da_pct": 4.95,
+      "oct_pct": 1.63,
+      "ser_pct": 1.45
+    },
+    "ICL_R": {
+      "total_synapses": 360940,
+      "dominant_transmitter": "ach",
+      "ach_pct": 51.16,
+      "gaba_pct": 18.22,
+      "glut_pct": 21.67,
+      "da_pct": 4.68,
+      "oct_pct": 1.0,
+      "ser_pct": 3.28
+    },
+    "PRW": {
+      "total_synapses": 352333,
+      "dominant_transmitter": "ach",
+      "ach_pct": 43.67,
+      "gaba_pct": 19.4,
+      "glut_pct": 20.37,
+      "da_pct": 7.23,
+      "oct_pct": 0.54,
+      "ser_pct": 8.79
+    },
+    "CRE_R": {
+      "total_synapses": 342435,
+      "dominant_transmitter": "ach",
+      "ach_pct": 53.71,
+      "gaba_pct": 17.42,
+      "glut_pct": 17.77,
+      "da_pct": 8.17,
+      "oct_pct": 0.7,
+      "ser_pct": 2.23
+    },
+    "ICL_L": {
+      "total_synapses": 327927,
+      "dominant_transmitter": "ach",
+      "ach_pct": 50.43,
+      "gaba_pct": 18.3,
+      "glut_pct": 22.99,
+      "da_pct": 4.45,
+      "oct_pct": 1.0,
+      "ser_pct": 2.84
+    },
+    "MB_ML_L": {
+      "total_synapses": 325421,
+      "dominant_transmitter": "ach",
+      "ach_pct": 76.34,
+      "gaba_pct": 7.43,
+      "glut_pct": 4.04,
+      "da_pct": 10.85,
+      "oct_pct": 0.17,
+      "ser_pct": 1.17
+    },
+    "CRE_L": {
+      "total_synapses": 322237,
+      "dominant_transmitter": "ach",
+      "ach_pct": 53.76,
+      "gaba_pct": 13.89,
+      "glut_pct": 21.96,
+      "da_pct": 7.82,
+      "oct_pct": 0.78,
+      "ser_pct": 1.78
+    },
+    "EB": {
+      "total_synapses": 282714,
+      "dominant_transmitter": "gaba",
+      "ach_pct": 19.69,
+      "gaba_pct": 68.86,
+      "glut_pct": 4.62,
+      "da_pct": 4.69,
+      "oct_pct": 0.71,
+      "ser_pct": 1.42
+    },
+    "VES_R": {
+      "total_synapses": 282167,
+      "dominant_transmitter": "ach",
+      "ach_pct": 51.61,
+      "gaba_pct": 24.12,
+      "glut_pct": 17.17,
+      "da_pct": 4.28,
+      "oct_pct": 1.02,
+      "ser_pct": 1.8
+    },
+    "SCL_R": {
+      "total_synapses": 280743,
+      "dominant_transmitter": "ach",
+      "ach_pct": 54.84,
+      "gaba_pct": 18.14,
+      "glut_pct": 19.94,
+      "da_pct": 3.66,
+      "oct_pct": 1.25,
+      "ser_pct": 2.17
+    },
+    "LA_R": {
+      "total_synapses": 273732,
+      "dominant_transmitter": "ach",
+      "ach_pct": 45.47,
+      "gaba_pct": 17.88,
+      "glut_pct": 20.14,
+      "da_pct": 10.4,
+      "oct_pct": 2.03,
+      "ser_pct": 4.09
+    },
+    "VES_L": {
+      "total_synapses": 263765,
+      "dominant_transmitter": "ach",
+      "ach_pct": 51.79,
+      "gaba_pct": 25.68,
+      "glut_pct": 15.37,
+      "da_pct": 4.27,
+      "oct_pct": 1.16,
+      "ser_pct": 1.73
+    },
+    "MB_CA_L": {
+      "total_synapses": 263221,
+      "dominant_transmitter": "ach",
+      "ach_pct": 84.85,
+      "gaba_pct": 11.15,
+      "glut_pct": 1.7,
+      "da_pct": 1.49,
+      "oct_pct": 0.39,
+      "ser_pct": 0.43
+    },
+    "WED_R": {
+      "total_synapses": 254680,
+      "dominant_transmitter": "ach",
+      "ach_pct": 54.48,
+      "gaba_pct": 25.36,
+      "glut_pct": 13.24,
+      "da_pct": 3.43,
+      "oct_pct": 2.13,
+      "ser_pct": 1.36
+    },
+    "MB_ML_R": {
+      "total_synapses": 250422,
+      "dominant_transmitter": "ach",
+      "ach_pct": 77.62,
+      "gaba_pct": 6.25,
+      "glut_pct": 2.42,
+      "da_pct": 11.54,
+      "oct_pct": 0.14,
+      "ser_pct": 2.03
+    },
+    "SCL_L": {
+      "total_synapses": 245157,
+      "dominant_transmitter": "ach",
+      "ach_pct": 52.48,
+      "gaba_pct": 16.75,
+      "glut_pct": 23.49,
+      "da_pct": 3.69,
+      "oct_pct": 1.48,
+      "ser_pct": 2.11
+    },
+    "MB_CA_R": {
+      "total_synapses": 230379,
+      "dominant_transmitter": "ach",
+      "ach_pct": 82.05,
+      "gaba_pct": 12.23,
+      "glut_pct": 2.76,
+      "da_pct": 1.93,
+      "oct_pct": 0.39,
+      "ser_pct": 0.65
+    },
+    "SIP_R": {
+      "total_synapses": 229288,
+      "dominant_transmitter": "ach",
+      "ach_pct": 51.43,
+      "gaba_pct": 18.86,
+      "glut_pct": 21.78,
+      "da_pct": 5.23,
+      "oct_pct": 1.04,
+      "ser_pct": 1.65
+    },
+    "AOTU_R": {
+      "total_synapses": 215603,
+      "dominant_transmitter": "ach",
+      "ach_pct": 47.81,
+      "gaba_pct": 23.25,
+      "glut_pct": 17.34,
+      "da_pct": 9.28,
+      "oct_pct": 0.96,
+      "ser_pct": 1.36
+    },
+    "SIP_L": {
+      "total_synapses": 197040,
+      "dominant_transmitter": "ach",
+      "ach_pct": 54.71,
+      "gaba_pct": 15.54,
+      "glut_pct": 21.77,
+      "da_pct": 5.28,
+      "oct_pct": 0.95,
+      "ser_pct": 1.76
+    },
+    "WED_L": {
+      "total_synapses": 196091,
+      "dominant_transmitter": "ach",
+      "ach_pct": 56.61,
+      "gaba_pct": 26.01,
+      "glut_pct": 10.9,
+      "da_pct": 3.68,
+      "oct_pct": 1.4,
+      "ser_pct": 1.39
+    },
+    "AOTU_L": {
+      "total_synapses": 182479,
+      "dominant_transmitter": "ach",
+      "ach_pct": 46.63,
+      "gaba_pct": 19.84,
+      "glut_pct": 25.2,
+      "da_pct": 6.8,
+      "oct_pct": 0.99,
+      "ser_pct": 0.54
+    },
+    "LA_L": {
+      "total_synapses": 169170,
+      "dominant_transmitter": "ach",
+      "ach_pct": 53.62,
+      "gaba_pct": 17.18,
+      "glut_pct": 14.81,
+      "da_pct": 6.64,
+      "oct_pct": 1.89,
+      "ser_pct": 5.87
+    },
+    "IB_R": {
+      "total_synapses": 158215,
+      "dominant_transmitter": "ach",
+      "ach_pct": 45.02,
+      "gaba_pct": 12.98,
+      "glut_pct": 30.93,
+      "da_pct": 6.68,
+      "oct_pct": 0.59,
+      "ser_pct": 3.8
+    },
+    "IB_L": {
+      "total_synapses": 142166,
+      "dominant_transmitter": "ach",
+      "ach_pct": 43.74,
+      "gaba_pct": 12.77,
+      "glut_pct": 32.02,
+      "da_pct": 6.92,
+      "oct_pct": 0.56,
+      "ser_pct": 3.99
+    },
+    "MB_PED_L": {
+      "total_synapses": 133514,
+      "dominant_transmitter": "ach",
+      "ach_pct": 77.56,
+      "gaba_pct": 10.18,
+      "glut_pct": 5.94,
+      "da_pct": 4.61,
+      "oct_pct": 0.35,
+      "ser_pct": 1.35
+    },
+    "FLA_R": {
+      "total_synapses": 129153,
+      "dominant_transmitter": "ach",
+      "ach_pct": 46.82,
+      "gaba_pct": 17.0,
+      "glut_pct": 20.28,
+      "da_pct": 6.84,
+      "oct_pct": 0.63,
+      "ser_pct": 8.44
+    },
+    "MB_PED_R": {
+      "total_synapses": 124306,
+      "dominant_transmitter": "ach",
+      "ach_pct": 77.44,
+      "gaba_pct": 9.66,
+      "glut_pct": 6.32,
+      "da_pct": 4.59,
+      "oct_pct": 0.47,
+      "ser_pct": 1.52
+    },
+    "MB_VL_R": {
+      "total_synapses": 113967,
+      "dominant_transmitter": "ach",
+      "ach_pct": 82.5,
+      "gaba_pct": 6.59,
+      "glut_pct": 2.57,
+      "da_pct": 6.99,
+      "oct_pct": 0.12,
+      "ser_pct": 1.23
+    },
+    "NO": {
+      "total_synapses": 103904,
+      "dominant_transmitter": "ach",
+      "ach_pct": 41.37,
+      "gaba_pct": 26.32,
+      "glut_pct": 11.74,
+      "da_pct": 13.82,
+      "oct_pct": 0.51,
+      "ser_pct": 6.25
+    },
+    "AMMC_R": {
+      "total_synapses": 101793,
+      "dominant_transmitter": "ach",
+      "ach_pct": 33.67,
+      "gaba_pct": 32.05,
+      "glut_pct": 24.08,
+      "da_pct": 3.59,
+      "oct_pct": 0.83,
+      "ser_pct": 5.79
+    },
+    "FLA_L": {
+      "total_synapses": 99577,
+      "dominant_transmitter": "ach",
+      "ach_pct": 47.21,
+      "gaba_pct": 17.42,
+      "glut_pct": 18.86,
+      "da_pct": 7.09,
+      "oct_pct": 0.6,
+      "ser_pct": 8.82
+    },
+    "AMMC_L": {
+      "total_synapses": 98011,
+      "dominant_transmitter": "gaba",
+      "ach_pct": 35.08,
+      "gaba_pct": 40.29,
+      "glut_pct": 16.5,
+      "da_pct": 4.62,
+      "oct_pct": 0.9,
+      "ser_pct": 2.62
+    },
+    "MB_VL_L": {
+      "total_synapses": 94051,
+      "dominant_transmitter": "ach",
+      "ach_pct": 77.22,
+      "gaba_pct": 7.53,
+      "glut_pct": 6.74,
+      "da_pct": 7.39,
+      "oct_pct": 0.15,
+      "ser_pct": 0.96
+    },
+    "GOR_R": {
+      "total_synapses": 76880,
+      "dominant_transmitter": "ach",
+      "ach_pct": 49.47,
+      "gaba_pct": 22.11,
+      "glut_pct": 19.42,
+      "da_pct": 4.93,
+      "oct_pct": 0.85,
+      "ser_pct": 3.22
+    },
+    "GOR_L": {
+      "total_synapses": 76258,
+      "dominant_transmitter": "ach",
+      "ach_pct": 51.44,
+      "gaba_pct": 22.61,
+      "glut_pct": 17.4,
+      "da_pct": 4.82,
+      "oct_pct": 0.75,
+      "ser_pct": 2.98
+    },
+    "PB": {
+      "total_synapses": 63306,
+      "dominant_transmitter": "ach",
+      "ach_pct": 42.77,
+      "gaba_pct": 3.97,
+      "glut_pct": 40.79,
+      "da_pct": 3.92,
+      "oct_pct": 0.55,
+      "ser_pct": 7.99
+    },
+    "EPA_L": {
+      "total_synapses": 58224,
+      "dominant_transmitter": "ach",
+      "ach_pct": 49.78,
+      "gaba_pct": 25.66,
+      "glut_pct": 18.14,
+      "da_pct": 3.26,
+      "oct_pct": 2.32,
+      "ser_pct": 0.83
+    },
+    "EPA_R": {
+      "total_synapses": 47698,
+      "dominant_transmitter": "ach",
+      "ach_pct": 51.06,
+      "gaba_pct": 25.82,
+      "glut_pct": 16.52,
+      "da_pct": 3.47,
+      "oct_pct": 1.95,
+      "ser_pct": 1.18
+    },
+    "ATL_L": {
+      "total_synapses": 37726,
+      "dominant_transmitter": "ach",
+      "ach_pct": 53.17,
+      "gaba_pct": 11.51,
+      "glut_pct": 22.29,
+      "da_pct": 7.48,
+      "oct_pct": 0.86,
+      "ser_pct": 4.69
+    },
+    "ATL_R": {
+      "total_synapses": 33747,
+      "dominant_transmitter": "ach",
+      "ach_pct": 52.46,
+      "gaba_pct": 10.27,
+      "glut_pct": 23.72,
+      "da_pct": 7.87,
+      "oct_pct": 0.72,
+      "ser_pct": 4.96
+    },
+    "GA_L": {
+      "total_synapses": 15863,
+      "dominant_transmitter": "ach",
+      "ach_pct": 54.17,
+      "gaba_pct": 13.89,
+      "glut_pct": 18.56,
+      "da_pct": 9.85,
+      "oct_pct": 1.57,
+      "ser_pct": 1.96
+    },
+    "CAN_R": {
+      "total_synapses": 15540,
+      "dominant_transmitter": "ach",
+      "ach_pct": 54.77,
+      "gaba_pct": 19.78,
+      "glut_pct": 17.48,
+      "da_pct": 4.57,
+      "oct_pct": 0.6,
+      "ser_pct": 2.8
+    },
+    "CAN_L": {
+      "total_synapses": 13368,
+      "dominant_transmitter": "ach",
+      "ach_pct": 55.59,
+      "gaba_pct": 23.4,
+      "glut_pct": 13.24,
+      "da_pct": 4.33,
+      "oct_pct": 0.5,
+      "ser_pct": 2.93
+    },
+    "AME_R": {
+      "total_synapses": 12524,
+      "dominant_transmitter": "ach",
+      "ach_pct": 54.62,
+      "gaba_pct": 20.8,
+      "glut_pct": 17.04,
+      "da_pct": 3.18,
+      "oct_pct": 2.48,
+      "ser_pct": 1.87
+    },
+    "AME_L": {
+      "total_synapses": 11001,
+      "dominant_transmitter": "ach",
+      "ach_pct": 48.39,
+      "gaba_pct": 23.5,
+      "glut_pct": 18.88,
+      "da_pct": 3.51,
+      "oct_pct": 3.58,
+      "ser_pct": 2.14
+    },
+    "GA_R": {
+      "total_synapses": 10283,
+      "dominant_transmitter": "ach",
+      "ach_pct": 58.77,
+      "gaba_pct": 16.66,
+      "glut_pct": 10.14,
+      "da_pct": 10.61,
+      "oct_pct": 0.86,
+      "ser_pct": 2.96
+    },
+    "OCG": {
+      "total_synapses": 10030,
+      "dominant_transmitter": "ach",
+      "ach_pct": 30.99,
+      "gaba_pct": 15.23,
+      "glut_pct": 24.51,
+      "da_pct": 2.84,
+      "oct_pct": 2.61,
+      "ser_pct": 23.83
+    },
+    "BU_R": {
+      "total_synapses": 10029,
+      "dominant_transmitter": "ach",
+      "ach_pct": 66.82,
+      "gaba_pct": 11.93,
+      "glut_pct": 9.86,
+      "da_pct": 7.57,
+      "oct_pct": 0.58,
+      "ser_pct": 3.24
+    },
+    "UNASGD": {
+      "total_synapses": 4185,
+      "dominant_transmitter": "ach",
+      "ach_pct": 32.59,
+      "gaba_pct": 22.39,
+      "glut_pct": 8.87,
+      "da_pct": 17.02,
+      "oct_pct": 7.12,
+      "ser_pct": 12.01
+    },
+    "BU_L": {
+      "total_synapses": 4097,
+      "dominant_transmitter": "ach",
+      "ach_pct": 54.76,
+      "gaba_pct": 29.44,
+      "glut_pct": 11.21,
+      "da_pct": 3.06,
+      "oct_pct": 0.66,
+      "ser_pct": 0.86
+    }
+  }
+}

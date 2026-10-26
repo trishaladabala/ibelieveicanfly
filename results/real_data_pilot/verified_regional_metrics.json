@@ -1,0 +1,4638 @@
+{
+  "metadata": {
+    "execution_date": "2026-10-19 22:24:13",
+    "dataset_file": "proofread_connections_783.feather",
+    "total_neuropils_evaluated": 79,
+    "bilateral_pairs_evaluated": 35,
+    "runtime_seconds": 71.51,
+    "peak_ram_mb": 1432.5
+  },
+  "all_neuropils_ranked": [
+    {
+      "neuropil": "EB",
+      "input_records": 45030,
+      "represented_neurons": 1420,
+      "total_directed_edges_w1": 45030,
+      "total_synapses_w1": 282714,
+      "reciprocity_w1_pct": 58.06,
+      "reciprocity_w3_pct": 45.93,
+      "reciprocity_w5_pct": 44.5,
+      "reciprocity_w10_pct": 51.12,
+      "threshold_details": {
+        "w1": {
+          "edges": 45030,
+          "synapses": 282714,
+          "autapses": 0,
+          "mutual_dyads": 13072,
+          "reciprocal_directed_edges": 26144,
+          "reciprocity_edge_pct": 58.06,
+          "reciprocity_dyad_pct": 40.9
+        },
+        "w3": {
+          "edges": 23062,
+          "synapses": 253809,
+          "autapses": 0,
+          "mutual_dyads": 5296,
+          "reciprocal_directed_edges": 10592,
+          "reciprocity_edge_pct": 45.93,
+          "reciprocity_dyad_pct": 29.81
+        },
+        "w5": {
+          "edges": 15812,
+          "synapses": 229135,
+          "autapses": 0,
+          "mutual_dyads": 3518,
+          "reciprocal_directed_edges": 7036,
+          "reciprocity_edge_pct": 44.5,
+          "reciprocity_dyad_pct": 28.62
+        },
+        "w10": {
+          "edges": 8294,
+          "synapses": 180112,
+          "autapses": 0,
+          "mutual_dyads": 2120,
+          "reciprocal_directed_edges": 4240,
+          "reciprocity_edge_pct": 51.12,
+          "reciprocity_dyad_pct": 34.34
+        }
+      },
+      "rank_reciprocity_w1": 1,
+      "rank_reciprocity_w3": 2
+    },
+    {
+      "neuropil": "NO",
+      "input_records": 21576,
+      "represented_neurons": 1232,
+      "total_directed_edges_w1": 21576,
+      "total_synapses_w1": 103904,
+      "reciprocity_w1_pct": 49.95,
+      "reciprocity_w3_pct": 60.03,
+      "reciprocity_w5_pct": 61.07,
+      "reciprocity_w10_pct": 57.59,
+      "threshold_details": {
+        "w1": {
+          "edges": 21576,
+          "synapses": 103904,
+          "autapses": 0,
+          "mutual_dyads": 5389,
+          "reciprocal_directed_edges": 10778,
+          "reciprocity_edge_pct": 49.95,
+          "reciprocity_dyad_pct": 33.29
+        },
+        "w3": {
+          "edges": 7236,
+          "synapses": 86012,
+          "autapses": 0,
+          "mutual_dyads": 2172,
+          "reciprocal_directed_edges": 4344,
+          "reciprocity_edge_pct": 60.03,
+          "reciprocity_dyad_pct": 42.89
+        },
+        "w5": {
+          "edges": 4362,
+          "synapses": 76302,
+          "autapses": 0,
+          "mutual_dyads": 1332,
+          "reciprocal_directed_edges": 2664,
+          "reciprocity_edge_pct": 61.07,
+          "reciprocity_dyad_pct": 43.96
+        },
+        "w10": {
+          "edges": 1917,
+          "synapses": 60514,
+          "autapses": 0,
+          "mutual_dyads": 552,
+          "reciprocal_directed_edges": 1104,
+          "reciprocity_edge_pct": 57.59,
+          "reciprocity_dyad_pct": 40.44
+        }
+      },
+      "rank_reciprocity_w1": 2,
+      "rank_reciprocity_w3": 1
+    },
+    {
+      "neuropil": "AL_L",
+      "input_records": 140046,
+      "represented_neurons": 3616,
+      "total_directed_edges_w1": 140046,
+      "total_synapses_w1": 760542,
+      "reciprocity_w1_pct": 42.79,
+      "reciprocity_w3_pct": 38.95,
+      "reciprocity_w5_pct": 38.23,
+      "reciprocity_w10_pct": 36.18,
+      "threshold_details": {
+        "w1": {
+          "edges": 140046,
+          "synapses": 760542,
+          "autapses": 0,
+          "mutual_dyads": 29963,
+          "reciprocal_directed_edges": 59926,
+          "reciprocity_edge_pct": 42.79,
+          "reciprocity_dyad_pct": 27.22
+        },
+        "w3": {
+          "edges": 55159,
+          "synapses": 651942,
+          "autapses": 0,
+          "mutual_dyads": 10743,
+          "reciprocal_directed_edges": 21486,
+          "reciprocity_edge_pct": 38.95,
+          "reciprocity_dyad_pct": 24.19
+        },
+        "w5": {
+          "edges": 34320,
+          "synapses": 581348,
+          "autapses": 0,
+          "mutual_dyads": 6560,
+          "reciprocal_directed_edges": 13120,
+          "reciprocity_edge_pct": 38.23,
+          "reciprocity_dyad_pct": 23.63
+        },
+        "w10": {
+          "edges": 17020,
+          "synapses": 468743,
+          "autapses": 0,
+          "mutual_dyads": 3079,
+          "reciprocal_directed_edges": 6158,
+          "reciprocity_edge_pct": 36.18,
+          "reciprocity_dyad_pct": 22.09
+        }
+      },
+      "rank_reciprocity_w1": 3,
+      "rank_reciprocity_w3": 3
+    },
+    {
+      "neuropil": "AL_R",
+      "input_records": 140612,
+      "represented_neurons": 3739,
+      "total_directed_edges_w1": 140612,
+      "total_synapses_w1": 727451,
+      "reciprocity_w1_pct": 41.7,
+      "reciprocity_w3_pct": 36.97,
+      "reciprocity_w5_pct": 36.34,
+      "reciprocity_w10_pct": 34.92,
+      "threshold_details": {
+        "w1": {
+          "edges": 140612,
+          "synapses": 727451,
+          "autapses": 0,
+          "mutual_dyads": 29321,
+          "reciprocal_directed_edges": 58642,
+          "reciprocity_edge_pct": 41.7,
+          "reciprocity_dyad_pct": 26.35
+        },
+        "w3": {
+          "edges": 54034,
+          "synapses": 616571,
+          "autapses": 0,
+          "mutual_dyads": 9989,
+          "reciprocal_directed_edges": 19978,
+          "reciprocity_edge_pct": 36.97,
+          "reciprocity_dyad_pct": 22.68
+        },
+        "w5": {
+          "edges": 33132,
+          "synapses": 545875,
+          "autapses": 0,
+          "mutual_dyads": 6020,
+          "reciprocal_directed_edges": 12040,
+          "reciprocity_edge_pct": 36.34,
+          "reciprocity_dyad_pct": 22.2
+        },
+        "w10": {
+          "edges": 16094,
+          "synapses": 435245,
+          "autapses": 0,
+          "mutual_dyads": 2810,
+          "reciprocal_directed_edges": 5620,
+          "reciprocity_edge_pct": 34.92,
+          "reciprocity_dyad_pct": 21.15
+        }
+      },
+      "rank_reciprocity_w1": 4,
+      "rank_reciprocity_w3": 4
+    },
+    {
+      "neuropil": "MB_PED_L",
+      "input_records": 68149,
+      "represented_neurons": 4143,
+      "total_directed_edges_w1": 68149,
+      "total_synapses_w1": 133514,
+      "reciprocity_w1_pct": 36.36,
+      "reciprocity_w3_pct": 27.57,
+      "reciprocity_w5_pct": 27.59,
+      "reciprocity_w10_pct": 13.79,
+      "threshold_details": {
+        "w1": {
+          "edges": 68149,
+          "synapses": 133514,
+          "autapses": 0,
+          "mutual_dyads": 12388,
+          "reciprocal_directed_edges": 24776,
+          "reciprocity_edge_pct": 36.36,
+          "reciprocity_dyad_pct": 22.22
+        },
+        "w3": {
+          "edges": 13747,
+          "synapses": 66543,
+          "autapses": 0,
+          "mutual_dyads": 1895,
+          "reciprocal_directed_edges": 3790,
+          "reciprocity_edge_pct": 27.57,
+          "reciprocity_dyad_pct": 15.99
+        },
+        "w5": {
+          "edges": 5299,
+          "synapses": 38174,
+          "autapses": 0,
+          "mutual_dyads": 731,
+          "reciprocal_directed_edges": 1462,
+          "reciprocity_edge_pct": 27.59,
+          "reciprocity_dyad_pct": 16.0
+        },
+        "w10": {
+          "edges": 464,
+          "synapses": 8371,
+          "autapses": 0,
+          "mutual_dyads": 32,
+          "reciprocal_directed_edges": 64,
+          "reciprocity_edge_pct": 13.79,
+          "reciprocity_dyad_pct": 7.41
+        }
+      },
+      "rank_reciprocity_w1": 5,
+      "rank_reciprocity_w3": 6
+    },
+    {
+      "neuropil": "FB",
+      "input_records": 226311,
+      "represented_neurons": 3875,
+      "total_directed_edges_w1": 226311,
+      "total_synapses_w1": 897766,
+      "reciprocity_w1_pct": 35.43,
+      "reciprocity_w3_pct": 26.15,
+      "reciprocity_w5_pct": 23.19,
+      "reciprocity_w10_pct": 17.92,
+      "threshold_details": {
+        "w1": {
+          "edges": 226311,
+          "synapses": 897766,
+          "autapses": 0,
+          "mutual_dyads": 40090,
+          "reciprocal_directed_edges": 80180,
+          "reciprocity_edge_pct": 35.43,
+          "reciprocity_dyad_pct": 21.53
+        },
+        "w3": {
+          "edges": 80485,
+          "synapses": 712335,
+          "autapses": 0,
+          "mutual_dyads": 10524,
+          "reciprocal_directed_edges": 21048,
+          "reciprocity_edge_pct": 26.15,
+          "reciprocity_dyad_pct": 15.04
+        },
+        "w5": {
+          "edges": 46928,
+          "synapses": 598942,
+          "autapses": 0,
+          "mutual_dyads": 5442,
+          "reciprocal_directed_edges": 10884,
+          "reciprocity_edge_pct": 23.19,
+          "reciprocity_dyad_pct": 13.12
+        },
+        "w10": {
+          "edges": 20586,
+          "synapses": 428387,
+          "autapses": 0,
+          "mutual_dyads": 1845,
+          "reciprocal_directed_edges": 3690,
+          "reciprocity_edge_pct": 17.92,
+          "reciprocity_dyad_pct": 9.84
+        }
+      },
+      "rank_reciprocity_w1": 6,
+      "rank_reciprocity_w3": 7
+    },
+    {
+      "neuropil": "MB_PED_R",
+      "input_records": 65532,
+      "represented_neurons": 4285,
+      "total_directed_edges_w1": 65532,
+      "total_synapses_w1": 124306,
+      "reciprocity_w1_pct": 30.41,
+      "reciprocity_w3_pct": 21.39,
+      "reciprocity_w5_pct": 16.4,
+      "reciprocity_w10_pct": 8.04,
+      "threshold_details": {
+        "w1": {
+          "edges": 65532,
+          "synapses": 124306,
+          "autapses": 0,
+          "mutual_dyads": 9964,
+          "reciprocal_directed_edges": 19928,
+          "reciprocity_edge_pct": 30.41,
+          "reciprocity_dyad_pct": 17.93
+        },
+        "w3": {
+          "edges": 12640,
+          "synapses": 59608,
+          "autapses": 0,
+          "mutual_dyads": 1352,
+          "reciprocal_directed_edges": 2704,
+          "reciprocity_edge_pct": 21.39,
+          "reciprocity_dyad_pct": 11.98
+        },
+        "w5": {
+          "edges": 4525,
+          "synapses": 32354,
+          "autapses": 0,
+          "mutual_dyads": 371,
+          "reciprocal_directed_edges": 742,
+          "reciprocity_edge_pct": 16.4,
+          "reciprocity_dyad_pct": 8.93
+        },
+        "w10": {
+          "edges": 423,
+          "synapses": 7519,
+          "autapses": 0,
+          "mutual_dyads": 17,
+          "reciprocal_directed_edges": 34,
+          "reciprocity_edge_pct": 8.04,
+          "reciprocity_dyad_pct": 4.19
+        }
+      },
+      "rank_reciprocity_w1": 7,
+      "rank_reciprocity_w3": 10
+    },
+    {
+      "neuropil": "LOP_R",
+      "input_records": 613882,
+      "represented_neurons": 14694,
+      "total_directed_edges_w1": 613882,
+      "total_synapses_w1": 1901109,
+      "reciprocity_w1_pct": 29.53,
+      "reciprocity_w3_pct": 17.42,
+      "reciprocity_w5_pct": 11.78,
+      "reciprocity_w10_pct": 4.54,
+      "threshold_details": {
+        "w1": {
+          "edges": 613882,
+          "synapses": 1901109,
+          "autapses": 0,
+          "mutual_dyads": 90649,
+          "reciprocal_directed_edges": 181298,
+          "reciprocity_edge_pct": 29.53,
+          "reciprocity_dyad_pct": 17.32
+        },
+        "w3": {
+          "edges": 202768,
+          "synapses": 1374878,
+          "autapses": 0,
+          "mutual_dyads": 17666,
+          "reciprocal_directed_edges": 35332,
+          "reciprocity_edge_pct": 17.42,
+          "reciprocity_dyad_pct": 9.54
+        },
+        "w5": {
+          "edges": 103259,
+          "synapses": 1038569,
+          "autapses": 0,
+          "mutual_dyads": 6082,
+          "reciprocal_directed_edges": 12164,
+          "reciprocity_edge_pct": 11.78,
+          "reciprocity_dyad_pct": 6.26
+        },
+        "w10": {
+          "edges": 32896,
+          "synapses": 589489,
+          "autapses": 0,
+          "mutual_dyads": 747,
+          "reciprocal_directed_edges": 1494,
+          "reciprocity_edge_pct": 4.54,
+          "reciprocity_dyad_pct": 2.32
+        }
+      },
+      "rank_reciprocity_w1": 8,
+      "rank_reciprocity_w3": 19
+    },
+    {
+      "neuropil": "ME_R",
+      "input_records": 2598890,
+      "represented_neurons": 36693,
+      "total_directed_edges_w1": 2598890,
+      "total_synapses_w1": 8821540,
+      "reciprocity_w1_pct": 29.48,
+      "reciprocity_w3_pct": 20.05,
+      "reciprocity_w5_pct": 17.77,
+      "reciprocity_w10_pct": 13.25,
+      "threshold_details": {
+        "w1": {
+          "edges": 2598890,
+          "synapses": 8821540,
+          "autapses": 0,
+          "mutual_dyads": 383080,
+          "reciprocal_directed_edges": 766160,
+          "reciprocity_edge_pct": 29.48,
+          "reciprocity_dyad_pct": 17.29
+        },
+        "w3": {
+          "edges": 870015,
+          "synapses": 6620293,
+          "autapses": 0,
+          "mutual_dyads": 87233,
+          "reciprocal_directed_edges": 174466,
+          "reciprocity_edge_pct": 20.05,
+          "reciprocity_dyad_pct": 11.14
+        },
+        "w5": {
+          "edges": 464935,
+          "synapses": 5250949,
+          "autapses": 0,
+          "mutual_dyads": 41305,
+          "reciprocal_directed_edges": 82610,
+          "reciprocity_edge_pct": 17.77,
+          "reciprocity_dyad_pct": 9.75
+        },
+        "w10": {
+          "edges": 166140,
+          "synapses": 3336435,
+          "autapses": 0,
+          "mutual_dyads": 11003,
+          "reciprocal_directed_edges": 22006,
+          "reciprocity_edge_pct": 13.25,
+          "reciprocity_dyad_pct": 7.09
+        }
+      },
+      "rank_reciprocity_w1": 9,
+      "rank_reciprocity_w3": 11
+    },
+    {
+      "neuropil": "OCG",
+      "input_records": 2690,
+      "represented_neurons": 347,
+      "total_directed_edges_w1": 2690,
+      "total_synapses_w1": 10030,
+      "reciprocity_w1_pct": 29.22,
+      "reciprocity_w3_pct": 11.29,
+      "reciprocity_w5_pct": 3.25,
+      "reciprocity_w10_pct": 0.0,
+      "threshold_details": {
+        "w1": {
+          "edges": 2690,
+          "synapses": 10030,
+          "autapses": 0,
+          "mutual_dyads": 393,
+          "reciprocal_directed_edges": 786,
+          "reciprocity_edge_pct": 29.22,
+          "reciprocity_dyad_pct": 17.11
+        },
+        "w3": {
+          "edges": 1045,
+          "synapses": 7945,
+          "autapses": 0,
+          "mutual_dyads": 59,
+          "reciprocal_directed_edges": 118,
+          "reciprocity_edge_pct": 11.29,
+          "reciprocity_dyad_pct": 5.98
+        },
+        "w5": {
+          "edges": 616,
+          "synapses": 6499,
+          "autapses": 0,
+          "mutual_dyads": 10,
+          "reciprocal_directed_edges": 20,
+          "reciprocity_edge_pct": 3.25,
+          "reciprocity_dyad_pct": 1.65
+        },
+        "w10": {
+          "edges": 234,
+          "synapses": 4029,
+          "autapses": 0,
+          "mutual_dyads": 0,
+          "reciprocal_directed_edges": 0,
+          "reciprocity_edge_pct": 0.0,
+          "reciprocity_dyad_pct": 0.0
+        }
+      },
+      "rank_reciprocity_w1": 10,
+      "rank_reciprocity_w3": 29
+    },
+    {
+      "neuropil": "ME_L",
+      "input_records": 2426813,
+      "represented_neurons": 36841,
+      "total_directed_edges_w1": 2426813,
+      "total_synapses_w1": 7712403,
+      "reciprocity_w1_pct": 28.83,
+      "reciprocity_w3_pct": 18.82,
+      "reciprocity_w5_pct": 16.3,
+      "reciprocity_w10_pct": 11.65,
+      "threshold_details": {
+        "w1": {
+          "edges": 2426813,
+          "synapses": 7712403,
+          "autapses": 0,
+          "mutual_dyads": 349843,
+          "reciprocal_directed_edges": 699686,
+          "reciprocity_edge_pct": 28.83,
+          "reciprocity_dyad_pct": 16.84
+        },
+        "w3": {
+          "edges": 773992,
+          "synapses": 5614284,
+          "autapses": 0,
+          "mutual_dyads": 72851,
+          "reciprocal_directed_edges": 145702,
+          "reciprocity_edge_pct": 18.82,
+          "reciprocity_dyad_pct": 10.39
+        },
+        "w5": {
+          "edges": 401064,
+          "synapses": 4355046,
+          "autapses": 0,
+          "mutual_dyads": 32679,
+          "reciprocal_directed_edges": 65358,
+          "reciprocity_edge_pct": 16.3,
+          "reciprocity_dyad_pct": 8.87
+        },
+        "w10": {
+          "edges": 136757,
+          "synapses": 2666470,
+          "autapses": 0,
+          "mutual_dyads": 7969,
+          "reciprocal_directed_edges": 15938,
+          "reciprocity_edge_pct": 11.65,
+          "reciprocity_dyad_pct": 6.19
+        }
+      },
+      "rank_reciprocity_w1": 11,
+      "rank_reciprocity_w3": 16
+    },
+    {
+      "neuropil": "MB_VL_R",
+      "input_records": 54638,
+      "represented_neurons": 2824,
+      "total_directed_edges_w1": 54638,
+      "total_synapses_w1": 113967,
+      "reciprocity_w1_pct": 28.75,
+      "reciprocity_w3_pct": 19.93,
+      "reciprocity_w5_pct": 15.35,
+      "reciprocity_w10_pct": 5.86,
+      "threshold_details": {
+        "w1": {
+          "edges": 54638,
+          "synapses": 113967,
+          "autapses": 0,
+          "mutual_dyads": 7855,
+          "reciprocal_directed_edges": 15710,
+          "reciprocity_edge_pct": 28.75,
+          "reciprocity_dyad_pct": 16.79
+        },
+        "w3": {
+          "edges": 10796,
+          "synapses": 62081,
+          "autapses": 0,
+          "mutual_dyads": 1076,
+          "reciprocal_directed_edges": 2152,
+          "reciprocity_edge_pct": 19.93,
+          "reciprocity_dyad_pct": 11.07
+        },
+        "w5": {
+          "edges": 5356,
+          "synapses": 43685,
+          "autapses": 0,
+          "mutual_dyads": 411,
+          "reciprocal_directed_edges": 822,
+          "reciprocity_edge_pct": 15.35,
+          "reciprocity_dyad_pct": 8.31
+        },
+        "w10": {
+          "edges": 1092,
+          "synapses": 16514,
+          "autapses": 0,
+          "mutual_dyads": 32,
+          "reciprocal_directed_edges": 64,
+          "reciprocity_edge_pct": 5.86,
+          "reciprocity_dyad_pct": 3.02
+        }
+      },
+      "rank_reciprocity_w1": 12,
+      "rank_reciprocity_w3": 12
+    },
+    {
+      "neuropil": "MB_ML_L",
+      "input_records": 168097,
+      "represented_neurons": 4359,
+      "total_directed_edges_w1": 168097,
+      "total_synapses_w1": 325421,
+      "reciprocity_w1_pct": 27.86,
+      "reciprocity_w3_pct": 25.56,
+      "reciprocity_w5_pct": 26.12,
+      "reciprocity_w10_pct": 20.64,
+      "threshold_details": {
+        "w1": {
+          "edges": 168097,
+          "synapses": 325421,
+          "autapses": 0,
+          "mutual_dyads": 23414,
+          "reciprocal_directed_edges": 46828,
+          "reciprocity_edge_pct": 27.86,
+          "reciprocity_dyad_pct": 16.18
+        },
+        "w3": {
+          "edges": 24392,
+          "synapses": 158991,
+          "autapses": 0,
+          "mutual_dyads": 3117,
+          "reciprocal_directed_edges": 6234,
+          "reciprocity_edge_pct": 25.56,
+          "reciprocity_dyad_pct": 14.65
+        },
+        "w5": {
+          "edges": 12796,
+          "synapses": 120139,
+          "autapses": 0,
+          "mutual_dyads": 1671,
+          "reciprocal_directed_edges": 3342,
+          "reciprocity_edge_pct": 26.12,
+          "reciprocity_dyad_pct": 15.02
+        },
+        "w10": {
+          "edges": 3934,
+          "synapses": 62213,
+          "autapses": 0,
+          "mutual_dyads": 406,
+          "reciprocal_directed_edges": 812,
+          "reciprocity_edge_pct": 20.64,
+          "reciprocity_dyad_pct": 11.51
+        }
+      },
+      "rank_reciprocity_w1": 13,
+      "rank_reciprocity_w3": 8
+    },
+    {
+      "neuropil": "MB_VL_L",
+      "input_records": 48848,
+      "represented_neurons": 3120,
+      "total_directed_edges_w1": 48848,
+      "total_synapses_w1": 94051,
+      "reciprocity_w1_pct": 27.06,
+      "reciprocity_w3_pct": 18.96,
+      "reciprocity_w5_pct": 17.07,
+      "reciprocity_w10_pct": 10.46,
+      "threshold_details": {
+        "w1": {
+          "edges": 48848,
+          "synapses": 94051,
+          "autapses": 0,
+          "mutual_dyads": 6608,
+          "reciprocal_directed_edges": 13216,
+          "reciprocity_edge_pct": 27.06,
+          "reciprocity_dyad_pct": 15.64
+        },
+        "w3": {
+          "edges": 9081,
+          "synapses": 46607,
+          "autapses": 0,
+          "mutual_dyads": 861,
+          "reciprocal_directed_edges": 1722,
+          "reciprocity_edge_pct": 18.96,
+          "reciprocity_dyad_pct": 10.47
+        },
+        "w5": {
+          "edges": 3750,
+          "synapses": 28739,
+          "autapses": 0,
+          "mutual_dyads": 320,
+          "reciprocal_directed_edges": 640,
+          "reciprocity_edge_pct": 17.07,
+          "reciprocity_dyad_pct": 9.33
+        },
+        "w10": {
+          "edges": 593,
+          "synapses": 9040,
+          "autapses": 0,
+          "mutual_dyads": 31,
+          "reciprocal_directed_edges": 62,
+          "reciprocity_edge_pct": 10.46,
+          "reciprocity_dyad_pct": 5.52
+        }
+      },
+      "rank_reciprocity_w1": 14,
+      "rank_reciprocity_w3": 15
+    },
+    {
+      "neuropil": "AOTU_L",
+      "input_records": 46924,
+      "represented_neurons": 1700,
+      "total_directed_edges_w1": 46924,
+      "total_synapses_w1": 182479,
+      "reciprocity_w1_pct": 26.91,
+      "reciprocity_w3_pct": 18.09,
+      "reciprocity_w5_pct": 16.43,
+      "reciprocity_w10_pct": 14.57,
+      "threshold_details": {
+        "w1": {
+          "edges": 46924,
+          "synapses": 182479,
+          "autapses": 0,
+          "mutual_dyads": 6313,
+          "reciprocal_directed_edges": 12626,
+          "reciprocity_edge_pct": 26.91,
+          "reciprocity_dyad_pct": 15.55
+        },
+        "w3": {
+          "edges": 16820,
+          "synapses": 144184,
+          "autapses": 0,
+          "mutual_dyads": 1521,
+          "reciprocal_directed_edges": 3042,
+          "reciprocity_edge_pct": 18.09,
+          "reciprocity_dyad_pct": 9.94
+        },
+        "w5": {
+          "edges": 9776,
+          "synapses": 120346,
+          "autapses": 0,
+          "mutual_dyads": 803,
+          "reciprocal_directed_edges": 1606,
+          "reciprocity_edge_pct": 16.43,
+          "reciprocity_dyad_pct": 8.95
+        },
+        "w10": {
+          "edges": 4227,
+          "synapses": 84466,
+          "autapses": 0,
+          "mutual_dyads": 308,
+          "reciprocal_directed_edges": 616,
+          "reciprocity_edge_pct": 14.57,
+          "reciprocity_dyad_pct": 7.86
+        }
+      },
+      "rank_reciprocity_w1": 15,
+      "rank_reciprocity_w3": 17
+    },
+    {
+      "neuropil": "LOP_L",
+      "input_records": 447405,
+      "represented_neurons": 14185,
+      "total_directed_edges_w1": 447405,
+      "total_synapses_w1": 1189689,
+      "reciprocity_w1_pct": 26.68,
+      "reciprocity_w3_pct": 14.04,
+      "reciprocity_w5_pct": 8.85,
+      "reciprocity_w10_pct": 3.11,
+      "threshold_details": {
+        "w1": {
+          "edges": 447405,
+          "synapses": 1189689,
+          "autapses": 0,
+          "mutual_dyads": 59685,
+          "reciprocal_directed_edges": 119370,
+          "reciprocity_edge_pct": 26.68,
+          "reciprocity_dyad_pct": 15.39
+        },
+        "w3": {
+          "edges": 126144,
+          "synapses": 782905,
+          "autapses": 0,
+          "mutual_dyads": 8854,
+          "reciprocal_directed_edges": 17708,
+          "reciprocity_edge_pct": 14.04,
+          "reciprocity_dyad_pct": 7.55
+        },
+        "w5": {
+          "edges": 58789,
+          "synapses": 556241,
+          "autapses": 0,
+          "mutual_dyads": 2601,
+          "reciprocal_directed_edges": 5202,
+          "reciprocity_edge_pct": 8.85,
+          "reciprocity_dyad_pct": 4.63
+        },
+        "w10": {
+          "edges": 16642,
+          "synapses": 290029,
+          "autapses": 0,
+          "mutual_dyads": 259,
+          "reciprocal_directed_edges": 518,
+          "reciprocity_edge_pct": 3.11,
+          "reciprocity_dyad_pct": 1.58
+        }
+      },
+      "rank_reciprocity_w1": 16,
+      "rank_reciprocity_w3": 25
+    },
+    {
+      "neuropil": "GA_R",
+      "input_records": 2476,
+      "represented_neurons": 386,
+      "total_directed_edges_w1": 2476,
+      "total_synapses_w1": 10283,
+      "reciprocity_w1_pct": 25.04,
+      "reciprocity_w3_pct": 29.49,
+      "reciprocity_w5_pct": 37.27,
+      "reciprocity_w10_pct": 54.31,
+      "threshold_details": {
+        "w1": {
+          "edges": 2476,
+          "synapses": 10283,
+          "autapses": 0,
+          "mutual_dyads": 310,
+          "reciprocal_directed_edges": 620,
+          "reciprocity_edge_pct": 25.04,
+          "reciprocity_dyad_pct": 14.31
+        },
+        "w3": {
+          "edges": 807,
+          "synapses": 8201,
+          "autapses": 0,
+          "mutual_dyads": 119,
+          "reciprocal_directed_edges": 238,
+          "reciprocity_edge_pct": 29.49,
+          "reciprocity_dyad_pct": 17.3
+        },
+        "w5": {
+          "edges": 483,
+          "synapses": 7112,
+          "autapses": 0,
+          "mutual_dyads": 90,
+          "reciprocal_directed_edges": 180,
+          "reciprocity_edge_pct": 37.27,
+          "reciprocity_dyad_pct": 22.9
+        },
+        "w10": {
+          "edges": 232,
+          "synapses": 5485,
+          "autapses": 0,
+          "mutual_dyads": 63,
+          "reciprocal_directed_edges": 126,
+          "reciprocity_edge_pct": 54.31,
+          "reciprocity_dyad_pct": 37.28
+        }
+      },
+      "rank_reciprocity_w1": 17,
+      "rank_reciprocity_w3": 5
+    },
+    {
+      "neuropil": "PVLP_L",
+      "input_records": 270866,
+      "represented_neurons": 6344,
+      "total_directed_edges_w1": 270866,
+      "total_synapses_w1": 895615,
+      "reciprocity_w1_pct": 24.92,
+      "reciprocity_w3_pct": 14.43,
+      "reciprocity_w5_pct": 11.88,
+      "reciprocity_w10_pct": 9.18,
+      "threshold_details": {
+        "w1": {
+          "edges": 270866,
+          "synapses": 895615,
+          "autapses": 0,
+          "mutual_dyads": 33755,
+          "reciprocal_directed_edges": 67510,
+          "reciprocity_edge_pct": 24.92,
+          "reciprocity_dyad_pct": 14.24
+        },
+        "w3": {
+          "edges": 84317,
+          "synapses": 661337,
+          "autapses": 0,
+          "mutual_dyads": 6082,
+          "reciprocal_directed_edges": 12164,
+          "reciprocity_edge_pct": 14.43,
+          "reciprocity_dyad_pct": 7.77
+        },
+        "w5": {
+          "edges": 46725,
+          "synapses": 534412,
+          "autapses": 0,
+          "mutual_dyads": 2776,
+          "reciprocal_directed_edges": 5552,
+          "reciprocity_edge_pct": 11.88,
+          "reciprocity_dyad_pct": 6.32
+        },
+        "w10": {
+          "edges": 17689,
+          "synapses": 346711,
+          "autapses": 0,
+          "mutual_dyads": 812,
+          "reciprocal_directed_edges": 1624,
+          "reciprocity_edge_pct": 9.18,
+          "reciprocity_dyad_pct": 4.81
+        }
+      },
+      "rank_reciprocity_w1": 18,
+      "rank_reciprocity_w3": 23
+    },
+    {
+      "neuropil": "PVLP_R",
+      "input_records": 218402,
+      "represented_neurons": 5554,
+      "total_directed_edges_w1": 218402,
+      "total_synapses_w1": 704599,
+      "reciprocity_w1_pct": 24.77,
+      "reciprocity_w3_pct": 15.01,
+      "reciprocity_w5_pct": 12.97,
+      "reciprocity_w10_pct": 10.08,
+      "threshold_details": {
+        "w1": {
+          "edges": 218402,
+          "synapses": 704599,
+          "autapses": 0,
+          "mutual_dyads": 27044,
+          "reciprocal_directed_edges": 54088,
+          "reciprocity_edge_pct": 24.77,
+          "reciprocity_dyad_pct": 14.13
+        },
+        "w3": {
+          "edges": 67859,
+          "synapses": 514770,
+          "autapses": 0,
+          "mutual_dyads": 5093,
+          "reciprocal_directed_edges": 10186,
+          "reciprocity_edge_pct": 15.01,
+          "reciprocity_dyad_pct": 8.11
+        },
+        "w5": {
+          "edges": 37004,
+          "synapses": 410793,
+          "autapses": 0,
+          "mutual_dyads": 2399,
+          "reciprocal_directed_edges": 4798,
+          "reciprocity_edge_pct": 12.97,
+          "reciprocity_dyad_pct": 6.93
+        },
+        "w10": {
+          "edges": 13909,
+          "synapses": 261976,
+          "autapses": 0,
+          "mutual_dyads": 701,
+          "reciprocal_directed_edges": 1402,
+          "reciprocity_edge_pct": 10.08,
+          "reciprocity_dyad_pct": 5.31
+        }
+      },
+      "rank_reciprocity_w1": 19,
+      "rank_reciprocity_w3": 21
+    },
+    {
+      "neuropil": "MB_ML_R",
+      "input_records": 139808,
+      "represented_neurons": 4202,
+      "total_directed_edges_w1": 139808,
+      "total_synapses_w1": 250422,
+      "reciprocity_w1_pct": 24.66,
+      "reciprocity_w3_pct": 24.49,
+      "reciprocity_w5_pct": 24.89,
+      "reciprocity_w10_pct": 15.3,
+      "threshold_details": {
+        "w1": {
+          "edges": 139808,
+          "synapses": 250422,
+          "autapses": 0,
+          "mutual_dyads": 17241,
+          "reciprocal_directed_edges": 34482,
+          "reciprocity_edge_pct": 24.66,
+          "reciprocity_dyad_pct": 14.07
+        },
+        "w3": {
+          "edges": 18626,
+          "synapses": 110914,
+          "autapses": 0,
+          "mutual_dyads": 2281,
+          "reciprocal_directed_edges": 4562,
+          "reciprocity_edge_pct": 24.49,
+          "reciprocity_dyad_pct": 13.96
+        },
+        "w5": {
+          "edges": 9153,
+          "synapses": 79154,
+          "autapses": 0,
+          "mutual_dyads": 1139,
+          "reciprocal_directed_edges": 2278,
+          "reciprocity_edge_pct": 24.89,
+          "reciprocity_dyad_pct": 14.21
+        },
+        "w10": {
+          "edges": 2313,
+          "synapses": 35392,
+          "autapses": 0,
+          "mutual_dyads": 177,
+          "reciprocal_directed_edges": 354,
+          "reciprocity_edge_pct": 15.3,
+          "reciprocity_dyad_pct": 8.29
+        }
+      },
+      "rank_reciprocity_w1": 20,
+      "rank_reciprocity_w3": 9
+    },
+    {
+      "neuropil": "AOTU_R",
+      "input_records": 51272,
+      "represented_neurons": 1854,
+      "total_directed_edges_w1": 51272,
+      "total_synapses_w1": 215603,
+      "reciprocity_w1_pct": 24.39,
+      "reciprocity_w3_pct": 17.28,
+      "reciprocity_w5_pct": 16.21,
+      "reciprocity_w10_pct": 14.28,
+      "threshold_details": {
+        "w1": {
+          "edges": 51272,
+          "synapses": 215603,
+          "autapses": 0,
+          "mutual_dyads": 6253,
+          "reciprocal_directed_edges": 12506,
+          "reciprocity_edge_pct": 24.39,
+          "reciprocity_dyad_pct": 13.89
+        },
+        "w3": {
+          "edges": 18896,
+          "synapses": 174407,
+          "autapses": 0,
+          "mutual_dyads": 1633,
+          "reciprocal_directed_edges": 3266,
+          "reciprocity_edge_pct": 17.28,
+          "reciprocity_dyad_pct": 9.46
+        },
+        "w5": {
+          "edges": 11390,
+          "synapses": 148988,
+          "autapses": 0,
+          "mutual_dyads": 923,
+          "reciprocal_directed_edges": 1846,
+          "reciprocity_edge_pct": 16.21,
+          "reciprocity_dyad_pct": 8.82
+        },
+        "w10": {
+          "edges": 5211,
+          "synapses": 108836,
+          "autapses": 0,
+          "mutual_dyads": 372,
+          "reciprocal_directed_edges": 744,
+          "reciprocity_edge_pct": 14.28,
+          "reciprocity_dyad_pct": 7.69
+        }
+      },
+      "rank_reciprocity_w1": 21,
+      "rank_reciprocity_w3": 20
+    },
+    {
+      "neuropil": "MB_CA_L",
+      "input_records": 48438,
+      "represented_neurons": 3837,
+      "total_directed_edges_w1": 48438,
+      "total_synapses_w1": 263221,
+      "reciprocity_w1_pct": 23.17,
+      "reciprocity_w3_pct": 19.31,
+      "reciprocity_w5_pct": 13.42,
+      "reciprocity_w10_pct": 1.97,
+      "threshold_details": {
+        "w1": {
+          "edges": 48438,
+          "synapses": 263221,
+          "autapses": 0,
+          "mutual_dyads": 5611,
+          "reciprocal_directed_edges": 11222,
+          "reciprocity_edge_pct": 23.17,
+          "reciprocity_dyad_pct": 13.1
+        },
+        "w3": {
+          "edges": 20393,
+          "synapses": 229994,
+          "autapses": 0,
+          "mutual_dyads": 1969,
+          "reciprocal_directed_edges": 3938,
+          "reciprocity_edge_pct": 19.31,
+          "reciprocity_dyad_pct": 10.69
+        },
+        "w5": {
+          "edges": 15441,
+          "synapses": 212997,
+          "autapses": 0,
+          "mutual_dyads": 1036,
+          "reciprocal_directed_edges": 2072,
+          "reciprocity_edge_pct": 13.42,
+          "reciprocity_dyad_pct": 7.19
+        },
+        "w10": {
+          "edges": 9437,
+          "synapses": 172730,
+          "autapses": 0,
+          "mutual_dyads": 93,
+          "reciprocal_directed_edges": 186,
+          "reciprocity_edge_pct": 1.97,
+          "reciprocity_dyad_pct": 1.0
+        }
+      },
+      "rank_reciprocity_w1": 22,
+      "rank_reciprocity_w3": 14
+    },
+    {
+      "neuropil": "AVLP_L",
+      "input_records": 368725,
+      "represented_neurons": 5022,
+      "total_directed_edges_w1": 368725,
+      "total_synapses_w1": 1510021,
+      "reciprocity_w1_pct": 22.77,
+      "reciprocity_w3_pct": 14.44,
+      "reciprocity_w5_pct": 12.89,
+      "reciprocity_w10_pct": 11.05,
+      "threshold_details": {
+        "w1": {
+          "edges": 368725,
+          "synapses": 1510021,
+          "autapses": 0,
+          "mutual_dyads": 41984,
+          "reciprocal_directed_edges": 83968,
+          "reciprocity_edge_pct": 22.77,
+          "reciprocity_dyad_pct": 12.85
+        },
+        "w3": {
+          "edges": 122379,
+          "synapses": 1201131,
+          "autapses": 0,
+          "mutual_dyads": 8837,
+          "reciprocal_directed_edges": 17674,
+          "reciprocity_edge_pct": 14.44,
+          "reciprocity_dyad_pct": 7.78
+        },
+        "w5": {
+          "edges": 71740,
+          "synapses": 1030071,
+          "autapses": 0,
+          "mutual_dyads": 4625,
+          "reciprocal_directed_edges": 9250,
+          "reciprocity_edge_pct": 12.89,
+          "reciprocity_dyad_pct": 6.89
+        },
+        "w10": {
+          "edges": 32317,
+          "synapses": 775028,
+          "autapses": 0,
+          "mutual_dyads": 1786,
+          "reciprocal_directed_edges": 3572,
+          "reciprocity_edge_pct": 11.05,
+          "reciprocity_dyad_pct": 5.85
+        }
+      },
+      "rank_reciprocity_w1": 23,
+      "rank_reciprocity_w3": 22
+    },
+    {
+      "neuropil": "BU_R",
+      "input_records": 1989,
+      "represented_neurons": 422,
+      "total_directed_edges_w1": 1989,
+      "total_synapses_w1": 10029,
+      "reciprocity_w1_pct": 22.62,
+      "reciprocity_w3_pct": 13.47,
+      "reciprocity_w5_pct": 7.18,
+      "reciprocity_w10_pct": 2.06,
+      "threshold_details": {
+        "w1": {
+          "edges": 1989,
+          "synapses": 10029,
+          "autapses": 0,
+          "mutual_dyads": 225,
+          "reciprocal_directed_edges": 450,
+          "reciprocity_edge_pct": 22.62,
+          "reciprocity_dyad_pct": 12.76
+        },
+        "w3": {
+          "edges": 668,
+          "synapses": 8390,
+          "autapses": 0,
+          "mutual_dyads": 45,
+          "reciprocal_directed_edges": 90,
+          "reciprocity_edge_pct": 13.47,
+          "reciprocity_dyad_pct": 7.22
+        },
+        "w5": {
+          "edges": 390,
+          "synapses": 7447,
+          "autapses": 0,
+          "mutual_dyads": 14,
+          "reciprocal_directed_edges": 28,
+          "reciprocity_edge_pct": 7.18,
+          "reciprocity_dyad_pct": 3.72
+        },
+        "w10": {
+          "edges": 194,
+          "synapses": 6165,
+          "autapses": 0,
+          "mutual_dyads": 2,
+          "reciprocal_directed_edges": 4,
+          "reciprocity_edge_pct": 2.06,
+          "reciprocity_dyad_pct": 1.04
+        }
+      },
+      "rank_reciprocity_w1": 24,
+      "rank_reciprocity_w3": 27
+    },
+    {
+      "neuropil": "MB_CA_R",
+      "input_records": 45331,
+      "represented_neurons": 3715,
+      "total_directed_edges_w1": 45331,
+      "total_synapses_w1": 230379,
+      "reciprocity_w1_pct": 22.51,
+      "reciprocity_w3_pct": 19.5,
+      "reciprocity_w5_pct": 13.98,
+      "reciprocity_w10_pct": 2.46,
+      "threshold_details": {
+        "w1": {
+          "edges": 45331,
+          "synapses": 230379,
+          "autapses": 0,
+          "mutual_dyads": 5101,
+          "reciprocal_directed_edges": 10202,
+          "reciprocity_edge_pct": 22.51,
+          "reciprocity_dyad_pct": 12.68
+        },
+        "w3": {
+          "edges": 20015,
+          "synapses": 199833,
+          "autapses": 0,
+          "mutual_dyads": 1951,
+          "reciprocal_directed_edges": 3902,
+          "reciprocity_edge_pct": 19.5,
+          "reciprocity_dyad_pct": 10.8
+        },
+        "w5": {
+          "edges": 14902,
+          "synapses": 182371,
+          "autapses": 0,
+          "mutual_dyads": 1042,
+          "reciprocal_directed_edges": 2084,
+          "reciprocity_edge_pct": 13.98,
+          "reciprocity_dyad_pct": 7.52
+        },
+        "w10": {
+          "edges": 8202,
+          "synapses": 137364,
+          "autapses": 0,
+          "mutual_dyads": 101,
+          "reciprocal_directed_edges": 202,
+          "reciprocity_edge_pct": 2.46,
+          "reciprocity_dyad_pct": 1.25
+        }
+      },
+      "rank_reciprocity_w1": 25,
+      "rank_reciprocity_w3": 13
+    },
+    {
+      "neuropil": "PRW",
+      "input_records": 86874,
+      "represented_neurons": 2348,
+      "total_directed_edges_w1": 86874,
+      "total_synapses_w1": 352333,
+      "reciprocity_w1_pct": 21.74,
+      "reciprocity_w3_pct": 14.08,
+      "reciprocity_w5_pct": 12.61,
+      "reciprocity_w10_pct": 11.59,
+      "threshold_details": {
+        "w1": {
+          "edges": 86874,
+          "synapses": 352333,
+          "autapses": 0,
+          "mutual_dyads": 9442,
+          "reciprocal_directed_edges": 18884,
+          "reciprocity_edge_pct": 21.74,
+          "reciprocity_dyad_pct": 12.19
+        },
+        "w3": {
+          "edges": 30408,
+          "synapses": 281144,
+          "autapses": 0,
+          "mutual_dyads": 2140,
+          "reciprocal_directed_edges": 4280,
+          "reciprocity_edge_pct": 14.08,
+          "reciprocity_dyad_pct": 7.57
+        },
+        "w5": {
+          "edges": 17852,
+          "synapses": 238728,
+          "autapses": 0,
+          "mutual_dyads": 1126,
+          "reciprocal_directed_edges": 2252,
+          "reciprocity_edge_pct": 12.61,
+          "reciprocity_dyad_pct": 6.73
+        },
+        "w10": {
+          "edges": 7883,
+          "synapses": 173986,
+          "autapses": 0,
+          "mutual_dyads": 457,
+          "reciprocal_directed_edges": 914,
+          "reciprocity_edge_pct": 11.59,
+          "reciprocity_dyad_pct": 6.15
+        }
+      },
+      "rank_reciprocity_w1": 26,
+      "rank_reciprocity_w3": 24
+    },
+    {
+      "neuropil": "GA_L",
+      "input_records": 3869,
+      "represented_neurons": 500,
+      "total_directed_edges_w1": 3869,
+      "total_synapses_w1": 15863,
+      "reciprocity_w1_pct": 21.5,
+      "reciprocity_w3_pct": 17.61,
+      "reciprocity_w5_pct": 23.62,
+      "reciprocity_w10_pct": 34.13,
+      "threshold_details": {
+        "w1": {
+          "edges": 3869,
+          "synapses": 15863,
+          "autapses": 0,
+          "mutual_dyads": 416,
+          "reciprocal_directed_edges": 832,
+          "reciprocity_edge_pct": 21.5,
+          "reciprocity_dyad_pct": 12.05
+        },
+        "w3": {
+          "edges": 1295,
+          "synapses": 12557,
+          "autapses": 0,
+          "mutual_dyads": 114,
+          "reciprocal_directed_edges": 228,
+          "reciprocity_edge_pct": 17.61,
+          "reciprocity_dyad_pct": 9.65
+        },
+        "w5": {
+          "edges": 686,
+          "synapses": 10507,
+          "autapses": 0,
+          "mutual_dyads": 81,
+          "reciprocal_directed_edges": 162,
+          "reciprocity_edge_pct": 23.62,
+          "reciprocity_dyad_pct": 13.39
+        },
+        "w10": {
+          "edges": 334,
+          "synapses": 8273,
+          "autapses": 0,
+          "mutual_dyads": 57,
+          "reciprocal_directed_edges": 114,
+          "reciprocity_edge_pct": 34.13,
+          "reciprocity_dyad_pct": 20.58
+        }
+      },
+      "rank_reciprocity_w1": 27,
+      "rank_reciprocity_w3": 18
+    },
+    {
+      "neuropil": "LO_L",
+      "input_records": 1380744,
+      "represented_neurons": 23282,
+      "total_directed_edges_w1": 1380744,
+      "total_synapses_w1": 3792886,
+      "reciprocity_w1_pct": 21.48,
+      "reciprocity_w3_pct": 9.7,
+      "reciprocity_w5_pct": 7.29,
+      "reciprocity_w10_pct": 5.64,
+      "threshold_details": {
+        "w1": {
+          "edges": 1380744,
+          "synapses": 3792886,
+          "autapses": 0,
+          "mutual_dyads": 148297,
+          "reciprocal_directed_edges": 296594,
+          "reciprocity_edge_pct": 21.48,
+          "reciprocity_dyad_pct": 12.03
+        },
+        "w3": {
+          "edges": 405550,
+          "synapses": 2555589,
+          "autapses": 0,
+          "mutual_dyads": 19674,
+          "reciprocal_directed_edges": 39348,
+          "reciprocity_edge_pct": 9.7,
+          "reciprocity_dyad_pct": 5.1
+        },
+        "w5": {
+          "edges": 193095,
+          "synapses": 1839229,
+          "autapses": 0,
+          "mutual_dyads": 7041,
+          "reciprocal_directed_edges": 14082,
+          "reciprocity_edge_pct": 7.29,
+          "reciprocity_dyad_pct": 3.78
+        },
+        "w10": {
+          "edges": 55011,
+          "synapses": 966225,
+          "autapses": 0,
+          "mutual_dyads": 1551,
+          "reciprocal_directed_edges": 3102,
+          "reciprocity_edge_pct": 5.64,
+          "reciprocity_dyad_pct": 2.9
+        }
+      },
+      "rank_reciprocity_w1": 28,
+      "rank_reciprocity_w3": 36
+    },
+    {
+      "neuropil": "LO_R",
+      "input_records": 1375872,
+      "represented_neurons": 23059,
+      "total_directed_edges_w1": 1375872,
+      "total_synapses_w1": 3877311,
+      "reciprocity_w1_pct": 21.45,
+      "reciprocity_w3_pct": 10.16,
+      "reciprocity_w5_pct": 7.57,
+      "reciprocity_w10_pct": 6.03,
+      "threshold_details": {
+        "w1": {
+          "edges": 1375872,
+          "synapses": 3877311,
+          "autapses": 0,
+          "mutual_dyads": 147580,
+          "reciprocal_directed_edges": 295160,
+          "reciprocity_edge_pct": 21.45,
+          "reciprocity_dyad_pct": 12.02
+        },
+        "w3": {
+          "edges": 418724,
+          "synapses": 2658798,
+          "autapses": 0,
+          "mutual_dyads": 21271,
+          "reciprocal_directed_edges": 42542,
+          "reciprocity_edge_pct": 10.16,
+          "reciprocity_dyad_pct": 5.35
+        },
+        "w5": {
+          "edges": 201221,
+          "synapses": 1924897,
+          "autapses": 0,
+          "mutual_dyads": 7615,
+          "reciprocal_directed_edges": 15230,
+          "reciprocity_edge_pct": 7.57,
+          "reciprocity_dyad_pct": 3.93
+        },
+        "w10": {
+          "edges": 57794,
+          "synapses": 1017292,
+          "autapses": 0,
+          "mutual_dyads": 1743,
+          "reciprocal_directed_edges": 3486,
+          "reciprocity_edge_pct": 6.03,
+          "reciprocity_dyad_pct": 3.11
+        }
+      },
+      "rank_reciprocity_w1": 29,
+      "rank_reciprocity_w3": 33
+    },
+    {
+      "neuropil": "AVLP_R",
+      "input_records": 452236,
+      "represented_neurons": 6181,
+      "total_directed_edges_w1": 452236,
+      "total_synapses_w1": 2000857,
+      "reciprocity_w1_pct": 21.35,
+      "reciprocity_w3_pct": 13.65,
+      "reciprocity_w5_pct": 12.07,
+      "reciprocity_w10_pct": 10.26,
+      "threshold_details": {
+        "w1": {
+          "edges": 452236,
+          "synapses": 2000857,
+          "autapses": 0,
+          "mutual_dyads": 48282,
+          "reciprocal_directed_edges": 96564,
+          "reciprocity_edge_pct": 21.35,
+          "reciprocity_dyad_pct": 11.95
+        },
+        "w3": {
+          "edges": 159425,
+          "synapses": 1630944,
+          "autapses": 0,
+          "mutual_dyads": 10879,
+          "reciprocal_directed_edges": 21758,
+          "reciprocity_edge_pct": 13.65,
+          "reciprocity_dyad_pct": 7.32
+        },
+        "w5": {
+          "edges": 95139,
+          "synapses": 1413418,
+          "autapses": 0,
+          "mutual_dyads": 5740,
+          "reciprocal_directed_edges": 11480,
+          "reciprocity_edge_pct": 12.07,
+          "reciprocity_dyad_pct": 6.42
+        },
+        "w10": {
+          "edges": 43263,
+          "synapses": 1077434,
+          "autapses": 0,
+          "mutual_dyads": 2219,
+          "reciprocal_directed_edges": 4438,
+          "reciprocity_edge_pct": 10.26,
+          "reciprocity_dyad_pct": 5.41
+        }
+      },
+      "rank_reciprocity_w1": 30,
+      "rank_reciprocity_w3": 26
+    },
+    {
+      "neuropil": "LH_R",
+      "input_records": 216557,
+      "represented_neurons": 4492,
+      "total_directed_edges_w1": 216557,
+      "total_synapses_w1": 664653,
+      "reciprocity_w1_pct": 18.87,
+      "reciprocity_w3_pct": 11.08,
+      "reciprocity_w5_pct": 9.52,
+      "reciprocity_w10_pct": 8.93,
+      "threshold_details": {
+        "w1": {
+          "edges": 216557,
+          "synapses": 664653,
+          "autapses": 0,
+          "mutual_dyads": 20430,
+          "reciprocal_directed_edges": 40860,
+          "reciprocity_edge_pct": 18.87,
+          "reciprocity_dyad_pct": 10.42
+        },
+        "w3": {
+          "edges": 59255,
+          "synapses": 469838,
+          "autapses": 0,
+          "mutual_dyads": 3282,
+          "reciprocal_directed_edges": 6564,
+          "reciprocity_edge_pct": 11.08,
+          "reciprocity_dyad_pct": 5.86
+        },
+        "w5": {
+          "edges": 31414,
+          "synapses": 376027,
+          "autapses": 0,
+          "mutual_dyads": 1496,
+          "reciprocal_directed_edges": 2992,
+          "reciprocity_edge_pct": 9.52,
+          "reciprocity_dyad_pct": 5.0
+        },
+        "w10": {
+          "edges": 12025,
+          "synapses": 251798,
+          "autapses": 0,
+          "mutual_dyads": 537,
+          "reciprocal_directed_edges": 1074,
+          "reciprocity_edge_pct": 8.93,
+          "reciprocity_dyad_pct": 4.67
+        }
+      },
+      "rank_reciprocity_w1": 31,
+      "rank_reciprocity_w3": 30
+    },
+    {
+      "neuropil": "GNG",
+      "input_records": 544508,
+      "represented_neurons": 11250,
+      "total_directed_edges_w1": 544508,
+      "total_synapses_w1": 2713213,
+      "reciprocity_w1_pct": 18.57,
+      "reciprocity_w3_pct": 11.68,
+      "reciprocity_w5_pct": 9.95,
+      "reciprocity_w10_pct": 8.26,
+      "threshold_details": {
+        "w1": {
+          "edges": 544508,
+          "synapses": 2713213,
+          "autapses": 0,
+          "mutual_dyads": 50557,
+          "reciprocal_directed_edges": 101114,
+          "reciprocity_edge_pct": 18.57,
+          "reciprocity_dyad_pct": 10.24
+        },
+        "w3": {
+          "edges": 194037,
+          "synapses": 2271664,
+          "autapses": 0,
+          "mutual_dyads": 11329,
+          "reciprocal_directed_edges": 22658,
+          "reciprocity_edge_pct": 11.68,
+          "reciprocity_dyad_pct": 6.2
+        },
+        "w5": {
+          "edges": 118094,
+          "synapses": 2014873,
+          "autapses": 0,
+          "mutual_dyads": 5874,
+          "reciprocal_directed_edges": 11748,
+          "reciprocity_edge_pct": 9.95,
+          "reciprocity_dyad_pct": 5.23
+        },
+        "w10": {
+          "edges": 58365,
+          "synapses": 1628162,
+          "autapses": 0,
+          "mutual_dyads": 2410,
+          "reciprocal_directed_edges": 4820,
+          "reciprocity_edge_pct": 8.26,
+          "reciprocity_dyad_pct": 4.31
+        }
+      },
+      "rank_reciprocity_w1": 32,
+      "rank_reciprocity_w3": 28
+    },
+    {
+      "neuropil": "AME_R",
+      "input_records": 3881,
+      "represented_neurons": 720,
+      "total_directed_edges_w1": 3881,
+      "total_synapses_w1": 12524,
+      "reciprocity_w1_pct": 18.5,
+      "reciprocity_w3_pct": 9.4,
+      "reciprocity_w5_pct": 9.36,
+      "reciprocity_w10_pct": 10.4,
+      "threshold_details": {
+        "w1": {
+          "edges": 3881,
+          "synapses": 12524,
+          "autapses": 0,
+          "mutual_dyads": 359,
+          "reciprocal_directed_edges": 718,
+          "reciprocity_edge_pct": 18.5,
+          "reciprocity_dyad_pct": 10.19
+        },
+        "w3": {
+          "edges": 1043,
+          "synapses": 9051,
+          "autapses": 0,
+          "mutual_dyads": 49,
+          "reciprocal_directed_edges": 98,
+          "reciprocity_edge_pct": 9.4,
+          "reciprocity_dyad_pct": 4.93
+        },
+        "w5": {
+          "edges": 598,
+          "synapses": 7557,
+          "autapses": 0,
+          "mutual_dyads": 28,
+          "reciprocal_directed_edges": 56,
+          "reciprocity_edge_pct": 9.36,
+          "reciprocity_dyad_pct": 4.91
+        },
+        "w10": {
+          "edges": 250,
+          "synapses": 5360,
+          "autapses": 0,
+          "mutual_dyads": 13,
+          "reciprocal_directed_edges": 26,
+          "reciprocity_edge_pct": 10.4,
+          "reciprocity_dyad_pct": 5.49
+        }
+      },
+      "rank_reciprocity_w1": 33,
+      "rank_reciprocity_w3": 37
+    },
+    {
+      "neuropil": "SMP_L",
+      "input_records": 288021,
+      "represented_neurons": 7111,
+      "total_directed_edges_w1": 288021,
+      "total_synapses_w1": 816580,
+      "reciprocity_w1_pct": 18.49,
+      "reciprocity_w3_pct": 10.04,
+      "reciprocity_w5_pct": 8.13,
+      "reciprocity_w10_pct": 5.87,
+      "threshold_details": {
+        "w1": {
+          "edges": 288021,
+          "synapses": 816580,
+          "autapses": 0,
+          "mutual_dyads": 26623,
+          "reciprocal_directed_edges": 53246,
+          "reciprocity_edge_pct": 18.49,
+          "reciprocity_dyad_pct": 10.18
+        },
+        "w3": {
+          "edges": 74676,
+          "synapses": 552521,
+          "autapses": 0,
+          "mutual_dyads": 3749,
+          "reciprocal_directed_edges": 7498,
+          "reciprocity_edge_pct": 10.04,
+          "reciprocity_dyad_pct": 5.29
+        },
+        "w5": {
+          "edges": 37889,
+          "synapses": 428982,
+          "autapses": 0,
+          "mutual_dyads": 1541,
+          "reciprocal_directed_edges": 3082,
+          "reciprocity_edge_pct": 8.13,
+          "reciprocity_dyad_pct": 4.24
+        },
+        "w10": {
+          "edges": 13733,
+          "synapses": 274674,
+          "autapses": 0,
+          "mutual_dyads": 403,
+          "reciprocal_directed_edges": 806,
+          "reciprocity_edge_pct": 5.87,
+          "reciprocity_dyad_pct": 3.02
+        }
+      },
+      "rank_reciprocity_w1": 34,
+      "rank_reciprocity_w3": 34
+    },
+    {
+      "neuropil": "SMP_R",
+      "input_records": 305052,
+      "represented_neurons": 7099,
+      "total_directed_edges_w1": 305052,
+      "total_synapses_w1": 898333,
+      "reciprocity_w1_pct": 18.35,
+      "reciprocity_w3_pct": 9.98,
+      "reciprocity_w5_pct": 8.18,
+      "reciprocity_w10_pct": 6.11,
+      "threshold_details": {
+        "w1": {
+          "edges": 305052,
+          "synapses": 898333,
+          "autapses": 0,
+          "mutual_dyads": 27990,
+          "reciprocal_directed_edges": 55980,
+          "reciprocity_edge_pct": 18.35,
+          "reciprocity_dyad_pct": 10.1
+        },
+        "w3": {
+          "edges": 82101,
+          "synapses": 621796,
+          "autapses": 0,
+          "mutual_dyads": 4098,
+          "reciprocal_directed_edges": 8196,
+          "reciprocity_edge_pct": 9.98,
+          "reciprocity_dyad_pct": 5.25
+        },
+        "w5": {
+          "edges": 42168,
+          "synapses": 487481,
+          "autapses": 0,
+          "mutual_dyads": 1724,
+          "reciprocal_directed_edges": 3448,
+          "reciprocity_edge_pct": 8.18,
+          "reciprocity_dyad_pct": 4.26
+        },
+        "w10": {
+          "edges": 15772,
+          "synapses": 318645,
+          "autapses": 0,
+          "mutual_dyads": 482,
+          "reciprocal_directed_edges": 964,
+          "reciprocity_edge_pct": 6.11,
+          "reciprocity_dyad_pct": 3.15
+        }
+      },
+      "rank_reciprocity_w1": 35,
+      "rank_reciprocity_w3": 35
+    },
+    {
+      "neuropil": "AME_L",
+      "input_records": 3942,
+      "represented_neurons": 664,
+      "total_directed_edges_w1": 3942,
+      "total_synapses_w1": 11001,
+      "reciprocity_w1_pct": 18.32,
+      "reciprocity_w3_pct": 8.78,
+      "reciprocity_w5_pct": 8.36,
+      "reciprocity_w10_pct": 9.95,
+      "threshold_details": {
+        "w1": {
+          "edges": 3942,
+          "synapses": 11001,
+          "autapses": 0,
+          "mutual_dyads": 361,
+          "reciprocal_directed_edges": 722,
+          "reciprocity_edge_pct": 18.32,
+          "reciprocity_dyad_pct": 10.08
+        },
+        "w3": {
+          "edges": 1002,
+          "synapses": 7352,
+          "autapses": 0,
+          "mutual_dyads": 44,
+          "reciprocal_directed_edges": 88,
+          "reciprocity_edge_pct": 8.78,
+          "reciprocity_dyad_pct": 4.59
+        },
+        "w5": {
+          "edges": 550,
+          "synapses": 5842,
+          "autapses": 0,
+          "mutual_dyads": 23,
+          "reciprocal_directed_edges": 46,
+          "reciprocity_edge_pct": 8.36,
+          "reciprocity_dyad_pct": 4.36
+        },
+        "w10": {
+          "edges": 201,
+          "synapses": 3588,
+          "autapses": 0,
+          "mutual_dyads": 10,
+          "reciprocal_directed_edges": 20,
+          "reciprocity_edge_pct": 9.95,
+          "reciprocity_dyad_pct": 5.24
+        }
+      },
+      "rank_reciprocity_w1": 36,
+      "rank_reciprocity_w3": 41
+    },
+    {
+      "neuropil": "LAL_L",
+      "input_records": 90474,
+      "represented_neurons": 3098,
+      "total_directed_edges_w1": 90474,
+      "total_synapses_w1": 432296,
+      "reciprocity_w1_pct": 17.74,
+      "reciprocity_w3_pct": 8.88,
+      "reciprocity_w5_pct": 7.36,
+      "reciprocity_w10_pct": 5.32,
+      "threshold_details": {
+        "w1": {
+          "edges": 90474,
+          "synapses": 432296,
+          "autapses": 0,
+          "mutual_dyads": 8024,
+          "reciprocal_directed_edges": 16048,
+          "reciprocity_edge_pct": 17.74,
+          "reciprocity_dyad_pct": 9.73
+        },
+        "w3": {
+          "edges": 31683,
+          "synapses": 358320,
+          "autapses": 0,
+          "mutual_dyads": 1406,
+          "reciprocal_directed_edges": 2812,
+          "reciprocity_edge_pct": 8.88,
+          "reciprocity_dyad_pct": 4.64
+        },
+        "w5": {
+          "edges": 19136,
+          "synapses": 315833,
+          "autapses": 0,
+          "mutual_dyads": 704,
+          "reciprocal_directed_edges": 1408,
+          "reciprocity_edge_pct": 7.36,
+          "reciprocity_dyad_pct": 3.82
+        },
+        "w10": {
+          "edges": 9292,
+          "synapses": 252081,
+          "autapses": 0,
+          "mutual_dyads": 247,
+          "reciprocal_directed_edges": 494,
+          "reciprocity_edge_pct": 5.32,
+          "reciprocity_dyad_pct": 2.73
+        }
+      },
+      "rank_reciprocity_w1": 37,
+      "rank_reciprocity_w3": 39
+    },
+    {
+      "neuropil": "LAL_R",
+      "input_records": 85096,
+      "represented_neurons": 2757,
+      "total_directed_edges_w1": 85096,
+      "total_synapses_w1": 437642,
+      "reciprocity_w1_pct": 17.4,
+      "reciprocity_w3_pct": 9.06,
+      "reciprocity_w5_pct": 7.03,
+      "reciprocity_w10_pct": 5.45,
+      "threshold_details": {
+        "w1": {
+          "edges": 85096,
+          "synapses": 437642,
+          "autapses": 0,
+          "mutual_dyads": 7405,
+          "reciprocal_directed_edges": 14810,
+          "reciprocity_edge_pct": 17.4,
+          "reciprocity_dyad_pct": 9.53
+        },
+        "w3": {
+          "edges": 31419,
+          "synapses": 370178,
+          "autapses": 0,
+          "mutual_dyads": 1423,
+          "reciprocal_directed_edges": 2846,
+          "reciprocity_edge_pct": 9.06,
+          "reciprocity_dyad_pct": 4.74
+        },
+        "w5": {
+          "edges": 19623,
+          "synapses": 330293,
+          "autapses": 0,
+          "mutual_dyads": 690,
+          "reciprocal_directed_edges": 1380,
+          "reciprocity_edge_pct": 7.03,
+          "reciprocity_dyad_pct": 3.64
+        },
+        "w10": {
+          "edges": 9866,
+          "synapses": 266714,
+          "autapses": 0,
+          "mutual_dyads": 269,
+          "reciprocal_directed_edges": 538,
+          "reciprocity_edge_pct": 5.45,
+          "reciprocity_dyad_pct": 2.8
+        }
+      },
+      "rank_reciprocity_w1": 38,
+      "rank_reciprocity_w3": 38
+    },
+    {
+      "neuropil": "CRE_L",
+      "input_records": 132535,
+      "represented_neurons": 5813,
+      "total_directed_edges_w1": 132535,
+      "total_synapses_w1": 322237,
+      "reciprocity_w1_pct": 17.29,
+      "reciprocity_w3_pct": 8.86,
+      "reciprocity_w5_pct": 6.55,
+      "reciprocity_w10_pct": 4.58,
+      "threshold_details": {
+        "w1": {
+          "edges": 132535,
+          "synapses": 322237,
+          "autapses": 0,
+          "mutual_dyads": 11455,
+          "reciprocal_directed_edges": 22910,
+          "reciprocity_edge_pct": 17.29,
+          "reciprocity_dyad_pct": 9.46
+        },
+        "w3": {
+          "edges": 28361,
+          "synapses": 196851,
+          "autapses": 0,
+          "mutual_dyads": 1257,
+          "reciprocal_directed_edges": 2514,
+          "reciprocity_edge_pct": 8.86,
+          "reciprocity_dyad_pct": 4.64
+        },
+        "w5": {
+          "edges": 13921,
+          "synapses": 148383,
+          "autapses": 0,
+          "mutual_dyads": 456,
+          "reciprocal_directed_edges": 912,
+          "reciprocity_edge_pct": 6.55,
+          "reciprocity_dyad_pct": 3.39
+        },
+        "w10": {
+          "edges": 4589,
+          "synapses": 89154,
+          "autapses": 0,
+          "mutual_dyads": 105,
+          "reciprocal_directed_edges": 210,
+          "reciprocity_edge_pct": 4.58,
+          "reciprocity_dyad_pct": 2.34
+        }
+      },
+      "rank_reciprocity_w1": 39,
+      "rank_reciprocity_w3": 40
+    },
+    {
+      "neuropil": "LH_L",
+      "input_records": 199215,
+      "represented_neurons": 4749,
+      "total_directed_edges_w1": 199215,
+      "total_synapses_w1": 602473,
+      "reciprocity_w1_pct": 17.11,
+      "reciprocity_w3_pct": 10.19,
+      "reciprocity_w5_pct": 8.82,
+      "reciprocity_w10_pct": 7.54,
+      "threshold_details": {
+        "w1": {
+          "edges": 199215,
+          "synapses": 602473,
+          "autapses": 0,
+          "mutual_dyads": 17043,
+          "reciprocal_directed_edges": 34086,
+          "reciprocity_edge_pct": 17.11,
+          "reciprocity_dyad_pct": 9.36
+        },
+        "w3": {
+          "edges": 52908,
+          "synapses": 422058,
+          "autapses": 0,
+          "mutual_dyads": 2695,
+          "reciprocal_directed_edges": 5390,
+          "reciprocity_edge_pct": 10.19,
+          "reciprocity_dyad_pct": 5.37
+        },
+        "w5": {
+          "edges": 27811,
+          "synapses": 337553,
+          "autapses": 0,
+          "mutual_dyads": 1227,
+          "reciprocal_directed_edges": 2454,
+          "reciprocity_edge_pct": 8.82,
+          "reciprocity_dyad_pct": 4.62
+        },
+        "w10": {
+          "edges": 10849,
+          "synapses": 229088,
+          "autapses": 0,
+          "mutual_dyads": 409,
+          "reciprocal_directed_edges": 818,
+          "reciprocity_edge_pct": 7.54,
+          "reciprocity_dyad_pct": 3.92
+        }
+      },
+      "rank_reciprocity_w1": 40,
+      "rank_reciprocity_w3": 32
+    },
+    {
+      "neuropil": "LA_L",
+      "input_records": 39574,
+      "represented_neurons": 8800,
+      "total_directed_edges_w1": 39574,
+      "total_synapses_w1": 169170,
+      "reciprocity_w1_pct": 16.92,
+      "reciprocity_w3_pct": 2.4,
+      "reciprocity_w5_pct": 0.56,
+      "reciprocity_w10_pct": 0.0,
+      "threshold_details": {
+        "w1": {
+          "edges": 39574,
+          "synapses": 169170,
+          "autapses": 0,
+          "mutual_dyads": 3348,
+          "reciprocal_directed_edges": 6696,
+          "reciprocity_edge_pct": 16.92,
+          "reciprocity_dyad_pct": 9.24
+        },
+        "w3": {
+          "edges": 14980,
+          "synapses": 137907,
+          "autapses": 0,
+          "mutual_dyads": 180,
+          "reciprocal_directed_edges": 360,
+          "reciprocity_edge_pct": 2.4,
+          "reciprocity_dyad_pct": 1.22
+        },
+        "w5": {
+          "edges": 9300,
+          "synapses": 118727,
+          "autapses": 0,
+          "mutual_dyads": 26,
+          "reciprocal_directed_edges": 52,
+          "reciprocity_edge_pct": 0.56,
+          "reciprocity_dyad_pct": 0.28
+        },
+        "w10": {
+          "edges": 4937,
+          "synapses": 90437,
+          "autapses": 0,
+          "mutual_dyads": 0,
+          "reciprocal_directed_edges": 0,
+          "reciprocity_edge_pct": 0.0,
+          "reciprocity_dyad_pct": 0.0
+        }
+      },
+      "rank_reciprocity_w1": 41,
+      "rank_reciprocity_w3": 77
+    },
+    {
+      "neuropil": "LA_R",
+      "input_records": 70833,
+      "represented_neurons": 11381,
+      "total_directed_edges_w1": 70833,
+      "total_synapses_w1": 273732,
+      "reciprocity_w1_pct": 16.63,
+      "reciprocity_w3_pct": 3.65,
+      "reciprocity_w5_pct": 0.76,
+      "reciprocity_w10_pct": 0.0,
+      "threshold_details": {
+        "w1": {
+          "edges": 70833,
+          "synapses": 273732,
+          "autapses": 0,
+          "mutual_dyads": 5889,
+          "reciprocal_directed_edges": 11778,
+          "reciprocity_edge_pct": 16.63,
+          "reciprocity_dyad_pct": 9.07
+        },
+        "w3": {
+          "edges": 26037,
+          "synapses": 215886,
+          "autapses": 0,
+          "mutual_dyads": 475,
+          "reciprocal_directed_edges": 950,
+          "reciprocity_edge_pct": 3.65,
+          "reciprocity_dyad_pct": 1.86
+        },
+        "w5": {
+          "edges": 14651,
+          "synapses": 177439,
+          "autapses": 0,
+          "mutual_dyads": 56,
+          "reciprocal_directed_edges": 112,
+          "reciprocity_edge_pct": 0.76,
+          "reciprocity_dyad_pct": 0.38
+        },
+        "w10": {
+          "edges": 6366,
+          "synapses": 124152,
+          "autapses": 0,
+          "mutual_dyads": 0,
+          "reciprocal_directed_edges": 0,
+          "reciprocity_edge_pct": 0.0,
+          "reciprocity_dyad_pct": 0.0
+        }
+      },
+      "rank_reciprocity_w1": 42,
+      "rank_reciprocity_w3": 72
+    },
+    {
+      "neuropil": "PB",
+      "input_records": 15261,
+      "represented_neurons": 1939,
+      "total_directed_edges_w1": 15261,
+      "total_synapses_w1": 63306,
+      "reciprocity_w1_pct": 16.41,
+      "reciprocity_w3_pct": 10.68,
+      "reciprocity_w5_pct": 7.5,
+      "reciprocity_w10_pct": 3.86,
+      "threshold_details": {
+        "w1": {
+          "edges": 15261,
+          "synapses": 63306,
+          "autapses": 0,
+          "mutual_dyads": 1252,
+          "reciprocal_directed_edges": 2504,
+          "reciprocity_edge_pct": 16.41,
+          "reciprocity_dyad_pct": 8.94
+        },
+        "w3": {
+          "edges": 6009,
+          "synapses": 51443,
+          "autapses": 0,
+          "mutual_dyads": 321,
+          "reciprocal_directed_edges": 642,
+          "reciprocity_edge_pct": 10.68,
+          "reciprocity_dyad_pct": 5.64
+        },
+        "w5": {
+          "edges": 3653,
+          "synapses": 43445,
+          "autapses": 0,
+          "mutual_dyads": 137,
+          "reciprocal_directed_edges": 274,
+          "reciprocity_edge_pct": 7.5,
+          "reciprocity_dyad_pct": 3.9
+        },
+        "w10": {
+          "edges": 1608,
+          "synapses": 30133,
+          "autapses": 0,
+          "mutual_dyads": 31,
+          "reciprocal_directed_edges": 62,
+          "reciprocity_edge_pct": 3.86,
+          "reciprocity_dyad_pct": 1.97
+        }
+      },
+      "rank_reciprocity_w1": 43,
+      "rank_reciprocity_w3": 31
+    },
+    {
+      "neuropil": "SLP_L",
+      "input_records": 250796,
+      "represented_neurons": 6504,
+      "total_directed_edges_w1": 250796,
+      "total_synapses_w1": 544953,
+      "reciprocity_w1_pct": 15.62,
+      "reciprocity_w3_pct": 8.08,
+      "reciprocity_w5_pct": 6.54,
+      "reciprocity_w10_pct": 5.19,
+      "threshold_details": {
+        "w1": {
+          "edges": 250796,
+          "synapses": 544953,
+          "autapses": 0,
+          "mutual_dyads": 19593,
+          "reciprocal_directed_edges": 39186,
+          "reciprocity_edge_pct": 15.62,
+          "reciprocity_dyad_pct": 8.47
+        },
+        "w3": {
+          "edges": 50670,
+          "synapses": 300630,
+          "autapses": 0,
+          "mutual_dyads": 2046,
+          "reciprocal_directed_edges": 4092,
+          "reciprocity_edge_pct": 8.08,
+          "reciprocity_dyad_pct": 4.21
+        },
+        "w5": {
+          "edges": 22288,
+          "synapses": 205624,
+          "autapses": 0,
+          "mutual_dyads": 729,
+          "reciprocal_directed_edges": 1458,
+          "reciprocity_edge_pct": 6.54,
+          "reciprocity_dyad_pct": 3.38
+        },
+        "w10": {
+          "edges": 6201,
+          "synapses": 104366,
+          "autapses": 0,
+          "mutual_dyads": 161,
+          "reciprocal_directed_edges": 322,
+          "reciprocity_edge_pct": 5.19,
+          "reciprocity_dyad_pct": 2.67
+        }
+      },
+      "rank_reciprocity_w1": 44,
+      "rank_reciprocity_w3": 44
+    },
+    {
+      "neuropil": "PLP_L",
+      "input_records": 252745,
+      "represented_neurons": 9371,
+      "total_directed_edges_w1": 252745,
+      "total_synapses_w1": 746323,
+      "reciprocity_w1_pct": 15.43,
+      "reciprocity_w3_pct": 8.41,
+      "reciprocity_w5_pct": 7.59,
+      "reciprocity_w10_pct": 6.22,
+      "threshold_details": {
+        "w1": {
+          "edges": 252745,
+          "synapses": 746323,
+          "autapses": 0,
+          "mutual_dyads": 19504,
+          "reciprocal_directed_edges": 39008,
+          "reciprocity_edge_pct": 15.43,
+          "reciprocity_dyad_pct": 8.36
+        },
+        "w3": {
+          "edges": 69025,
+          "synapses": 518202,
+          "autapses": 0,
+          "mutual_dyads": 2903,
+          "reciprocal_directed_edges": 5806,
+          "reciprocity_edge_pct": 8.41,
+          "reciprocity_dyad_pct": 4.39
+        },
+        "w5": {
+          "edges": 35636,
+          "synapses": 405803,
+          "autapses": 0,
+          "mutual_dyads": 1353,
+          "reciprocal_directed_edges": 2706,
+          "reciprocity_edge_pct": 7.59,
+          "reciprocity_dyad_pct": 3.95
+        },
+        "w10": {
+          "edges": 13025,
+          "synapses": 261140,
+          "autapses": 0,
+          "mutual_dyads": 405,
+          "reciprocal_directed_edges": 810,
+          "reciprocity_edge_pct": 6.22,
+          "reciprocity_dyad_pct": 3.21
+        }
+      },
+      "rank_reciprocity_w1": 45,
+      "rank_reciprocity_w3": 42
+    },
+    {
+      "neuropil": "CRE_R",
+      "input_records": 133999,
+      "represented_neurons": 5769,
+      "total_directed_edges_w1": 133999,
+      "total_synapses_w1": 342435,
+      "reciprocity_w1_pct": 15.39,
+      "reciprocity_w3_pct": 8.01,
+      "reciprocity_w5_pct": 6.54,
+      "reciprocity_w10_pct": 5.65,
+      "threshold_details": {
+        "w1": {
+          "edges": 133999,
+          "synapses": 342435,
+          "autapses": 0,
+          "mutual_dyads": 10312,
+          "reciprocal_directed_edges": 20624,
+          "reciprocity_edge_pct": 15.39,
+          "reciprocity_dyad_pct": 8.34
+        },
+        "w3": {
+          "edges": 30377,
+          "synapses": 217256,
+          "autapses": 0,
+          "mutual_dyads": 1216,
+          "reciprocal_directed_edges": 2432,
+          "reciprocity_edge_pct": 8.01,
+          "reciprocity_dyad_pct": 4.17
+        },
+        "w5": {
+          "edges": 15072,
+          "synapses": 165801,
+          "autapses": 0,
+          "mutual_dyads": 493,
+          "reciprocal_directed_edges": 986,
+          "reciprocity_edge_pct": 6.54,
+          "reciprocity_dyad_pct": 3.38
+        },
+        "w10": {
+          "edges": 5311,
+          "synapses": 103594,
+          "autapses": 0,
+          "mutual_dyads": 150,
+          "reciprocal_directed_edges": 300,
+          "reciprocity_edge_pct": 5.65,
+          "reciprocity_dyad_pct": 2.91
+        }
+      },
+      "rank_reciprocity_w1": 46,
+      "rank_reciprocity_w3": 45
+    },
+    {
+      "neuropil": "SLP_R",
+      "input_records": 296717,
+      "represented_neurons": 6639,
+      "total_directed_edges_w1": 296717,
+      "total_synapses_w1": 723028,
+      "reciprocity_w1_pct": 15.38,
+      "reciprocity_w3_pct": 7.77,
+      "reciprocity_w5_pct": 6.5,
+      "reciprocity_w10_pct": 5.2,
+      "threshold_details": {
+        "w1": {
+          "edges": 296717,
+          "synapses": 723028,
+          "autapses": 0,
+          "mutual_dyads": 22811,
+          "reciprocal_directed_edges": 45622,
+          "reciprocity_edge_pct": 15.38,
+          "reciprocity_dyad_pct": 8.33
+        },
+        "w3": {
+          "edges": 69649,
+          "synapses": 443211,
+          "autapses": 0,
+          "mutual_dyads": 2707,
+          "reciprocal_directed_edges": 5414,
+          "reciprocity_edge_pct": 7.77,
+          "reciprocity_dyad_pct": 4.04
+        },
+        "w5": {
+          "edges": 32722,
+          "synapses": 319236,
+          "autapses": 0,
+          "mutual_dyads": 1063,
+          "reciprocal_directed_edges": 2126,
+          "reciprocity_edge_pct": 6.5,
+          "reciprocity_dyad_pct": 3.36
+        },
+        "w10": {
+          "edges": 10040,
+          "synapses": 175677,
+          "autapses": 0,
+          "mutual_dyads": 261,
+          "reciprocal_directed_edges": 522,
+          "reciprocity_edge_pct": 5.2,
+          "reciprocity_dyad_pct": 2.67
+        }
+      },
+      "rank_reciprocity_w1": 47,
+      "rank_reciprocity_w3": 46
+    },
+    {
+      "neuropil": "ICL_R",
+      "input_records": 130593,
+      "represented_neurons": 5121,
+      "total_directed_edges_w1": 130593,
+      "total_synapses_w1": 360940,
+      "reciprocity_w1_pct": 15.04,
+      "reciprocity_w3_pct": 6.59,
+      "reciprocity_w5_pct": 5.35,
+      "reciprocity_w10_pct": 5.3,
+      "threshold_details": {
+        "w1": {
+          "edges": 130593,
+          "synapses": 360940,
+          "autapses": 0,
+          "mutual_dyads": 9819,
+          "reciprocal_directed_edges": 19638,
+          "reciprocity_edge_pct": 15.04,
+          "reciprocity_dyad_pct": 8.13
+        },
+        "w3": {
+          "edges": 34910,
+          "synapses": 241997,
+          "autapses": 0,
+          "mutual_dyads": 1151,
+          "reciprocal_directed_edges": 2302,
+          "reciprocity_edge_pct": 6.59,
+          "reciprocity_dyad_pct": 3.41
+        },
+        "w5": {
+          "edges": 17704,
+          "synapses": 184172,
+          "autapses": 0,
+          "mutual_dyads": 474,
+          "reciprocal_directed_edges": 948,
+          "reciprocity_edge_pct": 5.35,
+          "reciprocity_dyad_pct": 2.75
+        },
+        "w10": {
+          "edges": 6077,
+          "synapses": 110274,
+          "autapses": 0,
+          "mutual_dyads": 161,
+          "reciprocal_directed_edges": 322,
+          "reciprocity_edge_pct": 5.3,
+          "reciprocity_dyad_pct": 2.72
+        }
+      },
+      "rank_reciprocity_w1": 48,
+      "rank_reciprocity_w3": 55
+    },
+    {
+      "neuropil": "SIP_L",
+      "input_records": 89219,
+      "represented_neurons": 5257,
+      "total_directed_edges_w1": 89219,
+      "total_synapses_w1": 197040,
+      "reciprocity_w1_pct": 14.97,
+      "reciprocity_w3_pct": 7.04,
+      "reciprocity_w5_pct": 6.2,
+      "reciprocity_w10_pct": 4.9,
+      "threshold_details": {
+        "w1": {
+          "edges": 89219,
+          "synapses": 197040,
+          "autapses": 0,
+          "mutual_dyads": 6680,
+          "reciprocal_directed_edges": 13360,
+          "reciprocity_edge_pct": 14.97,
+          "reciprocity_dyad_pct": 8.09
+        },
+        "w3": {
+          "edges": 18372,
+          "synapses": 110636,
+          "autapses": 0,
+          "mutual_dyads": 647,
+          "reciprocal_directed_edges": 1294,
+          "reciprocity_edge_pct": 7.04,
+          "reciprocity_dyad_pct": 3.65
+        },
+        "w5": {
+          "edges": 8028,
+          "synapses": 75952,
+          "autapses": 0,
+          "mutual_dyads": 249,
+          "reciprocal_directed_edges": 498,
+          "reciprocity_edge_pct": 6.2,
+          "reciprocity_dyad_pct": 3.2
+        },
+        "w10": {
+          "edges": 2244,
+          "synapses": 39645,
+          "autapses": 0,
+          "mutual_dyads": 55,
+          "reciprocal_directed_edges": 110,
+          "reciprocity_edge_pct": 4.9,
+          "reciprocity_dyad_pct": 2.51
+        }
+      },
+      "rank_reciprocity_w1": 49,
+      "rank_reciprocity_w3": 49
+    },
+    {
+      "neuropil": "PLP_R",
+      "input_records": 228302,
+      "represented_neurons": 8922,
+      "total_directed_edges_w1": 228302,
+      "total_synapses_w1": 664786,
+      "reciprocity_w1_pct": 14.78,
+      "reciprocity_w3_pct": 8.32,
+      "reciprocity_w5_pct": 7.95,
+      "reciprocity_w10_pct": 6.44,
+      "threshold_details": {
+        "w1": {
+          "edges": 228302,
+          "synapses": 664786,
+          "autapses": 0,
+          "mutual_dyads": 16870,
+          "reciprocal_directed_edges": 33740,
+          "reciprocity_edge_pct": 14.78,
+          "reciprocity_dyad_pct": 7.98
+        },
+        "w3": {
+          "edges": 60840,
+          "synapses": 457110,
+          "autapses": 0,
+          "mutual_dyads": 2531,
+          "reciprocal_directed_edges": 5062,
+          "reciprocity_edge_pct": 8.32,
+          "reciprocity_dyad_pct": 4.34
+        },
+        "w5": {
+          "edges": 31511,
+          "synapses": 358551,
+          "autapses": 0,
+          "mutual_dyads": 1253,
+          "reciprocal_directed_edges": 2506,
+          "reciprocity_edge_pct": 7.95,
+          "reciprocity_dyad_pct": 4.14
+        },
+        "w10": {
+          "edges": 11806,
+          "synapses": 232453,
+          "autapses": 0,
+          "mutual_dyads": 380,
+          "reciprocal_directed_edges": 760,
+          "reciprocity_edge_pct": 6.44,
+          "reciprocity_dyad_pct": 3.33
+        }
+      },
+      "rank_reciprocity_w1": 50,
+      "rank_reciprocity_w3": 43
+    },
+    {
+      "neuropil": "VES_R",
+      "input_records": 66708,
+      "represented_neurons": 2705,
+      "total_directed_edges_w1": 66708,
+      "total_synapses_w1": 282167,
+      "reciprocity_w1_pct": 14.71,
+      "reciprocity_w3_pct": 6.98,
+      "reciprocity_w5_pct": 5.43,
+      "reciprocity_w10_pct": 3.91,
+      "threshold_details": {
+        "w1": {
+          "edges": 66708,
+          "synapses": 282167,
+          "autapses": 0,
+          "mutual_dyads": 4907,
+          "reciprocal_directed_edges": 9814,
+          "reciprocity_edge_pct": 14.71,
+          "reciprocity_dyad_pct": 7.94
+        },
+        "w3": {
+          "edges": 22454,
+          "synapses": 226389,
+          "autapses": 0,
+          "mutual_dyads": 784,
+          "reciprocal_directed_edges": 1568,
+          "reciprocity_edge_pct": 6.98,
+          "reciprocity_dyad_pct": 3.62
+        },
+        "w5": {
+          "edges": 13293,
+          "synapses": 195447,
+          "autapses": 0,
+          "mutual_dyads": 361,
+          "reciprocal_directed_edges": 722,
+          "reciprocity_edge_pct": 5.43,
+          "reciprocity_dyad_pct": 2.79
+        },
+        "w10": {
+          "edges": 6042,
+          "synapses": 148471,
+          "autapses": 0,
+          "mutual_dyads": 118,
+          "reciprocal_directed_edges": 236,
+          "reciprocity_edge_pct": 3.91,
+          "reciprocity_dyad_pct": 1.99
+        }
+      },
+      "rank_reciprocity_w1": 51,
+      "rank_reciprocity_w3": 50
+    },
+    {
+      "neuropil": "BU_L",
+      "input_records": 1346,
+      "represented_neurons": 334,
+      "total_directed_edges_w1": 1346,
+      "total_synapses_w1": 4097,
+      "reciprocity_w1_pct": 14.71,
+      "reciprocity_w3_pct": 5.41,
+      "reciprocity_w5_pct": 0.0,
+      "reciprocity_w10_pct": 0.0,
+      "threshold_details": {
+        "w1": {
+          "edges": 1346,
+          "synapses": 4097,
+          "autapses": 0,
+          "mutual_dyads": 99,
+          "reciprocal_directed_edges": 198,
+          "reciprocity_edge_pct": 14.71,
+          "reciprocity_dyad_pct": 7.94
+        },
+        "w3": {
+          "edges": 333,
+          "synapses": 2839,
+          "autapses": 0,
+          "mutual_dyads": 9,
+          "reciprocal_directed_edges": 18,
+          "reciprocity_edge_pct": 5.41,
+          "reciprocity_dyad_pct": 2.78
+        },
+        "w5": {
+          "edges": 175,
+          "synapses": 2314,
+          "autapses": 0,
+          "mutual_dyads": 0,
+          "reciprocal_directed_edges": 0,
+          "reciprocity_edge_pct": 0.0,
+          "reciprocity_dyad_pct": 0.0
+        },
+        "w10": {
+          "edges": 71,
+          "synapses": 1638,
+          "autapses": 0,
+          "mutual_dyads": 0,
+          "reciprocal_directed_edges": 0,
+          "reciprocity_edge_pct": 0.0,
+          "reciprocity_dyad_pct": 0.0
+        }
+      },
+      "rank_reciprocity_w1": 52,
+      "rank_reciprocity_w3": 66
+    },
+    {
+      "neuropil": "VES_L",
+      "input_records": 65694,
+      "represented_neurons": 2652,
+      "total_directed_edges_w1": 65694,
+      "total_synapses_w1": 263765,
+      "reciprocity_w1_pct": 14.66,
+      "reciprocity_w3_pct": 6.94,
+      "reciprocity_w5_pct": 5.76,
+      "reciprocity_w10_pct": 4.15,
+      "threshold_details": {
+        "w1": {
+          "edges": 65694,
+          "synapses": 263765,
+          "autapses": 0,
+          "mutual_dyads": 4814,
+          "reciprocal_directed_edges": 9628,
+          "reciprocity_edge_pct": 14.66,
+          "reciprocity_dyad_pct": 7.91
+        },
+        "w3": {
+          "edges": 21407,
+          "synapses": 208195,
+          "autapses": 0,
+          "mutual_dyads": 743,
+          "reciprocal_directed_edges": 1486,
+          "reciprocity_edge_pct": 6.94,
+          "reciprocity_dyad_pct": 3.6
+        },
+        "w5": {
+          "edges": 12394,
+          "synapses": 177775,
+          "autapses": 0,
+          "mutual_dyads": 357,
+          "reciprocal_directed_edges": 714,
+          "reciprocity_edge_pct": 5.76,
+          "reciprocity_dyad_pct": 2.97
+        },
+        "w10": {
+          "edges": 5496,
+          "synapses": 133327,
+          "autapses": 0,
+          "mutual_dyads": 114,
+          "reciprocal_directed_edges": 228,
+          "reciprocity_edge_pct": 4.15,
+          "reciprocity_dyad_pct": 2.12
+        }
+      },
+      "rank_reciprocity_w1": 53,
+      "rank_reciprocity_w3": 51
+    },
+    {
+      "neuropil": "AMMC_L",
+      "input_records": 31842,
+      "represented_neurons": 1667,
+      "total_directed_edges_w1": 31842,
+      "total_synapses_w1": 98011,
+      "reciprocity_w1_pct": 14.6,
+      "reciprocity_w3_pct": 7.61,
+      "reciprocity_w5_pct": 5.96,
+      "reciprocity_w10_pct": 5.1,
+      "threshold_details": {
+        "w1": {
+          "edges": 31842,
+          "synapses": 98011,
+          "autapses": 0,
+          "mutual_dyads": 2325,
+          "reciprocal_directed_edges": 4650,
+          "reciprocity_edge_pct": 14.6,
+          "reciprocity_dyad_pct": 7.88
+        },
+        "w3": {
+          "edges": 9880,
+          "synapses": 70126,
+          "autapses": 0,
+          "mutual_dyads": 376,
+          "reciprocal_directed_edges": 752,
+          "reciprocity_edge_pct": 7.61,
+          "reciprocity_dyad_pct": 3.96
+        },
+        "w5": {
+          "edges": 5169,
+          "synapses": 54251,
+          "autapses": 0,
+          "mutual_dyads": 154,
+          "reciprocal_directed_edges": 308,
+          "reciprocity_edge_pct": 5.96,
+          "reciprocity_dyad_pct": 3.07
+        },
+        "w10": {
+          "edges": 1804,
+          "synapses": 32729,
+          "autapses": 0,
+          "mutual_dyads": 46,
+          "reciprocal_directed_edges": 92,
+          "reciprocity_edge_pct": 5.1,
+          "reciprocity_dyad_pct": 2.62
+        }
+      },
+      "rank_reciprocity_w1": 54,
+      "rank_reciprocity_w3": 47
+    },
+    {
+      "neuropil": "ICL_L",
+      "input_records": 122152,
+      "represented_neurons": 4997,
+      "total_directed_edges_w1": 122152,
+      "total_synapses_w1": 327927,
+      "reciprocity_w1_pct": 14.19,
+      "reciprocity_w3_pct": 6.72,
+      "reciprocity_w5_pct": 5.51,
+      "reciprocity_w10_pct": 5.44,
+      "threshold_details": {
+        "w1": {
+          "edges": 122152,
+          "synapses": 327927,
+          "autapses": 0,
+          "mutual_dyads": 8664,
+          "reciprocal_directed_edges": 17328,
+          "reciprocity_edge_pct": 14.19,
+          "reciprocity_dyad_pct": 7.63
+        },
+        "w3": {
+          "edges": 31867,
+          "synapses": 215761,
+          "autapses": 0,
+          "mutual_dyads": 1071,
+          "reciprocal_directed_edges": 2142,
+          "reciprocity_edge_pct": 6.72,
+          "reciprocity_dyad_pct": 3.48
+        },
+        "w5": {
+          "edges": 15721,
+          "synapses": 161449,
+          "autapses": 0,
+          "mutual_dyads": 433,
+          "reciprocal_directed_edges": 866,
+          "reciprocity_edge_pct": 5.51,
+          "reciprocity_dyad_pct": 2.83
+        },
+        "w10": {
+          "edges": 5259,
+          "synapses": 94756,
+          "autapses": 0,
+          "mutual_dyads": 143,
+          "reciprocal_directed_edges": 286,
+          "reciprocity_edge_pct": 5.44,
+          "reciprocity_dyad_pct": 2.8
+        }
+      },
+      "rank_reciprocity_w1": 55,
+      "rank_reciprocity_w3": 54
+    },
+    {
+      "neuropil": "SPS_R",
+      "input_records": 197289,
+      "represented_neurons": 6050,
+      "total_directed_edges_w1": 197289,
+      "total_synapses_w1": 731877,
+      "reciprocity_w1_pct": 13.38,
+      "reciprocity_w3_pct": 6.94,
+      "reciprocity_w5_pct": 6.03,
+      "reciprocity_w10_pct": 4.39,
+      "threshold_details": {
+        "w1": {
+          "edges": 197289,
+          "synapses": 731877,
+          "autapses": 0,
+          "mutual_dyads": 13201,
+          "reciprocal_directed_edges": 26402,
+          "reciprocity_edge_pct": 13.38,
+          "reciprocity_dyad_pct": 7.17
+        },
+        "w3": {
+          "edges": 63576,
+          "synapses": 564055,
+          "autapses": 0,
+          "mutual_dyads": 2205,
+          "reciprocal_directed_edges": 4410,
+          "reciprocity_edge_pct": 6.94,
+          "reciprocity_dyad_pct": 3.59
+        },
+        "w5": {
+          "edges": 36106,
+          "synapses": 471425,
+          "autapses": 0,
+          "mutual_dyads": 1089,
+          "reciprocal_directed_edges": 2178,
+          "reciprocity_edge_pct": 6.03,
+          "reciprocity_dyad_pct": 3.11
+        },
+        "w10": {
+          "edges": 15113,
+          "synapses": 335919,
+          "autapses": 0,
+          "mutual_dyads": 332,
+          "reciprocal_directed_edges": 664,
+          "reciprocity_edge_pct": 4.39,
+          "reciprocity_dyad_pct": 2.25
+        }
+      },
+      "rank_reciprocity_w1": 56,
+      "rank_reciprocity_w3": 52
+    },
+    {
+      "neuropil": "SIP_R",
+      "input_records": 92175,
+      "represented_neurons": 4929,
+      "total_directed_edges_w1": 92175,
+      "total_synapses_w1": 229288,
+      "reciprocity_w1_pct": 13.22,
+      "reciprocity_w3_pct": 6.86,
+      "reciprocity_w5_pct": 5.84,
+      "reciprocity_w10_pct": 4.9,
+      "threshold_details": {
+        "w1": {
+          "edges": 92175,
+          "synapses": 229288,
+          "autapses": 0,
+          "mutual_dyads": 6093,
+          "reciprocal_directed_edges": 12186,
+          "reciprocity_edge_pct": 13.22,
+          "reciprocity_dyad_pct": 7.08
+        },
+        "w3": {
+          "edges": 21814,
+          "synapses": 142592,
+          "autapses": 0,
+          "mutual_dyads": 748,
+          "reciprocal_directed_edges": 1496,
+          "reciprocity_edge_pct": 6.86,
+          "reciprocity_dyad_pct": 3.55
+        },
+        "w5": {
+          "edges": 10199,
+          "synapses": 103608,
+          "autapses": 0,
+          "mutual_dyads": 298,
+          "reciprocal_directed_edges": 596,
+          "reciprocity_edge_pct": 5.84,
+          "reciprocity_dyad_pct": 3.01
+        },
+        "w10": {
+          "edges": 3186,
+          "synapses": 59273,
+          "autapses": 0,
+          "mutual_dyads": 78,
+          "reciprocal_directed_edges": 156,
+          "reciprocity_edge_pct": 4.9,
+          "reciprocity_dyad_pct": 2.51
+        }
+      },
+      "rank_reciprocity_w1": 57,
+      "rank_reciprocity_w3": 53
+    },
+    {
+      "neuropil": "WED_L",
+      "input_records": 61304,
+      "represented_neurons": 3456,
+      "total_directed_edges_w1": 61304,
+      "total_synapses_w1": 196091,
+      "reciprocity_w1_pct": 13.16,
+      "reciprocity_w3_pct": 7.47,
+      "reciprocity_w5_pct": 6.46,
+      "reciprocity_w10_pct": 5.51,
+      "threshold_details": {
+        "w1": {
+          "edges": 61304,
+          "synapses": 196091,
+          "autapses": 0,
+          "mutual_dyads": 4034,
+          "reciprocal_directed_edges": 8068,
+          "reciprocity_edge_pct": 13.16,
+          "reciprocity_dyad_pct": 7.04
+        },
+        "w3": {
+          "edges": 19029,
+          "synapses": 142743,
+          "autapses": 0,
+          "mutual_dyads": 711,
+          "reciprocal_directed_edges": 1422,
+          "reciprocity_edge_pct": 7.47,
+          "reciprocity_dyad_pct": 3.88
+        },
+        "w5": {
+          "edges": 10099,
+          "synapses": 112598,
+          "autapses": 0,
+          "mutual_dyads": 326,
+          "reciprocal_directed_edges": 652,
+          "reciprocity_edge_pct": 6.46,
+          "reciprocity_dyad_pct": 3.34
+        },
+        "w10": {
+          "edges": 3630,
+          "synapses": 71022,
+          "autapses": 0,
+          "mutual_dyads": 100,
+          "reciprocal_directed_edges": 200,
+          "reciprocity_edge_pct": 5.51,
+          "reciprocity_dyad_pct": 2.83
+        }
+      },
+      "rank_reciprocity_w1": 58,
+      "rank_reciprocity_w3": 48
+    },
+    {
+      "neuropil": "SCL_R",
+      "input_records": 123841,
+      "represented_neurons": 6436,
+      "total_directed_edges_w1": 123841,
+      "total_synapses_w1": 280743,
+      "reciprocity_w1_pct": 13.03,
+      "reciprocity_w3_pct": 6.18,
+      "reciprocity_w5_pct": 5.02,
+      "reciprocity_w10_pct": 2.76,
+      "threshold_details": {
+        "w1": {
+          "edges": 123841,
+          "synapses": 280743,
+          "autapses": 0,
+          "mutual_dyads": 8069,
+          "reciprocal_directed_edges": 16138,
+          "reciprocity_edge_pct": 13.03,
+          "reciprocity_dyad_pct": 6.97
+        },
+        "w3": {
+          "edges": 27415,
+          "synapses": 161983,
+          "autapses": 0,
+          "mutual_dyads": 847,
+          "reciprocal_directed_edges": 1694,
+          "reciprocity_edge_pct": 6.18,
+          "reciprocity_dyad_pct": 3.19
+        },
+        "w5": {
+          "edges": 12075,
+          "synapses": 110555,
+          "autapses": 0,
+          "mutual_dyads": 303,
+          "reciprocal_directed_edges": 606,
+          "reciprocity_edge_pct": 5.02,
+          "reciprocity_dyad_pct": 2.57
+        },
+        "w10": {
+          "edges": 3403,
+          "synapses": 55934,
+          "autapses": 0,
+          "mutual_dyads": 47,
+          "reciprocal_directed_edges": 94,
+          "reciprocity_edge_pct": 2.76,
+          "reciprocity_dyad_pct": 1.4
+        }
+      },
+      "rank_reciprocity_w1": 59,
+      "rank_reciprocity_w3": 60
+    },
+    {
+      "neuropil": "AMMC_R",
+      "input_records": 32689,
+      "represented_neurons": 1937,
+      "total_directed_edges_w1": 32689,
+      "total_synapses_w1": 101793,
+      "reciprocity_w1_pct": 12.96,
+      "reciprocity_w3_pct": 6.53,
+      "reciprocity_w5_pct": 4.66,
+      "reciprocity_w10_pct": 3.11,
+      "threshold_details": {
+        "w1": {
+          "edges": 32689,
+          "synapses": 101793,
+          "autapses": 0,
+          "mutual_dyads": 2119,
+          "reciprocal_directed_edges": 4238,
+          "reciprocity_edge_pct": 12.96,
+          "reciprocity_dyad_pct": 6.93
+        },
+        "w3": {
+          "edges": 10406,
+          "synapses": 73377,
+          "autapses": 0,
+          "mutual_dyads": 340,
+          "reciprocal_directed_edges": 680,
+          "reciprocity_edge_pct": 6.53,
+          "reciprocity_dyad_pct": 3.38
+        },
+        "w5": {
+          "edges": 5361,
+          "synapses": 56409,
+          "autapses": 0,
+          "mutual_dyads": 125,
+          "reciprocal_directed_edges": 250,
+          "reciprocity_edge_pct": 4.66,
+          "reciprocity_dyad_pct": 2.39
+        },
+        "w10": {
+          "edges": 1932,
+          "synapses": 34367,
+          "autapses": 0,
+          "mutual_dyads": 30,
+          "reciprocal_directed_edges": 60,
+          "reciprocity_edge_pct": 3.11,
+          "reciprocity_dyad_pct": 1.58
+        }
+      },
+      "rank_reciprocity_w1": 60,
+      "rank_reciprocity_w3": 56
+    },
+    {
+      "neuropil": "WED_R",
+      "input_records": 78387,
+      "represented_neurons": 3502,
+      "total_directed_edges_w1": 78387,
+      "total_synapses_w1": 254680,
+      "reciprocity_w1_pct": 12.92,
+      "reciprocity_w3_pct": 6.09,
+      "reciprocity_w5_pct": 5.15,
+      "reciprocity_w10_pct": 4.37,
+      "threshold_details": {
+        "w1": {
+          "edges": 78387,
+          "synapses": 254680,
+          "autapses": 0,
+          "mutual_dyads": 5062,
+          "reciprocal_directed_edges": 10124,
+          "reciprocity_edge_pct": 12.92,
+          "reciprocity_dyad_pct": 6.9
+        },
+        "w3": {
+          "edges": 24323,
+          "synapses": 186828,
+          "autapses": 0,
+          "mutual_dyads": 741,
+          "reciprocal_directed_edges": 1482,
+          "reciprocity_edge_pct": 6.09,
+          "reciprocity_dyad_pct": 3.14
+        },
+        "w5": {
+          "edges": 13243,
+          "synapses": 149449,
+          "autapses": 0,
+          "mutual_dyads": 341,
+          "reciprocal_directed_edges": 682,
+          "reciprocity_edge_pct": 5.15,
+          "reciprocity_dyad_pct": 2.64
+        },
+        "w10": {
+          "edges": 4942,
+          "synapses": 96122,
+          "autapses": 0,
+          "mutual_dyads": 108,
+          "reciprocal_directed_edges": 216,
+          "reciprocity_edge_pct": 4.37,
+          "reciprocity_dyad_pct": 2.23
+        }
+      },
+      "rank_reciprocity_w1": 61,
+      "rank_reciprocity_w3": 61
+    },
+    {
+      "neuropil": "GOR_L",
+      "input_records": 30605,
+      "represented_neurons": 1956,
+      "total_directed_edges_w1": 30605,
+      "total_synapses_w1": 76258,
+      "reciprocity_w1_pct": 12.84,
+      "reciprocity_w3_pct": 6.02,
+      "reciprocity_w5_pct": 4.62,
+      "reciprocity_w10_pct": 4.61,
+      "threshold_details": {
+        "w1": {
+          "edges": 30605,
+          "synapses": 76258,
+          "autapses": 0,
+          "mutual_dyads": 1965,
+          "reciprocal_directed_edges": 3930,
+          "reciprocity_edge_pct": 12.84,
+          "reciprocity_dyad_pct": 6.86
+        },
+        "w3": {
+          "edges": 7680,
+          "synapses": 47576,
+          "autapses": 0,
+          "mutual_dyads": 231,
+          "reciprocal_directed_edges": 462,
+          "reciprocity_edge_pct": 6.02,
+          "reciprocity_dyad_pct": 3.1
+        },
+        "w5": {
+          "edges": 3507,
+          "synapses": 33566,
+          "autapses": 0,
+          "mutual_dyads": 81,
+          "reciprocal_directed_edges": 162,
+          "reciprocity_edge_pct": 4.62,
+          "reciprocity_dyad_pct": 2.36
+        },
+        "w10": {
+          "edges": 1127,
+          "synapses": 18552,
+          "autapses": 0,
+          "mutual_dyads": 26,
+          "reciprocal_directed_edges": 52,
+          "reciprocity_edge_pct": 4.61,
+          "reciprocity_dyad_pct": 2.36
+        }
+      },
+      "rank_reciprocity_w1": 62,
+      "rank_reciprocity_w3": 62
+    },
+    {
+      "neuropil": "SPS_L",
+      "input_records": 158658,
+      "represented_neurons": 5403,
+      "total_directed_edges_w1": 158658,
+      "total_synapses_w1": 569251,
+      "reciprocity_w1_pct": 12.38,
+      "reciprocity_w3_pct": 5.89,
+      "reciprocity_w5_pct": 4.55,
+      "reciprocity_w10_pct": 3.1,
+      "threshold_details": {
+        "w1": {
+          "edges": 158658,
+          "synapses": 569251,
+          "autapses": 0,
+          "mutual_dyads": 9819,
+          "reciprocal_directed_edges": 19638,
+          "reciprocity_edge_pct": 12.38,
+          "reciprocity_dyad_pct": 6.6
+        },
+        "w3": {
+          "edges": 50497,
+          "synapses": 433380,
+          "autapses": 0,
+          "mutual_dyads": 1488,
+          "reciprocal_directed_edges": 2976,
+          "reciprocity_edge_pct": 5.89,
+          "reciprocity_dyad_pct": 3.04
+        },
+        "w5": {
+          "edges": 27950,
+          "synapses": 357229,
+          "autapses": 0,
+          "mutual_dyads": 636,
+          "reciprocal_directed_edges": 1272,
+          "reciprocity_edge_pct": 4.55,
+          "reciprocity_dyad_pct": 2.33
+        },
+        "w10": {
+          "edges": 11548,
+          "synapses": 251416,
+          "autapses": 0,
+          "mutual_dyads": 179,
+          "reciprocal_directed_edges": 358,
+          "reciprocity_edge_pct": 3.1,
+          "reciprocity_dyad_pct": 1.57
+        }
+      },
+      "rank_reciprocity_w1": 63,
+      "rank_reciprocity_w3": 63
+    },
+    {
+      "neuropil": "SAD",
+      "input_records": 171786,
+      "represented_neurons": 7697,
+      "total_directed_edges_w1": 171786,
+      "total_synapses_w1": 527408,
+      "reciprocity_w1_pct": 12.3,
+      "reciprocity_w3_pct": 6.3,
+      "reciprocity_w5_pct": 4.84,
+      "reciprocity_w10_pct": 3.21,
+      "threshold_details": {
+        "w1": {
+          "edges": 171786,
+          "synapses": 527408,
+          "autapses": 0,
+          "mutual_dyads": 10563,
+          "reciprocal_directed_edges": 21126,
+          "reciprocity_edge_pct": 12.3,
+          "reciprocity_dyad_pct": 6.55
+        },
+        "w3": {
+          "edges": 52093,
+          "synapses": 376716,
+          "autapses": 0,
+          "mutual_dyads": 1641,
+          "reciprocal_directed_edges": 3282,
+          "reciprocity_edge_pct": 6.3,
+          "reciprocity_dyad_pct": 3.25
+        },
+        "w5": {
+          "edges": 27293,
+          "synapses": 292925,
+          "autapses": 0,
+          "mutual_dyads": 660,
+          "reciprocal_directed_edges": 1320,
+          "reciprocity_edge_pct": 4.84,
+          "reciprocity_dyad_pct": 2.48
+        },
+        "w10": {
+          "edges": 9653,
+          "synapses": 180114,
+          "autapses": 0,
+          "mutual_dyads": 155,
+          "reciprocal_directed_edges": 310,
+          "reciprocity_edge_pct": 3.21,
+          "reciprocity_dyad_pct": 1.63
+        }
+      },
+      "rank_reciprocity_w1": 64,
+      "rank_reciprocity_w3": 58
+    },
+    {
+      "neuropil": "SCL_L",
+      "input_records": 110570,
+      "represented_neurons": 5869,
+      "total_directed_edges_w1": 110570,
+      "total_synapses_w1": 245157,
+      "reciprocity_w1_pct": 12.16,
+      "reciprocity_w3_pct": 5.26,
+      "reciprocity_w5_pct": 3.65,
+      "reciprocity_w10_pct": 2.51,
+      "threshold_details": {
+        "w1": {
+          "edges": 110570,
+          "synapses": 245157,
+          "autapses": 0,
+          "mutual_dyads": 6720,
+          "reciprocal_directed_edges": 13440,
+          "reciprocity_edge_pct": 12.16,
+          "reciprocity_dyad_pct": 6.47
+        },
+        "w3": {
+          "edges": 23805,
+          "synapses": 138684,
+          "autapses": 0,
+          "mutual_dyads": 626,
+          "reciprocal_directed_edges": 1252,
+          "reciprocity_edge_pct": 5.26,
+          "reciprocity_dyad_pct": 2.7
+        },
+        "w5": {
+          "edges": 10199,
+          "synapses": 93083,
+          "autapses": 0,
+          "mutual_dyads": 186,
+          "reciprocal_directed_edges": 372,
+          "reciprocity_edge_pct": 3.65,
+          "reciprocity_dyad_pct": 1.86
+        },
+        "w10": {
+          "edges": 2873,
+          "synapses": 46965,
+          "autapses": 0,
+          "mutual_dyads": 36,
+          "reciprocal_directed_edges": 72,
+          "reciprocity_edge_pct": 2.51,
+          "reciprocity_dyad_pct": 1.27
+        }
+      },
+      "rank_reciprocity_w1": 65,
+      "rank_reciprocity_w3": 67
+    },
+    {
+      "neuropil": "GOR_R",
+      "input_records": 30751,
+      "represented_neurons": 1979,
+      "total_directed_edges_w1": 30751,
+      "total_synapses_w1": 76880,
+      "reciprocity_w1_pct": 11.83,
+      "reciprocity_w3_pct": 5.06,
+      "reciprocity_w5_pct": 4.32,
+      "reciprocity_w10_pct": 4.99,
+      "threshold_details": {
+        "w1": {
+          "edges": 30751,
+          "synapses": 76880,
+          "autapses": 0,
+          "mutual_dyads": 1819,
+          "reciprocal_directed_edges": 3638,
+          "reciprocity_edge_pct": 11.83,
+          "reciprocity_dyad_pct": 6.29
+        },
+        "w3": {
+          "edges": 7867,
+          "synapses": 48160,
+          "autapses": 0,
+          "mutual_dyads": 199,
+          "reciprocal_directed_edges": 398,
+          "reciprocity_edge_pct": 5.06,
+          "reciprocity_dyad_pct": 2.6
+        },
+        "w5": {
+          "edges": 3567,
+          "synapses": 33696,
+          "autapses": 0,
+          "mutual_dyads": 77,
+          "reciprocal_directed_edges": 154,
+          "reciprocity_edge_pct": 4.32,
+          "reciprocity_dyad_pct": 2.21
+        },
+        "w10": {
+          "edges": 1042,
+          "synapses": 17646,
+          "autapses": 0,
+          "mutual_dyads": 26,
+          "reciprocal_directed_edges": 52,
+          "reciprocity_edge_pct": 4.99,
+          "reciprocity_dyad_pct": 2.56
+        }
+      },
+      "rank_reciprocity_w1": 66,
+      "rank_reciprocity_w3": 68
+    },
+    {
+      "neuropil": "FLA_R",
+      "input_records": 43385,
+      "represented_neurons": 2196,
+      "total_directed_edges_w1": 43385,
+      "total_synapses_w1": 129153,
+      "reciprocity_w1_pct": 11.31,
+      "reciprocity_w3_pct": 5.54,
+      "reciprocity_w5_pct": 4.94,
+      "reciprocity_w10_pct": 4.63,
+      "threshold_details": {
+        "w1": {
+          "edges": 43385,
+          "synapses": 129153,
+          "autapses": 0,
+          "mutual_dyads": 2453,
+          "reciprocal_directed_edges": 4906,
+          "reciprocity_edge_pct": 11.31,
+          "reciprocity_dyad_pct": 5.99
+        },
+        "w3": {
+          "edges": 12632,
+          "synapses": 90632,
+          "autapses": 0,
+          "mutual_dyads": 350,
+          "reciprocal_directed_edges": 700,
+          "reciprocity_edge_pct": 5.54,
+          "reciprocity_dyad_pct": 2.85
+        },
+        "w5": {
+          "edges": 6596,
+          "synapses": 70279,
+          "autapses": 0,
+          "mutual_dyads": 163,
+          "reciprocal_directed_edges": 326,
+          "reciprocity_edge_pct": 4.94,
+          "reciprocity_dyad_pct": 2.53
+        },
+        "w10": {
+          "edges": 2334,
+          "synapses": 42894,
+          "autapses": 0,
+          "mutual_dyads": 54,
+          "reciprocal_directed_edges": 108,
+          "reciprocity_edge_pct": 4.63,
+          "reciprocity_dyad_pct": 2.37
+        }
+      },
+      "rank_reciprocity_w1": 67,
+      "rank_reciprocity_w3": 65
+    },
+    {
+      "neuropil": "ATL_R",
+      "input_records": 15034,
+      "represented_neurons": 1606,
+      "total_directed_edges_w1": 15034,
+      "total_synapses_w1": 33747,
+      "reciprocity_w1_pct": 11.0,
+      "reciprocity_w3_pct": 6.2,
+      "reciprocity_w5_pct": 6.82,
+      "reciprocity_w10_pct": 4.35,
+      "threshold_details": {
+        "w1": {
+          "edges": 15034,
+          "synapses": 33747,
+          "autapses": 0,
+          "mutual_dyads": 827,
+          "reciprocal_directed_edges": 1654,
+          "reciprocity_edge_pct": 11.0,
+          "reciprocity_dyad_pct": 5.82
+        },
+        "w3": {
+          "edges": 3097,
+          "synapses": 19105,
+          "autapses": 0,
+          "mutual_dyads": 96,
+          "reciprocal_directed_edges": 192,
+          "reciprocity_edge_pct": 6.2,
+          "reciprocity_dyad_pct": 3.2
+        },
+        "w5": {
+          "edges": 1319,
+          "synapses": 13183,
+          "autapses": 0,
+          "mutual_dyads": 45,
+          "reciprocal_directed_edges": 90,
+          "reciprocity_edge_pct": 6.82,
+          "reciprocity_dyad_pct": 3.53
+        },
+        "w10": {
+          "edges": 414,
+          "synapses": 7502,
+          "autapses": 0,
+          "mutual_dyads": 9,
+          "reciprocal_directed_edges": 18,
+          "reciprocity_edge_pct": 4.35,
+          "reciprocity_dyad_pct": 2.22
+        }
+      },
+      "rank_reciprocity_w1": 68,
+      "rank_reciprocity_w3": 59
+    },
+    {
+      "neuropil": "EPA_L",
+      "input_records": 24044,
+      "represented_neurons": 1816,
+      "total_directed_edges_w1": 24044,
+      "total_synapses_w1": 58224,
+      "reciprocity_w1_pct": 10.92,
+      "reciprocity_w3_pct": 3.86,
+      "reciprocity_w5_pct": 3.2,
+      "reciprocity_w10_pct": 3.62,
+      "threshold_details": {
+        "w1": {
+          "edges": 24044,
+          "synapses": 58224,
+          "autapses": 0,
+          "mutual_dyads": 1313,
+          "reciprocal_directed_edges": 2626,
+          "reciprocity_edge_pct": 10.92,
+          "reciprocity_dyad_pct": 5.78
+        },
+        "w3": {
+          "edges": 5906,
+          "synapses": 35565,
+          "autapses": 0,
+          "mutual_dyads": 114,
+          "reciprocal_directed_edges": 228,
+          "reciprocity_edge_pct": 3.86,
+          "reciprocity_dyad_pct": 1.97
+        },
+        "w5": {
+          "edges": 2686,
+          "synapses": 24764,
+          "autapses": 0,
+          "mutual_dyads": 43,
+          "reciprocal_directed_edges": 86,
+          "reciprocity_edge_pct": 3.2,
+          "reciprocity_dyad_pct": 1.63
+        },
+        "w10": {
+          "edges": 774,
+          "synapses": 12767,
+          "autapses": 0,
+          "mutual_dyads": 14,
+          "reciprocal_directed_edges": 28,
+          "reciprocity_edge_pct": 3.62,
+          "reciprocity_dyad_pct": 1.84
+        }
+      },
+      "rank_reciprocity_w1": 69,
+      "rank_reciprocity_w3": 71
+    },
+    {
+      "neuropil": "FLA_L",
+      "input_records": 35957,
+      "represented_neurons": 2023,
+      "total_directed_edges_w1": 35957,
+      "total_synapses_w1": 99577,
+      "reciprocity_w1_pct": 10.79,
+      "reciprocity_w3_pct": 6.46,
+      "reciprocity_w5_pct": 5.76,
+      "reciprocity_w10_pct": 4.22,
+      "threshold_details": {
+        "w1": {
+          "edges": 35957,
+          "synapses": 99577,
+          "autapses": 0,
+          "mutual_dyads": 1939,
+          "reciprocal_directed_edges": 3878,
+          "reciprocity_edge_pct": 10.79,
+          "reciprocity_dyad_pct": 5.7
+        },
+        "w3": {
+          "edges": 10057,
+          "synapses": 67003,
+          "autapses": 0,
+          "mutual_dyads": 325,
+          "reciprocal_directed_edges": 650,
+          "reciprocity_edge_pct": 6.46,
+          "reciprocity_dyad_pct": 3.34
+        },
+        "w5": {
+          "edges": 4927,
+          "synapses": 49770,
+          "autapses": 0,
+          "mutual_dyads": 142,
+          "reciprocal_directed_edges": 284,
+          "reciprocity_edge_pct": 5.76,
+          "reciprocity_dyad_pct": 2.97
+        },
+        "w10": {
+          "edges": 1613,
+          "synapses": 28713,
+          "autapses": 0,
+          "mutual_dyads": 34,
+          "reciprocal_directed_edges": 68,
+          "reciprocity_edge_pct": 4.22,
+          "reciprocity_dyad_pct": 2.15
+        }
+      },
+      "rank_reciprocity_w1": 70,
+      "rank_reciprocity_w3": 57
+    },
+    {
+      "neuropil": "IPS_R",
+      "input_records": 119387,
+      "represented_neurons": 4445,
+      "total_directed_edges_w1": 119387,
+      "total_synapses_w1": 480261,
+      "reciprocity_w1_pct": 10.75,
+      "reciprocity_w3_pct": 4.84,
+      "reciprocity_w5_pct": 4.09,
+      "reciprocity_w10_pct": 3.72,
+      "threshold_details": {
+        "w1": {
+          "edges": 119387,
+          "synapses": 480261,
+          "autapses": 0,
+          "mutual_dyads": 6418,
+          "reciprocal_directed_edges": 12836,
+          "reciprocity_edge_pct": 10.75,
+          "reciprocity_dyad_pct": 5.68
+        },
+        "w3": {
+          "edges": 39792,
+          "synapses": 380248,
+          "autapses": 0,
+          "mutual_dyads": 963,
+          "reciprocal_directed_edges": 1926,
+          "reciprocity_edge_pct": 4.84,
+          "reciprocity_dyad_pct": 2.48
+        },
+        "w5": {
+          "edges": 22985,
+          "synapses": 323290,
+          "autapses": 0,
+          "mutual_dyads": 470,
+          "reciprocal_directed_edges": 940,
+          "reciprocity_edge_pct": 4.09,
+          "reciprocity_dyad_pct": 2.09
+        },
+        "w10": {
+          "edges": 9994,
+          "synapses": 239284,
+          "autapses": 0,
+          "mutual_dyads": 186,
+          "reciprocal_directed_edges": 372,
+          "reciprocity_edge_pct": 3.72,
+          "reciprocity_dyad_pct": 1.9
+        }
+      },
+      "rank_reciprocity_w1": 71,
+      "rank_reciprocity_w3": 69
+    },
+    {
+      "neuropil": "ATL_L",
+      "input_records": 16961,
+      "represented_neurons": 1672,
+      "total_directed_edges_w1": 16961,
+      "total_synapses_w1": 37726,
+      "reciprocity_w1_pct": 10.64,
+      "reciprocity_w3_pct": 5.71,
+      "reciprocity_w5_pct": 4.93,
+      "reciprocity_w10_pct": 5.38,
+      "threshold_details": {
+        "w1": {
+          "edges": 16961,
+          "synapses": 37726,
+          "autapses": 0,
+          "mutual_dyads": 902,
+          "reciprocal_directed_edges": 1804,
+          "reciprocity_edge_pct": 10.64,
+          "reciprocity_dyad_pct": 5.62
+        },
+        "w3": {
+          "edges": 3536,
+          "synapses": 21241,
+          "autapses": 0,
+          "mutual_dyads": 101,
+          "reciprocal_directed_edges": 202,
+          "reciprocity_edge_pct": 5.71,
+          "reciprocity_dyad_pct": 2.94
+        },
+        "w5": {
+          "edges": 1461,
+          "synapses": 14314,
+          "autapses": 0,
+          "mutual_dyads": 36,
+          "reciprocal_directed_edges": 72,
+          "reciprocity_edge_pct": 4.93,
+          "reciprocity_dyad_pct": 2.53
+        },
+        "w10": {
+          "edges": 446,
+          "synapses": 7877,
+          "autapses": 0,
+          "mutual_dyads": 12,
+          "reciprocal_directed_edges": 24,
+          "reciprocity_edge_pct": 5.38,
+          "reciprocity_dyad_pct": 2.76
+        }
+      },
+      "rank_reciprocity_w1": 72,
+      "rank_reciprocity_w3": 64
+    },
+    {
+      "neuropil": "IPS_L",
+      "input_records": 126502,
+      "represented_neurons": 4469,
+      "total_directed_edges_w1": 126502,
+      "total_synapses_w1": 500696,
+      "reciprocity_w1_pct": 10.4,
+      "reciprocity_w3_pct": 4.42,
+      "reciprocity_w5_pct": 3.6,
+      "reciprocity_w10_pct": 3.04,
+      "threshold_details": {
+        "w1": {
+          "edges": 126502,
+          "synapses": 500696,
+          "autapses": 0,
+          "mutual_dyads": 6581,
+          "reciprocal_directed_edges": 13162,
+          "reciprocity_edge_pct": 10.4,
+          "reciprocity_dyad_pct": 5.49
+        },
+        "w3": {
+          "edges": 41973,
+          "synapses": 394670,
+          "autapses": 0,
+          "mutual_dyads": 927,
+          "reciprocal_directed_edges": 1854,
+          "reciprocity_edge_pct": 4.42,
+          "reciprocity_dyad_pct": 2.26
+        },
+        "w5": {
+          "edges": 24259,
+          "synapses": 334760,
+          "autapses": 0,
+          "mutual_dyads": 437,
+          "reciprocal_directed_edges": 874,
+          "reciprocity_edge_pct": 3.6,
+          "reciprocity_dyad_pct": 1.83
+        },
+        "w10": {
+          "edges": 10387,
+          "synapses": 245302,
+          "autapses": 0,
+          "mutual_dyads": 158,
+          "reciprocal_directed_edges": 316,
+          "reciprocity_edge_pct": 3.04,
+          "reciprocity_dyad_pct": 1.54
+        }
+      },
+      "rank_reciprocity_w1": 73,
+      "rank_reciprocity_w3": 70
+    },
+    {
+      "neuropil": "EPA_R",
+      "input_records": 19048,
+      "represented_neurons": 1615,
+      "total_directed_edges_w1": 19048,
+      "total_synapses_w1": 47698,
+      "reciprocity_w1_pct": 10.02,
+      "reciprocity_w3_pct": 3.51,
+      "reciprocity_w5_pct": 2.2,
+      "reciprocity_w10_pct": 2.37,
+      "threshold_details": {
+        "w1": {
+          "edges": 19048,
+          "synapses": 47698,
+          "autapses": 0,
+          "mutual_dyads": 954,
+          "reciprocal_directed_edges": 1908,
+          "reciprocity_edge_pct": 10.02,
+          "reciprocity_dyad_pct": 5.27
+        },
+        "w3": {
+          "edges": 4959,
+          "synapses": 30143,
+          "autapses": 0,
+          "mutual_dyads": 87,
+          "reciprocal_directed_edges": 174,
+          "reciprocity_edge_pct": 3.51,
+          "reciprocity_dyad_pct": 1.79
+        },
+        "w5": {
+          "edges": 2275,
+          "synapses": 21116,
+          "autapses": 0,
+          "mutual_dyads": 25,
+          "reciprocal_directed_edges": 50,
+          "reciprocity_edge_pct": 2.2,
+          "reciprocity_dyad_pct": 1.11
+        },
+        "w10": {
+          "edges": 676,
+          "synapses": 11028,
+          "autapses": 0,
+          "mutual_dyads": 8,
+          "reciprocal_directed_edges": 16,
+          "reciprocity_edge_pct": 2.37,
+          "reciprocity_dyad_pct": 1.2
+        }
+      },
+      "rank_reciprocity_w1": 74,
+      "rank_reciprocity_w3": 73
+    },
+    {
+      "neuropil": "IB_R",
+      "input_records": 60487,
+      "represented_neurons": 3135,
+      "total_directed_edges_w1": 60487,
+      "total_synapses_w1": 158215,
+      "reciprocity_w1_pct": 8.56,
+      "reciprocity_w3_pct": 2.88,
+      "reciprocity_w5_pct": 2.29,
+      "reciprocity_w10_pct": 1.37,
+      "threshold_details": {
+        "w1": {
+          "edges": 60487,
+          "synapses": 158215,
+          "autapses": 0,
+          "mutual_dyads": 2590,
+          "reciprocal_directed_edges": 5180,
+          "reciprocity_edge_pct": 8.56,
+          "reciprocity_dyad_pct": 4.47
+        },
+        "w3": {
+          "edges": 15505,
+          "synapses": 102140,
+          "autapses": 0,
+          "mutual_dyads": 223,
+          "reciprocal_directed_edges": 446,
+          "reciprocity_edge_pct": 2.88,
+          "reciprocity_dyad_pct": 1.46
+        },
+        "w5": {
+          "edges": 7517,
+          "synapses": 75222,
+          "autapses": 0,
+          "mutual_dyads": 86,
+          "reciprocal_directed_edges": 172,
+          "reciprocity_edge_pct": 2.29,
+          "reciprocity_dyad_pct": 1.16
+        },
+        "w10": {
+          "edges": 2477,
+          "synapses": 43384,
+          "autapses": 0,
+          "mutual_dyads": 17,
+          "reciprocal_directed_edges": 34,
+          "reciprocity_edge_pct": 1.37,
+          "reciprocity_dyad_pct": 0.69
+        }
+      },
+      "rank_reciprocity_w1": 75,
+      "rank_reciprocity_w3": 75
+    },
+    {
+      "neuropil": "IB_L",
+      "input_records": 56460,
+      "represented_neurons": 3176,
+      "total_directed_edges_w1": 56460,
+      "total_synapses_w1": 142166,
+      "reciprocity_w1_pct": 7.74,
+      "reciprocity_w3_pct": 2.56,
+      "reciprocity_w5_pct": 1.79,
+      "reciprocity_w10_pct": 0.79,
+      "threshold_details": {
+        "w1": {
+          "edges": 56460,
+          "synapses": 142166,
+          "autapses": 0,
+          "mutual_dyads": 2184,
+          "reciprocal_directed_edges": 4368,
+          "reciprocity_edge_pct": 7.74,
+          "reciprocity_dyad_pct": 4.02
+        },
+        "w3": {
+          "edges": 14040,
+          "synapses": 89379,
+          "autapses": 0,
+          "mutual_dyads": 180,
+          "reciprocal_directed_edges": 360,
+          "reciprocity_edge_pct": 2.56,
+          "reciprocity_dyad_pct": 1.3
+        },
+        "w5": {
+          "edges": 6581,
+          "synapses": 64370,
+          "autapses": 0,
+          "mutual_dyads": 59,
+          "reciprocal_directed_edges": 118,
+          "reciprocity_edge_pct": 1.79,
+          "reciprocity_dyad_pct": 0.9
+        },
+        "w10": {
+          "edges": 2030,
+          "synapses": 35208,
+          "autapses": 0,
+          "mutual_dyads": 8,
+          "reciprocal_directed_edges": 16,
+          "reciprocity_edge_pct": 0.79,
+          "reciprocity_dyad_pct": 0.4
+        }
+      },
+      "rank_reciprocity_w1": 76,
+      "rank_reciprocity_w3": 76
+    },
+    {
+      "neuropil": "UNASGD",
+      "input_records": 3193,
+      "represented_neurons": 4546,
+      "total_directed_edges_w1": 3193,
+      "total_synapses_w1": 4185,
+      "reciprocity_w1_pct": 5.45,
+      "reciprocity_w3_pct": 3.08,
+      "reciprocity_w5_pct": 0.0,
+      "reciprocity_w10_pct": 0.0,
+      "threshold_details": {
+        "w1": {
+          "edges": 3193,
+          "synapses": 4185,
+          "autapses": 0,
+          "mutual_dyads": 87,
+          "reciprocal_directed_edges": 174,
+          "reciprocity_edge_pct": 5.45,
+          "reciprocity_dyad_pct": 2.8
+        },
+        "w3": {
+          "edges": 195,
+          "synapses": 802,
+          "autapses": 0,
+          "mutual_dyads": 3,
+          "reciprocal_directed_edges": 6,
+          "reciprocity_edge_pct": 3.08,
+          "reciprocity_dyad_pct": 1.56
+        },
+        "w5": {
+          "edges": 39,
+          "synapses": 290,
+          "autapses": 0,
+          "mutual_dyads": 0,
+          "reciprocal_directed_edges": 0,
+          "reciprocity_edge_pct": 0.0,
+          "reciprocity_dyad_pct": 0.0
+        },
+        "w10": {
+          "edges": 8,
+          "synapses": 95,
+          "autapses": 0,
+          "mutual_dyads": 0,
+          "reciprocal_directed_edges": 0,
+          "reciprocity_edge_pct": 0.0,
+          "reciprocity_dyad_pct": 0.0
+        }
+      },
+      "rank_reciprocity_w1": 77,
+      "rank_reciprocity_w3": 74
+    },
+    {
+      "neuropil": "CAN_L",
+      "input_records": 5303,
+      "represented_neurons": 606,
+      "total_directed_edges_w1": 5303,
+      "total_synapses_w1": 13368,
+      "reciprocity_w1_pct": 5.2,
+      "reciprocity_w3_pct": 1.76,
+      "reciprocity_w5_pct": 0.9,
+      "reciprocity_w10_pct": 1.03,
+      "threshold_details": {
+        "w1": {
+          "edges": 5303,
+          "synapses": 13368,
+          "autapses": 0,
+          "mutual_dyads": 138,
+          "reciprocal_directed_edges": 276,
+          "reciprocity_edge_pct": 5.2,
+          "reciprocity_dyad_pct": 2.67
+        },
+        "w3": {
+          "edges": 1476,
+          "synapses": 8518,
+          "autapses": 0,
+          "mutual_dyads": 13,
+          "reciprocal_directed_edges": 26,
+          "reciprocity_edge_pct": 1.76,
+          "reciprocity_dyad_pct": 0.89
+        },
+        "w5": {
+          "edges": 664,
+          "synapses": 5788,
+          "autapses": 0,
+          "mutual_dyads": 3,
+          "reciprocal_directed_edges": 6,
+          "reciprocity_edge_pct": 0.9,
+          "reciprocity_dyad_pct": 0.45
+        },
+        "w10": {
+          "edges": 195,
+          "synapses": 2899,
+          "autapses": 0,
+          "mutual_dyads": 1,
+          "reciprocal_directed_edges": 2,
+          "reciprocity_edge_pct": 1.03,
+          "reciprocity_dyad_pct": 0.52
+        }
+      },
+      "rank_reciprocity_w1": 78,
+      "rank_reciprocity_w3": 78
+    },
+    {
+      "neuropil": "CAN_R",
+      "input_records": 6774,
+      "represented_neurons": 1049,
+      "total_directed_edges_w1": 6774,
+      "total_synapses_w1": 15540,
+      "reciprocity_w1_pct": 4.64,
+      "reciprocity_w3_pct": 1.08,
+      "reciprocity_w5_pct": 0.9,
+      "reciprocity_w10_pct": 1.13,
+      "threshold_details": {
+        "w1": {
+          "edges": 6774,
+          "synapses": 15540,
+          "autapses": 0,
+          "mutual_dyads": 157,
+          "reciprocal_directed_edges": 314,
+          "reciprocity_edge_pct": 4.64,
+          "reciprocity_dyad_pct": 2.37
+        },
+        "w3": {
+          "edges": 1663,
+          "synapses": 9090,
+          "autapses": 0,
+          "mutual_dyads": 9,
+          "reciprocal_directed_edges": 18,
+          "reciprocity_edge_pct": 1.08,
+          "reciprocity_dyad_pct": 0.54
+        },
+        "w5": {
+          "edges": 669,
+          "synapses": 5760,
+          "autapses": 0,
+          "mutual_dyads": 3,
+          "reciprocal_directed_edges": 6,
+          "reciprocity_edge_pct": 0.9,
+          "reciprocity_dyad_pct": 0.45
+        },
+        "w10": {
+          "edges": 177,
+          "synapses": 2654,
+          "autapses": 0,
+          "mutual_dyads": 1,
+          "reciprocal_directed_edges": 2,
+          "reciprocity_edge_pct": 1.13,
+          "reciprocity_dyad_pct": 0.57
+        }
+      },
+      "rank_reciprocity_w1": 79,
+      "rank_reciprocity_w3": 79
+    }
+  ],
+  "bilateral_symmetry_audit": [
+    {
+      "base_neuropil": "ME",
+      "left_region": "ME_L",
+      "right_region": "ME_R",
+      "edges_left": 2426813,
+      "edges_right": 2598890,
+      "synapses_left": 7712403,
+      "synapses_right": 8821540,
+      "reciprocity_left_pct": 28.83,
+      "reciprocity_right_pct": 29.48,
+      "absolute_diff_pct_points": 0.65,
+      "relative_diff_pct": 2.23,
+      "cohens_h_effect_size": 0.0143,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -15.9905,
+      "p_value": 1e-15
+    },
+    {
+      "base_neuropil": "LO",
+      "left_region": "LO_L",
+      "right_region": "LO_R",
+      "edges_left": 1380744,
+      "edges_right": 1375872,
+      "synapses_left": 3792886,
+      "synapses_right": 3877311,
+      "reciprocity_left_pct": 21.48,
+      "reciprocity_right_pct": 21.45,
+      "absolute_diff_pct_points": 0.03,
+      "relative_diff_pct": 0.14,
+      "cohens_h_effect_size": 0.0007,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 0.5694,
+      "p_value": 0.5691045847390901
+    },
+    {
+      "base_neuropil": "LOP",
+      "left_region": "LOP_L",
+      "right_region": "LOP_R",
+      "edges_left": 447405,
+      "edges_right": 613882,
+      "synapses_left": 1189689,
+      "synapses_right": 1901109,
+      "reciprocity_left_pct": 26.68,
+      "reciprocity_right_pct": 29.53,
+      "absolute_diff_pct_points": 2.85,
+      "relative_diff_pct": 10.14,
+      "cohens_h_effect_size": 0.0634,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -32.204,
+      "p_value": 1e-15
+    },
+    {
+      "base_neuropil": "AVLP",
+      "left_region": "AVLP_L",
+      "right_region": "AVLP_R",
+      "edges_left": 368725,
+      "edges_right": 452236,
+      "synapses_left": 1510021,
+      "synapses_right": 2000857,
+      "reciprocity_left_pct": 22.77,
+      "reciprocity_right_pct": 21.35,
+      "absolute_diff_pct_points": 1.42,
+      "relative_diff_pct": 6.44,
+      "cohens_h_effect_size": 0.0342,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 15.4511,
+      "p_value": 1e-15
+    },
+    {
+      "base_neuropil": "SMP",
+      "left_region": "SMP_L",
+      "right_region": "SMP_R",
+      "edges_left": 288021,
+      "edges_right": 305052,
+      "synapses_left": 816580,
+      "synapses_right": 898333,
+      "reciprocity_left_pct": 18.49,
+      "reciprocity_right_pct": 18.35,
+      "absolute_diff_pct_points": 0.14,
+      "relative_diff_pct": 0.76,
+      "cohens_h_effect_size": 0.0036,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 1.3492,
+      "p_value": 0.17726779977545082
+    },
+    {
+      "base_neuropil": "SLP",
+      "left_region": "SLP_L",
+      "right_region": "SLP_R",
+      "edges_left": 250796,
+      "edges_right": 296717,
+      "synapses_left": 544953,
+      "synapses_right": 723028,
+      "reciprocity_left_pct": 15.62,
+      "reciprocity_right_pct": 15.38,
+      "absolute_diff_pct_points": 0.24,
+      "relative_diff_pct": 1.55,
+      "cohens_h_effect_size": 0.0066,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 2.5378,
+      "p_value": 0.011155075457465413
+    },
+    {
+      "base_neuropil": "PVLP",
+      "left_region": "PVLP_L",
+      "right_region": "PVLP_R",
+      "edges_left": 270866,
+      "edges_right": 218402,
+      "synapses_left": 895615,
+      "synapses_right": 704599,
+      "reciprocity_left_pct": 24.92,
+      "reciprocity_right_pct": 24.77,
+      "absolute_diff_pct_points": 0.15,
+      "relative_diff_pct": 0.6,
+      "cohens_h_effect_size": 0.0035,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 1.2747,
+      "p_value": 0.20242134078399854
+    },
+    {
+      "base_neuropil": "PLP",
+      "left_region": "PLP_L",
+      "right_region": "PLP_R",
+      "edges_left": 252745,
+      "edges_right": 228302,
+      "synapses_left": 746323,
+      "synapses_right": 664786,
+      "reciprocity_left_pct": 15.43,
+      "reciprocity_right_pct": 14.78,
+      "absolute_diff_pct_points": 0.65,
+      "relative_diff_pct": 4.3,
+      "cohens_h_effect_size": 0.0182,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 6.3325,
+      "p_value": 2.4120039299191376e-10
+    },
+    {
+      "base_neuropil": "LH",
+      "left_region": "LH_L",
+      "right_region": "LH_R",
+      "edges_left": 199215,
+      "edges_right": 216557,
+      "synapses_left": 602473,
+      "synapses_right": 664653,
+      "reciprocity_left_pct": 17.11,
+      "reciprocity_right_pct": 18.87,
+      "absolute_diff_pct_points": 1.76,
+      "relative_diff_pct": 9.78,
+      "cohens_h_effect_size": 0.0458,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -14.7305,
+      "p_value": 1e-15
+    },
+    {
+      "base_neuropil": "SPS",
+      "left_region": "SPS_L",
+      "right_region": "SPS_R",
+      "edges_left": 158658,
+      "edges_right": 197289,
+      "synapses_left": 569251,
+      "synapses_right": 731877,
+      "reciprocity_left_pct": 12.38,
+      "reciprocity_right_pct": 13.38,
+      "absolute_diff_pct_points": 1.0,
+      "relative_diff_pct": 7.76,
+      "cohens_h_effect_size": 0.0299,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -8.8794,
+      "p_value": 1e-15
+    },
+    {
+      "base_neuropil": "MB_ML",
+      "left_region": "MB_ML_L",
+      "right_region": "MB_ML_R",
+      "edges_left": 168097,
+      "edges_right": 139808,
+      "synapses_left": 325421,
+      "synapses_right": 250422,
+      "reciprocity_left_pct": 27.86,
+      "reciprocity_right_pct": 24.66,
+      "absolute_diff_pct_points": 3.2,
+      "relative_diff_pct": 12.19,
+      "cohens_h_effect_size": 0.0727,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 20.0161,
+      "p_value": 1e-15
+    },
+    {
+      "base_neuropil": "AL",
+      "left_region": "AL_L",
+      "right_region": "AL_R",
+      "edges_left": 140046,
+      "edges_right": 140612,
+      "synapses_left": 760542,
+      "synapses_right": 727451,
+      "reciprocity_left_pct": 42.79,
+      "reciprocity_right_pct": 41.7,
+      "absolute_diff_pct_points": 1.09,
+      "relative_diff_pct": 2.58,
+      "cohens_h_effect_size": 0.0221,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 5.8205,
+      "p_value": 5.867142327531383e-09
+    },
+    {
+      "base_neuropil": "CRE",
+      "left_region": "CRE_L",
+      "right_region": "CRE_R",
+      "edges_left": 132535,
+      "edges_right": 133999,
+      "synapses_left": 322237,
+      "synapses_right": 342435,
+      "reciprocity_left_pct": 17.29,
+      "reciprocity_right_pct": 15.39,
+      "absolute_diff_pct_points": 1.9,
+      "relative_diff_pct": 11.63,
+      "cohens_h_effect_size": 0.0514,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 13.2312,
+      "p_value": 1e-15
+    },
+    {
+      "base_neuropil": "ICL",
+      "left_region": "ICL_L",
+      "right_region": "ICL_R",
+      "edges_left": 122152,
+      "edges_right": 130593,
+      "synapses_left": 327927,
+      "synapses_right": 360940,
+      "reciprocity_left_pct": 14.19,
+      "reciprocity_right_pct": 15.04,
+      "absolute_diff_pct_points": 0.85,
+      "relative_diff_pct": 5.82,
+      "cohens_h_effect_size": 0.0241,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -6.0571,
+      "p_value": 1.3862833103672756e-09
+    },
+    {
+      "base_neuropil": "IPS",
+      "left_region": "IPS_L",
+      "right_region": "IPS_R",
+      "edges_left": 126502,
+      "edges_right": 119387,
+      "synapses_left": 500696,
+      "synapses_right": 480261,
+      "reciprocity_left_pct": 10.4,
+      "reciprocity_right_pct": 10.75,
+      "absolute_diff_pct_points": 0.35,
+      "relative_diff_pct": 3.31,
+      "cohens_h_effect_size": 0.0114,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -2.7968,
+      "p_value": 0.005160670723917349
+    },
+    {
+      "base_neuropil": "SCL",
+      "left_region": "SCL_L",
+      "right_region": "SCL_R",
+      "edges_left": 110570,
+      "edges_right": 123841,
+      "synapses_left": 245157,
+      "synapses_right": 280743,
+      "reciprocity_left_pct": 12.16,
+      "reciprocity_right_pct": 13.03,
+      "absolute_diff_pct_points": 0.87,
+      "relative_diff_pct": 6.91,
+      "cohens_h_effect_size": 0.0262,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -6.3764,
+      "p_value": 1.8131984802494117e-10
+    },
+    {
+      "base_neuropil": "SIP",
+      "left_region": "SIP_L",
+      "right_region": "SIP_R",
+      "edges_left": 89219,
+      "edges_right": 92175,
+      "synapses_left": 197040,
+      "synapses_right": 229288,
+      "reciprocity_left_pct": 14.97,
+      "reciprocity_right_pct": 13.22,
+      "absolute_diff_pct_points": 1.75,
+      "relative_diff_pct": 12.42,
+      "cohens_h_effect_size": 0.0503,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 10.7358,
+      "p_value": 1e-15
+    },
+    {
+      "base_neuropil": "LAL",
+      "left_region": "LAL_L",
+      "right_region": "LAL_R",
+      "edges_left": 90474,
+      "edges_right": 85096,
+      "synapses_left": 432296,
+      "synapses_right": 437642,
+      "reciprocity_left_pct": 17.74,
+      "reciprocity_right_pct": 17.4,
+      "absolute_diff_pct_points": 0.34,
+      "relative_diff_pct": 1.94,
+      "cohens_h_effect_size": 0.0089,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 1.8366,
+      "p_value": 0.06626749484763828
+    },
+    {
+      "base_neuropil": "WED",
+      "left_region": "WED_L",
+      "right_region": "WED_R",
+      "edges_left": 61304,
+      "edges_right": 78387,
+      "synapses_left": 196091,
+      "synapses_right": 254680,
+      "reciprocity_left_pct": 13.16,
+      "reciprocity_right_pct": 12.92,
+      "absolute_diff_pct_points": 0.24,
+      "relative_diff_pct": 1.84,
+      "cohens_h_effect_size": 0.0071,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 1.3515,
+      "p_value": 0.1765445419719589
+    },
+    {
+      "base_neuropil": "MB_PED",
+      "left_region": "MB_PED_L",
+      "right_region": "MB_PED_R",
+      "edges_left": 68149,
+      "edges_right": 65532,
+      "synapses_left": 133514,
+      "synapses_right": 124306,
+      "reciprocity_left_pct": 36.36,
+      "reciprocity_right_pct": 30.41,
+      "absolute_diff_pct_points": 5.95,
+      "relative_diff_pct": 17.82,
+      "cohens_h_effect_size": 0.1263,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 23.0361,
+      "p_value": 1e-15
+    },
+    {
+      "base_neuropil": "VES",
+      "left_region": "VES_L",
+      "right_region": "VES_R",
+      "edges_left": 65694,
+      "edges_right": 66708,
+      "synapses_left": 263765,
+      "synapses_right": 282167,
+      "reciprocity_left_pct": 14.66,
+      "reciprocity_right_pct": 14.71,
+      "absolute_diff_pct_points": 0.05,
+      "relative_diff_pct": 0.34,
+      "cohens_h_effect_size": 0.0014,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -0.2881,
+      "p_value": 0.7732705055143716
+    },
+    {
+      "base_neuropil": "IB",
+      "left_region": "IB_L",
+      "right_region": "IB_R",
+      "edges_left": 56460,
+      "edges_right": 60487,
+      "synapses_left": 142166,
+      "synapses_right": 158215,
+      "reciprocity_left_pct": 7.74,
+      "reciprocity_right_pct": 8.56,
+      "absolute_diff_pct_points": 0.82,
+      "relative_diff_pct": 10.06,
+      "cohens_h_effect_size": 0.03,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -5.1635,
+      "p_value": 2.424228582320609e-07
+    },
+    {
+      "base_neuropil": "LA",
+      "left_region": "LA_L",
+      "right_region": "LA_R",
+      "edges_left": 39574,
+      "edges_right": 70833,
+      "synapses_left": 169170,
+      "synapses_right": 273732,
+      "reciprocity_left_pct": 16.92,
+      "reciprocity_right_pct": 16.63,
+      "absolute_diff_pct_points": 0.29,
+      "relative_diff_pct": 1.73,
+      "cohens_h_effect_size": 0.0078,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 1.248,
+      "p_value": 0.21202675772611812
+    },
+    {
+      "base_neuropil": "MB_VL",
+      "left_region": "MB_VL_L",
+      "right_region": "MB_VL_R",
+      "edges_left": 48848,
+      "edges_right": 54638,
+      "synapses_left": 94051,
+      "synapses_right": 113967,
+      "reciprocity_left_pct": 27.06,
+      "reciprocity_right_pct": 28.75,
+      "absolute_diff_pct_points": 1.69,
+      "relative_diff_pct": 6.06,
+      "cohens_h_effect_size": 0.0377,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -6.0748,
+      "p_value": 1.2415086736439207e-09
+    },
+    {
+      "base_neuropil": "AOTU",
+      "left_region": "AOTU_L",
+      "right_region": "AOTU_R",
+      "edges_left": 46924,
+      "edges_right": 51272,
+      "synapses_left": 182479,
+      "synapses_right": 215603,
+      "reciprocity_left_pct": 26.91,
+      "reciprocity_right_pct": 24.39,
+      "absolute_diff_pct_points": 2.52,
+      "relative_diff_pct": 9.82,
+      "cohens_h_effect_size": 0.0577,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 9.0241,
+      "p_value": 1e-15
+    },
+    {
+      "base_neuropil": "MB_CA",
+      "left_region": "MB_CA_L",
+      "right_region": "MB_CA_R",
+      "edges_left": 48438,
+      "edges_right": 45331,
+      "synapses_left": 263221,
+      "synapses_right": 230379,
+      "reciprocity_left_pct": 23.17,
+      "reciprocity_right_pct": 22.51,
+      "absolute_diff_pct_points": 0.66,
+      "relative_diff_pct": 2.89,
+      "cohens_h_effect_size": 0.0157,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 2.4135,
+      "p_value": 0.015799734364040585
+    },
+    {
+      "base_neuropil": "FLA",
+      "left_region": "FLA_L",
+      "right_region": "FLA_R",
+      "edges_left": 35957,
+      "edges_right": 43385,
+      "synapses_left": 99577,
+      "synapses_right": 129153,
+      "reciprocity_left_pct": 10.79,
+      "reciprocity_right_pct": 11.31,
+      "absolute_diff_pct_points": 0.52,
+      "relative_diff_pct": 4.71,
+      "cohens_h_effect_size": 0.0166,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -2.337,
+      "p_value": 0.019440197329306574
+    },
+    {
+      "base_neuropil": "AMMC",
+      "left_region": "AMMC_L",
+      "right_region": "AMMC_R",
+      "edges_left": 31842,
+      "edges_right": 32689,
+      "synapses_left": 98011,
+      "synapses_right": 101793,
+      "reciprocity_left_pct": 14.6,
+      "reciprocity_right_pct": 12.96,
+      "absolute_diff_pct_points": 1.64,
+      "relative_diff_pct": 11.9,
+      "cohens_h_effect_size": 0.0476,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 6.0393,
+      "p_value": 1.5473722303482873e-09
+    },
+    {
+      "base_neuropil": "GOR",
+      "left_region": "GOR_L",
+      "right_region": "GOR_R",
+      "edges_left": 30605,
+      "edges_right": 30751,
+      "synapses_left": 76258,
+      "synapses_right": 76880,
+      "reciprocity_left_pct": 12.84,
+      "reciprocity_right_pct": 11.83,
+      "absolute_diff_pct_points": 1.01,
+      "relative_diff_pct": 8.19,
+      "cohens_h_effect_size": 0.0307,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 3.806,
+      "p_value": 0.0001412260195641224
+    },
+    {
+      "base_neuropil": "EPA",
+      "left_region": "EPA_L",
+      "right_region": "EPA_R",
+      "edges_left": 24044,
+      "edges_right": 19048,
+      "synapses_left": 58224,
+      "synapses_right": 47698,
+      "reciprocity_left_pct": 10.92,
+      "reciprocity_right_pct": 10.02,
+      "absolute_diff_pct_points": 0.9,
+      "relative_diff_pct": 8.6,
+      "cohens_h_effect_size": 0.0294,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 3.0402,
+      "p_value": 0.0023642153294380908
+    },
+    {
+      "base_neuropil": "ATL",
+      "left_region": "ATL_L",
+      "right_region": "ATL_R",
+      "edges_left": 16961,
+      "edges_right": 15034,
+      "synapses_left": 37726,
+      "synapses_right": 33747,
+      "reciprocity_left_pct": 10.64,
+      "reciprocity_right_pct": 11.0,
+      "absolute_diff_pct_points": 0.36,
+      "relative_diff_pct": 3.33,
+      "cohens_h_effect_size": 0.0116,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -1.0511,
+      "p_value": 0.29320499483358686
+    },
+    {
+      "base_neuropil": "CAN",
+      "left_region": "CAN_L",
+      "right_region": "CAN_R",
+      "edges_left": 5303,
+      "edges_right": 6774,
+      "synapses_left": 13368,
+      "synapses_right": 15540,
+      "reciprocity_left_pct": 5.2,
+      "reciprocity_right_pct": 4.64,
+      "absolute_diff_pct_points": 0.56,
+      "relative_diff_pct": 11.38,
+      "cohens_h_effect_size": 0.0259,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": 1.4402,
+      "p_value": 0.14981168168569647
+    },
+    {
+      "base_neuropil": "AME",
+      "left_region": "AME_L",
+      "right_region": "AME_R",
+      "edges_left": 3942,
+      "edges_right": 3881,
+      "synapses_left": 11001,
+      "synapses_right": 12524,
+      "reciprocity_left_pct": 18.32,
+      "reciprocity_right_pct": 18.5,
+      "absolute_diff_pct_points": 0.18,
+      "relative_diff_pct": 0.98,
+      "cohens_h_effect_size": 0.0046,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -0.2109,
+      "p_value": 0.8329753308774781
+    },
+    {
+      "base_neuropil": "GA",
+      "left_region": "GA_L",
+      "right_region": "GA_R",
+      "edges_left": 3869,
+      "edges_right": 2476,
+      "synapses_left": 15863,
+      "synapses_right": 10283,
+      "reciprocity_left_pct": 21.5,
+      "reciprocity_right_pct": 25.04,
+      "absolute_diff_pct_points": 3.54,
+      "relative_diff_pct": 15.21,
+      "cohens_h_effect_size": 0.0838,
+      "effect_size_interpretation": "Negligible (|h| < 0.2)",
+      "two_proportion_z_stat": -3.2707,
+      "p_value": 0.0010726382486900832
+    },
+    {
+      "base_neuropil": "BU",
+      "left_region": "BU_L",
+      "right_region": "BU_R",
+      "edges_left": 1346,
+      "edges_right": 1989,
+      "synapses_left": 4097,
+      "synapses_right": 10029,
+      "reciprocity_left_pct": 14.71,
+      "reciprocity_right_pct": 22.62,
+      "absolute_diff_pct_points": 7.91,
+      "relative_diff_pct": 42.38,
+      "cohens_h_effect_size": 0.2041,
+      "effect_size_interpretation": "Small (0.2 <= |h| < 0.5)",
+      "two_proportion_z_stat": -5.6673,
+      "p_value": 1.4510583401516897e-08
+    }
+  ]
+}

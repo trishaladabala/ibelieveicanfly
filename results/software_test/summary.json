@@ -3,9 +3,9 @@
     "is_software_test": true,
     "file_analyzed": "synthetic_connectivity_test.csv",
     "is_sampled": false,
-    "max_records_limit": 0,
+    "max_records_limit": 10,
     "execution_time_seconds": 0.0011,
-    "peak_ram_mb": 14.12
+    "peak_ram_mb": 122.25
   },
   "record_validation": {
     "valid_records_processed": 10,
@@ -67,7 +67,7 @@
         "out_degree": 2
       },
       {
-        "node_id": "720575940614000007",
+        "node_id": "720575940614000004",
         "out_degree": 1
       },
       {
@@ -93,7 +93,7 @@
         "in_degree": 1
       },
       {
-        "node_id": "720575940614000008",
+        "node_id": "720575940614000005",
         "in_degree": 1
       }
     ],
@@ -125,11 +125,11 @@
         "in_synapses": 20
       },
       {
-        "node_id": "720575940614000005",
+        "node_id": "720575940614000004",
         "in_synapses": 15
       },
       {
-        "node_id": "720575940614000004",
+        "node_id": "720575940614000005",
         "in_synapses": 15
       },
       {
@@ -141,5 +141,6 @@
         "in_synapses": 7
       }
     ]
-  }
+  },
+  "regional_breakdown": null
 }

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" style="background:#ffffff; font-family:sans-serif;">
+  <text x="320" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f172a">Whole-Brain Out-Degree Distribution (138,639 Neurons)</text>
+  <text x="320" y="44" text-anchor="middle" font-size="11" fill="#64748b">Mean: 108.9 | Median: 79.0 | Q25: 44.0 | Q75: 130.0 | Max: 9,783</text>
+  <line x1="70" y1="290" x2="600" y2="290" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="70" y1="60" x2="70" y2="290" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="335" y="330" text-anchor="middle" font-size="12" fill="#334155">Out-Degree (Postsynaptic Partner Neurons)</text>
+  <text x="24" y="175" text-anchor="middle" font-size="12" fill="#334155" transform="rotate(-90 24 175)">Neuron Frequency (Relative)</text>
+  <rect x="85" y="260.0" width="48" height="30.0" fill="#3b82f6" rx="2" opacity="0.85"/>
+  <text x="109.0" y="306" text-anchor="middle" font-size="8" fill="#64748b" transform="rotate(30 109.0 306)">[0, 25]</text>
+  <rect x="137" y="226.0" width="48" height="64.0" fill="#3b82f6" rx="2" opacity="0.85"/>
+  <text x="161.0" y="306" text-anchor="middle" font-size="8" fill="#64748b" transform="rotate(30 161.0 306)">[25, 50]</text>
+  <rect x="189" y="194.0" width="48" height="96.0" fill="#3b82f6" rx="2" opacity="0.85"/>
+  <text x="213.0" y="306" text-anchor="middle" font-size="8" fill="#64748b" transform="rotate(30 213.0 306)">[50, 75]</text>
+  <rect x="241" y="120.0" width="48" height="170.0" fill="#3b82f6" rx="2" opacity="0.85"/>
+  <text x="265.0" y="306" text-anchor="middle" font-size="8" fill="#64748b" transform="rotate(30 265.0 306)">[75, 100]</text>
+  <rect x="293" y="160.0" width="48" height="130.0" fill="#3b82f6" rx="2" opacity="0.85"/>
+  <text x="317.0" y="306" text-anchor="middle" font-size="8" fill="#64748b" transform="rotate(30 317.0 306)">[100, 150]</text>
+  <rect x="345" y="220.0" width="48" height="70.0" fill="#3b82f6" rx="2" opacity="0.85"/>
+  <text x="369.0" y="306" text-anchor="middle" font-size="8" fill="#64748b" transform="rotate(30 369.0 306)">[150, 250]</text>
+  <rect x="397" y="254.0" width="48" height="36.0" fill="#3b82f6" rx="2" opacity="0.85"/>
+  <text x="421.0" y="306" text-anchor="middle" font-size="8" fill="#64748b" transform="rotate(30 421.0 306)">[250, 500]</text>
+  <rect x="449" y="274.0" width="48" height="16.0" fill="#3b82f6" rx="2" opacity="0.85"/>
+  <text x="473.0" y="306" text-anchor="middle" font-size="8" fill="#64748b" transform="rotate(30 473.0 306)">[500, 1000]</text>
+  <rect x="501" y="284.0" width="48" height="6.0" fill="#3b82f6" rx="2" opacity="0.85"/>
+  <text x="525.0" y="306" text-anchor="middle" font-size="8" fill="#64748b" transform="rotate(30 525.0 306)">[1000, 2500]</text>
+  <rect x="553" y="288.0" width="48" height="2.0" fill="#3b82f6" rx="2" opacity="0.85"/>
+  <text x="577.0" y="306" text-anchor="middle" font-size="8" fill="#64748b" transform="rotate(30 577.0 306)">[2500+]</text>
+</svg>

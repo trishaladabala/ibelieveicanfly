@@ -1,0 +1,180 @@
+{
+  "benchmark_metadata": {
+    "dataset_file": "proofread_connections_783.feather",
+    "max_records_requested": -1,
+    "total_records_processed": 16847997,
+    "is_full_dataset": true,
+    "wall_time_seconds": 145.552,
+    "ingestion_time_seconds": 116.822,
+    "graph_analysis_time_seconds": 28.73,
+    "throughput_records_per_second": 115752.8,
+    "peak_ram_mb": 1511.8,
+    "ram_headroom_mb": 1048.2
+  },
+  "topology": {
+    "unique_neurons": 138639,
+    "unique_directed_edges": 15091983,
+    "total_synapse_count": 54492922,
+    "duplicate_records_aggregated": 1756014,
+    "autapse_records": 0,
+    "mutual_dyads": 2007259,
+    "reciprocity_ratio": 0.266,
+    "connected_components": 89,
+    "largest_component_neurons": 138113,
+    "largest_component_coverage": 0.9962
+  },
+  "distributions": {
+    "out_degree": {
+      "count": 138639,
+      "min": 0,
+      "max": 9783,
+      "mean": 108.86,
+      "median": 79.0,
+      "q25": 44.0,
+      "q75": 130.0
+    },
+    "in_degree": {
+      "count": 138639,
+      "min": 0,
+      "max": 10356,
+      "mean": 108.86,
+      "median": 69.0,
+      "q25": 36.0,
+      "q75": 130.0
+    },
+    "edge_weights": {
+      "count": 15091983,
+      "min": 1,
+      "max": 2405,
+      "mean": 3.61,
+      "median": 2.0,
+      "q25": 1.0,
+      "q75": 3.0
+    }
+  },
+  "top_hubs": {
+    "top_out_degree": [
+      {
+        "node_id": "720575940628908548",
+        "out_degree": 9783
+      },
+      {
+        "node_id": "720575940626979621",
+        "out_degree": 9610
+      },
+      {
+        "node_id": "720575940628038808",
+        "out_degree": 8454
+      },
+      {
+        "node_id": "720575940628307026",
+        "out_degree": 8445
+      },
+      {
+        "node_id": "720575940631190016",
+        "out_degree": 7787
+      }
+    ],
+    "top_in_degree": [
+      {
+        "node_id": "720575940626979621",
+        "in_degree": 10356
+      },
+      {
+        "node_id": "720575940628908548",
+        "in_degree": 10182
+      },
+      {
+        "node_id": "720575940636543668",
+        "in_degree": 5684
+      },
+      {
+        "node_id": "720575940625952755",
+        "in_degree": 5432
+      },
+      {
+        "node_id": "720575940626403917",
+        "in_degree": 5349
+      }
+    ],
+    "top_out_strength": [
+      {
+        "node_id": "720575940628908548",
+        "out_synapses": 99871
+      },
+      {
+        "node_id": "720575940626979621",
+        "out_synapses": 98624
+      },
+      {
+        "node_id": "720575940624547622",
+        "out_synapses": 60103
+      },
+      {
+        "node_id": "720575940613583001",
+        "out_synapses": 50681
+      },
+      {
+        "node_id": "720575940627497244",
+        "out_synapses": 47851
+      }
+    ],
+    "top_in_strength": [
+      {
+        "node_id": "720575940626979621",
+        "in_synapses": 69948
+      },
+      {
+        "node_id": "720575940628908548",
+        "in_synapses": 68400
+      },
+      {
+        "node_id": "720575940624547622",
+        "in_synapses": 68332
+      },
+      {
+        "node_id": "720575940613583001",
+        "in_synapses": 63780
+      },
+      {
+        "node_id": "720575940620975696",
+        "in_synapses": 50943
+      }
+    ]
+  },
+  "regional_breakdown": {
+    "neuropils_count": 79,
+    "top_neuropils_by_synapses": {
+      "ME_R": 8821540,
+      "ME_L": 7712403,
+      "LO_R": 3877311,
+      "LO_L": 3792886,
+      "GNG": 2713213,
+      "AVLP_R": 2000857,
+      "LOP_R": 1901109,
+      "AVLP_L": 1510021,
+      "LOP_L": 1189689,
+      "SMP_R": 898333
+    },
+    "top_neuropils_by_records": {
+      "ME_R": 2598890,
+      "ME_L": 2426813,
+      "LO_L": 1380744,
+      "LO_R": 1375872,
+      "LOP_R": 613882,
+      "GNG": 544508,
+      "AVLP_R": 452236,
+      "LOP_L": 447405,
+      "AVLP_L": 368725,
+      "SMP_R": 305052
+    }
+  },
+  "neurotransmitter_profile_percentage": {
+    "ach": 48.38,
+    "gaba": 23.16,
+    "glut": 19.25,
+    "oct": 2.69,
+    "ser": 2.08,
+    "da": 4.43
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "metadata": {
+    "dataset_file": "proofread_connections_783.feather",
+    "sample_size": 250000,
+    "timestamp": "2026-10-19 13:23:51",
+    "peak_ram_mb": 253.14
+  },
+  "synapse_threshold_sensitivity": [
+    {
+      "min_weight_threshold": 1,
+      "exclude_self_loops": false,
+      "unique_neurons_total": 99539,
+      "unique_neurons_active": 99539,
+      "directed_edges": 247318,
+      "total_synapses": 1834886,
+      "autapse_edges": 0,
+      "mutual_dyads": 4718,
+      "reciprocity_ratio": 0.0382,
+      "connected_components_count": 2911,
+      "largest_wcc_neurons": 92819,
+      "largest_wcc_coverage": 0.9325,
+      "out_degree_stats": {
+        "count": 99539,
+        "min": 0,
+        "max": 470,
+        "mean": 2.48,
+        "median": 1.0,
+        "q25": 1.0,
+        "q75": 2.0
+      },
+      "in_degree_stats": {
+        "count": 99539,
+        "min": 0,
+        "max": 564,
+        "mean": 2.48,
+        "median": 1.0,
+        "q25": 0.0,
+        "q75": 2.0
+      },
+      "edge_weight_stats": {
+        "count": 247318,
+        "min": 1,
+        "max": 1060,
+        "mean": 7.42,
+        "median": 2.0,
+        "q25": 1.0,
+        "q75": 6.0
+      }
+    },
+    {
+      "min_weight_threshold": 2,
+      "exclude_self_loops": false,
+      "unique_neurons_total": 99539,
+      "unique_neurons_active": 75762,
+      "directed_edges": 147474,
+      "total_synapses": 1735042,
+      "autapse_edges": 0,
+      "mutual_dyads": 3356,
+      "reciprocity_ratio": 0.0455,
+      "connected_components_count": 5691,
+      "largest_wcc_neurons": 61451,
+      "largest_wcc_coverage": 0.8111,
+      "out_degree_stats": {
+        "count": 75762,
+        "min": 0,
+        "max": 424,
+        "mean": 1.95,
+        "median": 1.0,
+        "q25": 0.0,
+        "q75": 2.0
+      },
+      "in_degree_stats": {
+        "count": 75762,
+        "min": 0,
+        "max": 523,
+        "mean": 1.95,
+        "median": 1.0,
+        "q25": 0.0,
+        "q75": 2.0
+      },
+      "edge_weight_stats": {
+        "count": 147474,
+        "min": 2,
+        "max": 1060,
+        "mean": 11.77,
+        "median": 4.0,
+        "q25": 2.0,
+        "q75": 11.0
+      }
+    },
+    {
+      "min_weight_threshold": 3,
+      "exclude_self_loops": false,
+      "unique_neurons_total": 99539,
+      "unique_neurons_active": 60112,
+      "directed_edges": 109019,
+      "total_synapses": 1658132,
+      "autapse_edges": 0,
+      "mutual_dyads": 2873,
+      "reciprocity_ratio": 0.0527,
+      "connected_components_count": 6984,
+      "largest_wcc_neurons": 41735,
+      "largest_wcc_coverage": 0.6943,
+      "out_degree_stats": {
+        "count": 60112,
+        "min": 0,
+        "max": 396,
+        "mean": 1.81,
+        "median": 1.0,
+        "q25": 0.0,
+        "q75": 2.0
+      },
+      "in_degree_stats": {
+        "count": 60112,
+        "min": 0,
+        "max": 489,
+        "mean": 1.81,
+        "median": 1.0,
+        "q25": 0.0,
+        "q75": 2.0
+      },
+      "edge_weight_stats": {
+        "count": 109019,
+        "min": 3,
+        "max": 1060,
+        "mean": 15.21,
+        "median": 7.0,
+        "q25": 4.0,
+        "q75": 15.0
+      }
+    },
+    {
+      "min_weight_threshold": 5,
+      "exclude_self_loops": false,
+      "unique_neurons_total": 99539,
+      "unique_neurons_active": 41309,
+      "directed_edges": 73350,
+      "total_synapses": 1536820,
+      "autapse_edges": 0,
+      "mutual_dyads": 2286,
+      "reciprocity_ratio": 0.0623,
+      "connected_components_count": 6843,
+      "largest_wcc_neurons": 22677,
+      "largest_wcc_coverage": 0.549,
+      "out_degree_stats": {
+        "count": 41309,
+        "min": 0,
+        "max": 323,
+        "mean": 1.78,
+        "median": 1.0,
+        "q25": 0.0,
+        "q75": 1.0
+      },
+      "in_degree_stats": {
+        "count": 41309,
+        "min": 0,
+        "max": 373,
+        "mean": 1.78,
+        "median": 1.0,
+        "q25": 0.0,
+        "q75": 1.0
+      },
+      "edge_weight_stats": {
+        "count": 73350,
+        "min": 5,
+        "max": 1060,
+        "mean": 20.95,
+        "median": 11.0,
+        "q25": 7.0,
+        "q75": 22.0
+      }
+    },
+    {
+      "min_weight_threshold": 10,
+      "exclude_self_loops": false,
+      "unique_neurons_total": 99539,
+      "unique_neurons_active": 21697,
+      "directed_edges": 40682,
+      "total_synapses": 1323196,
+      "autapse_edges": 0,
+      "mutual_dyads": 1564,
+      "reciprocity_ratio": 0.0769,
+      "connected_components_count": 4108,
+      "largest_wcc_neurons": 11208,
+      "largest_wcc_coverage": 0.5166,
+      "out_degree_stats": {
+        "count": 21697,
+        "min": 0,
+        "max": 192,
+        "mean": 1.88,
+        "median": 1.0,
+        "q25": 0.0,
+        "q75": 1.0
+      },
+      "in_degree_stats": {
+        "count": 21697,
+        "min": 0,
+        "max": 259,
+        "mean": 1.88,
+        "median": 1.0,
+        "q25": 0.0,
+        "q75": 1.0
+      },
+      "edge_weight_stats": {
+        "count": 40682,
+        "min": 10,
+        "max": 1060,
+        "mean": 32.53,
+        "median": 20.0,
+        "q25": 13.0,
+        "q75": 35.0
+      }
+    },
+    {
+      "min_weight_threshold": 20,
+      "exclude_self_loops": false,
+      "unique_neurons_total": 99539,
+      "unique_neurons_active": 10218,
+      "directed_edges": 20410,
+      "total_synapses": 1048503,
+      "autapse_edges": 0,
+      "mutual_dyads": 940,
+      "reciprocity_ratio": 0.0921,
+      "connected_components_count": 1663,
+      "largest_wcc_neurons": 6190,
+      "largest_wcc_coverage": 0.6058,
+      "out_degree_stats": {
+        "count": 10218,
+        "min": 0,
+        "max": 96,
+        "mean": 2.0,
+        "median": 1.0,
+        "q25": 0.0,
+        "q75": 2.0
+      },
+      "in_degree_stats": {
+        "count": 10218,
+        "min": 0,
+        "max": 98,
+        "mean": 2.0,
+        "median": 1.0,
+        "q25": 0.0,
+        "q75": 2.0
+      },
+      "edge_weight_stats": {
+        "count": 20410,
+        "min": 20,
+        "max": 1060,
+        "mean": 51.37,
+        "median": 35.0,
+        "q25": 25.0,
+        "q75": 57.0
+      }
+    }
+  ],
+  "row_order_invariance": {
+    "passed": true,
+    "original_edges": 247318,
+    "shuffled_edges": 247318
+  },
+  "autapse_sensitivity": {
+    "autapses_detected": 0,
+    "with_autapses": {
+      "edges": 247318,
+      "reciprocity": 0.0382
+    },
+    "without_autapses": {
+      "edges": 247318,
+      "reciprocity": 0.0382
+    }
+  }
+}

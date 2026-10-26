@@ -1,0 +1,182 @@
+[
+  {
+    "benchmark_metadata": {
+      "dataset_file": "proofread_connections_783.feather",
+      "max_records_requested": 1000000,
+      "total_records_processed": 1000000,
+      "is_full_dataset": false,
+      "wall_time_seconds": 9.392,
+      "ingestion_time_seconds": 6.81,
+      "graph_analysis_time_seconds": 2.581,
+      "throughput_records_per_second": 106478.0,
+      "peak_ram_mb": 224.2,
+      "ram_headroom_mb": 2335.8
+    },
+    "topology": {
+      "unique_neurons": 128724,
+      "unique_directed_edges": 988120,
+      "total_synapse_count": 4185675,
+      "duplicate_records_aggregated": 11880,
+      "autapse_records": 0,
+      "mutual_dyads": 14377,
+      "reciprocity_ratio": 0.0291,
+      "connected_components": 355,
+      "largest_component_neurons": 127919,
+      "largest_component_coverage": 0.9937
+    },
+    "distributions": {
+      "out_degree": {
+        "count": 128724,
+        "min": 0,
+        "max": 902,
+        "mean": 7.68,
+        "median": 5.0,
+        "q25": 2.0,
+        "q75": 9.0
+      },
+      "in_degree": {
+        "count": 128724,
+        "min": 0,
+        "max": 1037,
+        "mean": 7.68,
+        "median": 4.0,
+        "q25": 2.0,
+        "q75": 9.0
+      },
+      "edge_weights": {
+        "count": 988120,
+        "min": 1,
+        "max": 1281,
+        "mean": 4.24,
+        "median": 2.0,
+        "q25": 1.0,
+        "q75": 3.0
+      }
+    },
+    "top_hubs": {
+      "top_out_degree": [
+        {
+          "node_id": "720575940624547622",
+          "out_degree": 902
+        },
+        {
+          "node_id": "720575940613583001",
+          "out_degree": 873
+        },
+        {
+          "node_id": "720575940628307026",
+          "out_degree": 563
+        },
+        {
+          "node_id": "720575940629513222",
+          "out_degree": 554
+        },
+        {
+          "node_id": "720575940626979621",
+          "out_degree": 509
+        }
+      ],
+      "top_in_degree": [
+        {
+          "node_id": "720575940613583001",
+          "in_degree": 1037
+        },
+        {
+          "node_id": "720575940624547622",
+          "in_degree": 950
+        },
+        {
+          "node_id": "720575940625934094",
+          "in_degree": 844
+        },
+        {
+          "node_id": "720575940620975696",
+          "in_degree": 823
+        },
+        {
+          "node_id": "720575940628908548",
+          "in_degree": 562
+        }
+      ],
+      "top_out_strength": [
+        {
+          "node_id": "720575940624547622",
+          "out_synapses": 8152
+        },
+        {
+          "node_id": "720575940632795532",
+          "out_synapses": 7911
+        },
+        {
+          "node_id": "720575940623000858",
+          "out_synapses": 7263
+        },
+        {
+          "node_id": "720575940624973831",
+          "out_synapses": 6953
+        },
+        {
+          "node_id": "720575940604569824",
+          "out_synapses": 6848
+        }
+      ],
+      "top_in_strength": [
+        {
+          "node_id": "720575940625102224",
+          "in_synapses": 9618
+        },
+        {
+          "node_id": "720575940618366843",
+          "in_synapses": 9594
+        },
+        {
+          "node_id": "720575940620975696",
+          "in_synapses": 8749
+        },
+        {
+          "node_id": "720575940624547622",
+          "in_synapses": 8450
+        },
+        {
+          "node_id": "720575940618308825",
+          "in_synapses": 8412
+        }
+      ]
+    },
+    "regional_breakdown": {
+      "neuropils_count": 79,
+      "top_neuropils_by_synapses": {
+        "ME_R": 481991,
+        "ME_L": 419892,
+        "AVLP_R": 398727,
+        "GNG": 234539,
+        "LO_R": 209849,
+        "LO_L": 206704,
+        "AL_L": 195257,
+        "AVLP_L": 155452,
+        "LAL_R": 134891,
+        "LOP_R": 105238
+      },
+      "top_neuropils_by_records": {
+        "ME_R": 141259,
+        "ME_L": 131683,
+        "LO_L": 75680,
+        "LO_R": 75050,
+        "AVLP_R": 37993,
+        "LOP_R": 33551,
+        "GNG": 32421,
+        "LOP_L": 24472,
+        "AVLP_L": 23577,
+        "SMP_R": 21545
+      }
+    },
+    "neurotransmitter_profile_percentage": {
+      "ach": 47.85,
+      "gaba": 23.7,
+      "glut": 18.5,
+      "oct": 2.14,
+      "ser": 2.68,
+      "da": 5.13
+    }
+  }
+]

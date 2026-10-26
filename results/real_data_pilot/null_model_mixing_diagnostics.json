@@ -1,0 +1,1163 @@
+{
+  "metadata": {
+    "execution_date": "2026-10-20 00:24:10",
+    "regions": [
+      "EB",
+      "FB",
+      "PB"
+    ],
+    "thresholds": [
+      3,
+      5
+    ],
+    "swap_multipliers": [
+      1,
+      2,
+      5,
+      10,
+      20,
+      30,
+      50,
+      100
+    ],
+    "multi_seeds": [
+      42,
+      101,
+      777,
+      2026
+    ],
+    "chain_samples": 200,
+    "burn_in_multiplier": 20,
+    "thinning_multiplier": 5
+  },
+  "regions": {
+    "EB": {
+      "w3": {
+        "threshold": 3,
+        "nodes": 566,
+        "edges": 23062,
+        "observed_mutual_dyads": 5296,
+        "observed_target_motif": 3683,
+        "target_motif": "gaba_gaba",
+        "swap_trajectory": [
+          {
+            "multiplier": 1,
+            "attempted": 23062,
+            "accepted": 11816,
+            "acceptance_rate_pct": 51.24,
+            "rejections": {
+              "same_index": 2,
+              "self_loop": 116,
+              "shared_node": 146,
+              "duplicate_edge": 10982
+            },
+            "rewired_fraction_pct": 54.23,
+            "mutual_dyads": 1893,
+            "target_motif_count": 999
+          },
+          {
+            "multiplier": 2,
+            "attempted": 46124,
+            "accepted": 23725,
+            "acceptance_rate_pct": 51.44,
+            "rejections": {
+              "same_index": 4,
+              "self_loop": 242,
+              "shared_node": 330,
+              "duplicate_edge": 21823
+            },
+            "rewired_fraction_pct": 67.47,
+            "mutual_dyads": 1707,
+            "target_motif_count": 807
+          },
+          {
+            "multiplier": 5,
+            "attempted": 115310,
+            "accepted": 59804,
+            "acceptance_rate_pct": 51.86,
+            "rejections": {
+              "same_index": 7,
+              "self_loop": 631,
+              "shared_node": 819,
+              "duplicate_edge": 54049
+            },
+            "rewired_fraction_pct": 71.47,
+            "mutual_dyads": 1678,
+            "target_motif_count": 770
+          },
+          {
+            "multiplier": 10,
+            "attempted": 230620,
+            "accepted": 119774,
+            "acceptance_rate_pct": 51.94,
+            "rejections": {
+              "same_index": 11,
+              "self_loop": 1149,
+              "shared_node": 1631,
+              "duplicate_edge": 108055
+            },
+            "rewired_fraction_pct": 71.36,
+            "mutual_dyads": 1637,
+            "target_motif_count": 754
+          },
+          {
+            "multiplier": 20,
+            "attempted": 461240,
+            "accepted": 239532,
+            "acceptance_rate_pct": 51.93,
+            "rejections": {
+              "same_index": 22,
+              "self_loop": 2326,
+              "shared_node": 3333,
+              "duplicate_edge": 216027
+            },
+            "rewired_fraction_pct": 71.36,
+            "mutual_dyads": 1690,
+            "target_motif_count": 779
+          },
+          {
+            "multiplier": 30,
+            "attempted": 691860,
+            "accepted": 360243,
+            "acceptance_rate_pct": 52.07,
+            "rejections": {
+              "same_index": 34,
+              "self_loop": 3477,
+              "shared_node": 4943,
+              "duplicate_edge": 323163
+            },
+            "rewired_fraction_pct": 71.82,
+            "mutual_dyads": 1691,
+            "target_motif_count": 775
+          },
+          {
+            "multiplier": 50,
+            "attempted": 1153100,
+            "accepted": 598499,
+            "acceptance_rate_pct": 51.9,
+            "rejections": {
+              "same_index": 55,
+              "self_loop": 5814,
+              "shared_node": 8263,
+              "duplicate_edge": 540469
+            },
+            "rewired_fraction_pct": 72.07,
+            "mutual_dyads": 1648,
+            "target_motif_count": 805
+          },
+          {
+            "multiplier": 100,
+            "attempted": 2306200,
+            "accepted": 1197358,
+            "acceptance_rate_pct": 51.92,
+            "rejections": {
+              "same_index": 101,
+              "self_loop": 11458,
+              "shared_node": 16370,
+              "duplicate_edge": 1080913
+            },
+            "rewired_fraction_pct": 71.57,
+            "mutual_dyads": 1652,
+            "target_motif_count": 775
+          }
+        ],
+        "continuous_chain": {
+          "num_samples": 200,
+          "burn_in_multiplier": 20,
+          "thinning_multiplier": 5,
+          "mean_rewired_fraction_pct": 71.52,
+          "mutual_dyads": {
+            "mean": 1672.49,
+            "std": 30.71,
+            "acf_lags_1_to_5": [
+              0.005,
+              0.027,
+              0.138,
+              -0.052,
+              -0.138
+            ],
+            "acf_lag_10": -0.015,
+            "tau_int": 0.67,
+            "effective_sample_size": 149.4
+          },
+          "target_motif": {
+            "motif": "gaba_gaba",
+            "mean": 776.59,
+            "std": 23.32,
+            "acf_lags_1_to_5": [
+              0.005,
+              -0.003,
+              0.061,
+              -0.038,
+              -0.094
+            ],
+            "acf_lag_10": -0.075,
+            "tau_int": 0.5,
+            "effective_sample_size": 198.1
+          }
+        },
+        "multi_seed_comparison": [
+          {
+            "seed": 42,
+            "mutual_dyads": 1662,
+            "target_motif_count": 777
+          },
+          {
+            "seed": 101,
+            "mutual_dyads": 1680,
+            "target_motif_count": 770
+          },
+          {
+            "seed": 777,
+            "mutual_dyads": 1709,
+            "target_motif_count": 793
+          },
+          {
+            "seed": 2026,
+            "mutual_dyads": 1688,
+            "target_motif_count": 780
+          }
+        ]
+      },
+      "w5": {
+        "threshold": 5,
+        "nodes": 483,
+        "edges": 15812,
+        "observed_mutual_dyads": 3518,
+        "observed_target_motif": 2615,
+        "target_motif": "gaba_gaba",
+        "swap_trajectory": [
+          {
+            "multiplier": 1,
+            "attempted": 15812,
+            "accepted": 9791,
+            "acceptance_rate_pct": 61.92,
+            "rejections": {
+              "same_index": 1,
+              "self_loop": 67,
+              "shared_node": 116,
+              "duplicate_edge": 5837
+            },
+            "rewired_fraction_pct": 61.52,
+            "mutual_dyads": 880,
+            "target_motif_count": 490
+          },
+          {
+            "multiplier": 2,
+            "attempted": 31624,
+            "accepted": 19615,
+            "acceptance_rate_pct": 62.03,
+            "rejections": {
+              "same_index": 4,
+              "self_loop": 162,
+              "shared_node": 207,
+              "duplicate_edge": 11636
+            },
+            "rewired_fraction_pct": 74.18,
+            "mutual_dyads": 751,
+            "target_motif_count": 396
+          },
+          {
+            "multiplier": 5,
+            "attempted": 79060,
+            "accepted": 49024,
+            "acceptance_rate_pct": 62.01,
+            "rejections": {
+              "same_index": 6,
+              "self_loop": 428,
+              "shared_node": 573,
+              "duplicate_edge": 29029
+            },
+            "rewired_fraction_pct": 77.73,
+            "mutual_dyads": 730,
+            "target_motif_count": 383
+          },
+          {
+            "multiplier": 10,
+            "attempted": 158120,
+            "accepted": 98303,
+            "acceptance_rate_pct": 62.17,
+            "rejections": {
+              "same_index": 11,
+              "self_loop": 817,
+              "shared_node": 1213,
+              "duplicate_edge": 57776
+            },
+            "rewired_fraction_pct": 77.76,
+            "mutual_dyads": 754,
+            "target_motif_count": 389
+          },
+          {
+            "multiplier": 20,
+            "attempted": 316240,
+            "accepted": 196119,
+            "acceptance_rate_pct": 62.02,
+            "rejections": {
+              "same_index": 17,
+              "self_loop": 1598,
+              "shared_node": 2312,
+              "duplicate_edge": 116194
+            },
+            "rewired_fraction_pct": 78.31,
+            "mutual_dyads": 736,
+            "target_motif_count": 375
+          },
+          {
+            "multiplier": 30,
+            "attempted": 474360,
+            "accepted": 293857,
+            "acceptance_rate_pct": 61.95,
+            "rejections": {
+              "same_index": 39,
+              "self_loop": 2337,
+              "shared_node": 3436,
+              "duplicate_edge": 174691
+            },
+            "rewired_fraction_pct": 78.14,
+            "mutual_dyads": 797,
+            "target_motif_count": 420
+          },
+          {
+            "multiplier": 50,
+            "attempted": 790600,
+            "accepted": 489474,
+            "acceptance_rate_pct": 61.91,
+            "rejections": {
+              "same_index": 56,
+              "self_loop": 3925,
+              "shared_node": 5821,
+              "duplicate_edge": 291324
+            },
+            "rewired_fraction_pct": 78.28,
+            "mutual_dyads": 777,
+            "target_motif_count": 393
+          },
+          {
+            "multiplier": 100,
+            "attempted": 1581200,
+            "accepted": 980735,
+            "acceptance_rate_pct": 62.02,
+            "rejections": {
+              "same_index": 82,
+              "self_loop": 7833,
+              "shared_node": 11483,
+              "duplicate_edge": 581067
+            },
+            "rewired_fraction_pct": 78.16,
+            "mutual_dyads": 797,
+            "target_motif_count": 398
+          }
+        ],
+        "continuous_chain": {
+          "num_samples": 200,
+          "burn_in_multiplier": 20,
+          "thinning_multiplier": 5,
+          "mean_rewired_fraction_pct": 78.06,
+          "mutual_dyads": {
+            "mean": 763.43,
+            "std": 21.98,
+            "acf_lags_1_to_5": [
+              0.012,
+              0.117,
+              -0.07,
+              0.068,
+              0.042
+            ],
+            "acf_lag_10": -0.063,
+            "tau_int": 0.63,
+            "effective_sample_size": 158.8
+          },
+          "target_motif": {
+            "motif": "gaba_gaba",
+            "mean": 385.88,
+            "std": 17.66,
+            "acf_lags_1_to_5": [
+              0.005,
+              0.093,
+              -0.002,
+              0.061,
+              0.037
+            ],
+            "acf_lag_10": -0.024,
+            "tau_int": 0.6,
+            "effective_sample_size": 167.2
+          }
+        },
+        "multi_seed_comparison": [
+          {
+            "seed": 42,
+            "mutual_dyads": 781,
+            "target_motif_count": 396
+          },
+          {
+            "seed": 101,
+            "mutual_dyads": 756,
+            "target_motif_count": 394
+          },
+          {
+            "seed": 777,
+            "mutual_dyads": 750,
+            "target_motif_count": 373
+          },
+          {
+            "seed": 2026,
+            "mutual_dyads": 761,
+            "target_motif_count": 371
+          }
+        ]
+      }
+    },
+    "FB": {
+      "w3": {
+        "threshold": 3,
+        "nodes": 2789,
+        "edges": 80484,
+        "observed_mutual_dyads": 10524,
+        "observed_target_motif": 792,
+        "target_motif": "ach_gaba",
+        "swap_trajectory": [
+          {
+            "multiplier": 1,
+            "attempted": 80484,
+            "accepted": 68604,
+            "acceptance_rate_pct": 85.24,
+            "rejections": {
+              "same_index": 2,
+              "self_loop": 120,
+              "shared_node": 151,
+              "duplicate_edge": 11607
+            },
+            "rewired_fraction_pct": 77.96,
+            "mutual_dyads": 1812,
+            "target_motif_count": 136
+          },
+          {
+            "multiplier": 2,
+            "attempted": 160968,
+            "accepted": 137436,
+            "acceptance_rate_pct": 85.38,
+            "rejections": {
+              "same_index": 4,
+              "self_loop": 252,
+              "shared_node": 296,
+              "duplicate_edge": 22980
+            },
+            "rewired_fraction_pct": 90.31,
+            "mutual_dyads": 1600,
+            "target_motif_count": 86
+          },
+          {
+            "multiplier": 5,
+            "attempted": 402420,
+            "accepted": 342975,
+            "acceptance_rate_pct": 85.23,
+            "rejections": {
+              "same_index": 5,
+              "self_loop": 542,
+              "shared_node": 813,
+              "duplicate_edge": 58085
+            },
+            "rewired_fraction_pct": 92.47,
+            "mutual_dyads": 1618,
+            "target_motif_count": 80
+          },
+          {
+            "multiplier": 10,
+            "attempted": 804840,
+            "accepted": 686137,
+            "acceptance_rate_pct": 85.25,
+            "rejections": {
+              "same_index": 8,
+              "self_loop": 1107,
+              "shared_node": 1608,
+              "duplicate_edge": 115980
+            },
+            "rewired_fraction_pct": 92.45,
+            "mutual_dyads": 1636,
+            "target_motif_count": 110
+          },
+          {
+            "multiplier": 20,
+            "attempted": 1609680,
+            "accepted": 1371849,
+            "acceptance_rate_pct": 85.22,
+            "rejections": {
+              "same_index": 25,
+              "self_loop": 2279,
+              "shared_node": 3122,
+              "duplicate_edge": 232405
+            },
+            "rewired_fraction_pct": 92.68,
+            "mutual_dyads": 1694,
+            "target_motif_count": 99
+          },
+          {
+            "multiplier": 30,
+            "attempted": 2414520,
+            "accepted": 2056682,
+            "acceptance_rate_pct": 85.18,
+            "rejections": {
+              "same_index": 28,
+              "self_loop": 3422,
+              "shared_node": 4751,
+              "duplicate_edge": 349637
+            },
+            "rewired_fraction_pct": 92.47,
+            "mutual_dyads": 1633,
+            "target_motif_count": 99
+          },
+          {
+            "multiplier": 50,
+            "attempted": 4024200,
+            "accepted": 3427962,
+            "acceptance_rate_pct": 85.18,
+            "rejections": {
+              "same_index": 52,
+              "self_loop": 5794,
+              "shared_node": 7838,
+              "duplicate_edge": 582554
+            },
+            "rewired_fraction_pct": 92.54,
+            "mutual_dyads": 1630,
+            "target_motif_count": 105
+          },
+          {
+            "multiplier": 100,
+            "attempted": 8048400,
+            "accepted": 6857852,
+            "acceptance_rate_pct": 85.21,
+            "rejections": {
+              "same_index": 112,
+              "self_loop": 11375,
+              "shared_node": 15737,
+              "duplicate_edge": 1163324
+            },
+            "rewired_fraction_pct": 92.47,
+            "mutual_dyads": 1613,
+            "target_motif_count": 95
+          }
+        ],
+        "continuous_chain": {
+          "num_samples": 200,
+          "burn_in_multiplier": 20,
+          "thinning_multiplier": 5,
+          "mean_rewired_fraction_pct": 92.57,
+          "mutual_dyads": {
+            "mean": 1605.12,
+            "std": 39.22,
+            "acf_lags_1_to_5": [
+              -0.061,
+              0.145,
+              0.059,
+              -0.021,
+              -0.002
+            ],
+            "acf_lag_10": 0.062,
+            "tau_int": 0.5,
+            "effective_sample_size": 200.0
+          },
+          "target_motif": {
+            "motif": "ach_gaba",
+            "mean": 91.42,
+            "std": 9.32,
+            "acf_lags_1_to_5": [
+              -0.025,
+              0.047,
+              -0.053,
+              0.021,
+              -0.123
+            ],
+            "acf_lag_10": 0.11,
+            "tau_int": 0.5,
+            "effective_sample_size": 200.0
+          }
+        },
+        "multi_seed_comparison": [
+          {
+            "seed": 42,
+            "mutual_dyads": 1568,
+            "target_motif_count": 94
+          },
+          {
+            "seed": 101,
+            "mutual_dyads": 1584,
+            "target_motif_count": 82
+          },
+          {
+            "seed": 777,
+            "mutual_dyads": 1550,
+            "target_motif_count": 80
+          },
+          {
+            "seed": 2026,
+            "mutual_dyads": 1602,
+            "target_motif_count": 94
+          }
+        ]
+      },
+      "w5": {
+        "threshold": 5,
+        "nodes": 2465,
+        "edges": 46927,
+        "observed_mutual_dyads": 5442,
+        "observed_target_motif": 555,
+        "target_motif": "ach_gaba",
+        "swap_trajectory": [
+          {
+            "multiplier": 1,
+            "attempted": 46927,
+            "accepted": 40867,
+            "acceptance_rate_pct": 87.09,
+            "rejections": {
+              "same_index": 1,
+              "self_loop": 74,
+              "shared_node": 114,
+              "duplicate_edge": 5871
+            },
+            "rewired_fraction_pct": 79.0,
+            "mutual_dyads": 810,
+            "target_motif_count": 80
+          },
+          {
+            "multiplier": 2,
+            "attempted": 93854,
+            "accepted": 82027,
+            "acceptance_rate_pct": 87.4,
+            "rejections": {
+              "same_index": 1,
+              "self_loop": 150,
+              "shared_node": 228,
+              "duplicate_edge": 11448
+            },
+            "rewired_fraction_pct": 91.55,
+            "mutual_dyads": 772,
+            "target_motif_count": 59
+          },
+          {
+            "multiplier": 5,
+            "attempted": 234635,
+            "accepted": 204539,
+            "acceptance_rate_pct": 87.17,
+            "rejections": {
+              "same_index": 5,
+              "self_loop": 352,
+              "shared_node": 546,
+              "duplicate_edge": 29193
+            },
+            "rewired_fraction_pct": 93.75,
+            "mutual_dyads": 726,
+            "target_motif_count": 47
+          },
+          {
+            "multiplier": 10,
+            "attempted": 469270,
+            "accepted": 408279,
+            "acceptance_rate_pct": 87.0,
+            "rejections": {
+              "same_index": 9,
+              "self_loop": 790,
+              "shared_node": 1070,
+              "duplicate_edge": 59122
+            },
+            "rewired_fraction_pct": 93.82,
+            "mutual_dyads": 691,
+            "target_motif_count": 65
+          },
+          {
+            "multiplier": 20,
+            "attempted": 938540,
+            "accepted": 816238,
+            "acceptance_rate_pct": 86.97,
+            "rejections": {
+              "same_index": 28,
+              "self_loop": 1540,
+              "shared_node": 2233,
+              "duplicate_edge": 118501
+            },
+            "rewired_fraction_pct": 93.69,
+            "mutual_dyads": 738,
+            "target_motif_count": 72
+          },
+          {
+            "multiplier": 30,
+            "attempted": 1407810,
+            "accepted": 1223924,
+            "acceptance_rate_pct": 86.94,
+            "rejections": {
+              "same_index": 27,
+              "self_loop": 2388,
+              "shared_node": 3377,
+              "duplicate_edge": 178094
+            },
+            "rewired_fraction_pct": 93.82,
+            "mutual_dyads": 755,
+            "target_motif_count": 67
+          },
+          {
+            "multiplier": 50,
+            "attempted": 2346350,
+            "accepted": 2040347,
+            "acceptance_rate_pct": 86.96,
+            "rejections": {
+              "same_index": 50,
+              "self_loop": 3970,
+              "shared_node": 5579,
+              "duplicate_edge": 296404
+            },
+            "rewired_fraction_pct": 93.92,
+            "mutual_dyads": 704,
+            "target_motif_count": 68
+          },
+          {
+            "multiplier": 100,
+            "attempted": 4692700,
+            "accepted": 4080530,
+            "acceptance_rate_pct": 86.95,
+            "rejections": {
+              "same_index": 113,
+              "self_loop": 7836,
+              "shared_node": 11246,
+              "duplicate_edge": 592975
+            },
+            "rewired_fraction_pct": 93.8,
+            "mutual_dyads": 743,
+            "target_motif_count": 65
+          }
+        ],
+        "continuous_chain": {
+          "num_samples": 200,
+          "burn_in_multiplier": 20,
+          "thinning_multiplier": 5,
+          "mean_rewired_fraction_pct": 93.77,
+          "mutual_dyads": {
+            "mean": 741.68,
+            "std": 24.69,
+            "acf_lags_1_to_5": [
+              -0.084,
+              -0.022,
+              0.098,
+              -0.037,
+              -0.043
+            ],
+            "acf_lag_10": 0.045,
+            "tau_int": 0.5,
+            "effective_sample_size": 200.0
+          },
+          "target_motif": {
+            "motif": "ach_gaba",
+            "mean": 60.13,
+            "std": 7.63,
+            "acf_lags_1_to_5": [
+              -0.049,
+              0.064,
+              0.007,
+              0.109,
+              -0.063
+            ],
+            "acf_lag_10": -0.021,
+            "tau_int": 0.5,
+            "effective_sample_size": 200.0
+          }
+        },
+        "multi_seed_comparison": [
+          {
+            "seed": 42,
+            "mutual_dyads": 726,
+            "target_motif_count": 62
+          },
+          {
+            "seed": 101,
+            "mutual_dyads": 771,
+            "target_motif_count": 66
+          },
+          {
+            "seed": 777,
+            "mutual_dyads": 772,
+            "target_motif_count": 57
+          },
+          {
+            "seed": 2026,
+            "mutual_dyads": 795,
+            "target_motif_count": 69
+          }
+        ]
+      }
+    },
+    "PB": {
+      "w3": {
+        "threshold": 3,
+        "nodes": 1025,
+        "edges": 6006,
+        "observed_mutual_dyads": 321,
+        "observed_target_motif": 50,
+        "target_motif": "ach_ach",
+        "swap_trajectory": [
+          {
+            "multiplier": 1,
+            "attempted": 6006,
+            "accepted": 4526,
+            "acceptance_rate_pct": 75.36,
+            "rejections": {
+              "same_index": 0,
+              "self_loop": 46,
+              "shared_node": 67,
+              "duplicate_edge": 1367
+            },
+            "rewired_fraction_pct": 71.61,
+            "mutual_dyads": 185,
+            "target_motif_count": 18
+          },
+          {
+            "multiplier": 2,
+            "attempted": 12012,
+            "accepted": 9227,
+            "acceptance_rate_pct": 76.81,
+            "rejections": {
+              "same_index": 1,
+              "self_loop": 77,
+              "shared_node": 142,
+              "duplicate_edge": 2565
+            },
+            "rewired_fraction_pct": 83.4,
+            "mutual_dyads": 167,
+            "target_motif_count": 13
+          },
+          {
+            "multiplier": 5,
+            "attempted": 30030,
+            "accepted": 22945,
+            "acceptance_rate_pct": 76.41,
+            "rejections": {
+              "same_index": 6,
+              "self_loop": 213,
+              "shared_node": 321,
+              "duplicate_edge": 6545
+            },
+            "rewired_fraction_pct": 87.0,
+            "mutual_dyads": 173,
+            "target_motif_count": 12
+          },
+          {
+            "multiplier": 10,
+            "attempted": 60060,
+            "accepted": 45916,
+            "acceptance_rate_pct": 76.45,
+            "rejections": {
+              "same_index": 14,
+              "self_loop": 431,
+              "shared_node": 668,
+              "duplicate_edge": 13031
+            },
+            "rewired_fraction_pct": 87.13,
+            "mutual_dyads": 166,
+            "target_motif_count": 17
+          },
+          {
+            "multiplier": 20,
+            "attempted": 120120,
+            "accepted": 92172,
+            "acceptance_rate_pct": 76.73,
+            "rejections": {
+              "same_index": 19,
+              "self_loop": 837,
+              "shared_node": 1271,
+              "duplicate_edge": 25821
+            },
+            "rewired_fraction_pct": 86.98,
+            "mutual_dyads": 175,
+            "target_motif_count": 11
+          },
+          {
+            "multiplier": 30,
+            "attempted": 180180,
+            "accepted": 137594,
+            "acceptance_rate_pct": 76.36,
+            "rejections": {
+              "same_index": 19,
+              "self_loop": 1296,
+              "shared_node": 1926,
+              "duplicate_edge": 39345
+            },
+            "rewired_fraction_pct": 86.81,
+            "mutual_dyads": 171,
+            "target_motif_count": 9
+          },
+          {
+            "multiplier": 50,
+            "attempted": 300300,
+            "accepted": 229779,
+            "acceptance_rate_pct": 76.52,
+            "rejections": {
+              "same_index": 43,
+              "self_loop": 2102,
+              "shared_node": 3296,
+              "duplicate_edge": 65080
+            },
+            "rewired_fraction_pct": 87.26,
+            "mutual_dyads": 161,
+            "target_motif_count": 14
+          },
+          {
+            "multiplier": 100,
+            "attempted": 600600,
+            "accepted": 458881,
+            "acceptance_rate_pct": 76.4,
+            "rejections": {
+              "same_index": 107,
+              "self_loop": 4284,
+              "shared_node": 6604,
+              "duplicate_edge": 130724
+            },
+            "rewired_fraction_pct": 86.61,
+            "mutual_dyads": 165,
+            "target_motif_count": 16
+          }
+        ],
+        "continuous_chain": {
+          "num_samples": 200,
+          "burn_in_multiplier": 20,
+          "thinning_multiplier": 5,
+          "mean_rewired_fraction_pct": 86.78,
+          "mutual_dyads": {
+            "mean": 172.41,
+            "std": 10.69,
+            "acf_lags_1_to_5": [
+              0.072,
+              -0.054,
+              0.018,
+              0.058,
+              0.068
+            ],
+            "acf_lag_10": -0.102,
+            "tau_int": 0.57,
+            "effective_sample_size": 174.9
+          },
+          "target_motif": {
+            "motif": "ach_ach",
+            "mean": 12.79,
+            "std": 3.25,
+            "acf_lags_1_to_5": [
+              -0.059,
+              -0.067,
+              0.042,
+              -0.006,
+              0.035
+            ],
+            "acf_lag_10": 0.004,
+            "tau_int": 0.5,
+            "effective_sample_size": 200.0
+          }
+        },
+        "multi_seed_comparison": [
+          {
+            "seed": 42,
+            "mutual_dyads": 162,
+            "target_motif_count": 11
+          },
+          {
+            "seed": 101,
+            "mutual_dyads": 157,
+            "target_motif_count": 13
+          },
+          {
+            "seed": 777,
+            "mutual_dyads": 182,
+            "target_motif_count": 16
+          },
+          {
+            "seed": 2026,
+            "mutual_dyads": 171,
+            "target_motif_count": 16
+          }
+        ]
+      },
+      "w5": {
+        "threshold": 5,
+        "nodes": 699,
+        "edges": 3651,
+        "observed_mutual_dyads": 137,
+        "observed_target_motif": 35,
+        "target_motif": "ach_ach",
+        "swap_trajectory": [
+          {
+            "multiplier": 1,
+            "attempted": 3651,
+            "accepted": 2801,
+            "acceptance_rate_pct": 76.72,
+            "rejections": {
+              "same_index": 0,
+              "self_loop": 35,
+              "shared_node": 64,
+              "duplicate_edge": 751
+            },
+            "rewired_fraction_pct": 73.1,
+            "mutual_dyads": 82,
+            "target_motif_count": 17
+          },
+          {
+            "multiplier": 2,
+            "attempted": 7302,
+            "accepted": 5702,
+            "acceptance_rate_pct": 78.09,
+            "rejections": {
+              "same_index": 1,
+              "self_loop": 66,
+              "shared_node": 77,
+              "duplicate_edge": 1456
+            },
+            "rewired_fraction_pct": 84.94,
+            "mutual_dyads": 93,
+            "target_motif_count": 6
+          },
+          {
+            "multiplier": 5,
+            "attempted": 18255,
+            "accepted": 14189,
+            "acceptance_rate_pct": 77.73,
+            "rejections": {
+              "same_index": 6,
+              "self_loop": 164,
+              "shared_node": 227,
+              "duplicate_edge": 3669
+            },
+            "rewired_fraction_pct": 88.14,
+            "mutual_dyads": 80,
+            "target_motif_count": 9
+          },
+          {
+            "multiplier": 10,
+            "attempted": 36510,
+            "accepted": 28434,
+            "acceptance_rate_pct": 77.88,
+            "rejections": {
+              "same_index": 8,
+              "self_loop": 298,
+              "shared_node": 460,
+              "duplicate_edge": 7310
+            },
+            "rewired_fraction_pct": 87.54,
+            "mutual_dyads": 69,
+            "target_motif_count": 5
+          },
+          {
+            "multiplier": 20,
+            "attempted": 73020,
+            "accepted": 56744,
+            "acceptance_rate_pct": 77.71,
+            "rejections": {
+              "same_index": 26,
+              "self_loop": 619,
+              "shared_node": 988,
+              "duplicate_edge": 14643
+            },
+            "rewired_fraction_pct": 88.69,
+            "mutual_dyads": 81,
+            "target_motif_count": 6
+          },
+          {
+            "multiplier": 30,
+            "attempted": 109530,
+            "accepted": 85351,
+            "acceptance_rate_pct": 77.92,
+            "rejections": {
+              "same_index": 32,
+              "self_loop": 933,
+              "shared_node": 1437,
+              "duplicate_edge": 21777
+            },
+            "rewired_fraction_pct": 87.78,
+            "mutual_dyads": 85,
+            "target_motif_count": 6
+          },
+          {
+            "multiplier": 50,
+            "attempted": 182550,
+            "accepted": 141988,
+            "acceptance_rate_pct": 77.78,
+            "rejections": {
+              "same_index": 39,
+              "self_loop": 1485,
+              "shared_node": 2445,
+              "duplicate_edge": 36593
+            },
+            "rewired_fraction_pct": 87.62,
+            "mutual_dyads": 76,
+            "target_motif_count": 4
+          },
+          {
+            "multiplier": 100,
+            "attempted": 365100,
+            "accepted": 283847,
+            "acceptance_rate_pct": 77.75,
+            "rejections": {
+              "same_index": 108,
+              "self_loop": 2908,
+              "shared_node": 4875,
+              "duplicate_edge": 73362
+            },
+            "rewired_fraction_pct": 87.7,
+            "mutual_dyads": 84,
+            "target_motif_count": 11
+          }
+        ],
+        "continuous_chain": {
+          "num_samples": 200,
+          "burn_in_multiplier": 20,
+          "thinning_multiplier": 5,
+          "mean_rewired_fraction_pct": 87.89,
+          "mutual_dyads": {
+            "mean": 83.5,
+            "std": 7.8,
+            "acf_lags_1_to_5": [
+              -0.085,
+              -0.034,
+              -0.032,
+              0.076,
+              0.079
+            ],
+            "acf_lag_10": -0.016,
+            "tau_int": 0.5,
+            "effective_sample_size": 200.0
+          },
+          "target_motif": {
+            "motif": "ach_ach",
+            "mean": 7.62,
+            "std": 2.5,
+            "acf_lags_1_to_5": [
+              -0.055,
+              0.053,
+              -0.023,
+              -0.006,
+              -0.146
+            ],
+            "acf_lag_10": 0.04,
+            "tau_int": 0.5,
+            "effective_sample_size": 200.0
+          }
+        },
+        "multi_seed_comparison": [
+          {
+            "seed": 42,
+            "mutual_dyads": 100,
+            "target_motif_count": 10
+          },
+          {
+            "seed": 101,
+            "mutual_dyads": 80,
+            "target_motif_count": 3
+          },
+          {
+            "seed": 777,
+            "mutual_dyads": 81,
+            "target_motif_count": 3
+          },
+          {
+            "seed": 2026,
+            "mutual_dyads": 89,
+            "target_motif_count": 12
+          }
+        ]
+      }
+    }
+  }
+}

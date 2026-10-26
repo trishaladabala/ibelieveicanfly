@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "neuropil": "FB",
+    "active_nodes_count": 2465,
+    "matched_annotations_count": 2465,
+    "coverage_pct": 100.0,
+    "mutual_dyads_count": 5435,
+    "ach_gaba_dyads_count": 554,
+    "timestamp": "2026-10-26T12:49:59Z"
+  },
+  "morphology_census": {
+    "columnar_interneuron": 576,
+    "unclassified": 286,
+    "columnar_unclassified": 525,
+    "columnar_output": 80,
+    "tangential_exr": 17,
+    "columnar_input": 380,
+    "tangential_fb": 594,
+    "tangential_unclassified": 7
+  },
+  "dyad_broad_category": {
+    "columnar__tangential": 3579,
+    "tangential__tangential": 1120,
+    "columnar__columnar": 663,
+    "other": 73
+  },
+  "dyad_morphology_detailed": {
+    "columnar_interneuron__tangential_fb": 2515,
+    "tangential_fb__tangential_fb": 1066,
+    "columnar_unclassified__tangential_fb": 722,
+    "columnar_interneuron__columnar_output": 68,
+    "columnar_interneuron__tangential_exr": 59,
+    "columnar_input__tangential_fb": 182,
+    "columnar_interneuron__columnar_interneuron": 437,
+    "columnar_input__columnar_interneuron": 93,
+    "tangential_exr__tangential_fb": 51,
+    "columnar_input__tangential_exr": 24,
+    "columnar_interneuron__unclassified": 4,
+    "columnar_output__tangential_fb": 68,
+    "columnar_interneuron__columnar_unclassified": 46,
+    "tangential_unclassified__unclassified": 28,
+    "unclassified__unclassified": 35,
+    "tangential_fb__unclassified": 6,
+    "columnar_unclassified__tangential_exr": 8,
+    "tangential_fb__tangential_unclassified": 2,
+    "columnar_interneuron__tangential_unclassified": 1,
+    "columnar_unclassified__columnar_unclassified": 9,
+    "columnar_input__columnar_input": 1,
+    "columnar_output__columnar_output": 5,
+    "tangential_exr__tangential_exr": 1,
+    "columnar_output__columnar_unclassified": 2,
+    "columnar_input__columnar_unclassified": 2
+  },
+  "ach_gaba_broad": {
+    "columnar__tangential": 551,
+    "tangential__tangential": 3
+  },
+  "ach_gaba_polarity": {
+    "col_ach__tan_gaba": 551
+  },
+  "all_dyad_layers": {
+    "Unassigned_Layer": 935,
+    "Layer_7": 385,
+    "Layer_5": 1077,
+    "Layer_4": 1119,
+    "Layer_6": 932,
+    "Layer_8": 181,
+    "Layer_3": 102,
+    "Layer_2": 579,
+    "Layer_1": 100,
+    "Layer_9": 25
+  },
+  "ach_gaba_layers": {
+    "Layer_5": 364,
+    "Layer_4": 185,
+    "Unassigned_Layer": 3,
+    "Layer_6": 2
+  },
+  "layer_4_5_concentration_test": {
+    "l45_ach_gaba_count": 549,
+    "l45_ach_gaba_pct": 99.1,
+    "l45_all_dyads_count": 2196,
+    "l45_all_dyads_pct": 40.4,
+    "odds_ratio": 215.6,
+    "fisher_exact_p_value": 3.357537313568672e-226,
+    "is_statistically_significant": true
+  },
+  "ach_gaba_top_cell_pairs": {
+    "FB4A <-> vDeltaA": 150,
+    "FB5A <-> FC2C": 131,
+    "FB5A <-> FC2B": 102,
+    "FB5A <-> FC2A": 39,
+    "FB5A <-> hDeltaM": 32,
+    "FB5I2 <-> vDeltaF": 29,
+    "FB4A <-> hDeltaI": 26,
+    "FB5A <-> FC3": 21,
+    "FB4A <-> vDeltaF": 8,
+    "FB5A <-> Unknown": 3,
+    "FB5A <-> FB5AB": 3,
+    "FB5B <-> hDeltaC": 3,
+    "ExR1 <-> hDeltaD": 2,
+    "FB6Q <-> hDeltaC": 1,
+    "FB5A <-> PFGs": 1,
+    "ExR1 <-> hDeltaE": 1,
+    "FB4A <-> hDeltaJ": 1,
+    "FB6Q <-> hDeltaG": 1
+  }
+}

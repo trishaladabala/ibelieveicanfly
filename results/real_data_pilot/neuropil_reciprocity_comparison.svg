@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" style="background:#ffffff; font-family:system-ui, -apple-system, sans-serif;">
+  <text x="400.0" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Intra-Neuropil Reciprocity Ratio across Functional Tiers (FlyWire v783)</text>
+  <text x="400.0" y="44" text-anchor="middle" font-size="11" fill="#64748b">Complete Connectome Intra-Regional Wiring | High-Resolution EM Data</text>
+  <line x1="180" y1="50" x2="180" y2="420" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="180" y1="420" x2="750" y2="420" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="180.0" y1="50" x2="180.0" y2="420" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="180.0" y1="420" x2="180.0" y2="424" stroke="#64748b"/>
+  <text x="180.0" y="438" text-anchor="middle" font-size="11" fill="#475569">0%</text>
+  <line x1="275.0" y1="50" x2="275.0" y2="420" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="275.0" y1="420" x2="275.0" y2="424" stroke="#64748b"/>
+  <text x="275.0" y="438" text-anchor="middle" font-size="11" fill="#475569">10%</text>
+  <line x1="370.0" y1="50" x2="370.0" y2="420" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="370.0" y1="420" x2="370.0" y2="424" stroke="#64748b"/>
+  <text x="370.0" y="438" text-anchor="middle" font-size="11" fill="#475569">20%</text>
+  <line x1="465.0" y1="50" x2="465.0" y2="420" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="465.0" y1="420" x2="465.0" y2="424" stroke="#64748b"/>
+  <text x="465.0" y="438" text-anchor="middle" font-size="11" fill="#475569">30%</text>
+  <line x1="560.0" y1="50" x2="560.0" y2="420" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="560.0" y1="420" x2="560.0" y2="424" stroke="#64748b"/>
+  <text x="560.0" y="438" text-anchor="middle" font-size="11" fill="#475569">40%</text>
+  <line x1="655.0" y1="50" x2="655.0" y2="420" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="655.0" y1="420" x2="655.0" y2="424" stroke="#64748b"/>
+  <text x="655.0" y="438" text-anchor="middle" font-size="11" fill="#475569">50%</text>
+  <line x1="750.0" y1="50" x2="750.0" y2="420" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="750.0" y1="420" x2="750.0" y2="424" stroke="#64748b"/>
+  <text x="750.0" y="438" text-anchor="middle" font-size="11" fill="#475569">60%</text>
+  <text x="465.0" y="468" text-anchor="middle" font-size="12" font-weight="600" fill="#334155">Reciprocal Directed Edges (% of Total Intra-Neuropil Edges)</text>
+  <text x="170" y="66.3" text-anchor="end" font-size="11" fill="#1e293b">EB (Navigation)</text>
+  <rect x="180" y="54.0" width="551.6" height="16.7" fill="#8b5cf6" rx="3" opacity="0.9"><title>EB: 58.06% reciprocity (13,072 dyads / 45,030 edges)</title></rect>
+  <text x="737.6" y="66.3" font-size="10" font-weight="bold" fill="#8b5cf6">58.1%</text>
+  <text x="170" y="91.0" text-anchor="end" font-size="11" fill="#1e293b">AL_L (Primary Sensory)</text>
+  <rect x="180" y="78.7" width="406.5" height="16.7" fill="#3b82f6" rx="3" opacity="0.9"><title>AL_L: 42.79% reciprocity (29,963 dyads / 140,046 edges)</title></rect>
+  <text x="592.5" y="91.0" font-size="10" font-weight="bold" fill="#3b82f6">42.8%</text>
+  <text x="170" y="115.7" text-anchor="end" font-size="11" fill="#1e293b">AL_R (Primary Sensory)</text>
+  <rect x="180" y="103.3" width="396.2" height="16.7" fill="#3b82f6" rx="3" opacity="0.9"><title>AL_R: 41.70% reciprocity (29,321 dyads / 140,612 edges)</title></rect>
+  <text x="582.2" y="115.7" font-size="10" font-weight="bold" fill="#3b82f6">41.7%</text>
+  <text x="170" y="140.3" text-anchor="end" font-size="11" fill="#1e293b">FB (Navigation)</text>
+  <rect x="180" y="128.0" width="336.6" height="16.7" fill="#8b5cf6" rx="3" opacity="0.9"><title>FB: 35.43% reciprocity (40,090 dyads / 226,311 edges)</title></rect>
+  <text x="522.6" y="140.3" font-size="10" font-weight="bold" fill="#8b5cf6">35.4%</text>
+  <text x="170" y="165.0" text-anchor="end" font-size="11" fill="#1e293b">MB_PED_R (Associative)</text>
+  <rect x="180" y="152.7" width="288.9" height="16.7" fill="#10b981" rx="3" opacity="0.9"><title>MB_PED_R: 30.41% reciprocity (9,964 dyads / 65,532 edges)</title></rect>
+  <text x="474.9" y="165.0" font-size="10" font-weight="bold" fill="#10b981">30.4%</text>
+  <text x="170" y="189.7" text-anchor="end" font-size="11" fill="#1e293b">ME_R (Primary Sensory)</text>
+  <rect x="180" y="177.3" width="280.1" height="16.7" fill="#3b82f6" rx="3" opacity="0.9"><title>ME_R: 29.48% reciprocity (383,080 dyads / 2,598,890 edges)</title></rect>
+  <text x="466.1" y="189.7" font-size="10" font-weight="bold" fill="#3b82f6">29.5%</text>
+  <text x="170" y="214.3" text-anchor="end" font-size="11" fill="#1e293b">ME_L (Primary Sensory)</text>
+  <rect x="180" y="202.0" width="273.9" height="16.7" fill="#3b82f6" rx="3" opacity="0.9"><title>ME_L: 28.83% reciprocity (349,843 dyads / 2,426,813 edges)</title></rect>
+  <text x="459.9" y="214.3" font-size="10" font-weight="bold" fill="#3b82f6">28.8%</text>
+  <text x="170" y="239.0" text-anchor="end" font-size="11" fill="#1e293b">MB_ML_R (Associative)</text>
+  <rect x="180" y="226.7" width="234.3" height="16.7" fill="#10b981" rx="3" opacity="0.9"><title>MB_ML_R: 24.66% reciprocity (17,241 dyads / 139,808 edges)</title></rect>
+  <text x="420.3" y="239.0" font-size="10" font-weight="bold" fill="#10b981">24.7%</text>
+  <text x="170" y="263.7" text-anchor="end" font-size="11" fill="#1e293b">MB_CA_L (Associative)</text>
+  <rect x="180" y="251.3" width="220.1" height="16.7" fill="#10b981" rx="3" opacity="0.9"><title>MB_CA_L: 23.17% reciprocity (5,611 dyads / 48,438 edges)</title></rect>
+  <text x="406.1" y="263.7" font-size="10" font-weight="bold" fill="#10b981">23.2%</text>
+  <text x="170" y="288.3" text-anchor="end" font-size="11" fill="#1e293b">AVLP_L (Premotor Hub)</text>
+  <rect x="180" y="276.0" width="216.3" height="16.7" fill="#f59e0b" rx="3" opacity="0.9"><title>AVLP_L: 22.77% reciprocity (41,984 dyads / 368,725 edges)</title></rect>
+  <text x="402.3" y="288.3" font-size="10" font-weight="bold" fill="#f59e0b">22.8%</text>
+  <text x="170" y="313.0" text-anchor="end" font-size="11" fill="#1e293b">MB_CA_R (Associative)</text>
+  <rect x="180" y="300.7" width="213.8" height="16.7" fill="#10b981" rx="3" opacity="0.9"><title>MB_CA_R: 22.51% reciprocity (5,101 dyads / 45,331 edges)</title></rect>
+  <text x="399.8" y="313.0" font-size="10" font-weight="bold" fill="#10b981">22.5%</text>
+  <text x="170" y="337.7" text-anchor="end" font-size="11" fill="#1e293b">AVLP_R (Premotor Hub)</text>
+  <rect x="180" y="325.3" width="202.8" height="16.7" fill="#f59e0b" rx="3" opacity="0.9"><title>AVLP_R: 21.35% reciprocity (48,282 dyads / 452,236 edges)</title></rect>
+  <text x="388.8" y="337.7" font-size="10" font-weight="bold" fill="#f59e0b">21.4%</text>
+  <text x="170" y="362.3" text-anchor="end" font-size="11" fill="#1e293b">LAL_L (Premotor Steering)</text>
+  <rect x="180" y="350.0" width="168.5" height="16.7" fill="#f59e0b" rx="3" opacity="0.9"><title>LAL_L: 17.74% reciprocity (8,024 dyads / 90,474 edges)</title></rect>
+  <text x="354.5" y="362.3" font-size="10" font-weight="bold" fill="#f59e0b">17.7%</text>
+  <text x="170" y="387.0" text-anchor="end" font-size="11" fill="#1e293b">LAL_R (Premotor Steering)</text>
+  <rect x="180" y="374.7" width="165.3" height="16.7" fill="#f59e0b" rx="3" opacity="0.9"><title>LAL_R: 17.40% reciprocity (7,405 dyads / 85,096 edges)</title></rect>
+  <text x="351.3" y="387.0" font-size="10" font-weight="bold" fill="#f59e0b">17.4%</text>
+  <text x="170" y="411.7" text-anchor="end" font-size="11" fill="#1e293b">PB (Navigation)</text>
+  <rect x="180" y="399.3" width="155.9" height="16.7" fill="#8b5cf6" rx="3" opacity="0.9"><title>PB: 16.41% reciprocity (1,252 dyads / 15,261 edges)</title></rect>
+  <text x="341.9" y="411.7" font-size="10" font-weight="bold" fill="#8b5cf6">16.4%</text>
+</svg>

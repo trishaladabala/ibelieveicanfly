@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "dataset": "proofread_connections_783.feather",
+    "scope": "COMPLETE CONNECTOME (16,847,997 records, 54,492,922 synapses)",
+    "primary_model": "Eckstein, Bates et al. 2024 Cell deep learning EM predictions",
+    "interpretation_warning": "Predicted probabilities, NOT direct biochemical concentrations or physiological conductance"
+  },
+  "whole_brain_proportions_normalized_pct": {
+    "ach": 48.38,
+    "gaba": 23.16,
+    "glut": 19.25,
+    "da": 4.43,
+    "oct": 2.69,
+    "ser": 2.08
+  },
+  "whole_brain_proportions_class_specific_pct": {
+    "ach": 48.38,
+    "gaba": 23.16,
+    "glut": 19.25,
+    "da": 4.43,
+    "oct": 2.69,
+    "ser": 2.08
+  },
+  "complete_case_proportions_pct": {
+    "ach": 48.38,
+    "gaba": 23.16,
+    "glut": 19.25,
+    "da": 4.43,
+    "oct": 2.69,
+    "ser": 2.08
+  },
+  "raw_probability_mass": {
+    "ach": 26348931.0,
+    "gaba": 12614419.6,
+    "glut": 10486203.8,
+    "da": 2412833.0,
+    "oct": 1466759.4,
+    "ser": 1132969.1
+  },
+  "missing_data_fraction_pct": 0.0565
+}

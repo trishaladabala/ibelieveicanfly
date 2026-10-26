@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-26T12:49:57Z",
+    "runtime_sec": 19.75,
+    "peak_ram_mb": 27.75
+  },
+  "fb_continuous_knn": {
+    "fb_k16": {
+      "observed": 554,
+      "null_mean": 201.65,
+      "null_std": 52.29,
+      "enrichment_ratio": 2.7473,
+      "z_score": 6.74,
+      "empirical_p_value": 0.000999000999000999,
+      "q025": 104,
+      "median": 199,
+      "q975": 303,
+      "strata_count": 154,
+      "strata_mean_size": 16.01,
+      "frozen_strata_count": 14
+    },
+    "fb_k8": {
+      "observed": 554,
+      "null_mean": 219.09,
+      "null_std": 54.14,
+      "enrichment_ratio": 2.5286,
+      "z_score": 6.19,
+      "empirical_p_value": 0.000999000999000999,
+      "q025": 113,
+      "median": 219,
+      "q975": 320,
+      "strata_count": 308,
+      "strata_mean_size": 8.0,
+      "frozen_strata_count": 66
+    }
+  },
+  "fb_continuous_mcmc": {
+    "fb_mcmc_sigma020": {
+      "observed": 554,
+      "null_mean": 459.98,
+      "null_std": 33.6,
+      "enrichment_ratio": 1.2044,
+      "z_score": 2.8,
+      "empirical_p_value": 0.015873015873015872,
+      "q025": 408,
+      "median": 462,
+      "q975": 538,
+      "sigma_d": 0.2,
+      "burnin_steps": 50000,
+      "thin_steps": 1500,
+      "total_steps": 1550000,
+      "samples_collected": 62,
+      "acceptance_rate_pct": 6.74,
+      "lag1_autocorrelation": 0.85,
+      "effective_sample_size": 5.0
+    }
+  },
+  "eb_continuous_knn": {
+    "eb_k16": {
+      "observed": 2615,
+      "null_mean": 2206.67,
+      "null_std": 47.05,
+      "enrichment_ratio": 1.185,
+      "z_score": 8.68,
+      "empirical_p_value": 0.000999000999000999,
+      "q025": 2112,
+      "median": 2206,
+      "q975": 2301,
+      "strata_count": 30,
+      "strata_mean_size": 16.1,
+      "frozen_strata_count": 7
+    },
+    "eb_k8": {
+      "observed": 2615,
+      "null_mean": 2239.36,
+      "null_std": 44.54,
+      "enrichment_ratio": 1.1677,
+      "z_score": 8.43,
+      "empirical_p_value": 0.000999000999000999,
+      "q025": 2156,
+      "median": 2239,
+      "q975": 2327,
+      "strata_count": 60,
+      "strata_mean_size": 8.05,
+      "frozen_strata_count": 25
+    },
+    "eb_mcmc_sigma020": {
+      "observed": 2615,
+      "null_mean": 1636.15,
+      "null_std": 165.32,
+      "enrichment_ratio": 1.5983,
+      "z_score": 5.92,
+      "empirical_p_value": 0.025,
+      "q025": 1454,
+      "median": 1560,
+      "q975": 2039,
+      "sigma_d": 0.2,
+      "burnin_steps": 50000,
+      "thin_steps": 1500,
+      "total_steps": 1550000,
+      "samples_collected": 39,
+      "acceptance_rate_pct": 3.94,
+      "lag1_autocorrelation": 0.867,
+      "effective_sample_size": 2.8
+    }
+  }
+}

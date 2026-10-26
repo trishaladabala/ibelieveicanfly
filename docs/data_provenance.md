@@ -13,9 +13,16 @@ Two major open-access electron microscopy (EM) reconstruction datasets represent
 - **Scale**: ~139,255 reconstructed neurons and ~50 million synapses across the entire central brain and optic lobes.
 - **Versions**:
   - `v630`: Initial static release.
-  - `v783`: Updated proofread public benchmark release.
-- **Official Access & Portal**: [FlyWire Codex](https://codex.flywire.ai) and the Princeton FlyWire data dump repository.
-- **Licensing**: Creative Commons Attribution 4.0 International (CC-BY 4.0).
+  - `v783`: Updated proofread public benchmark release (Female Adult Fly Brain, FAFB).
+- **Official Access & Portals**:
+  - FlyWire Codex: [https://codex.flywire.ai](https://codex.flywire.ai)
+  - Codex API / Downloads: [https://codex.flywire.ai/api/download](https://codex.flywire.ai/api/download)
+  - Zenodo Archive: [https://zenodo.org/records/10676866](https://zenodo.org/records/10676866) (DOI: `10.5281/zenodo.10676866`)
+  - Community Guidelines: [https://flywire.ai/guidelines](https://flywire.ai/guidelines)
+- **Licensing & Terms**:
+  - **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
+  - *Strict Non-Commercial Restriction*: Data cannot be used for commercial purposes without explicit permission.
+  - *Mandatory Attribution*: Requires explicit citation of Dorkenwald et al. (2024), *Nature*, DOI: `10.1038/s41586-024-07558-y` and the Zenodo release DOI `10.5281/zenodo.10676866`.
 
 ### B. Janelia Hemibrain
 - **Organism**: *Drosophila melanogaster* (central brain only).
@@ -59,11 +66,40 @@ In computational biology and network science, the term "weight" is frequently ov
 
 ---
 
-## 4. Dataset Acquisition Protocol
+## 4. Acquired Biological Dataset Audit (FAFB v783)
 
-Under our research safety constraints:
-- **No automatic downloading** of multi-gigabyte files.
-- When ready for real Drosophila data:
-  1. Target the **FlyWire v783 aggregated connections table** (compressed CSV/gzip or Parquet, ~50-80 MB download).
-  2. Target the **FlyWire cell classification table** (~5 MB download).
-  3. Validate cryptographic checksums (SHA256) upon acquisition.
+The official FlyWire aggregated proofread connections table was successfully acquired and verified on 2026-10-19:
+
+- **Local Path**: `data/raw/fafb_v783/proofread_connections_783.feather`
+- **File Format**: Apache Arrow IPC / Feather (V2)
+- **Exact File Size**: `852,022,274 bytes` (812.55 MiB / 852.02 MB)
+- **SHA-256 Checksum**: `24f960ae3e7d4f8cd30db3b62e99fb5179cc3d1e76d8c155bfb441e9737d3faf`
+- **Total Physical Records**: `16,847,997 rows` (258 Arrow record batches of 65,536 rows each)
+- **Source Direct URL**: `https://zenodo.org/api/records/10676866/files/proofread_connections_783.feather/content`
+- **Source Record**: Zenodo Record `10676866` (DOI: `10.5281/zenodo.10676866`)
+- **Access Date**: 2026-10-19
+- **Licence**: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+- **Primary Citation**: Dorkenwald et al. (2024), *Nature*, DOI: `10.1038/s41586-024-07558-y`
+- **Release Version**: FlyWire FAFB v783.0 (Zenodo Record `10676866`, DOI: `10.5281/zenodo.10676866`)
+- **Excluded Large Files**: `flywire_synapses_783.feather` (~9.5 GB raw synapse cloud) was strictly excluded per hardware constraints.
+- **Git Tracking Status**: Fully excluded by `.gitignore` (`data/raw/`).
+
+---
+
+## 5. Acquired Proofread Root IDs Array (`proofread_root_ids_783.npy`)
+
+- **Local Path**: `data/raw/fafb_v783/proofread_root_ids_783.npy`
+- **File Format**: NumPy binary array (`.npy`, uint64, shape `(139255,)`)
+- **Exact File Size**: `1,114,168 bytes` (1.1 MB)
+- **SHA-256 Checksum**: `7c7b7e818e9232e5ab64793d52ba20574dbe9da3a6509fbc74193b0f259a01be`
+- **Source Direct URL**: `https://zenodo.org/api/records/10676866/files/proofread_root_ids_783.npy/content`
+- **Total Proofread Neurons in Array**: `139,255`
+- **Neuron Universe Reconciliation**:
+  - Represented in `proofread_connections_783.feather`: `138,639` unique neurons (100% are proofread; 0 non-proofread IDs present).
+  - Presynaptic active neurons: `138,005`
+  - Postsynaptic active neurons: `137,090`
+  - Bidirectionally connected: `136,456`
+  - Pure source neurons (outgoing only): `1,549`
+  - Pure target neurons (incoming only): `634`
+  - Proofread neurons with zero connections in aggregated table: `616` (0.442% of population). These represent proofread somata/fragments lacking detected chemical synapses within the thresholded release.
+

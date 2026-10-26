@@ -1,0 +1,1513 @@
+{
+  "metadata": {
+    "neuropil": "FB",
+    "threshold": 5,
+    "timestamp": "2026-10-26T12:48:23Z",
+    "active_nodes_count": 2465,
+    "directed_edges_count": 46903,
+    "mutual_dyads_count": 5435,
+    "edge_reciprocity_pct": 23.1755,
+    "permutations_per_model": 2000,
+    "seed": 42
+  },
+  "models": {
+    "model1_mutual_quartiles": {
+      "model_name": "Mutual-Degree Quartiles (4 strata)",
+      "results": {
+        "strata_count": 4,
+        "strata_sizes": [
+          616,
+          616,
+          616,
+          617
+        ],
+        "frozen_strata_count": 0,
+        "mobile_nodes_count": 2465,
+        "pair_statistics": {
+          "ach_ach": {
+            "observed": 456,
+            "null_mean": 955.12,
+            "null_std": 80.57,
+            "enrichment_ratio": 0.4774,
+            "z_score": -6.19,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 803,
+              "q25": 900,
+              "median": 952,
+              "q75": 1010,
+              "q975": 1111
+            },
+            "fdr_q_value": 0.002623688155922039,
+            "fdr_significant": true
+          },
+          "ach_gaba": {
+            "observed": 554,
+            "null_mean": 93.56,
+            "null_std": 26.09,
+            "enrichment_ratio": 5.9211,
+            "z_score": 17.65,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 56,
+              "q25": 75,
+              "median": 88,
+              "q75": 106,
+              "q975": 155
+            },
+            "fdr_q_value": 0.002623688155922039,
+            "fdr_significant": true
+          },
+          "ach_glut": {
+            "observed": 2267,
+            "null_mean": 1962.97,
+            "null_std": 72.54,
+            "enrichment_ratio": 1.1549,
+            "z_score": 4.19,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 1822,
+              "q25": 1915,
+              "median": 1964,
+              "q75": 2013,
+              "q975": 2106
+            },
+            "fdr_q_value": 0.002623688155922039,
+            "fdr_significant": true
+          },
+          "ach_da": {
+            "observed": 296,
+            "null_mean": 260.29,
+            "null_std": 42.91,
+            "enrichment_ratio": 1.1372,
+            "z_score": 0.83,
+            "empirical_p_value": 0.4107946026986507,
+            "quantiles": {
+              "q025": 188,
+              "q25": 229,
+              "median": 255,
+              "q75": 287,
+              "q975": 356
+            },
+            "fdr_q_value": 0.6635912812824357,
+            "fdr_significant": false
+          },
+          "ach_oct": {
+            "observed": 0,
+            "null_mean": 2.09,
+            "null_std": 1.25,
+            "enrichment_ratio": 0.0,
+            "z_score": -1.67,
+            "empirical_p_value": 0.12643678160919541,
+            "quantiles": {
+              "q025": 0,
+              "q25": 1,
+              "median": 2,
+              "q75": 3,
+              "q975": 5
+            },
+            "fdr_q_value": 0.2655172413793104,
+            "fdr_significant": false
+          },
+          "ach_ser": {
+            "observed": 100,
+            "null_mean": 341.74,
+            "null_std": 45.99,
+            "enrichment_ratio": 0.2926,
+            "z_score": -5.26,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 263,
+              "q25": 309,
+              "median": 338,
+              "q75": 370,
+              "q975": 442
+            },
+            "fdr_q_value": 0.002623688155922039,
+            "fdr_significant": true
+          },
+          "gaba_gaba": {
+            "observed": 6,
+            "null_mean": 2.11,
+            "null_std": 1.64,
+            "enrichment_ratio": 2.8497,
+            "z_score": 2.38,
+            "empirical_p_value": 0.03698150924537731,
+            "quantiles": {
+              "q025": 0,
+              "q25": 1,
+              "median": 2,
+              "q75": 3,
+              "q975": 6
+            },
+            "fdr_q_value": 0.08629018823921372,
+            "fdr_significant": false
+          },
+          "gaba_glut": {
+            "observed": 31,
+            "null_mean": 94.19,
+            "null_std": 19.19,
+            "enrichment_ratio": 0.3291,
+            "z_score": -3.29,
+            "empirical_p_value": 0.0034982508745627187,
+            "quantiles": {
+              "q025": 63,
+              "q25": 80,
+              "median": 92,
+              "q75": 105,
+              "q975": 138
+            },
+            "fdr_q_value": 0.012243878060969516,
+            "fdr_significant": true
+          },
+          "gaba_da": {
+            "observed": 16,
+            "null_mean": 12.32,
+            "null_std": 4.27,
+            "enrichment_ratio": 1.2989,
+            "z_score": 0.86,
+            "empirical_p_value": 0.39480259870064965,
+            "quantiles": {
+              "q025": 5,
+              "q25": 9,
+              "median": 12,
+              "q75": 15,
+              "q975": 22
+            },
+            "fdr_q_value": 0.6635912812824357,
+            "fdr_significant": false
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "null_mean": 0.12,
+            "null_std": 0.36,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.35,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 0,
+              "q975": 1
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "gaba_ser": {
+            "observed": 21,
+            "null_mean": 16.69,
+            "null_std": 5.36,
+            "enrichment_ratio": 1.2583,
+            "z_score": 0.8,
+            "empirical_p_value": 0.4427786106946527,
+            "quantiles": {
+              "q025": 7,
+              "q25": 13,
+              "median": 16,
+              "q75": 20,
+              "q975": 29
+            },
+            "fdr_q_value": 0.664167916041979,
+            "fdr_significant": false
+          },
+          "glut_glut": {
+            "observed": 968,
+            "null_mean": 988.66,
+            "null_std": 63.63,
+            "enrichment_ratio": 0.9791,
+            "z_score": -0.32,
+            "empirical_p_value": 0.7496251874062968,
+            "quantiles": {
+              "q025": 867,
+              "q25": 946,
+              "median": 989,
+              "q75": 1031,
+              "q975": 1114
+            },
+            "fdr_q_value": 0.9838830584707645,
+            "fdr_significant": false
+          },
+          "glut_da": {
+            "observed": 253,
+            "null_mean": 261.27,
+            "null_std": 31.78,
+            "enrichment_ratio": 0.9683,
+            "z_score": -0.26,
+            "empirical_p_value": 0.7966016991504248,
+            "quantiles": {
+              "q025": 204,
+              "q25": 240,
+              "median": 259,
+              "q75": 281,
+              "q975": 330
+            },
+            "fdr_q_value": 0.9840373930681717,
+            "fdr_significant": false
+          },
+          "glut_oct": {
+            "observed": 3,
+            "null_mean": 2.37,
+            "null_std": 1.38,
+            "enrichment_ratio": 1.265,
+            "z_score": 0.45,
+            "empirical_p_value": 0.7071464267866067,
+            "quantiles": {
+              "q025": 0,
+              "q25": 1,
+              "median": 2,
+              "q75": 3,
+              "q975": 5
+            },
+            "fdr_q_value": 0.9838830584707645,
+            "fdr_significant": false
+          },
+          "glut_ser": {
+            "observed": 307,
+            "null_mean": 348.03,
+            "null_std": 34.04,
+            "enrichment_ratio": 0.8821,
+            "z_score": -1.21,
+            "empirical_p_value": 0.2303848075962019,
+            "quantiles": {
+              "q025": 282,
+              "q25": 325,
+              "median": 346,
+              "q75": 369,
+              "q975": 422
+            },
+            "fdr_q_value": 0.4398255417745673,
+            "fdr_significant": false
+          },
+          "da_da": {
+            "observed": 32,
+            "null_mean": 16.82,
+            "null_std": 5.28,
+            "enrichment_ratio": 1.9027,
+            "z_score": 2.88,
+            "empirical_p_value": 0.0079960019990005,
+            "quantiles": {
+              "q025": 8,
+              "q25": 13,
+              "median": 16,
+              "q75": 20,
+              "q975": 28
+            },
+            "fdr_q_value": 0.0239880059970015,
+            "fdr_significant": true
+          },
+          "da_oct": {
+            "observed": 0,
+            "null_mean": 0.36,
+            "null_std": 0.6,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.6,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 1,
+              "q975": 2
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "da_ser": {
+            "observed": 76,
+            "null_mean": 45.78,
+            "null_std": 9.31,
+            "enrichment_ratio": 1.66,
+            "z_score": 3.24,
+            "empirical_p_value": 0.0024987506246876563,
+            "quantiles": {
+              "q025": 28,
+              "q25": 39,
+              "median": 45,
+              "q75": 52,
+              "q975": 66
+            },
+            "fdr_q_value": 0.010494752623688156,
+            "fdr_significant": true
+          },
+          "oct_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.0,
+            "enrichment_ratio": 0.0,
+            "z_score": 0.0,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 0,
+              "q975": 0
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "oct_ser": {
+            "observed": 0,
+            "null_mean": 0.41,
+            "null_std": 0.63,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.64,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 1,
+              "q975": 2
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "ser_ser": {
+            "observed": 49,
+            "null_mean": 30.1,
+            "null_std": 8.17,
+            "enrichment_ratio": 1.6277,
+            "z_score": 2.31,
+            "empirical_p_value": 0.0239880059970015,
+            "quantiles": {
+              "q025": 16,
+              "q25": 24,
+              "median": 29,
+              "q75": 35,
+              "q975": 48
+            },
+            "fdr_q_value": 0.06296851574212893,
+            "fdr_significant": false
+          }
+        }
+      }
+    },
+    "model2_joint_in_out_tertiles": {
+      "model_name": "Joint Directed In x Out Tertiles (3x3 grid, 9 strata)",
+      "results": {
+        "strata_count": 9,
+        "strata_sizes": [
+          511,
+          539,
+          384,
+          223,
+          184,
+          214,
+          253,
+          98,
+          59
+        ],
+        "frozen_strata_count": 0,
+        "mobile_nodes_count": 2465,
+        "pair_statistics": {
+          "ach_ach": {
+            "observed": 456,
+            "null_mean": 1327.23,
+            "null_std": 94.76,
+            "enrichment_ratio": 0.3436,
+            "z_score": -9.19,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 1141,
+              "q25": 1263,
+              "median": 1330,
+              "q75": 1390,
+              "q975": 1515
+            },
+            "fdr_q_value": 0.0020989505247376314,
+            "fdr_significant": true
+          },
+          "ach_gaba": {
+            "observed": 554,
+            "null_mean": 97.43,
+            "null_std": 28.09,
+            "enrichment_ratio": 5.6859,
+            "z_score": 16.25,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 56,
+              "q25": 78,
+              "median": 93,
+              "q75": 113,
+              "q975": 164
+            },
+            "fdr_q_value": 0.0020989505247376314,
+            "fdr_significant": true
+          },
+          "ach_glut": {
+            "observed": 2267,
+            "null_mean": 2135.58,
+            "null_std": 71.6,
+            "enrichment_ratio": 1.0615,
+            "z_score": 1.84,
+            "empirical_p_value": 0.06346826586706647,
+            "quantiles": {
+              "q025": 1996,
+              "q25": 2086,
+              "median": 2136,
+              "q75": 2186,
+              "q975": 2274
+            },
+            "fdr_q_value": 0.10898396955368471,
+            "fdr_significant": false
+          },
+          "ach_da": {
+            "observed": 296,
+            "null_mean": 224.44,
+            "null_std": 37.69,
+            "enrichment_ratio": 1.3188,
+            "z_score": 1.9,
+            "empirical_p_value": 0.050474762618690654,
+            "quantiles": {
+              "q025": 158,
+              "q25": 199,
+              "median": 222,
+              "q75": 248,
+              "q975": 305
+            },
+            "fdr_q_value": 0.09636091045386398,
+            "fdr_significant": false
+          },
+          "ach_oct": {
+            "observed": 0,
+            "null_mean": 2.12,
+            "null_std": 1.55,
+            "enrichment_ratio": 0.0,
+            "z_score": -1.37,
+            "empirical_p_value": 0.21239380309845077,
+            "quantiles": {
+              "q025": 0,
+              "q25": 1,
+              "median": 2,
+              "q75": 3,
+              "q975": 6
+            },
+            "fdr_q_value": 0.2787668665667166,
+            "fdr_significant": false
+          },
+          "ach_ser": {
+            "observed": 100,
+            "null_mean": 248.99,
+            "null_std": 33.55,
+            "enrichment_ratio": 0.4016,
+            "z_score": -4.44,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 186,
+              "q25": 226,
+              "median": 247,
+              "q75": 272,
+              "q975": 317
+            },
+            "fdr_q_value": 0.0020989505247376314,
+            "fdr_significant": true
+          },
+          "gaba_gaba": {
+            "observed": 6,
+            "null_mean": 1.67,
+            "null_std": 1.38,
+            "enrichment_ratio": 3.595,
+            "z_score": 3.14,
+            "empirical_p_value": 0.006496751624187906,
+            "quantiles": {
+              "q025": 0,
+              "q25": 1,
+              "median": 1,
+              "q75": 3,
+              "q975": 5
+            },
+            "fdr_q_value": 0.013643178410794602,
+            "fdr_significant": true
+          },
+          "gaba_glut": {
+            "observed": 31,
+            "null_mean": 79.34,
+            "null_std": 16.87,
+            "enrichment_ratio": 0.3907,
+            "z_score": -2.87,
+            "empirical_p_value": 0.005497251374312844,
+            "quantiles": {
+              "q025": 49,
+              "q25": 67,
+              "median": 78,
+              "q75": 90,
+              "q975": 116
+            },
+            "fdr_q_value": 0.012826919873396635,
+            "fdr_significant": true
+          },
+          "gaba_da": {
+            "observed": 16,
+            "null_mean": 8.14,
+            "null_std": 4.35,
+            "enrichment_ratio": 1.9657,
+            "z_score": 1.81,
+            "empirical_p_value": 0.06746626686656672,
+            "quantiles": {
+              "q025": 2,
+              "q25": 5,
+              "median": 7,
+              "q75": 11,
+              "q975": 19
+            },
+            "fdr_q_value": 0.10898396955368471,
+            "fdr_significant": false
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "null_mean": 0.08,
+            "null_std": 0.29,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.28,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 0,
+              "q975": 1
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "gaba_ser": {
+            "observed": 21,
+            "null_mean": 9.19,
+            "null_std": 6.81,
+            "enrichment_ratio": 2.2848,
+            "z_score": 1.73,
+            "empirical_p_value": 0.07546226886556721,
+            "quantiles": {
+              "q025": 1,
+              "q25": 4,
+              "median": 7,
+              "q75": 13,
+              "q975": 27
+            },
+            "fdr_q_value": 0.11319340329835081,
+            "fdr_significant": false
+          },
+          "glut_glut": {
+            "observed": 968,
+            "null_mean": 875.03,
+            "null_std": 55.73,
+            "enrichment_ratio": 1.1063,
+            "z_score": 1.67,
+            "empirical_p_value": 0.10294852573713144,
+            "quantiles": {
+              "q025": 768,
+              "q25": 838,
+              "median": 876,
+              "q75": 912,
+              "q975": 984
+            },
+            "fdr_q_value": 0.144127936031984,
+            "fdr_significant": false
+          },
+          "glut_da": {
+            "observed": 253,
+            "null_mean": 178.61,
+            "null_std": 24.7,
+            "enrichment_ratio": 1.4165,
+            "z_score": 3.01,
+            "empirical_p_value": 0.0034982508745627187,
+            "quantiles": {
+              "q025": 130,
+              "q25": 162,
+              "median": 178,
+              "q75": 195,
+              "q975": 230
+            },
+            "fdr_q_value": 0.009182908545727137,
+            "fdr_significant": true
+          },
+          "glut_oct": {
+            "observed": 3,
+            "null_mean": 1.84,
+            "null_std": 1.51,
+            "enrichment_ratio": 1.6287,
+            "z_score": 0.77,
+            "empirical_p_value": 0.4827586206896552,
+            "quantiles": {
+              "q025": 0,
+              "q25": 1,
+              "median": 2,
+              "q75": 3,
+              "q975": 5
+            },
+            "fdr_q_value": 0.5963488843813388,
+            "fdr_significant": false
+          },
+          "glut_ser": {
+            "observed": 307,
+            "null_mean": 200.99,
+            "null_std": 27.44,
+            "enrichment_ratio": 1.5274,
+            "z_score": 3.86,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 149,
+              "q25": 183,
+              "median": 201,
+              "q75": 219,
+              "q975": 255
+            },
+            "fdr_q_value": 0.0020989505247376314,
+            "fdr_significant": true
+          },
+          "da_da": {
+            "observed": 32,
+            "null_mean": 9.74,
+            "null_std": 5.2,
+            "enrichment_ratio": 3.2861,
+            "z_score": 4.28,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 2,
+              "q25": 6,
+              "median": 9,
+              "q75": 13,
+              "q975": 22
+            },
+            "fdr_q_value": 0.0020989505247376314,
+            "fdr_significant": true
+          },
+          "da_oct": {
+            "observed": 0,
+            "null_mean": 0.15,
+            "null_std": 0.39,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.37,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 0,
+              "q975": 1
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "da_ser": {
+            "observed": 76,
+            "null_mean": 22.65,
+            "null_std": 9.85,
+            "enrichment_ratio": 3.3547,
+            "z_score": 5.42,
+            "empirical_p_value": 0.0009995002498750624,
+            "quantiles": {
+              "q025": 8,
+              "q25": 15,
+              "median": 21,
+              "q75": 29,
+              "q975": 45
+            },
+            "fdr_q_value": 0.0034982508745627187,
+            "fdr_significant": true
+          },
+          "oct_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.02,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.02,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 0,
+              "q975": 0
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "oct_ser": {
+            "observed": 0,
+            "null_mean": 0.11,
+            "null_std": 0.35,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.32,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 0,
+              "q975": 1
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "ser_ser": {
+            "observed": 49,
+            "null_mean": 11.66,
+            "null_std": 6.78,
+            "enrichment_ratio": 4.2024,
+            "z_score": 5.5,
+            "empirical_p_value": 0.0014992503748125937,
+            "quantiles": {
+              "q025": 3,
+              "q25": 7,
+              "median": 10,
+              "q75": 15,
+              "q975": 29
+            },
+            "fdr_q_value": 0.004497751124437781,
+            "fdr_significant": true
+          }
+        }
+      }
+    },
+    "model3_joint_in_out_medians": {
+      "model_name": "Joint Directed In x Out Medians (2x2 grid, 4 strata)",
+      "results": {
+        "strata_count": 4,
+        "strata_sizes": [
+          943,
+          942,
+          290,
+          290
+        ],
+        "frozen_strata_count": 0,
+        "mobile_nodes_count": 2465,
+        "pair_statistics": {
+          "ach_ach": {
+            "observed": 456,
+            "null_mean": 1289.84,
+            "null_std": 101.7,
+            "enrichment_ratio": 0.3535,
+            "z_score": -8.2,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 1093,
+              "q25": 1223,
+              "median": 1290,
+              "q75": 1359,
+              "q975": 1493
+            },
+            "fdr_q_value": 0.0017491254372813594,
+            "fdr_significant": true
+          },
+          "ach_gaba": {
+            "observed": 554,
+            "null_mean": 101.74,
+            "null_std": 26.51,
+            "enrichment_ratio": 5.4452,
+            "z_score": 17.06,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 61,
+              "q25": 83,
+              "median": 97,
+              "q75": 116,
+              "q975": 165
+            },
+            "fdr_q_value": 0.0017491254372813594,
+            "fdr_significant": true
+          },
+          "ach_glut": {
+            "observed": 2267,
+            "null_mean": 2022.64,
+            "null_std": 76.13,
+            "enrichment_ratio": 1.1208,
+            "z_score": 3.21,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 1863,
+              "q25": 1974,
+              "median": 2025,
+              "q75": 2075,
+              "q975": 2171
+            },
+            "fdr_q_value": 0.0017491254372813594,
+            "fdr_significant": true
+          },
+          "ach_da": {
+            "observed": 296,
+            "null_mean": 202.78,
+            "null_std": 38.62,
+            "enrichment_ratio": 1.4597,
+            "z_score": 2.41,
+            "empirical_p_value": 0.02348825587206397,
+            "quantiles": {
+              "q025": 137,
+              "q25": 175,
+              "median": 200,
+              "q75": 226,
+              "q975": 293
+            },
+            "fdr_q_value": 0.04674935259642907,
+            "fdr_significant": true
+          },
+          "ach_oct": {
+            "observed": 0,
+            "null_mean": 5.66,
+            "null_std": 6.36,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.89,
+            "empirical_p_value": 0.15942028985507245,
+            "quantiles": {
+              "q025": 0,
+              "q25": 2,
+              "median": 4,
+              "q75": 7,
+              "q975": 22
+            },
+            "fdr_q_value": 0.23913043478260868,
+            "fdr_significant": false
+          },
+          "ach_ser": {
+            "observed": 100,
+            "null_mean": 386.35,
+            "null_std": 53.15,
+            "enrichment_ratio": 0.2588,
+            "z_score": -5.39,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 292,
+              "q25": 350,
+              "median": 382,
+              "q75": 420,
+              "q975": 502
+            },
+            "fdr_q_value": 0.0017491254372813594,
+            "fdr_significant": true
+          },
+          "gaba_gaba": {
+            "observed": 6,
+            "null_mean": 1.86,
+            "null_std": 1.93,
+            "enrichment_ratio": 3.2215,
+            "z_score": 2.15,
+            "empirical_p_value": 0.04547726136931534,
+            "quantiles": {
+              "q025": 0,
+              "q25": 1,
+              "median": 1,
+              "q75": 3,
+              "q975": 7
+            },
+            "fdr_q_value": 0.07958520739630184,
+            "fdr_significant": false
+          },
+          "gaba_glut": {
+            "observed": 31,
+            "null_mean": 80.13,
+            "null_std": 19.31,
+            "enrichment_ratio": 0.3868,
+            "z_score": -2.54,
+            "empirical_p_value": 0.012993503248375811,
+            "quantiles": {
+              "q025": 46,
+              "q25": 67,
+              "median": 79,
+              "q75": 92,
+              "q975": 121
+            },
+            "fdr_q_value": 0.030318174246210226,
+            "fdr_significant": true
+          },
+          "gaba_da": {
+            "observed": 16,
+            "null_mean": 7.97,
+            "null_std": 4.08,
+            "enrichment_ratio": 2.0068,
+            "z_score": 1.97,
+            "empirical_p_value": 0.05147426286856572,
+            "quantiles": {
+              "q025": 2,
+              "q25": 5,
+              "median": 7,
+              "q75": 10,
+              "q975": 18
+            },
+            "fdr_q_value": 0.08315073232614462,
+            "fdr_significant": false
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "null_mean": 0.21,
+            "null_std": 0.61,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.35,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 0,
+              "q975": 1
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "gaba_ser": {
+            "observed": 21,
+            "null_mean": 15.12,
+            "null_std": 5.84,
+            "enrichment_ratio": 1.3889,
+            "z_score": 1.01,
+            "empirical_p_value": 0.3193403298350825,
+            "quantiles": {
+              "q025": 6,
+              "q25": 11,
+              "median": 15,
+              "q75": 18,
+              "q975": 29
+            },
+            "fdr_q_value": 0.4470764617691155,
+            "fdr_significant": false
+          },
+          "glut_glut": {
+            "observed": 968,
+            "null_mean": 787.14,
+            "null_std": 69.45,
+            "enrichment_ratio": 1.2298,
+            "z_score": 2.6,
+            "empirical_p_value": 0.012993503248375811,
+            "quantiles": {
+              "q025": 657,
+              "q25": 740,
+              "median": 786,
+              "q75": 833,
+              "q975": 927
+            },
+            "fdr_q_value": 0.030318174246210226,
+            "fdr_significant": true
+          },
+          "glut_da": {
+            "observed": 253,
+            "null_mean": 158.96,
+            "null_std": 26.88,
+            "enrichment_ratio": 1.5916,
+            "z_score": 3.5,
+            "empirical_p_value": 0.0014992503748125937,
+            "quantiles": {
+              "q025": 109,
+              "q25": 141,
+              "median": 158,
+              "q75": 176,
+              "q975": 216
+            },
+            "fdr_q_value": 0.004497751124437781,
+            "fdr_significant": true
+          },
+          "glut_oct": {
+            "observed": 3,
+            "null_mean": 4.47,
+            "null_std": 4.63,
+            "enrichment_ratio": 0.6705,
+            "z_score": -0.32,
+            "empirical_p_value": 0.8115942028985508,
+            "quantiles": {
+              "q025": 0,
+              "q25": 2,
+              "median": 3,
+              "q75": 6,
+              "q975": 17
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "glut_ser": {
+            "observed": 307,
+            "null_mean": 302.06,
+            "null_std": 38.36,
+            "enrichment_ratio": 1.0164,
+            "z_score": 0.13,
+            "empirical_p_value": 0.9000499750124937,
+            "quantiles": {
+              "q025": 233,
+              "q25": 276,
+              "median": 300,
+              "q75": 328,
+              "q975": 382
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "da_da": {
+            "observed": 32,
+            "null_mean": 7.76,
+            "null_std": 3.8,
+            "enrichment_ratio": 4.1248,
+            "z_score": 6.39,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 2,
+              "q25": 5,
+              "median": 7,
+              "q75": 10,
+              "q975": 16
+            },
+            "fdr_q_value": 0.0017491254372813594,
+            "fdr_significant": true
+          },
+          "da_oct": {
+            "observed": 0,
+            "null_mean": 0.43,
+            "null_std": 0.76,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.56,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 1,
+              "q975": 2
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "da_ser": {
+            "observed": 76,
+            "null_mean": 30.44,
+            "null_std": 8.2,
+            "enrichment_ratio": 2.497,
+            "z_score": 5.55,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 16,
+              "q25": 25,
+              "median": 30,
+              "q75": 36,
+              "q975": 48
+            },
+            "fdr_q_value": 0.0017491254372813594,
+            "fdr_significant": true
+          },
+          "oct_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.04,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.04,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 0,
+              "q975": 0
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "oct_ser": {
+            "observed": 0,
+            "null_mean": 0.82,
+            "null_std": 1.19,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.69,
+            "empirical_p_value": 0.7251374312843578,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 1,
+              "q975": 4
+            },
+            "fdr_q_value": 0.9517428785607196,
+            "fdr_significant": false
+          },
+          "ser_ser": {
+            "observed": 49,
+            "null_mean": 28.61,
+            "null_std": 8.58,
+            "enrichment_ratio": 1.7129,
+            "z_score": 2.38,
+            "empirical_p_value": 0.02448775612193903,
+            "quantiles": {
+              "q025": 14,
+              "q25": 23,
+              "median": 28,
+              "q75": 34,
+              "q975": 47
+            },
+            "fdr_q_value": 0.04674935259642907,
+            "fdr_significant": true
+          }
+        }
+      }
+    },
+    "model4_total_degree_quintiles": {
+      "model_name": "Total Directed Degree Quintiles (5 strata)",
+      "results": {
+        "strata_count": 5,
+        "strata_sizes": [
+          493,
+          493,
+          493,
+          493,
+          493
+        ],
+        "frozen_strata_count": 0,
+        "mobile_nodes_count": 2465,
+        "pair_statistics": {
+          "ach_ach": {
+            "observed": 456,
+            "null_mean": 967.88,
+            "null_std": 87.57,
+            "enrichment_ratio": 0.4711,
+            "z_score": -5.85,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 795,
+              "q25": 911,
+              "median": 967,
+              "q75": 1024,
+              "q975": 1142
+            },
+            "fdr_q_value": 0.002623688155922039,
+            "fdr_significant": true
+          },
+          "ach_gaba": {
+            "observed": 554,
+            "null_mean": 111.69,
+            "null_std": 28.97,
+            "enrichment_ratio": 4.9603,
+            "z_score": 15.27,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 65,
+              "q25": 91,
+              "median": 108,
+              "q75": 129,
+              "q975": 178
+            },
+            "fdr_q_value": 0.002623688155922039,
+            "fdr_significant": true
+          },
+          "ach_glut": {
+            "observed": 2267,
+            "null_mean": 2055.75,
+            "null_std": 75.01,
+            "enrichment_ratio": 1.1028,
+            "z_score": 2.82,
+            "empirical_p_value": 0.0069965017491254375,
+            "quantiles": {
+              "q025": 1914,
+              "q25": 2005,
+              "median": 2057,
+              "q75": 2108,
+              "q975": 2199
+            },
+            "fdr_q_value": 0.020989505247376312,
+            "fdr_significant": true
+          },
+          "ach_da": {
+            "observed": 296,
+            "null_mean": 252.16,
+            "null_std": 44.09,
+            "enrichment_ratio": 1.1738,
+            "z_score": 0.99,
+            "empirical_p_value": 0.31584207896051975,
+            "quantiles": {
+              "q025": 176,
+              "q25": 220,
+              "median": 249,
+              "q75": 281,
+              "q975": 343
+            },
+            "fdr_q_value": 0.5102064352439165,
+            "fdr_significant": false
+          },
+          "ach_oct": {
+            "observed": 0,
+            "null_mean": 1.59,
+            "null_std": 1.48,
+            "enrichment_ratio": 0.0,
+            "z_score": -1.08,
+            "empirical_p_value": 0.3583208395802099,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 1,
+              "q75": 2,
+              "q975": 5
+            },
+            "fdr_q_value": 0.5374812593703149,
+            "fdr_significant": false
+          },
+          "ach_ser": {
+            "observed": 100,
+            "null_mean": 253.32,
+            "null_std": 41.38,
+            "enrichment_ratio": 0.3948,
+            "z_score": -3.71,
+            "empirical_p_value": 0.0014992503748125937,
+            "quantiles": {
+              "q025": 182,
+              "q25": 224,
+              "median": 250,
+              "q75": 278,
+              "q975": 343
+            },
+            "fdr_q_value": 0.006296851574212893,
+            "fdr_significant": true
+          },
+          "gaba_gaba": {
+            "observed": 6,
+            "null_mean": 3.02,
+            "null_std": 2.01,
+            "enrichment_ratio": 1.9871,
+            "z_score": 1.48,
+            "empirical_p_value": 0.17341329335332334,
+            "quantiles": {
+              "q025": 0,
+              "q25": 2,
+              "median": 3,
+              "q75": 4,
+              "q975": 8
+            },
+            "fdr_q_value": 0.4046310178244211,
+            "fdr_significant": false
+          },
+          "gaba_glut": {
+            "observed": 31,
+            "null_mean": 115.41,
+            "null_std": 22.37,
+            "enrichment_ratio": 0.2686,
+            "z_score": -3.77,
+            "empirical_p_value": 0.001999000499750125,
+            "quantiles": {
+              "q025": 77,
+              "q25": 100,
+              "median": 113,
+              "q75": 130,
+              "q975": 163
+            },
+            "fdr_q_value": 0.0069965017491254375,
+            "fdr_significant": true
+          },
+          "gaba_da": {
+            "observed": 16,
+            "null_mean": 14.19,
+            "null_std": 4.7,
+            "enrichment_ratio": 1.1279,
+            "z_score": 0.39,
+            "empirical_p_value": 0.7586206896551724,
+            "quantiles": {
+              "q025": 6,
+              "q25": 11,
+              "median": 14,
+              "q75": 17,
+              "q975": 24
+            },
+            "fdr_q_value": 0.9956896551724137,
+            "fdr_significant": false
+          },
+          "gaba_oct": {
+            "observed": 0,
+            "null_mean": 0.1,
+            "null_std": 0.32,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.31,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 0,
+              "q975": 1
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "gaba_ser": {
+            "observed": 21,
+            "null_mean": 14.62,
+            "null_std": 5.19,
+            "enrichment_ratio": 1.4362,
+            "z_score": 1.23,
+            "empirical_p_value": 0.2463768115942029,
+            "quantiles": {
+              "q025": 6,
+              "q25": 11,
+              "median": 14,
+              "q75": 18,
+              "q975": 25
+            },
+            "fdr_q_value": 0.43115942028985504,
+            "fdr_significant": false
+          },
+          "glut_glut": {
+            "observed": 968,
+            "null_mean": 1052.92,
+            "null_std": 70.15,
+            "enrichment_ratio": 0.9193,
+            "z_score": -1.21,
+            "empirical_p_value": 0.2283858070964518,
+            "quantiles": {
+              "q025": 917,
+              "q25": 1006,
+              "median": 1053,
+              "q75": 1099,
+              "q975": 1193
+            },
+            "fdr_q_value": 0.43115942028985504,
+            "fdr_significant": false
+          },
+          "glut_da": {
+            "observed": 253,
+            "null_mean": 258.5,
+            "null_std": 33.92,
+            "enrichment_ratio": 0.9787,
+            "z_score": -0.16,
+            "empirical_p_value": 0.8740629685157422,
+            "quantiles": {
+              "q025": 198,
+              "q25": 235,
+              "median": 257,
+              "q75": 280,
+              "q975": 328
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "glut_oct": {
+            "observed": 3,
+            "null_mean": 1.73,
+            "null_std": 1.53,
+            "enrichment_ratio": 1.7386,
+            "z_score": 0.83,
+            "empirical_p_value": 0.49975012493753124,
+            "quantiles": {
+              "q025": 0,
+              "q25": 1,
+              "median": 1,
+              "q75": 3,
+              "q975": 5
+            },
+            "fdr_q_value": 0.6996501749125437,
+            "fdr_significant": false
+          },
+          "glut_ser": {
+            "observed": 307,
+            "null_mean": 267.37,
+            "null_std": 32.53,
+            "enrichment_ratio": 1.1482,
+            "z_score": 1.22,
+            "empirical_p_value": 0.223888055972014,
+            "quantiles": {
+              "q025": 208,
+              "q25": 244,
+              "median": 266,
+              "q75": 289,
+              "q975": 333
+            },
+            "fdr_q_value": 0.43115942028985504,
+            "fdr_significant": false
+          },
+          "da_da": {
+            "observed": 32,
+            "null_mean": 15.48,
+            "null_std": 5.33,
+            "enrichment_ratio": 2.0675,
+            "z_score": 3.1,
+            "empirical_p_value": 0.0079960019990005,
+            "quantiles": {
+              "q025": 6,
+              "q25": 12,
+              "median": 15,
+              "q75": 19,
+              "q975": 27
+            },
+            "fdr_q_value": 0.020989505247376312,
+            "fdr_significant": true
+          },
+          "da_oct": {
+            "observed": 0,
+            "null_mean": 0.23,
+            "null_std": 0.49,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.47,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 0,
+              "q975": 2
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "da_ser": {
+            "observed": 76,
+            "null_mean": 32.72,
+            "null_std": 8.1,
+            "enrichment_ratio": 2.3225,
+            "z_score": 5.34,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 19,
+              "q25": 27,
+              "median": 32,
+              "q75": 38,
+              "q975": 50
+            },
+            "fdr_q_value": 0.002623688155922039,
+            "fdr_significant": true
+          },
+          "oct_oct": {
+            "observed": 0,
+            "null_mean": 0.0,
+            "null_std": 0.02,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.02,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 0,
+              "q975": 0
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "oct_ser": {
+            "observed": 0,
+            "null_mean": 0.2,
+            "null_std": 0.45,
+            "enrichment_ratio": 0.0,
+            "z_score": -0.44,
+            "empirical_p_value": 1.0,
+            "quantiles": {
+              "q025": 0,
+              "q25": 0,
+              "median": 0,
+              "q75": 0,
+              "q975": 1
+            },
+            "fdr_q_value": 1.0,
+            "fdr_significant": false
+          },
+          "ser_ser": {
+            "observed": 49,
+            "null_mean": 16.13,
+            "null_std": 5.82,
+            "enrichment_ratio": 3.0386,
+            "z_score": 5.65,
+            "empirical_p_value": 0.0004997501249375312,
+            "quantiles": {
+              "q025": 6,
+              "q25": 12,
+              "median": 16,
+              "q75": 20,
+              "q975": 29
+            },
+            "fdr_q_value": 0.002623688155922039,
+            "fdr_significant": true
+          }
+        }
+      }
+    }
+  }
+}

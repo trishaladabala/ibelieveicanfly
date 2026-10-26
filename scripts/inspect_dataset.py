@@ -90,6 +90,138 @@ def classify_dataset_schema(header: list[str]) -> tuple[str, dict[str, str]]:
     return schema_type, col_map
 
 
+def audit_feather_file(
+    file_path: Path,
+    max_rows: int = 50000,
+    is_software_test: bool = False,
+) -> dict[str, Any]:
+    """Audit an Apache Arrow Feather (.feather) file with bounded batch memory processing."""
+    start_time = time.perf_counter()
+    file_size_bytes = file_path.stat().st_size
+    file_size_mb = file_size_bytes / (1024 * 1024)
+
+    try:
+        import pyarrow.ipc as ipc
+    except ImportError:
+        venv_path = Path(__file__).resolve().parent.parent / ".venv" / "lib" / "python3.12" / "site-packages"
+        if venv_path.exists():
+            sys.path.insert(0, str(venv_path))
+            import pyarrow.ipc as ipc
+        else:
+            raise ImportError("pyarrow is required to read .feather files. Install in local .venv.")
+
+    with open(file_path, "rb") as f:
+        reader = ipc.open_file(f)
+        header = list(reader.schema.names)
+        num_batches = reader.num_record_batches
+        total_records_in_file = reader.count_rows() if hasattr(reader, "count_rows") else sum(reader.get_batch(i).num_rows for i in range(num_batches))
+        schema_type, col_map = classify_dataset_schema(header)
+
+        unique_pre: set[str] = set()
+        unique_post: set[str] = set()
+        seen_edges: set[tuple[str, str]] = set()
+
+        total_valid_records = 0
+        malformed_records = 0
+        duplicate_edges = 0
+        self_connections = 0
+
+        weight_distribution: Counter[int] = Counter()
+        total_synapse_count = 0
+        min_weight: int | None = None
+        max_weight: int | None = None
+        is_sampled = False
+
+        for batch_idx in range(num_batches):
+            if max_rows is not None and max_rows >= 0 and (total_valid_records + malformed_records) >= max_rows:
+                is_sampled = True
+                break
+
+            batch = reader.get_batch(batch_idx)
+            pre_list = batch.column(col_map["pre"]).to_pylist()
+            post_list = batch.column(col_map["post"]).to_pylist()
+            weight_list = batch.column(col_map["weight"]).to_pylist() if "weight" in col_map else [1] * len(pre_list)
+
+            for pre_val, post_val, weight_val in zip(pre_list, post_list, weight_list):
+                if max_rows is not None and max_rows >= 0 and (total_valid_records + malformed_records) >= max_rows:
+                    is_sampled = True
+                    break
+
+                if pre_val is None or post_val is None:
+                    malformed_records += 1
+                    continue
+
+                pre_str = str(pre_val).strip()
+                post_str = str(post_val).strip()
+
+                if not pre_str or not post_str:
+                    malformed_records += 1
+                    continue
+
+                try:
+                    weight_int = int(weight_val)
+                    if weight_int <= 0:
+                        malformed_records += 1
+                        continue
+                except (ValueError, TypeError):
+                    malformed_records += 1
+                    continue
+
+                total_valid_records += 1
+                unique_pre.add(pre_str)
+                unique_post.add(post_str)
+
+                edge_key = (pre_str, post_str)
+                if edge_key in seen_edges:
+                    duplicate_edges += 1
+                else:
+                    seen_edges.add(edge_key)
+
+                if pre_str == post_str:
+                    self_connections += 1
+
+                weight_distribution[weight_int] += 1
+                total_synapse_count += weight_int
+                if min_weight is None or weight_int < min_weight:
+                    min_weight = weight_int
+                if max_weight is None or weight_int > max_weight:
+                    max_weight = weight_int
+
+    elapsed_sec = time.perf_counter() - start_time
+    peak_ram_mb = get_peak_memory_mb()
+    mean_weight = (total_synapse_count / total_valid_records) if total_valid_records > 0 else 0.0
+    all_neurons = unique_pre.union(unique_post)
+
+    return {
+        "file_name": file_path.name,
+        "file_path": str(file_path.resolve()),
+        "file_size_mb": round(file_size_mb, 4),
+        "is_software_test": is_software_test,
+        "schema_type": schema_type,
+        "detected_columns": header,
+        "mapped_columns": col_map,
+        "is_sampled": is_sampled,
+        "max_rows_limit": max_rows,
+        "total_lines_read": total_valid_records + malformed_records,
+        "total_records_in_file": total_records_in_file,
+        "comment_lines": 0,
+        "valid_records": total_valid_records,
+        "malformed_records": malformed_records,
+        "duplicate_edges": duplicate_edges,
+        "self_connections": self_connections,
+        "unique_source_neurons": len(unique_pre),
+        "unique_target_neurons": len(unique_post),
+        "total_unique_neurons": len(all_neurons),
+        "total_synapse_count": total_synapse_count,
+        "min_synapse_count": min_weight,
+        "max_synapse_count": max_weight,
+        "mean_synapse_count": round(mean_weight, 2),
+        "top_weight_frequencies": dict(weight_distribution.most_common(5)),
+        "execution_time_seconds": round(elapsed_sec, 4),
+        "peak_ram_mb": round(peak_ram_mb, 2),
+    }
+
+
 def audit_dataset_file(
     file_path: Path,
     max_rows: int = 50000,
@@ -98,6 +230,9 @@ def audit_dataset_file(
     """
     Audit a connectivity dataset file with streaming, bounded memory processing.
     """
+    if file_path.suffix.lower() == ".feather":
+        return audit_feather_file(file_path, max_rows=max_rows, is_software_test=is_software_test)
+
     start_time = time.perf_counter()
     file_size_bytes = file_path.stat().st_size
     file_size_mb = file_size_bytes / (1024 * 1024)
@@ -153,7 +288,7 @@ def audit_dataset_file(
         for row in reader:
             total_lines += 1
 
-            if max_rows > 0 and total_valid_records + malformed_records >= max_rows:
+            if max_rows is not None and max_rows >= 0 and (total_valid_records + malformed_records) >= max_rows:
                 is_sampled = True
                 break
 
@@ -284,7 +419,7 @@ def main() -> int:
         "--max-rows",
         type=int,
         default=50000,
-        help="Maximum records to process (default: 50,000; 0 for unlimited).",
+        help="Maximum records to process (default: 50,000; -1 for unlimited; positive integer for sample size).",
     )
     parser.add_argument(
         "--json-out",

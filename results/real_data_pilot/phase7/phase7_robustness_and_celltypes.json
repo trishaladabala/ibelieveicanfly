@@ -1,0 +1,502 @@
+{
+  "metadata": {
+    "execution_date": "2026-10-20 09:49:33",
+    "dataset": "proofread_connections_783.feather",
+    "annotation_source": "https://github.com/flyconnectome/flywire_annotations/releases/tag/v2.1.0",
+    "annotation_file": "Supplemental_file1_neuron_annotations.tsv",
+    "annotation_sha256": "30be6c73975a70c56d930e27911f36455d3886e15abf383b78edd2a5d679e0b6",
+    "permutations": 2000,
+    "random_seed": 42,
+    "runtime_seconds": 7.36,
+    "peak_ram_mb": 119.8
+  },
+  "baseline_p6_results": {
+    "model": "Mutual-Degree Quartiles (4 strata)",
+    "observed_gaba_gaba": 2615,
+    "total_mutual_dyads": 3518,
+    "null_mean": 2167.84,
+    "null_std": 30.38,
+    "enrichment_ratio": 1.2063,
+    "z_score": 14.72,
+    "empirical_p_value": 0.0004997501249375312
+  },
+  "primary_sensitivity_model": {
+    "model": "Joint Directed In-Degree x Out-Degree Tertiles (9 strata)",
+    "null_hypothesis": "Observed reciprocal dyad GABA-GABA pairing is explained by joint directed in-degree and out-degree tertile profiles.",
+    "strata_count": 9,
+    "strata_diagnostics": [
+      {
+        "stratum_key": "In_0_Out_0",
+        "total_nodes": 106,
+        "gaba_nodes": 12,
+        "gaba_pct": 11.32,
+        "nt_composition": {
+          "ach": 50,
+          "ser": 29,
+          "da": 8,
+          "gaba": 12,
+          "glut": 7
+        }
+      },
+      {
+        "stratum_key": "In_0_Out_1",
+        "total_nodes": 38,
+        "gaba_nodes": 29,
+        "gaba_pct": 76.32,
+        "nt_composition": {
+          "gaba": 29,
+          "ach": 9
+        }
+      },
+      {
+        "stratum_key": "In_0_Out_2",
+        "total_nodes": 18,
+        "gaba_nodes": 17,
+        "gaba_pct": 94.44,
+        "nt_composition": {
+          "gaba": 17,
+          "ach": 1
+        }
+      },
+      {
+        "stratum_key": "In_1_Out_0",
+        "total_nodes": 32,
+        "gaba_nodes": 18,
+        "gaba_pct": 56.25,
+        "nt_composition": {
+          "gaba": 18,
+          "da": 5,
+          "ach": 9
+        }
+      },
+      {
+        "stratum_key": "In_1_Out_1",
+        "total_nodes": 73,
+        "gaba_nodes": 64,
+        "gaba_pct": 87.67,
+        "nt_composition": {
+          "gaba": 64,
+          "ach": 9
+        }
+      },
+      {
+        "stratum_key": "In_1_Out_2",
+        "total_nodes": 62,
+        "gaba_nodes": 52,
+        "gaba_pct": 83.87,
+        "nt_composition": {
+          "gaba": 52,
+          "ach": 8,
+          "da": 2
+        }
+      },
+      {
+        "stratum_key": "In_2_Out_0",
+        "total_nodes": 29,
+        "gaba_nodes": 17,
+        "gaba_pct": 58.62,
+        "nt_composition": {
+          "gaba": 17,
+          "ach": 9,
+          "da": 3
+        }
+      },
+      {
+        "stratum_key": "In_2_Out_1",
+        "total_nodes": 53,
+        "gaba_nodes": 25,
+        "gaba_pct": 47.17,
+        "nt_composition": {
+          "gaba": 25,
+          "ach": 28
+        }
+      },
+      {
+        "stratum_key": "In_2_Out_2",
+        "total_nodes": 72,
+        "gaba_nodes": 64,
+        "gaba_pct": 88.89,
+        "nt_composition": {
+          "gaba": 64,
+          "glut": 5,
+          "ach": 3
+        }
+      }
+    ],
+    "observed_gaba_gaba": 2615,
+    "null_mean": 2037.96,
+    "null_std": 35.86,
+    "enrichment_ratio": 1.2831,
+    "z_score": 16.09,
+    "empirical_p_value": 0.0004997501249375312,
+    "survived_gate": true
+  },
+  "secondary_sensitivity_model": {
+    "model": "Joint Directed In-Degree x Out-Degree Medians (4 strata)",
+    "strata_count": 4,
+    "null_mean": 1984.76,
+    "null_std": 48.05,
+    "enrichment_ratio": 1.3175,
+    "z_score": 13.12,
+    "empirical_p_value": 0.0004997501249375312
+  },
+  "annotation_matching": {
+    "total_active_nodes": 483,
+    "matched_nodes": 483,
+    "matching_rate_pct": 100.0,
+    "all_dyads_matched": 3518,
+    "all_dyads_coverage_pct": 100.0,
+    "gaba_dyads_matched": 2615,
+    "gaba_dyads_coverage_pct": 100.0,
+    "node_classes": {
+      "CX": 474,
+      "MBON": 1,
+      "MBIN": 1,
+      "Kenyon_Cell": 2,
+      "ALLN": 1,
+      "unannotated": 2,
+      "olfactory": 2
+    },
+    "node_subclasses": {
+      "unannotated": 151,
+      "ring neuron": 276,
+      "tangential": 8,
+      "columnar": 48
+    }
+  },
+  "descriptive_biological_summary": {
+    "all_dyads": {
+      "both_same_subclass": 2306,
+      "both_same_subclass_pct": 65.55,
+      "different_subclass": 109,
+      "different_subclass_pct": 3.1,
+      "unannotated_subclass": 1103,
+      "unannotated_subclass_pct": 31.35,
+      "both_same_specific_type": 2171,
+      "both_same_specific_type_pct": 61.71,
+      "top_subclass_pairs": [
+        {
+          "pair": [
+            "ring neuron",
+            "ring neuron"
+          ],
+          "count": 2306,
+          "pct": 65.55
+        },
+        {
+          "pair": [
+            "unannotated",
+            "unannotated"
+          ],
+          "count": 639,
+          "pct": 18.16
+        },
+        {
+          "pair": [
+            "ring neuron",
+            "unannotated"
+          ],
+          "count": 399,
+          "pct": 11.34
+        },
+        {
+          "pair": [
+            "columnar",
+            "ring neuron"
+          ],
+          "count": 109,
+          "pct": 3.1
+        },
+        {
+          "pair": [
+            "columnar",
+            "unannotated"
+          ],
+          "count": 65,
+          "pct": 1.85
+        }
+      ],
+      "top_type_pairs": [
+        {
+          "pair": [
+            "ER2",
+            "ER2"
+          ],
+          "count": 458,
+          "pct": 13.02
+        },
+        {
+          "pair": [
+            "ER3d",
+            "ER3d"
+          ],
+          "count": 445,
+          "pct": 12.65
+        },
+        {
+          "pair": [
+            "ER4d",
+            "ER4d"
+          ],
+          "count": 274,
+          "pct": 7.79
+        },
+        {
+          "pair": [
+            "ER3w",
+            "ER3w"
+          ],
+          "count": 243,
+          "pct": 6.91
+        },
+        {
+          "pair": [
+            "ER5",
+            "ER5"
+          ],
+          "count": 191,
+          "pct": 5.43
+        },
+        {
+          "pair": [
+            "ER3a",
+            "ER3a"
+          ],
+          "count": 174,
+          "pct": 4.95
+        },
+        {
+          "pair": [
+            "EPG",
+            "PEN_a(PEN1)"
+          ],
+          "count": 163,
+          "pct": 4.63
+        },
+        {
+          "pair": [
+            "EPG",
+            "PEN_b(PEN2)"
+          ],
+          "count": 142,
+          "pct": 4.04
+        },
+        {
+          "pair": [
+            "ER3p",
+            "ER3p"
+          ],
+          "count": 129,
+          "pct": 3.67
+        },
+        {
+          "pair": [
+            "ER3m",
+            "ER3m"
+          ],
+          "count": 112,
+          "pct": 3.18
+        },
+        {
+          "pair": [
+            "EPG",
+            "ER4m"
+          ],
+          "count": 102,
+          "pct": 2.9
+        },
+        {
+          "pair": [
+            "ER5",
+            "ExR1"
+          ],
+          "count": 84,
+          "pct": 2.39
+        },
+        {
+          "pair": [
+            "ER3d",
+            "ExR1"
+          ],
+          "count": 81,
+          "pct": 2.3
+        },
+        {
+          "pair": [
+            "EPG",
+            "ExR6"
+          ],
+          "count": 81,
+          "pct": 2.3
+        },
+        {
+          "pair": [
+            "ER3a",
+            "ER3m"
+          ],
+          "count": 75,
+          "pct": 2.13
+        }
+      ]
+    },
+    "gaba_gaba_dyads": {
+      "total_gaba_gaba": 2615,
+      "top_subclass_pairs": [
+        {
+          "pair": [
+            "ring neuron",
+            "ring neuron"
+          ],
+          "count": 2306,
+          "pct": 88.18
+        },
+        {
+          "pair": [
+            "ring neuron",
+            "unannotated"
+          ],
+          "count": 184,
+          "pct": 7.04
+        },
+        {
+          "pair": [
+            "columnar",
+            "ring neuron"
+          ],
+          "count": 109,
+          "pct": 4.17
+        },
+        {
+          "pair": [
+            "columnar",
+            "unannotated"
+          ],
+          "count": 16,
+          "pct": 0.61
+        }
+      ],
+      "top_type_pairs": [
+        {
+          "pair": [
+            "ER2",
+            "ER2"
+          ],
+          "count": 458,
+          "pct": 17.51
+        },
+        {
+          "pair": [
+            "ER3d",
+            "ER3d"
+          ],
+          "count": 445,
+          "pct": 17.02
+        },
+        {
+          "pair": [
+            "ER4d",
+            "ER4d"
+          ],
+          "count": 274,
+          "pct": 10.48
+        },
+        {
+          "pair": [
+            "ER3w",
+            "ER3w"
+          ],
+          "count": 243,
+          "pct": 9.29
+        },
+        {
+          "pair": [
+            "ER5",
+            "ER5"
+          ],
+          "count": 191,
+          "pct": 7.3
+        },
+        {
+          "pair": [
+            "ER3a",
+            "ER3a"
+          ],
+          "count": 174,
+          "pct": 6.65
+        },
+        {
+          "pair": [
+            "ER3p",
+            "ER3p"
+          ],
+          "count": 129,
+          "pct": 4.93
+        },
+        {
+          "pair": [
+            "ER3m",
+            "ER3m"
+          ],
+          "count": 112,
+          "pct": 4.28
+        },
+        {
+          "pair": [
+            "ER5",
+            "ExR1"
+          ],
+          "count": 84,
+          "pct": 3.21
+        },
+        {
+          "pair": [
+            "ER3d",
+            "ExR1"
+          ],
+          "count": 81,
+          "pct": 3.1
+        },
+        {
+          "pair": [
+            "ER3a",
+            "ER3m"
+          ],
+          "count": 75,
+          "pct": 2.87
+        },
+        {
+          "pair": [
+            "EL",
+            "ER4d"
+          ],
+          "count": 72,
+          "pct": 2.75
+        },
+        {
+          "pair": [
+            "ER2",
+            "ER4m"
+          ],
+          "count": 65,
+          "pct": 2.49
+        },
+        {
+          "pair": [
+            "ER4m",
+            "ER4m"
+          ],
+          "count": 49,
+          "pct": 1.87
+        },
+        {
+          "pair": [
+            "ER2",
+            "ER3w"
+          ],
+          "count": 42,
+          "pct": 1.61
+        }
+      ]
+    }
+  }
+}
